@@ -1,0 +1,218 @@
+.footer {
+  width: 100%;
+  height: 300px;
+  background: $c-footer-bg;
+  color: $c-white;
+  font-size: $fs-20;
+  font-weight: $fw-r;
+  font-family: $ff-suit;
+  @include flex-center;
+
+  .footer-content {
+    @include inner($inner-sub);
+    display: flex;
+    flex-direction: column;
+    gap: $sp-30;
+
+    .footer-top-icon {
+      @include flex-between;
+
+      .footer-top-sns {
+        ul {
+          display: flex;
+          align-items: center;
+          gap: $sp-20;
+
+          li {
+            a {
+              display: block;
+              width: 60px;
+              height: 60px;
+              border-radius: $r-xs;
+              transition: $tr-r $ease-default;
+
+              &:hover {
+                transform: translateY(-3px);
+              }
+            }
+
+            .footer-icon-youtube {
+              background: url(../images/common/footer-sns-icon-youtube.png) no-repeat center / cover;
+            }
+
+            .footer-icon-kakaostroy {
+              background: url(../images/common/footer-sns-icon-kakaos.png) no-repeat center / cover;
+            }
+
+            .footer-icon-facebook {
+              background: url(../images/common/footer-sns-icon-facebook.png) no-repeat center / cover;
+            }
+
+            .footer-icon-x {
+              background: url(../images/common/footer-sns-icon-x.png) no-repeat center / cover;
+            }
+
+            .footer-icon-kakaotalk {
+              background: url(../images/common/footer-sns-icon-kakaot.png) no-repeat center / cover;
+            }
+          }
+        }
+      }
+
+      .footer-top-site {
+        display: flex;
+        align-items: center;
+        gap: $sp-20;
+
+        .footer-icon-long {
+          width: 381px;
+          height: 60px;
+          display: block;
+          border-radius: $r-xs;
+          transition: $tr-r $ease-default;
+
+          &:hover {
+            transform: translateY(-3px);
+          }
+        }
+
+        .footer-icon-mynintendo {
+          background: url(../images/common/footer-sns-icon-mynintendo.png) no-repeat center / cover;
+        }
+
+        .footer-icon-amiibo {
+          background: url(../images/common/footer-sns-icon-amiibo.png) no-repeat center / cover;
+        }
+      }
+    }
+
+    .footer-bottom-text {
+      display: flex;
+
+      &-left {
+        display: flex;
+        flex-direction: column;
+        gap: $sp-10;
+
+        .footer-bottom-atags {
+          .footer-bottom-atag {
+            font-weight: $fw-semi-b;
+          }
+        }
+      }
+
+      &-right {
+        display: flex;
+        flex-direction: column;
+        gap: $sp-10;
+        flex: 1;
+        text-align: right;
+      }
+    }
+
+    .responsive-copyright {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $bp-tablet) {
+  .footer {
+    height: auto;
+    padding: $sp-40;
+
+    .footer-content {
+      .footer-top-icon {
+        gap: $sp-30;
+        flex-direction: column;
+        align-items: flex-start;
+        order: 2;
+
+        .footer-top-sns {
+          ul {
+            li {
+              a {
+                width: 52px;
+                height: 52px;
+              }
+            }
+          }
+        }
+
+        .footer-top-site {
+          flex-direction: column;
+          gap: $sp-10;
+          width: 100%;
+
+          .footer-icon-long {
+            height: 65px;
+            width: 100%;
+          }
+        }
+      }
+
+      .footer-bottom-text {
+        order: 1;
+        flex-direction: column;
+        gap: $sp-5;
+
+        &-left {
+          gap: $sp-5;
+        }
+
+        &-right {
+          text-align: left;
+          gap: $sp-5;
+        }
+      }
+    }
+  }
+
+  .footer-bottom-text01 {
+    display: none;
+  }
+
+  .footer-bottom-text02 {
+    line-height: $lh-text;
+
+    .footer-line-break {
+      display: block;
+    }
+  }
+
+  .responsive-copyright {
+    display: block !important;
+    order: 3;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .footer {
+    font-size: $fs-18;
+
+    .footer-top-sns {
+      ul {
+        li {
+          a {
+            width: 38px !important;
+            height: 38px !important;
+          }
+        }
+      }
+    }
+
+    .footer-top-site {
+      .footer-icon-long {
+        height: 45px !important;
+      }
+    }
+  }
+
+  .footer-line-break-mb {
+    display: block;
+  }
+
+  .responsive-copyright {
+    font-size: $fs-14;
+  }
+}

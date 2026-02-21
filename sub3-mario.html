@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닌텐도 - 소프트웨어 '마리오'</title>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="scss/sub3-mario.css">
+  <link rel="stylesheet" href="scss/mario-responsive.css">
+  <link rel="icon" href="images/common/favicon.svg">
+</head>
+
+<body class="page-sub">
+  <!-- 헤더 -->
+  <header class="header">
+    <nav>
+      <a href="index.html" class="logo"></a>
+      <div class="header-click-wrap">
+        <ul class="gnb">
+          <li class="main-menu"><a href="sub1.html">한국닌텐도</a></li>
+          <li class="main-menu"><a href="sub2.html">제품소개</a></li>
+          <li class="main-menu" data-nav="navSw"><a href="#none">소프트웨어</a></li>
+          <li class="main-menu"><a href="sub4.html">영상</a></li>
+          <li class="main-menu"><a href="sub5.html">뉴스</a></li>
+          <li class="main-menu"><a href="sub6.html">고객지원</a></li>
+        </ul>
+        <div class="utility">
+          <button class="header-search-section">
+            <div class="search-icon"></div>
+            <p class="search-text">SEARCH</p>
+          </button>
+          <div class="header-cart"></div>
+          <button class="header-login-section">
+            <div class="login-icon"></div>
+            <div class="login-text">LOGIN / SIGN UP</div>
+          </button>
+          <div class="header-kr"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- 서브헤더 -->
+  <div class="sub-header">
+    <a href="index.html" class="sub-header-home-icon"></a>
+    <a class="sub-header-text" href="#subSeries">Series</a>
+    <a class="sub-header-text" href="#subChar">Charactors</a>
+    <a class="sub-header-text" href="#subNews">News</a>
+  </div>
+  <!-- 서브내비 -->
+  <div class="sub-nav-container" id="navSw">
+    <div class="sub-nav-title-wrap">
+      <div class="sub-nav-title-icon sub-nav-title-icon-sw"></div>
+      <h2>SOFTWARE</h2>
+    </div>
+    <div class="sub-nav-lnb-wrap">
+      <a href="sub3-mario.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">마리오</p>
+      </a>
+      <a href="sub3-animalCrossing.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">동물의 숲</p>
+      </a>
+      <a href="sub3-zelda.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">젤다</p>
+      </a>
+      <a href="sub3-kirby.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">커비</p>
+      </a>
+      <a href="sub3-pikmin.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">피크민</p>
+      </a>
+    </div>
+  </div>
+  <!-- 태블릿, 모바일 내비 -->
+  <div class="responsive-nav-body">
+    <div class="r-nav-left-wrap">
+      <button class="r-nav-hamburger-btn"></button>
+      <a href="index.html" class="r-nav-home-btn"></a>
+    </div>
+    <button class="r-nav-center-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="r-nav-right-wrap">
+      <button class="r-nav-cart-btn"></button>
+      <button class="r-nav-login-btn"></button>
+    </div>
+  </div>
+  <div class="responsive-nav-container">
+    <div class="r-nav-container-header">
+      <div class="r-nav-container-logo"></div>
+      <button class="r-nav-container-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="r-nav-container-body">
+      <div class="r-nav-tab-wrap">
+        <button class="r-nav-tab-btn r-nav-tab-btn1 active" data-rnav="rNavCom">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">COMPANY</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn2" data-rnav="rNavPro">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">PRODUCT</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn3" data-rnav="rNavSw">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SOFTWARE</p>
+        </button>
+        <a href="sub4.html" class="r-nav-tab-btn r-nav-tab-btn4">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">VIDEO</p>
+        </a>
+        <a href="sub5.html" class="r-nav-tab-btn r-nav-tab-btn5">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">NEWS</p>
+        </a>
+        <button class="r-nav-tab-btn r-nav-tab-btn6" data-rnav="rNavSup">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SUPPORT</p>
+        </button>
+      </div>
+      <div class="r-nav-content-wrap">
+        <ul class="r-nav-lnb-wrap active" id="rNavCom">
+          <li>
+            <a href="sub1.html#subComCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">한국닌텐도</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주요 사업</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">연혁</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">찾아오시는 길</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavPro">
+          <li>
+            <a href="sub2.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주변기기</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">아미보</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSw">
+          <li>
+            <a href="sub3-mario.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">마리오</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-animalCrossing.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">동물의 숲</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-zelda.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">젤다</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-kirby.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">커비</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-pikmin.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">피크민</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSup">
+          <li>
+            <a href="sub6.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">FAQ</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">수리접수</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 메인비주얼 -->
+  <section class="main-visual" id="mainVisual" aria-label="메인 비주얼">
+
+    <!-- 배경 영상 -->
+    <div class="main-visual-media" aria-hidden="true">
+      <img class="main-visual-img-res" src="images/mario/main-visual-responsive.png" alt="메인비주얼의 이미지">
+      <video class="main-visual-video" src="https://hd1156.dothome.co.kr/videos/mario-cm.mp4" autoplay muted playsinline
+        loop>
+      </video>
+
+    </div>
+
+    <!-- 중앙 로고 영역 -->
+    <div class="main-visual-content">
+      <h1 class="main-visual-title">
+        <img src="images/mario/mainvisul-logo.png" alt="Nintendo mario" class="main-visual-logo">
+      </h1>
+    </div>
+
+    <!-- 스크롤 안내 -->
+    <a href="#main-content" class="main-visual-scroll" aria-label="아래로 이동">
+      <div class="main-visual-scroll-icon-wrap">
+        <img src="images/mario/main-visual-arrow.png" alt="스크롤 이미지">
+      </div>
+      <span class="main-visual-scroll-text">SCROLL</span>
+    </a>
+
+  </section>
+
+  <!-- 소프트웨어 -->
+  <section class="sub-software sub-software--mario" id="subSw">
+    <div class="sub-software-container">
+      <!-- 소프트웨어 랩 -->
+      <div class="sub-software-wrap">
+        <!-- 위쪽 비디오 영역 -->
+        <div class="top-nintendo-video">
+          <!-- 캐릭터에디션 닌텐도 -->
+          <img src="images/mario/sub-mario-nitendo.png" alt="닌텐도이미지">
+          <!-- 게임 소개 영상 -->
+          <video src="https://hd1156.dothome.co.kr/videos/mario-introduce-video.mp4" type="video/mp4" alt="게임소개영상"
+            autoplay muted playsinline></video>
+          <!-- 커스텀 일시정지 버튼 -->
+          <button class="video-pause-btn" aria-label="pause">
+            <img src="images/mario/sub-mario-palybtn.png" alt="일시정지">
+          </button>
+        </div>
+        <!-- 아래 택스트 영역 -->
+        <div class="bottom-wrap">
+          <div class="sub-software-img">
+            <!-- 캐릭터 이미지 -->
+            <img src="images/mario/sub-software-img.png" alt="캐릭터 이미지">
+          </div>
+          <div class="bottom-text">
+            마리오와 동료들이 원더의 세계로 「슈퍼 마리오브라더스」시리즈 약 11년 만의 완전 신작이 Nintendo Switch로 등장 쿠파에 납치된 「플라워 왕국」을 구하기 위해 마리오와 동료들이 적과
+            장치를 돌파하면서 골을 향해 달려갑니다.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 시리즈 -->
+  <section class="sub-series sub-series--bg" id="subSeries">
+    <div class="sub-series-slide-wrap">
+      <!-- 왼쪽 -->
+      <div class="sub-series-left-wrap">
+        <!-- 데스크탑에서만 보이는 숫자 -->
+        <div class="sub-series-number active"><img src="images/mario/sub-series-num01.png" alt="01"></div>
+        <div class="sub-series-number"><img src="images/mario/sub-series-num02.png" alt="02"></div>
+        <div class="sub-series-number"><img src="images/mario/sub-series-num03.png" alt="03"></div>
+        <div class="sub-series-number"><img src="images/mario/sub-series-num04.png" alt="04"></div>
+
+        <!-- 설명 텍스트 -->
+        <div class="sub-series-left active" data-ssIndex="0">
+          <div class="sub-series-title-wrap">
+            <!-- sub-series-num-title >> 반응형에서만 보이는 영역 -->
+            <div class="sub-series-num-title sub-series-num-title1"></div>
+            <div class="sub-series-text-title-wrap">
+              <div class="sub-series-section-title"></div>
+              <h3 class="sub-series-title">마리오갤럭시</h3>
+            </div>
+          </div>
+          <p class="sub-series-desc">
+            별의 아이 「치코」와 함께 은하를 누비는 마리오 모험의 파트너가 된 별의 아이 치코와 함께 마리오는 여러 행성을 넘나들며 펼쳐지는 우주 모험에 나섭니다
+          </p>
+        </div>
+        <div class="sub-series-left" data-ssIndex="1">
+          <div class="sub-series-title-wrap">
+            <!-- sub-series-num-title >> 반응형에서만 보이는 영역 -->
+            <div class="sub-series-num-title sub-series-num-title2"></div>
+            <div class="sub-series-text-title-wrap">
+              <div class="sub-series-section-title"></div>
+              <h3 class="sub-series-title">마리오카트월드</h3>
+            </div>
+          </div>
+
+          <p class="sub-series-desc">
+            마리오와 동료들이 카트를 타고 코스를 달린다! 초원, 마을, 바다, 화산..... 넓은 세계 속에 존재하는 버라이어티가 넘치는 코스들 모든 곳이 연결된 세계에서 레이스가 펼쳐진다!
+          </p>
+        </div>
+        <div class="sub-series-left" data-ssIndex="2">
+          <div class="sub-series-title-wrap">
+            <!-- sub-series-num-title >> 반응형에서만 보이는 영역 -->
+            <div class="sub-series-num-title sub-series-num-title3"></div>
+            <div class="sub-series-text-title-wrap">
+              <div class="sub-series-section-title"></div>
+              <h3 class="sub-series-title">마리오파티잼버리</h3>
+            </div>
+          </div>
+          <p class="sub-series-desc">
+            다양한 놀거리가 가득한 리조트 아일랜드에서 신나게 즐기는 마리오 파티. 보드게임이나 미니게임을 잔뜩 즐길 수 있는섬!
+          </p>
+        </div>
+        <div class="sub-series-left" data-ssIndex="3">
+          <div class="sub-series-title-wrap">
+            <!-- sub-series-num-title >> 반응형에서만 보이는 영역 -->
+            <div class="sub-series-num-title sub-series-num-title4"></div>
+            <div class="sub-series-text-title-wrap">
+              <div class="sub-series-section-title"></div>
+              <h3 class="sub-series-title">마리오테니스피버</h3>
+            </div>
+          </div>
+          <p class="sub-series-desc">
+            불꽃과 얼음이 난무하는 "엉망진창 테니스"가 펼쳐진다! 30종류의 피버 라켓과 38명의 캐릭터로 플레이. 라켓 종류에 따라 다양한 해프닝이 일어난다!
+          </p>
+        </div>
+
+        <!-- 컨트롤 버튼 -->
+        <div class="sub-series-control-btn-wrap" aria-label="슬라이드 이동">
+          <button type="button" class="sub-series-control-btn-prev" aria-label="이전">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="sub-series-page-count"><span class="sub-series-page-current">01</span>/<span
+              class="sub-series-page-total">04</span></div>
+          <button type="button" class="sub-series-control-btn-next" aria-label="다음">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <!-- 데스크탑에서는 안 보임, 반응형에서만 -->
+        <button type="button" class="more-btn sub-series-btn">
+          <img src="images/mario/mario-serise-icon-l.png" alt="별 이미지">
+          MORE
+          <img src="images/mario/mario-serise-icon-r.png" alt="별 이미지">
+        </button>
+      </div>
+
+      <!-- 오른쪽 -->
+      <div class="sub-series-right-wrap">
+        <!-- viewport -->
+        <div class="sub-series-viewport">
+          <!-- track -->
+          <div class="sub-series-track">
+            <!-- slide -->
+            <div class="sub-series-slide-wrap active">
+              <div class="sub-series-slide sub-series-slide1--img">
+                <div class="sub-series-slide-notice">
+                  <div class="sub-series-slide-notice-icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="sub-series-slide-wrap">
+              <div class="sub-series-slide sub-series-slide2--img"></div>
+            </div>
+            <div class="sub-series-slide-wrap">
+              <div class="sub-series-slide sub-series-slide3--img"></div>
+            </div>
+            <div class="sub-series-slide-wrap">
+              <div class="sub-series-slide sub-series-slide4--img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 캐릭터 -->
+  <section class="sub-character" id="subChar">
+    <div class="sub-character-container inner">
+
+      <!-- 섹션 타이틀 -->
+      <div class="sub-character-title">
+        <img src="images/mario/sub-mario-character-title.svg" alt="캐릭터섹션_타이틀" class="sub-character-title-img">
+      </div>
+
+      <div class="sub-character-wrap">
+        <!-- 1) 큰 이미지 Swiper -->
+        <div class="sub-character-left">
+          <div class="swiper left-Swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="character-left-img" src="images/mario/mario.png " /></div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/mario/luigi.png" /></div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/mario/peach.png" /></div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/mario/kinopio.png" /></div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/mario/koopa.png" /></div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/mario/yoshi.png" /></div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/mario/rosalina.png" /></div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/mario/character-more-img.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 2) 썸네일 Swiper -->
+        <div class="sub-character-right">
+          <div thumbsSlider="" class="swiper right-Swiper">
+            <div class="swiper-wrapper">
+
+              <!-- 마리오 -->
+              <div class="swiper-slide" data-nameimg="images/mario/mario-name.svg"
+                data-desc="빨간 모자에 파란 작업복, 트레이트 마크인 콧수염. 언제나 밝고 활기찬 마리오. 피치공주를 좋아하며 쌍둥이 동생 루이지와는 명콤비. 운동신경이 좋아 테니스, 축구, 카트 레이스까지 못하는 것이 없지.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/mario/character-card01.png" alt="마리오" />
+                  <img class="character-thum-bg" src="images/mario/charactorbg-mario.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!-- 루이지 -->
+              <div class="swiper-slide" data-nameimg="images/mario/luigi-name.svg"
+                data-desc="마리오의 쌍둥이 동생. 겁이 많지만 상냥한 성격.싫어하는 것은 역시나 유령. 사실 마리오와 비견될 정도로 무엇이든 잘하는 실력의 소유자. 마리오와 루이지, 형제가 함께라면 일당백.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/mario/character-card02.png" alt="루이지" />
+                  <img class="character-thum-bg" src="images/mario/charactorbg-luigi.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!-- 피치 -->
+              <div class="swiper-slide" data-nameimg="images/mario/peach-name.svg"
+                data-desc="버섯 왕국의 공주님. 너무나도 상냥하여 모든 이들이 행복하게 지내기를 항상 기도. 케이크 굽기나 요리를 좋아하며 다양한 스포츠에도 도전. 마리오와는 아주 사이가 좋아서 서로 의지.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/mario/character-card03.png" alt="피치" />
+                  <img class="character-thum-bg" src="images/mario/charactorbg-peach.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!-- 코노피 -->
+              <div class="swiper-slide" data-nameimg="images/mario/kinopio-name.svg"
+                data-desc="피치공주의 곁에서 일하는 버섯 왕국의 주민. 다른 색의 동료도 있으며 모두 아주 활기찬 일꾼들. 쿠파대마왕에게서 버섯 왕국을 지키려고 노력하지만 항상 실패한다는 이야기도......">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/mario/character-card04.png" alt="키노피오" />
+                  <img class="character-thum-bg" src="images/mario/charactorbg-konopoi.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!-- 쿠파 -->
+              <div class="swiper-slide" data-nameimg="images/mario/koopa-name.svg"
+                data-desc="세계 평화를 어지럽히는 거북족의 대마왕이며 마리오와 친구들의 영원한 숙적. 여러 수하들을 거느리며 버섯 왕국을 위협하고 있지만 매번 실패. 괴력의 소유자로 입에서 뿜어져나오는 불꽃은 박력만점.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/mario/character-card05.png" alt="쿠파" />
+                  <img class="character-thum-bg" src="images/mario/charactorbg-koopa.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!-- 요시 -->
+              <div class="swiper-slide" data-nameimg="images/mario/yoshi-name.svg"
+                data-desc="요시 아일랜드에서 온 마리오의 의지할 수 있는 동료.상냥하고 느긋한 성격. 긴 혀로 과일이나 적캐릭터를 통째로 삼켜 알로 만들어 버리지. 빨강, 파랑, 핑크 등 다른 색의 요시도 있지.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/mario/character-card06.png" alt="요시" />
+                  <img class="character-thum-bg" src="images/mario/charactorbg-yoshi.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!-- 로젤리나 -->
+              <div class="swiper-slide" data-nameimg="images/mario/rosalina-name.svg"
+                data-desc="별의 아이 치코와 함께 우주를 여행하는 수수께끼의 여성. 겉보기엔 쿨해 보이지만 부모가 없는 치코들을 대신 돌봐주는 상냥한 성격의 소유자. 마리오와 친구들과 모험을 떠날 때도 있지. ">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/mario/character-card07.png" alt="로잘리나" />
+                  <img class="character-thum-bg" src="images/mario/charactorbg-rosalina.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!-- 그외 캐릭터 더보기 -->
+              <div class="swiper-slide" data-nameimg="images/mario/more-name.svg"
+                data-desc="더 많은 마리오 캐릭터를 보고싶다면 하단의 MORE 버튼을 클릭해주세요!">
+                <div class="sub-character-Thumbnail more">
+                  <img class="character-right-img" src="images/mario/character-card08.png" alt="더보기" />
+                  <img class="character-thum-bg" src="images/mario/charactorbg-more .png" alt="썸네일 배경">
+                </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 3) 텍스트 박스 -->
+        <div class="sub-character-text-box">
+          <div class="sub-character-group">
+            <img class="sub-character-name-img" src="images/mario/mario-name.svg" alt="캐릭터 이름">
+            <div class="sub-character-desc">
+              <p>
+                빨간 모자에 파란 작업복, 트레이트 마크인 콧수염. 언제나 밝고 활기찬 마리오. 피치공주를 좋아하며 쌍둥이 동생 루이지와는 명콤비. 운동신경이 좋아 테니스, 축구, 카트 레이스까지 못하는
+                것이 없지.
+              </p>
+            </div>
+            <div class="sub-character-more-btn">
+              <a href="#none" class="more-link">
+                MORE
+              </a>
+            </div>
+            </img>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+
+  <!--뉴스-->
+  <section class="sub-news" id="subNews">
+    <div class="sub-news-container inner">
+      <h2 class="sub-section-title">
+        <img src="images/mario/sub-mario-news-title.svg" alt="타이틀">
+      </h2>
+      <div class="sub-news-wrap">
+        <a href="#none">
+          <div class="sub-news-card">
+            <div class="sub-news-img-box">
+              <button class="more-btn">
+                MORE
+              </button>
+              <div class="sub-news-img">
+                <img src="images/mario/sub-mario-news-img01.png" alt="뉴스 이미지01">
+              </div>
+            </div>
+            <div class="sub-news-text-box">
+              <div class="sub-news-card-title">
+                <p>『슈퍼 마리오브라더스 원더 Nintendo Switch 2 Edition + 다 함께 방울 파크』의 티저 페이지가 공개되었습니다.</p>
+              </div>
+              <div class="sub-news-card-date">
+                <p>2026.02.10</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#none">
+          <div class="sub-news-card">
+            <div class="sub-news-img-box">
+              <button class="more-btn">
+                MORE
+              </button>
+              <div class="sub-news-img">
+                <img src="images/mario/sub-mario-news-img02.png" alt="뉴스 이미지02">
+              </div>
+            </div>
+            <div class="sub-news-text-box">
+              <div class="sub-news-card-title">
+                <p>
+                  『마리오 테니스 피버』의 공식 소개 페이지가 공개되었습니다.
+                </p>
+              </div>
+              <div class="sub-news-card-date">
+                <p>2026.01.28</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <div class="sub-news-card">
+          <div class="sub-news-img-box">
+            <button class="more-btn">
+              MORE
+            </button>
+            <div class="sub-news-img">
+              <img src="images/mario/sub-mario-news-img03.png" alt="뉴스 이미지03">
+            </div>
+          </div>
+          <div class="sub-news-text-box">
+            <div class="sub-news-card-title">
+              <p>『슈퍼 마리오 갤럭시』 요시의 등장을 알리는 최신 영상을 공개했습니다.</p>
+            </div>
+            <div class="sub-news-card-date">
+              <p>2026.01.26</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="sub-news-btn more-btn">
+        <img src="images/mario/mario-serise-icon-l.png" alt="별 이미지">
+        <a href="#none">MORE</a>
+        <img src="images/mario/mario-serise-icon-r.png" alt="별 이미지">
+      </button>
+    </div>
+  </section>
+
+  <!--뉴스 반응형-->
+  <div class="sub-news-responsive-wrap">
+    <h2 class="sub-section-title">
+      <img src="images/mario/sub-mario-news-title.svg" alt="타이틀">
+    </h2>
+    <section class="sub-news-tablet swiper">
+      <div class="swiper-wrapper sub-news-wrap">
+        <!--카드 1-->
+        <div class="swiper-slide sub-news-card" data-link="software-mario.html">
+          <div class="sub-news-img-box">
+            <div class="sub-news-img">
+              <img src="images/mario/sub-mario-news-img01.png" alt="뉴스 이미지01">
+            </div>
+          </div>
+          <div class="sub-news-text-box">
+            <div class="sub-news-card-title">
+              <p>
+                『슈퍼 마리오브라더스 원더 Nintendo Switch 2 Edition + 다 함께 방울 파크』의 티저 페이지가 공개되었습니다.
+              </p>
+            </div>
+            <div class="sub-news-card-date">
+              <p>2026.02.10</p>
+            </div>
+          </div>
+          <img src="images/pikmin/sub-news-card-t.svg" class="news-card">
+        </div>
+
+        <!--카드 2-->
+        <div class="swiper-slide sub-news-card" data-link="software-mario.html">
+          <div class="sub-news-img-box">
+            <div class="sub-news-img">
+              <img src="images/mario/sub-mario-news-img02.png" alt="뉴스 이미지02">
+            </div>
+          </div>
+          <div class="sub-news-text-box">
+            <div class="sub-news-card-title">
+              <p>
+                『마리오 테니스 피버』의 공식 소개 페이지가 공개되었습니다.
+              </p>
+            </div>
+            <div class="sub-news-card-date">
+              <p>2026.01.28</p>
+            </div>
+          </div>
+          <img src="images/pikmin/sub-news-card-t.svg" class="news-card">
+        </div>
+
+        <!--카드 3-->
+        <div class="swiper-slide sub-news-card" data-link="software-mario.html">
+          <div class="sub-news-img-box">
+            <div class="sub-news-img">
+              <img src="images/mario/sub-mario-news-img03.png" alt="뉴스 이미지03">
+            </div>
+          </div>
+          <div class="sub-news-text-box">
+            <div class="sub-news-card-title">
+              <p>
+                『슈퍼 마리오 갤럭시』 요시의 등장을 알리는 최신 영상을 공개했습니다.
+              </p>
+            </div>
+            <div class="sub-news-card-date">
+              <p>2026.01.26</p>
+            </div>
+          </div>
+          <img src="images/mario/sub-news-card-t.svg" class="news-card">
+        </div>
+      </div>
+      <div class="swiper-pagination-box">
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <!-- 다운로드 박스 -->
+  <section class="sub-download">
+    <div class="sub-download-box-container inner">
+
+      <div class="sub-download-box">
+        <div class="sub-download-wrap">
+          <!-- 왼쪽 영역 -->
+          <div class="download-left">
+
+            <!--  로고 이미지 -->
+            <div class="download-game-logo-img">
+              <img class="game-logo-img" src="images/mario/mario-download-logo.png" alt="피크민 로고 이미지">
+            </div>
+
+            <!-- 다운로드 버튼 -->
+            <a href="#" class="download-btn">
+              <span class="btn-bg"></span>
+              <span class="btn-nails"></span>
+              <span class="btn-text">DOWNLOAD</span>
+            </a>
+
+          </div>
+          <!-- 오른쪽 영역 -->
+          <div class="download-right">
+            <div class="download-character">
+              <div class="download-character-img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 풋터 -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-top-icon">
+        <div class="footer-top-sns">
+          <ul>
+            <li><a href="#none" class="footer-icon-youtube"></a></li>
+            <li><a href="#none" class="footer-icon-kakaostroy"></a></li>
+            <li><a href="#none" class="footer-icon-facebook"></a></li>
+            <li><a href="#none" class="footer-icon-x"></a></li>
+            <li><a href="#none" class="footer-icon-kakaotalk"></a></li>
+          </ul>
+        </div>
+        <div class="footer-top-site">
+          <a href="#none" class="footer-icon-long footer-icon-mynintendo"></a>
+          <a href="#none" class="footer-icon-long footer-icon-amiibo"></a>
+        </div>
+      </div>
+      <div class="footer-bottom-text">
+        <div class="footer-bottom-text-left">
+          <div class="footer-bottom-atags">
+            <a href="#none" class="footer-bottom-atag">이용약관</a>
+            <a href="#none" class="footer-bottom-atag">개인정보처리방침</a>
+          </div>
+          <p class="footer-bottom-text01">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+          <p class="footer-bottom-text02">상호명 : 한국닌텐도주식회사<span class="footer-line-break-mb"></span>대표자명 : 미우라 타카히로<span
+              class="footer-line-break"></span>사업자등록번호
+            : 120-87-03578</p>
+        </div>
+        <div class="footer-bottom-text-right">
+          <p class="footer-bottom-text03">고객지원 문의전화 : 1670-9900</p>
+          <p class="footer-bottom-text04">(평일 오전 9시 30분~오후 5시 30분)</p>
+          <p class="footer-bottom-text05">※토/일/공휴일/회사 정기휴일 및 특별휴일 제외</p>
+        </div>
+      </div>
+      <p class="responsive-copyright">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+    </div>
+
+  </footer>
+  <!-- 쇼핑 버튼 -->
+  <div class="fixed-cart">
+    <div class="cart-panel">
+      <a href="#none" class="cart-text">장바구니 바로가기 ></a>
+    </div>
+    <button class="cart-btn">
+      <i class="fa-solid fa-bag-shopping"></i>
+    </button>
+  </div>
+
+  <!-- 탑버튼 -->
+  <div class="top-btn-wrap" id="topBtn">
+    <div class="top-btn-img">
+      <img src="images/mario/topbtn-img.png" alt="">
+    </div>
+    <div class="top-btn">
+      <button>TOP <i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </div>
+
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="js/sub3.js"></script>
+  <script src="js/header.js"></script>
+
+</body>
+
+</html>

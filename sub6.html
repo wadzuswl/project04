@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닌텐도 - 고객지원</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="scss/sub6.css">
+  <link rel="stylesheet" href="scss/sub6-responsive.css">
+  <link rel="icon" href="images/common/favicon.svg">
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+    <nav>
+      <a href="index.html" class="logo"></a>
+      <div class="header-click-wrap">
+        <ul class="gnb">
+          <li class="main-menu"><a href="sub1.html">한국닌텐도</a></li>
+          <li class="main-menu"><a href="sub2.html">제품소개</a></li>
+          <li class="main-menu" data-nav="navSw"><a href="#none">소프트웨어</a></li>
+          <li class="main-menu"><a href="sub4.html">영상</a></li>
+          <li class="main-menu"><a href="sub5.html">뉴스</a></li>
+          <li class="main-menu"><a href="sub6.html">고객지원</a></li>
+        </ul>
+        <div class="utility">
+          <button class="header-search-section">
+            <div class="search-icon"></div>
+            <p class="search-text">SEARCH</p>
+          </button>
+          <div class="header-cart"></div>
+          <button class="header-login-section">
+            <div class="login-icon"></div>
+            <div class="login-text">LOGIN / SIGN UP</div>
+          </button>
+          <div class="header-kr"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- 서브헤더 -->
+  <div class="sub-header">
+    <a href="index.html" class="sub-header-home-icon"></a>
+    <a class="sub-header-text" href="#subSeries">Series</a>
+    <a class="sub-header-text" href="#subChar">Charactors</a>
+    <a class="sub-header-text" href="#subNews">News</a>
+  </div>
+  <!-- 서브내비 -->
+  <div class="sub-nav-container" id="navSw">
+    <div class="sub-nav-title-wrap">
+      <div class="sub-nav-title-icon sub-nav-title-icon-sw"></div>
+      <h2>SOFTWARE</h2>
+    </div>
+    <div class="sub-nav-lnb-wrap">
+      <a href="sub3-mario.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">마리오</p>
+      </a>
+      <a href="sub3-animalCrossing.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">동물의 숲</p>
+      </a>
+      <a href="sub3-zelda.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">젤다</p>
+      </a>
+      <a href="sub3-kirby.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">커비</p>
+      </a>
+      <a href="sub3-pikmin.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">피크민</p>
+      </a>
+    </div>
+  </div>
+  <!-- 태블릿, 모바일 내비 -->
+  <div class="responsive-nav-body">
+    <div class="r-nav-left-wrap">
+      <button class="r-nav-hamburger-btn"></button>
+      <a href="index.html" class="r-nav-home-btn"></a>
+    </div>
+    <button class="r-nav-center-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="r-nav-right-wrap">
+      <button class="r-nav-cart-btn"></button>
+      <button class="r-nav-login-btn"></button>
+    </div>
+  </div>
+  <div class="responsive-nav-container">
+    <div class="r-nav-container-header">
+      <div class="r-nav-container-logo"></div>
+      <button class="r-nav-container-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="r-nav-container-body">
+      <div class="r-nav-tab-wrap">
+        <button class="r-nav-tab-btn r-nav-tab-btn1 active" data-rnav="rNavCom">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">COMPANY</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn2" data-rnav="rNavPro">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">PRODUCT</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn3" data-rnav="rNavSw">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SOFTWARE</p>
+        </button>
+        <a href="sub4.html" class="r-nav-tab-btn r-nav-tab-btn4">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">VIDEO</p>
+        </a>
+        <a href="sub5.html" class="r-nav-tab-btn r-nav-tab-btn5">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">NEWS</p>
+        </a>
+        <button class="r-nav-tab-btn r-nav-tab-btn6" data-rnav="rNavSup">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SUPPORT</p>
+        </button>
+      </div>
+      <div class="r-nav-content-wrap">
+        <ul class="r-nav-lnb-wrap active" id="rNavCom">
+          <li>
+            <a href="sub1.html#subComCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">한국닌텐도</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주요 사업</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">연혁</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">찾아오시는 길</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavPro">
+          <li>
+            <a href="sub2.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주변기기</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">아미보</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSw">
+          <li>
+            <a href="sub3-mario.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">마리오</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-animalCrossing.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">동물의 숲</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-zelda.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">젤다</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-kirby.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">커비</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-pikmin.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">피크민</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSup">
+          <li>
+            <a href="sub6.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">FAQ</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">수리접수</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="sub-page-main-visual sub-page-main-visual-06">
+    <div class="sub-page-mv-title-wrap">
+      <p>고객지원</p>
+      <div class="sub-page-big-title">
+        <img src="images/sub6/sub6-main-visual-title.svg" alt="고객지원 타이틀" class="big-title-img">
+        <img src="images/sub6/sub6-main-visual-title-tablet.svg" alt="고객지원 타이틀" class="big-title-img-tablet">
+        <img src="images/sub6/sub6-main-visual-title-mb.svg" alt="고객지원 타이틀" class="big-title-img-mb">
+      </div>
+    </div>
+
+    <div class="sub-page-scroll-btn-wrap">
+      <div class="sub-page-scroll-icon">
+        <img src="images/sub6/scroll-btn.svg" alt="스크롤 아이콘">
+      </div>
+      <p class="sub-page-scroll-text">SCROLL</p>
+    </div>
+  </section>
+
+  <!-- 콘텐츠 시트 -->
+  <div class="sub-whole-content-container" id="subPageCon">
+
+    <div class="sub-page-tab-menu-wrap">
+      <!-- 탭 메뉴 -->
+      <div class="sub-page-tab-menu">
+        <div class="sub-page-tab-btn" data-sub-tab="subTabCon1">
+          <div class="sub-page-tab-btn-icon"></div>
+          <p class="sub-page-tab-btn-text">스위치 2</p>
+          <div class="sub-page-tab-btn-bar active"></div>
+        </div>
+
+        <div class="sub-page-tab-btn" data-sub-tab="subTabCon2">
+          <div class="sub-page-tab-btn-icon"></div>
+          <p class="sub-page-tab-btn-text">스위치</p>
+          <div class="sub-page-tab-btn-bar"></div>
+        </div>
+
+        <div class="sub-page-tab-btn" data-sub-tab="subTabCon3">
+          <div class="sub-page-tab-btn-icon"></div>
+          <p class="sub-page-tab-btn-text">FAQ</p>
+          <div class="sub-page-tab-btn-bar"></div>
+        </div>
+
+        <div class="sub-page-tab-btn" data-sub-tab="subTabCon4">
+          <div class="sub-page-tab-btn-icon"></div>
+          <p class="sub-page-tab-btn-text">수리접수</p>
+          <div class="sub-page-tab-btn-bar"></div>
+        </div>
+      </div>
+
+      <!-- 스위치2 콘텐츠 -->
+      <section class="sub6-switch2-page-content" id="subTabCon1">
+        <div class="inner">
+          <div class="top-section">
+            <div class="sub6-title-wrap">
+              <h2 class="sub6-title-ko">바로 시작하는</h2>
+              <h2 class="sub6-title-en">NINTENDO SWITCH 2</h2>
+            </div>
+            <div class="swiper page1-slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="top-slide-wrap">
+                    <div class="top-slide-img"></div>
+                    <div class="top-slide-text-box">
+                      <div class="step-box">STEP1</div>
+                      <div class="desc-box">초기 설정을 한다</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="top-slide-wrap">
+                    <div class="top-slide-img"></div>
+                    <div class="top-slide-text-box">
+                      <div class="step-box">STEP2</div>
+                      <div class="desc-box">통째로 전송한다</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="top-slide-wrap">
+                    <div class="top-slide-img"></div>
+                    <div class="top-slide-text-box">
+                      <div class="step-box">STEP3</div>
+                      <div class="desc-box">본체 세트의 소프트웨어를 다운로드한다</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="top-slide-wrap">
+                    <div class="top-slide-img"></div>
+                    <div class="top-slide-text-box">
+                      <div class="step-box">STEP4</div>
+                      <div class="desc-box">TV에 연결하여 플레이한다</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="top-slide-wrap">
+                    <div class="top-slide-img"></div>
+                    <div class="top-slide-text-box">
+                      <div class="step-box">STEP5</div>
+                      <div class="desc-box">Parental Controls 서포트</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="top-slide-wrap">
+                    <div class="top-slide-img"></div>
+                    <div class="top-slide-text-box">
+                      <div class="step-box">STEP6</div>
+                      <div class="desc-box">「Nintendo Switch Parental Controls」를 다운로드하고 본체와 연결한다</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="top-slide-wrap">
+                    <div class="top-slide-img"></div>
+                    <div class="top-slide-text-box">
+                      <div class="step-box">STEP7</div>
+                      <div class="desc-box">게임챗을 한다</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next page1-next-btn"><i class="fa-solid fa-angle-right"></i></div>
+            <div class="swiper-button-prev page1-prev-btn"><i class="fa-solid fa-angle-left"></i></div>
+          </div>
+          <div class="middle-section">
+            <div class="sub6-title-wrap">
+              <h2 class="sub6-title-en">HOW TO PLAY</h2>
+            </div>
+            <div class="middle-card-wrap" data-aos="fade-up">
+              <div class="middle-card">
+                <div class="middle-card-img"></div>
+                <div class="middle-card-title"><span>본체</span>로 플레이</div>
+                <div class="middle-card-btn">자세히 보기</div>
+                <div class="middle-click-card">
+                  Nintendo Switch 2 본체의 기본 사용 및 조작 방법을 정리한 안내 페이지입니다.
+                  플레이 모드 전환, 충전 방식, 네트워크 연결 등 초기 설정과 핵심 기능을 설명합니다.
+                </div>
+              </div>
+              <div class="middle-card">
+                <div class="middle-card-img"></div>
+                <div class="middle-card-title"><span>JOY-CON 2</span>로 플레이</div>
+                <div class="middle-card-btn">자세히 보기</div>
+                <div class="middle-click-card">
+                  Nintendo Switch 2용 Joy-Con 2 컨트롤러의 준비 및 기본 사용법을 안내합니다.
+                  스트랩/그립 장착, 본체 등록, 다양한 그립 방식과 조작법 등 컨트롤러 활용 전반을 설명합니다.
+                </div>
+              </div>
+              <div class="middle-card">
+                <div class="middle-card-img"></div>
+                <div class="middle-card-title"><span>패키지 소프트웨어</span>로 플레이</div>
+                <div class="middle-card-btn">자세히 보기</div>
+                <div class="middle-click-card">
+                  Nintendo Switch 2에서 물리적 소프트웨어(게임 카드/키 카드)로 게임을 플레이하는 방법을 설명합니다.
+                  지원되는 소프트웨어 유형, 게임 카드 삽입 절차, 키 카드 다운로드 요구 사항 등을 정리합니다.
+                </div>
+              </div>
+              <div class="middle-card">
+                <div class="middle-card-img"></div>
+                <div class="middle-card-title"><span>다운로드 소프트웨어</span>로 플레이</div>
+                <button class="middle-card-btn">자세히 보기</button>
+                <div class="middle-click-card">
+                  Nintendo Switch 2에서 디지털 소프트웨어를 다운로드하고 플레이하는 절차를 안내합니다.
+                  Nintendo eShop 이용, 소프트웨어 라이선스/계정 연결, 저장 공간 관리 등 디지털 게임 이용 전반을 설명합니다.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-section">
+            <div class="sub6-title-wrap">
+              <h2 class="sub6-title-en">ADVANCED USAGE</h2>
+            </div>
+            <div class="bottom-tab-menu">
+              <button class="bottom-tab-btn active" data-bottom-con="bottomCon1">보안 및 관리</button>
+              <button class="bottom-tab-btn" data-bottom-con="bottomCon2">유저 및 플레이 설정</button>
+              <button class="bottom-tab-btn" data-bottom-con="bottomCon3">기능 및 데이터 관리</button>
+            </div>
+
+            <div class="bottom-tab-con-wrap">
+              <div class="bottom-tab-con active" id="bottomCon1">
+                <details class="acc-item">
+                  <summary class="acc-item-title">
+                    <span class="acc-item-title-text">
+                      본체를 잠급니다
+                    </span>
+                    <span class="icon-act"></span>
+                  </summary>
+                  <div class="acc-item-desc">
+                    <p>
+                      Nintendo Switch 2는 본체에 비밀번호(PIN)를 설정해 사용을 제한할 수 있습니다.<br>
+                      잠금 설정은 HOME 메뉴의 본체 설정에서 진행하며, 활성화 시 전원 켜기나 슬립 해제 시 비밀번호 입력이 필요합니다.<br>
+                      비밀번호를 잊은 경우에는 닌텐도 어카운트 로그인을 통해 잠금을 해제할 수 있습니다.
+                    </p>
+                  </div>
+                </details>
+                <details class="acc-item">
+                  <summary class="acc-item-title">
+                    <span class="acc-item-title-text">
+                      자녀의 게임 사용을 Parental Controls 합니다
+                    </span>
+                    <span class="icon-act"></span>
+                  </summary>
+                  <div class="acc-item-desc">
+                    <p>
+                      Nintendo Switch 2의 부모 통제(Parental Controls)를 이용하려면 먼저 스마트폰에 Nintendo Switch Parental Controls 앱을
+                      다운로드합니다.<br>
+                      스마트폰 앱을 보호자의 닌텐도 어카운트로 로그인한 뒤 본체와 연결하면, 스마트폰에서 자녀의 게임 플레이 시간과 기능 제한 설정 등을 관리할 수 있습니다.
+                    </p>
+                  </div>
+                </details>
+                <details class="acc-item">
+                  <summary class="acc-item-title">
+                    <span class="acc-item-title-text">
+                      데이터를 확인/정리합니다
+                    </span>
+                    <span class="icon-act"></span>
+                  </summary>
+                  <div class="acc-item-desc">
+                    <p>
+                      Nintendo Switch 2에서는 저장 가능한 데이터의 종류와 저장 위치를 확인하고, 필요에 따라 데이터를 이동, 삭제하거나 저장 공간을 정리할 수 있습니다.<br>
+                      본체 저장 메모리와 microSD Express 카드 사이에서 소프트웨어나 화면 사진·동영상을 옮기고, 빈 용량을 늘리거나 불필요한 데이터를 제거하는 방법이 안내되어
+                      있습니다.<br>
+                      또한 저장 데이터를 백업하거나 다른 본체에서 사용할 수 있도록 관리할 수 있는 절차도 설명되어 있습니다.
+                    </p>
+                  </div>
+                </details>
+                <details class="acc-item">
+                  <summary class="acc-item-title">
+                    <span class="acc-item-title-text">
+                      비밀번호나 인증번호의 종류 및 입력 위치를 확인합니다
+                    </span>
+                    <span class="icon-act"></span>
+                  </summary>
+                  <div class="acc-item-desc">
+                    <p>
+                      Nintendo Switch 2 본체 또는 관련 기능을 사용할 때 필요한 비밀번호(PIN)와 인증번호의 종류를 설명합니다.<br>
+                      본체 확인 비밀번호, 닌텐도 어카운트 인증 코드, 확인 번호 등 각각의 입력 상황과 목적을 안내합니다.<br>
+                      이러한 비밀번호는 본체나 어카운트 설정에 따라 다르게 요구되며, 설정된 비밀번호는 해당 기능을 이용할 때 입력해야 합니다.
+                    </p>
+                  </div>
+                </details>
+                <details class="acc-item">
+                  <summary class="acc-item-title">
+                    <span class="acc-item-title-text">
+                      본체를 초기화합니다
+                    </span>
+                    <span class="icon-act"></span>
+                  </summary>
+                  <div class="acc-item-desc">
+                    <p>
+                      Nintendo Switch 2의 초기화(초기 상태로 되돌리기) 기능을 설명합니다.<br>
+                      본체 설정에서 데이터 삭제/초기화 옵션을 선택해 저장 데이터, 사용자 정보 및 설정을 제거하거나 초기 상태로 되돌릴 수 있는 방법과 주의사항을 안내합니다.<br>
+                      초기화 전에는 중요한 콘텐츠를 백업하는 것이 권장됩니다.
+                    </p>
+                  </div>
+                </details>
+              </div>
+              <div class="bottom-tab-con" id="bottomCon2">
+                <details class="acc-item">
+                  <summary class="acc-item-title">
+                    <span class="acc-item-title-text">
+                      유저를 추가/설정합니다
+                    </span>
+                    <span class="icon-act"></span>
+                  </summary>
+                  <div class="acc-item-desc">
+                    <p>
+                      Nintendo Switch 2에서 사용자 프로필(User)의 생성, 수정, 삭제 및 전환 방법을 설명합니다.<br>
+                      사용자의 닌텐도 어카운트 연결이나 친구 목록, 아이콘 설정 등 프로필과 관련된 다양한 기능을 안내합니다.<br>
+                      프로필 기능을 통해 각 사용자별 게임 기록과 설정을 개별적으로 관리할 수 있습니다.
+                    </p>
+                  </div>
+                </details>
+                <details class="acc-item">
+                  <summary class="acc-item-title">
+                    <span class="acc-item-title-text">
+                      다른 플레이어와 함께 플레이합니다
+                    </span>
+                    <span class="icon-act"></span>
+                  </summary>
+                  <div class="acc-item-desc">
+                    <p>
+                      Nintendo Switch 2에서 다른 플레이어(Other Player)의 게스트 플레이, 사용자 추가 초대 및 계정 전환 등의 기능을 설명합니다.<br>
+                      다른 플레이어와 함께 게임하거나 계정을 변경할 때 필요한 절차와 관련 옵션을 안내합니다.
+                    </p>
+                  </div>
+                </details>
+                <details class="acc-item">
+                  <summary class="acc-item-title">
+                    <span class="acc-item-title-text">
+                      버튼 할당을 변경합니다
+                    </span>
+                    <span class="icon-act"></span>
+                  </summary>
+                  <div class="acc-item-desc">
+                    <p>
+                      Nintendo Switch 2에서는 Joy-Con 2 충전 그립과 Pro 컨트롤러의 GL/GR 버튼 등 일부 버튼의 할당을 변경할 수 있습니다.<br>
+                      HOME 메뉴의 퀵 설정 또는 본체 설정의 컨트롤러 메뉴에서 할당을 선택하면, 원하는 기능을 다른 버튼으로 재지정할 수 있습니다.<br>
+                      버튼 할당 설정은 컨트롤러 번호 1에 저장되며, 동일한 사용자로 플레이할 때 자동으로 불러옵니다.
+                    </p>
+                  </div>
+                </details>
+              </div>
+              <div class="bottom-tab-con" id="bottomCon3">
+                <details class="acc-item">
+                  <summary class="acc-item-title">
+                    <span class="acc-item-title-text">
+                      microSD Express 카드를 사용합니다
+                    </span>
+                    <span class="icon-act"></span>
+                  </summary>
+                  <div class="acc-item-desc">
+                    <p>
+                      Nintendo Switch 2에서 microSD Express 카드를 사용해 저장 용량을 확장하고 데이터를 관리하는 방법을 설명합니다.<br>
+                      앱, 게임 데이터, 캡처 파일 등을 microSD 카드로 이동하거나 삭제하는 절차와, 저장 공간 상태를 확인하고 최적화하는 방법이 안내되어 있습니다.
+                    </p>
+                  </div>
+                </details>
+                <details class="acc-item">
+                  <summary class="acc-item-title">
+                    <span class="acc-item-title-text">
+                      화면 사진이나 동영상을 촬영합니다
+                    </span>
+                    <span class="icon-act"></span>
+                  </summary>
+                  <div class="acc-item-desc">
+                    <p>
+                      Nintendo Switch 2에서 화면 사진 및 동영상 캡처 기능을 사용하는 방법을 설명합니다.<br>
+                      캡처 버튼을 누르는 방법, 저장된 미디어 보기 및 공유 옵션, 원하는 콘텐츠 선택 등을 안내합니다.
+                    </p>
+                  </div>
+                </details>
+                <details class="acc-item">
+                  <summary class="acc-item-title">
+                    <span class="acc-item-title-text">
+                      Bluetooth 오디오를 사용합니다
+                    </span>
+                    <span class="icon-act"></span>
+                  </summary>
+                  <div class="acc-item-desc">
+                    <p>
+                      Nintendo Switch 2에서 Bluetooth 오디오 기기를 본체에 연결하고 사용하는 방법을 안내합니다.<br>
+                      Bluetooth 헤드폰이나 스피커 등의 기기를 페어링하고 오디오 출력을 설정하는 절차와 관련 옵션을 설명합니다.
+                    </p>
+                  </div>
+                </details>
+                <details class="acc-item">
+                  <summary class="acc-item-title">
+                    <span class="acc-item-title-text">
+                      접근성 기능을 사용합니다
+                    </span>
+                    <span class="icon-act"></span>
+                  </summary>
+                  <div class="acc-item-desc">
+                    <p>
+                      Nintendo Switch 2에서 접근성(Accessibility) 기능을 활성화하고 사용하는 방법을 설명합니다.<br>
+                      시각 및 청각 지원 옵션, 텍스트 크기 변경, 컬러 보정 등 다양한 접근성 설정을 통해 사용자 편의를 높이는 절차와 기능을 안내합니다.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+          <div class="notice-section" data-aos="fade-up">
+            <p class="big-title">SWITCH 2 사용에<span class="block"></span> 도움이 필요하신가요?</p>
+            <p class="sub-title">자주 묻는 질문을 확인하거나<span class="block"></span> 수리 안내를 받아보세요.</p>
+            <div class="notice-btn-wrap">
+              <a href="sub6.html#subTabCon3">
+                <p>자주 묻는 질문 (FAQ)</p>
+                <span></span>
+              </a>
+              <a href="sub6.html#subTabCon4">
+                <p>수리/문의</p>
+                <span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 스위치 콘텐츠 -->
+      <section class="sub6-switch-page-content" id="subTabCon2">
+        <div class="sub6-switch-page-content-wrap">
+          <h2 class="sub-title">
+            <p class="ko">바로 시작하는</p>
+            <p class="en">NINTENDO SWITCH</p>
+          </h2>
+          <div class="switch-page-content-start ">
+            <div class="switch-page-swiper">
+              <img src="./images/sub6/sub6-switch-start-card01.svg" alt="첫 번째 내용" class="switch-start-card01">
+              <img src="./images/sub6/sub6-switch-start-card02.svg" alt="첫 번째 내용" class="switch-start-card02">
+              <img src="./images/sub6/sub6-switch-start-card03.svg" alt="첫 번째 내용" class="switch-start-card03">
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="switch-page-content-how">
+            <div class="switch-button-box">
+              <a href="#none" class="switch-button">
+                <div class="switch-button-icon">
+                  <img src="./images/sub6/switch-button-icon01.svg" alt="아이콘">
+                </div>
+                <div class="switch-button-text">충전 방법</div>
+              </a>
+              <a href="#none" class="switch-button">
+                <div class="switch-button-icon">
+                  <img src="./images/sub6/switch-button-icon02.svg" alt="아이콘">
+                </div>
+                <div class="switch-button-text">플레이 모드와 접속 방법</div>
+              </a>
+              <a href="#none" class="switch-button">
+                <div class="switch-button-icon">
+                  <img src="./images/sub6/switch-button-icon03.svg" alt="아이콘">
+                </div>
+                <div class="switch-button-text">컨트롤러 충전</div>
+              </a>
+              <a href="#none" class="switch-button">
+                <div class="switch-button-icon">
+                  <img src="./images/sub6/switch-button-icon04.svg" alt="아이콘">
+                </div>
+                <div class="switch-button-text">인터넷 접속</div>
+              </a>
+              <a href="#none" class="switch-button">
+                <div class="switch-button-icon">
+                  <img src="./images/sub6/switch-button-icon05.svg" alt="아이콘">
+                </div>
+                <div class="switch-button-text">유저와 어카운트 연동</div>
+              </a>
+              <a href="#none" class="switch-button">
+                <div class="switch-button-icon">
+                  <img src="./images/sub6/switch-button-icon06.svg" alt="아이콘">
+                </div>
+                <div class="switch-button-text">친구</div>
+              </a>
+              <a href="#none" class="switch-button">
+                <div class="switch-button-icon">
+                  <img src="./images/sub6/switch-button-icon07.svg" alt="아이콘">
+                </div>
+                <div class="switch-button-text">Nintendo Switch Parental Controls</div>
+              </a>
+              <a href="#none" class="switch-button">
+                <div class="switch-button-icon">
+                  <img src="./images/sub6/switch-button-icon08.svg" alt="아이콘">
+                </div>
+                <div class="switch-button-text">주변기기의 사용 방법</div>
+              </a>
+              <a href="#none" class="switch-button">
+                <div class="switch-button-icon">
+                  <img src="./images/sub6/switch-button-icon09.svg" alt="아이콘">
+                </div>
+                <div class="switch-button-text">유저 이사와 자동 데이터의 이사</div>
+              </a>
+            </div>
+
+            <div class="switch-banner-box" data-aos="fade-up">
+              <div class="switch-banner">
+                <div class="switch-banner-desc">
+                  <div class="switch-banner-text">
+                    <span>본체</span>업데이트 정보
+                  </div>
+                  <button class="switch-banner-button">
+                    <a href="#none">자세히 보기</a>
+                  </button>
+                </div>
+              </div>
+              <div class="switch-banner">
+                <div class="switch-banner-desc">
+                  <div class="switch-banner-text">
+                    <span>소프트웨어 설치</span>된 본체
+                  </div>
+                  <button class="switch-banner-button">
+                    <a href="#none">자세히 보기</a>
+                  </button>
+                </div>
+              </div>
+              <div class="switch-banner">
+                <div class="switch-banner-desc">
+                  <div class="switch-banner-text">
+                    모여봐요 동물의 숲 <span>저장 데이터 이사</span>
+                  </div>
+                  <button class="switch-banner-button">
+                    <a href="#none">자세히 보기</a>
+                  </button>
+                </div>
+              </div>
+              <div class="switch-banner">
+                <div class="switch-banner-desc">
+                  <div class="switch-banner-text">
+                    마리오 카트 라이브 : 홈 서킷 <span>서포트</span>
+                  </div>
+                  <button class="switch-banner-button">
+                    <a href="#none">자세히 보기</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="switch-page-content-help" data-aos="fade-up">
+            <h2 class="sub-title">
+              <span class="ko">SWITCH 사용에 도움이 필요하신가요?</span>
+              <span class="p">자주 묻는 질문을 확인하거나 수리 안내를 받아보세요.</span>
+            </h2>
+
+            <div class="switch-help-button-box">
+              <button class="switch-help-button button01">
+                <a href="sub6.html#subTabCon3">
+                  자주 묻는 질문 (FAQ)
+                  <img src="./images/sub6/button-arrow-icon.png" alt="아이콘">
+                </a>
+              </button>
+              <button class="switch-help-button button02">
+                <a href="sub6.html#subTabCon4">수리/문의
+                  <img src="./images/sub6/button-arrow-icon.png" alt="아이콘">
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="sub6-faq-page-content" id="subTabCon3">
+        <div class="inner">
+          <div class="sub6-title-wrap">
+            <h2 class="sub6-title-ko">자주묻는 질문</h2>
+            <h2 class="sub6-title-en">FAQ</h2>
+          </div>
+          <form class="faq-search">
+            <div class="search-text-l">
+              <svg width="48" height="52" viewBox="0 0 48 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M22.9092 0C35.5616 0 45.8184 10.1856 45.8184 22.7501C45.8184 28.9656 43.3051 34.5957 39.2367 38.7018L47.0414 46.4524C48.3195 47.7216 48.3195 49.7789 47.0414 51.0481C45.7634 52.3173 43.6917 52.3173 42.4136 51.0481L33.976 42.6691C30.6949 44.4707 26.9238 45.5002 22.9092 45.5002C10.2568 45.5002 0 35.3146 0 22.7501C0 10.1856 10.2568 0 22.9092 0ZM22.9092 6.50003C13.8718 6.50003 6.54549 13.7754 6.54549 22.7501C6.54549 31.7248 13.8718 39.0002 22.9092 39.0002C31.9466 39.0002 39.2729 31.7248 39.2729 22.7501C39.2729 13.7754 31.9466 6.50003 22.9092 6.50003Z"
+                  fill="#E60012" />
+              </svg>
+
+              <input type="search" class="faq-search-input" placeholder="키워드로 검색해보세요" aria-label="FAQ 키워드 검색">
+            </div>
+            <button class="faq-search-btn search-btn" type="submit">검색</button>
+          </form>
+          <div class="faq-list">
+            <!-- faq 1 -->
+            <details class="faq-item">
+              <summary class="faq-item-q">
+                <span class="faq-item-q-text">
+                  Q. 본체 말고도 더 사야할 게 있나요?
+                </span>
+                <span class="icon-act"></span>
+              </summary>
+              <div class="faq-item-a">
+                <h6>
+                  A. 소프트웨어를 구입하시면 바로 플레이 할 수 있습니다.
+                </h6>
+                <p>
+                  소프트웨어를 구입하시면 바로 플레이 할 수 있습니다.
+                  "Nintendo Switch 2 마리오 카트월드 세트"의 경우, 추가구매 없이 [마리오 카트월드]<sup>*</sup>를 2명이서 플레이할 수 있습니다
+                </p>
+                <p class="faq-item-a-smtxt">
+                  *본체를 인터넷에 연결해 닌텐도 e숍에서 소프트웨어를 다운로드 해야합니다.
+                </p>
+              </div>
+            </details>
+            <!-- faq 2 -->
+            <details class="faq-item">
+              <summary class="faq-item-q">
+                <span class="faq-item-q-text">
+                  Q. <게임챗>은 아무하고나 가능한가요?
+                </span>
+                <span class="icon-act"></span>
+              </summary>
+              <div class="faq-item-a">
+                <h6>
+                  A. 초대할 수 있는 것은 자신의 친구뿐이며, 당신을 초대할 수 있는 것은 친구 중에서도 [허가한 친구]뿐 입니다.
+                </h6>
+                <p>
+                  초대받은 챗에서는 친구의 친구가 포함될 경우가 있습니다. 그 경우에도 사전에 챗 참가자를 확인할 수 있으므로 원하지 않는 상대와 갑자기 챗을 하게 되는 일을 없습니다. 또한,
+                  <게임챗>을 사용할 닌텐도 어카운트는 본인이 소유한 핸드폰 번호로 sms인증을 해야합니다. 그리고 16세 미만의 어린이는 보호자에 의한 [Parental Controls 설정]이
+                    필요합니다.
+                </p>
+              </div>
+            </details>
+            <!-- faq 3 -->
+            <details class="faq-item">
+              <summary class="faq-item-q">
+                <span class="faq-item-q-text">
+                  Q. Nintendo Switch 소프트웨어는 <Nintendo Switch 2>에서도 플레이할 수 있나요?
+                </span>
+                <span class="icon-act"></span>
+              </summary>
+              <div class="faq-item-a">
+                <h6>
+                  A. 보유하신 Nintendo Switch 소프트웨어(패키지 버전, 다운로드버전)를 플레이할 수 있습니다. <sup>*1</sup>
+                </h6>
+                <p>
+                  소프트웨어를 구입하시면 바로 플레이 할 수 있습니다.
+                  "Nintendo Switch 2 마리오 카트월드 세트"의 경우, 추가구매 없이 [마리오 카트월드]<sup>*2</sup>를 2명이서 플레이할 수 있습니다
+                </p>
+                <p>
+                  *1 일부 플레이 방법에 제한이 있는 소프트웨어 및 대응하지 않는 소프트웨어가 있습니다.
+                </p>
+                <p>
+                  *2 성능 향상에 의한 효과는 소프트웨어마다 다릅니다.
+                </p>
+              </div>
+            </details>
+            <!-- faq 4 -->
+            <details class="faq-item">
+              <summary class="faq-item-q">
+                <span class="faq-item-q-text">
+                  Q. Nintendo Switch의 주변기기는 Nintendo Switch 2에서도 쓸 수 있나요?
+                </span>
+                <span class="icon-act"></span>
+              </summary>
+              <div class="faq-item-a">
+                <h6>
+                  A. <Joy-Con>과 <Nintendo Switch Pro 컨트롤러>등 일부 주변기기를 계속해서 사용할 수 있습니다
+                </h6>
+              </div>
+            </details>
+            <!-- faq 5 -->
+            <details class="faq-item">
+              <summary class="faq-item-q">
+                <span class="faq-item-q-text">
+                  Q. Nintendo Switch 2 주변기기는 Nintendo Switch에서도 쓸 수 있나요?
+                </span>
+                <span class="icon-act"></span>
+              </summary>
+              <div class="faq-item-a">
+                <h6>
+                  A. 사용하실 수 없습니다만, Nintendo Switch 2 AC어댑터로 Nintendo Switch 본체와 Joy-Con, Nintendo Switch Pro 컨트롤러를 충전할 수
+                  있습니다.
+                </h6>
+                <p>
+                  * Joy-Con을 충전하려면 Nintendo Switch 본체나 Joy-Con 충전 그립 등 충전을 위한 기기가 별도로 필요합니다.
+                </p>
+              </div>
+            </details>
+            <!-- faq 6 -->
+            <details class="faq-item">
+              <summary class="faq-item-q">
+                <span class="faq-item-q-text">
+                  Q. Nintendo Switch에서 사용하던 microSD 카드를 쓸수 있나요?
+                </span>
+                <span class="icon-act"></span>
+              </summary>
+              <div class="faq-item-a">
+                <h6>
+                  A. <microSD Express> 규격에 대응하지 않는 경우에는 사용하실 수 없습니다. <microSD Express 카드>를 구입해 주십시오.
+                </h6>
+                <p>
+                  * <microSD 카드>에 저장된 Nintendo Switch의 화면 사진/영상만 읽어들일 수 있습니다.
+                </p>
+
+              </div>
+            </details>
+            <!-- faq 7 -->
+            <details class="faq-item">
+              <summary class="faq-item-q">
+                <span class="faq-item-q-text">
+                  Q. 자녀의 게임 플레이 시간을 관리하거나 챗 상대를 제한하는 것이 가능한가요?
+                </span>
+                <span class="icon-act"></span>
+              </summary>
+              <div class="faq-item-a">
+                <h6>
+                  A. 스마트폰 앱 [Nintendo Switch Parental Contols]를 Nintendo Switch 2와 연동하여 자녀분이 게임을 얼마나 플레이 했는지 확인하거나 챗 상대
+                  이력을 확인할 수 있으며, 플레이 시간과 영상 통화에 제한을 둘 수도 있습니다.
+                </h6>
+              </div>
+            </details>
+            <!-- faq 8 -->
+            <details class="faq-item">
+              <summary class="faq-item-q">
+                <span class="faq-item-q-text">
+                  Q. 지금까지 Nintendo Switch에서 플레이하던 데이터를 Nintendo Switch 2에서도 쓸 수 있나요?
+                </span>
+                <span class="icon-act"></span>
+              </summary>
+              <div class="faq-item-a">
+                <h6>
+                  A. <통재로 전송> 기능을 보유 중인 Nintendo Switch 의 데이터를 Nintendo Switch 2에 옮길 수 있습니다.
+                </h6>
+              </div>
+            </details>
+            <!-- faq 9 -->
+            <details class="faq-item">
+              <summary class="faq-item-q">
+                <span class="faq-item-q-text">
+                  Q. 본체 말고도 더 사야할 게 있나요?
+                </span>
+                <span class="icon-act"></span>
+              </summary>
+              <div class="faq-item-a">
+                <h6>
+                  A. 닌텐도 어카운트란 무엇인가요?
+                </h6>
+                <p>
+                  닌텐도 어카운트란 닌텐도가 제공하는 각종 서비스를 이용할 때 필요한 어카운트입니다.
+                </p>
+                <p>
+                  * 자녀분도 안심하고 인터넷상의 각종 서비스를 이용하실 수 있도록 어린이를 위한 닌텐도 어카운트인 <어린이 어카운트>가 있습니다.
+                </p>
+              </div>
+            </details>
+          </div>
+
+          <div class="faq-more-btn">
+            <a href="#none"><button>MORE</button></a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 수리접수 -->
+      <section class="sub6-repair-page-content" id="subTabCon4">
+        <div class="repair-support-container inner">
+
+          <!-- 배너 -->
+          <div class="repair-support-banner" aria-label="수리 안내 배너" data-aos="fade-up">
+            <div class="repair-support-banner-text">
+              <h2 class="repair-support-banner-title">
+                게임기의 <strong>상태가 이상</strong>한가요?
+              </h2>
+
+              <p class="repair-support-banner-desc">
+                수리를 신청하시기 전에 아래의 사항을 먼저 살펴보신 후, 그래도 정상적으로 작동하지 않을 경우,
+                온라인 수리 접수를 통한 신청을 하시거나 한국닌텐도 고객지원센터(1670-9900)에 문의해 주시기 바랍니다.
+              </p>
+              <div class="repair-support-banner-link">
+                <a
+                  href="https://support-kr.nintendo.com/hc/ko/requests/new?_gl=1*gctzlx*_gcl_au*Nzk2Mjc0OTIyLjE3NzEzMTAyMzI.*_ga*MjA1NTAyNTgzMC4xNzcxMzEwMjMy*_ga_LGH03QG2GB*czE3NzEzMTAyMzIkbzEkZzEkdDE3NzEzMTAyMzckajU1JGwwJGgxODg1NjEzNjA2">한국닌텐도
+                  고객지원센터 온라인 접수 바로가기</a>
+                <img src="images/sub6/repair-right-arrow.png" alt="화살표 이미지">
+              </div>
+
+              <ul class="repair-support-banner-links">
+                <li>
+                  <div class="support-banner-arrow-icon"></div>
+                  <a href="#">자주 묻는 질문 (FAQ)</a>
+                </li>
+                <li>
+                  <div class="support-banner-arrow-icon"></div>
+                  <a href="#">수리 접수가 종료된 제품</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 수리전 주의사항 -->
+          <section class="caution" data-aos="fade-up">
+            <h2 class="caution-title">수리전 주의사항</h2>
+
+            <!-- 카드 리스트 -->
+            <ul class="caution-list" data-aos="fade-up">
+
+              <li class="caution-item">
+                <div class="caution-icon">
+                  <img src="images/sub6/caution-card01.svg" alt="">
+                </div>
+                <p class="caution-text">
+                  수리비 결제는 ‘신용카드’ 또는 ‘가상 계좌 입금’ 중 선택할 수 있습니다. 단, 18세 미만은 신용카드 결제가 불가합니다.
+                </p>
+                <a class="caution-link" href="#">수리참고가격</a>
+              </li>
+
+              <li class="caution-item">
+                <div class="caution-icon">
+                  <img src="images/sub6/caution-card02.svg" alt="">
+                </div>
+                <p class="caution-text">
+                  로그인 후 수리 접수와 현황 확인이 가능합니다.
+                </p>
+              </li>
+
+              <li class="caution-item">
+                <div class="caution-icon">
+                  <img src="images/sub6/caution-card03.svg" alt="">
+                </div>
+                <p class="caution-text">
+                  A/S 센터 도착 후 발송까지 약 10일(영업일 기준) 정도 소요됩니다. 방학·연휴 기간에는 처리 기간이 더 길어질 수 있습니다.
+                </p>
+              </li>
+
+              <li class="caution-item">
+                <div class="caution-icon">
+                  <img src="images/sub6/caution-card04.svg" alt="">
+                </div>
+                <p class="caution-text">
+                  보증기간 내 제품은 반드시 보증서를 동봉해 주세요. 단, 침수나 파손 등으로 인한 고장은 보증기간이어도 유상 수리될 수 있습니다.
+                </p>
+              </li>
+
+              <li class="caution-item">
+                <div class="caution-icon">
+                  <img src="images/sub6/caution-card05.svg" alt="">
+                </div>
+                <p class="caution-text">
+                  고객님이 부착하신 스티커, 보호 시트, 케이스 등은 제거 과정에서 원상복구가 어렵고 제품 손상이 생길 수 있습니다. 수리를 위해 반드시 제거 후 보내주시기 바랍니다.
+                </p>
+              </li>
+
+              <li class="caution-item">
+                <div class="caution-icon">
+                  <img src="images/sub6/caution-card06.svg" alt="">
+                </div>
+                <p class="caution-text">
+                  택배 발송 시 사용한 박스(제품 박스 제외), 포장재, 완충재 등은 개봉 후 폐기되며 반환되지 않습니다.
+                </p>
+              </li>
+
+              <li class="caution-item">
+                <div class="caution-icon">
+                  <img src="images/sub6/caution-card07.svg" alt="">
+                </div>
+                <p class="caution-text">
+                  수리 과정에서 별도 안내 없이 여러 부품이 교체될 수 있으며, 교체된 부품은 반환되지 않고 당사 규정에 따라 폐기됩니다.
+                </p>
+              </li>
+
+              <li class="caution-item">
+                <div class="caution-icon">
+                  <img src="images/sub6/caution-card08.svg" alt="">
+                </div>
+                <p class="caution-text">
+                  점검 및 수리 후 모든 제품은 당사의 정해진 절차에 따라 특별한 통보 없이 최신 버전으로 시스템 업데이트될 수 있으며, 이전 구버전으로 되돌려드리지 않습니다.
+                </p>
+              </li>
+
+              <li class="caution-item">
+                <div class="caution-icon">
+                  <img src="images/sub6/caution-card09.svg" alt="">
+                </div>
+                <p class="caution-text">
+                  자세한 보증 규정은 제품의 사용설명서에서 확인해주세요. 게임기 보증기간은 1년, 소프트웨어는 1개월입니다.
+                </p>
+              </li>
+
+              <li class="caution-item">
+                <div class="caution-icon">
+                  <img src="images/sub6/caution-card10.svg" alt="">
+                </div>
+                <p class="caution-text">
+                  A/S 비용 또는 기본 검사비가 1년간 미결제일 경우, 맡겨주신 제품은 폐기 처리됩니다.
+                </p>
+              </li>
+
+            </ul>
+          </section>
+
+
+          <!-- 하단 안내 -->
+          <aside class="repair-support-download" data-aos="fade-up">
+            <div class="repair-support-download-laft">
+              <div class="repair-support-download-pdf"></div>
+              <p class="repair-support-download-text">
+                자세한 수리 서비스 규정과 보증 규정은 <span>PDF</span>를 확인하여 주십시오.
+              </p>
+            </div>
+            <div class="repair-support-download-actions">
+              <a class="repair-support-download-btn" href="#">다운로드</a>
+              <a class="repair-support-download-btn" href="#">바로보기</a>
+            </div>
+          </aside>
+
+          <!-- NEXT 버튼 -->
+          <a class="repair-support-next-btn" href="sub6-2.html#subTabCon4" aria-label="다음 단계로 이동">
+            NEXT
+          </a>
+
+        </div>
+      </section>
+    </div>
+    <!-- 풋터 -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-top-icon">
+          <div class="footer-top-sns">
+            <ul>
+              <li><a href="#none" class="footer-icon-youtube"></a></li>
+              <li><a href="#none" class="footer-icon-kakaostroy"></a></li>
+              <li><a href="#none" class="footer-icon-facebook"></a></li>
+              <li><a href="#none" class="footer-icon-x"></a></li>
+              <li><a href="#none" class="footer-icon-kakaotalk"></a></li>
+            </ul>
+          </div>
+          <div class="footer-top-site">
+            <a href="#none" class="footer-icon-long footer-icon-mynintendo"></a>
+            <a href="#none" class="footer-icon-long footer-icon-amiibo"></a>
+          </div>
+        </div>
+        <div class="footer-bottom-text">
+          <div class="footer-bottom-text-left">
+            <div class="footer-bottom-atags">
+              <a href="#none" class="footer-bottom-atag">이용약관</a>
+              <a href="#none" class="footer-bottom-atag">개인정보처리방침</a>
+            </div>
+            <p class="footer-bottom-text01">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+            <p class="footer-bottom-text02">상호명 : 한국닌텐도주식회사<span class="footer-line-break-mb"></span>대표자명 : 미우라
+              타카히로<span class="footer-line-break"></span>사업자등록번호
+              : 120-87-03578</p>
+          </div>
+          <div class="footer-bottom-text-right">
+            <p class="footer-bottom-text03">고객지원 문의전화 : 1670-9900</p>
+            <p class="footer-bottom-text04">(평일 오전 9시 30분~오후 5시 30분)</p>
+            <p class="footer-bottom-text05">※토/일/공휴일/회사 정기휴일 및 특별휴일 제외</p>
+          </div>
+        </div>
+        <p class="responsive-copyright">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+      </div>
+
+    </footer>
+  </div>
+
+  <!-- 쇼핑 버튼 -->
+  <div class="fixed-cart">
+    <div class="cart-panel">
+      <a href="#none" class="cart-text">장바구니 바로가기 ></a>
+    </div>
+    <button class="cart-btn">
+      <i class="fa-solid fa-bag-shopping"></i>
+    </button>
+  </div>
+
+  <!-- 탑버튼 -->
+  <div class="top-btn-wrap" id="topBtn">
+    <div class="top-btn">
+      <button>TOP <i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/sub6.js"></script>
+  <script src="js/header.js"></script>
+
+</body>
+
+</html>

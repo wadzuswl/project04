@@ -1,0 +1,1418 @@
+@import 'variables', 'mixins', 'reset', 'fonts', 'header', 'footer', 'common';
+
+
+@media (max-width: $bp-tablet) {
+  .sub-page-main-visual {
+    height: 100vh;
+    margin-top: 0;
+
+    .sub-page-mv-title-wrap {
+      gap: $sp-40;
+
+      .sub-page-big-title {
+
+        .big-title-img,
+        .big-title-img-mb {
+          display: none;
+        }
+
+        .big-title-img-tablet {
+          display: block;
+        }
+
+        p {
+          font-size: $fs-40;
+        }
+      }
+    }
+
+    .sub-page-scroll-btn-wrap {
+      display: none;
+    }
+  }
+
+  // 콘텐츠 올라오는 거
+  .sub-whole-content-container {
+    // 헤더 길이만큼 + 간격 너비만큼
+    padding-top: 150px;
+    position: relative;
+    z-index: 2;
+    border-radius: 80px 80px 0 0;
+    transform: translateY(80px);
+    transition: transform 800ms ease;
+    background: $c-white;
+
+    .sub-page-tab-menu {
+      @include flex-center;
+      gap: $sp-50;
+      margin-bottom: 100px;
+
+      .sub-page-tab-btn {
+        @include flex-center;
+        flex-direction: column;
+        gap: 15px;
+
+        &:hover .sub-page-tab-btn-bar {
+          background: $c-main;
+        }
+
+        &-icon {
+          width: 45px;
+          height: 45px;
+        }
+
+        &-text {
+          font-size: $fs-16;
+        }
+
+        &-bar {
+          width: 120px;
+        }
+      }
+    }
+  }
+
+  .sub2-title {
+    font-size: $fs-32;
+    padding-bottom: $sp-50;
+  }
+
+  .support-cta-section {
+    margin-bottom: $sp-100;
+
+    .support-cta-wrap {
+      .support-cta-title {
+        font-size: $fs-32;
+      }
+    }
+  }
+
+  /* ==================
+    스위치2
+  ==================== */
+  .sub2-switch2-page-content {
+    .switch2-banner {
+      margin-bottom: $sp-100;
+    }
+
+    .sub2-switch2-hero {
+      margin-bottom: 200px;
+
+      iframe {
+        height: 310px;
+        margin-bottom: $sp-50;
+      }
+
+      .hero-text-wrap {
+        gap: $sp-20;
+        flex-direction: column;
+        justify-content: center;
+
+        .hero-title {
+          width: 370px;
+        }
+
+        .hero-desc {
+          font-size: $fs-28;
+          text-align: center;
+
+          p {
+            .en {
+              font-size: $fs-32;
+            }
+
+            strong {
+              font-size: $fs-32;
+            }
+          }
+
+          .footnote {
+            font-size: $fs-20;
+          }
+        }
+      }
+    }
+
+    .sub2-switch-mode {
+      .switch-main {
+        .switch2-bg {
+          top: 5%;
+        }
+
+        .overlay {
+          top: 5%;
+        }
+      }
+    }
+
+    .sub2-sitch2-function {
+      .sub2-title {
+        p {
+          font-size: $fs-40;
+        }
+      }
+
+      .function-wrap {
+        display: none;
+      }
+
+      .sub2-page2-responsive-content-wrap {
+        display: block;
+
+        .sub2-page2-responsive-con-card {
+          display: flex;
+          align-items: center;
+          gap: $sp-20;
+          margin-bottom: $sp-100;
+
+          .card-img {
+            width: 212px;
+            height: 230px;
+            border-radius: $r-md;
+            flex-shrink: 0;
+
+            &1 {
+              background: url(../images/sub2/sub2-slide1.png) no-repeat center / cover;
+            }
+
+            &2 {
+              background: url(../images/sub2/sub2-slide2.png) no-repeat center / cover;
+            }
+
+            &3 {
+              background: url(../images/sub2/sub2-slide3.png) no-repeat center / cover;
+            }
+
+            &4 {
+              background: url(../images/sub2/sub2-slide4.png) no-repeat center / cover;
+            }
+
+            &5 {
+              background: url(../images/sub2/sub2-slide5.png) no-repeat center / cover;
+            }
+          }
+
+          .card-text-wrap {
+            flex: 1;
+            position: relative;
+
+            .card-number {
+              width: 150px;
+              position: absolute;
+              left: 0;
+              top: -50px;
+              z-index: -1;
+            }
+
+            .card-text {
+              font-size: $fs-20;
+              font-weight: $fw-b;
+              margin-bottom: $sp-20;
+            }
+
+            .mobile-text {
+              display: none;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  /* ==================
+    스위치
+  ==================== */
+
+  .sub2-switch-intro {
+    height: 363px;
+    width: 700px;
+    margin: auto;
+
+    .intro-title {
+      img {
+        width: 180px;
+        height: auto;
+      }
+    }
+
+    .intro-switch-frame {
+      width: 100%;
+
+      .center-img {
+        width: 470px;
+        height: 181px;
+      }
+
+      .left-img,
+      .right-img {
+        width: 230px;
+      }
+
+      .left-img {
+        left: -1%;
+      }
+
+      .right-img {
+        right: 0.5;
+      }
+    }
+
+    .intro-title img.aos-animate {
+      transform: translateY(-20px) scale(1.2);
+    }
+
+    .center-img img.aos-animate {
+      transform: translateY(-10px);
+    }
+
+    .left-img.aos-animate img {
+      transform: translateY(-10px);
+    }
+
+    .right-img.aos-animate img {
+      transform: translateY(-58px);
+    }
+  }
+
+  .sub2-switch-mode {
+    margin: $sp-100 auto;
+
+    .switch-main {
+      height: 326px;
+    }
+
+    .layer--bg {
+      width: 347px;
+      height: 196px;
+    }
+
+    .layer--frame {
+      top: 0;
+      height: inherit;
+    }
+
+    .overlay {
+      width: 347px;
+
+      .overlay-inner {
+        text-align: left;
+        color: #fff;
+
+        h3 {
+          font-size: $fs-20;
+          font-weight: $fw-semi-b;
+        }
+
+        p {
+          font-size: $fs-18;
+        }
+      }
+
+
+    }
+
+    .switch-modes {
+      .mode {
+        font-size: $fs-24;
+      }
+    }
+  }
+
+  .joy-con-wrap {
+    margin: 200px 0;
+    background: url(../images/sub2/joy-con-bg-tb.png) no-repeat;
+    height: 320px;
+    background-position: bottom;
+    gap: $sp-5;
+
+    img {
+      width: 158px;
+      height: 165px;
+    }
+
+    .joy-con-text-wrap {
+      gap: $sp-50;
+
+      h3 {
+        font-size: $fs-40;
+      }
+
+      .first-text {
+        font-size: $fs-24;
+      }
+
+      .second-text {
+        font-size: $fs-22;
+      }
+
+      .small-text {
+        font-size: $fs-16;
+      }
+
+
+    }
+  }
+
+  .spec-section {
+    margin-bottom: 200px;
+
+    .spec-nav-icon {
+      width: 104px;
+    }
+  }
+
+  .product-lineup-section {
+    margin-bottom: 200px;
+
+    .product-lineup-grid {
+      grid-template-columns: repeat(1, 1fr);
+
+      .product-card {
+        display: flex;
+        align-items: center;
+
+        .product-card-image-wrap {
+          flex: 1;
+        }
+
+        .product-card-body {
+          flex: 1;
+
+          .product-card-title-en {
+            font-size: $fs-24;
+          }
+
+          .product-card-title-ko {
+            font-size: $fs-24;
+          }
+
+          .product-card-date,
+          .product-card-price {
+            font-size: $fs-18;
+          }
+        }
+      }
+    }
+
+  }
+
+  .switch-family-section {
+    margin-bottom: $sp-100;
+
+    .switch-family-card {
+      height: 420px;
+
+      .switch-family-grid {
+        .switch-family-item {
+          .switch-family-circle {
+            width: 183px;
+            height: 183px;
+          }
+        }
+      }
+    }
+
+  }
+
+  /* ==================
+    주변기기
+  ==================== */
+  .sub2-product-page-content {
+    .product-title {
+      font-size: $fs-40;
+      margin-bottom: $sp-50;
+    }
+
+    .controller-wrap,
+    .joy-con-product-wrap {
+      margin-bottom: 200px;
+    }
+
+    .controller-hero-wrap,
+    .joy-con-hero-wrap {
+      position: relative;
+      background: #fff;
+      height: 290px;
+      margin-bottom: 180px;
+
+      .hero-main {
+        bottom: -60%;
+      }
+
+      .hero-copy {
+        height: 290px;
+        gap: $sp-10;
+        padding-top: $sp-10;
+      }
+    }
+
+    .card-wraps {
+      gap: $sp-20;
+    }
+
+    .card {
+      .card-body {
+        height: 400px;
+
+        .card-left,
+        .card-right {
+          gap: $sp-10;
+          padding: $sp-20;
+        }
+      }
+
+      .card-img {
+        height: 400px;
+        width: 50%;
+      }
+    }
+
+    .card-title {
+      font-size: $fs-22;
+
+      .en {
+        font-size: $fs-24;
+      }
+
+      img {
+        width: 167px;
+      }
+    }
+
+    .etc-wrap {
+      .card-grid {
+        .sm-card {
+          height: 400px;
+          padding: $sp-20;
+
+          .card-img {
+            width: 100%;
+            height: 100%;
+          }
+
+          .card-text {
+            gap: $sp-15;
+          }
+        }
+      }
+    }
+
+    .desc01 {
+      font-size: $fs-18;
+    }
+
+    .desc02 {
+      font-size: $fs-16;
+    }
+
+    .card-bottom {
+      flex-direction: column;
+      gap: $sp-5;
+      font-size: $fs-12;
+    }
+
+    .spacific {
+      font-size: $fs-16;
+    }
+  }
+
+  /* ==================
+    아미보
+  ==================== */
+  .sub2-amiibo-page-content {
+    .amiibo-intro {
+      flex-direction: column;
+    }
+
+    .amiibo-feature-wrap {
+      .amiibo-feature {
+        flex-direction: column;
+        height: 739px;
+
+        .feature-image-wrap {
+          flex: 1;
+
+          img {
+            width: 545px;
+            margin: auto;
+          }
+
+          .amiibo-product {
+            width: 155px;
+            bottom: 0;
+          }
+        }
+
+        .feature-text {
+          @include flex-center;
+          flex-direction: column;
+
+          .feature-title {
+            img {
+              width: 70px;
+            }
+
+            h3 {
+              font-size: $fs-32;
+            }
+          }
+
+          h4 {
+            margin-bottom: $sp-30;
+          }
+
+          p {
+            text-align: center;
+            font-size: $fs-20;
+          }
+        }
+      }
+
+      .right-type {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .amiibo-lineup {
+      h2 {
+        font-size: $fs-36;
+
+        .en {
+          font-size: $fs-40;
+        }
+      }
+    }
+
+    .amiibo-lineup-stage {
+      .stage-light {
+        height: 190%;
+        bottom: 13%;
+        clip-path: polygon(40% 100%, 60% 100%, 90% 0%, 10% 0%);
+      }
+    }
+
+    .amiibo-lineup-swiper {
+      .swiper-slide {
+        height: 350px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: $bp-mobile) {
+
+  //메인비주얼
+  .sub-page-main-visual {
+    .sub-page-mv-title-wrap {
+      gap: $sp-15;
+
+      .sub-page-big-title {
+
+        .big-title-img,
+        .big-title-img-tablet {
+          display: none;
+        }
+
+        .big-title-img-mb {
+          display: block;
+        }
+
+        p {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .sub-page-scroll-btn-wrap {
+      display: none;
+    }
+  }
+
+  // 콘텐츠 올라오는 거
+  .sub-whole-content-container {
+    // 헤더 길이만큼 + 간격 너비만큼
+    padding-top: 115px;
+    position: relative;
+    z-index: 2;
+    border-radius: 50px 50px 0 0;
+    transform: translateY(80px);
+    transition: transform 800ms ease;
+    background: $c-white;
+
+    .sub-page-tab-menu {
+      @include flex-center;
+      gap: $sp-10;
+      margin-bottom: 70px;
+
+      .sub-page-tab-btn {
+        @include flex-center;
+        flex-direction: column;
+        gap: 15px;
+
+        &:hover .sub-page-tab-btn-bar {
+          background: $c-main;
+        }
+
+        &-icon {
+          width: 45px;
+          height: 45px;
+        }
+
+        &-text {
+          font-size: $fs-16;
+          margin-bottom: 0;
+        }
+
+        &-bar {
+          width: 83px;
+          height: 4px;
+        }
+      }
+    }
+  }
+
+  .sub2-title {
+    font-size: $fs-24;
+    padding-bottom: $sp-30;
+
+    .en {
+      font-size: $fs-32;
+    }
+  }
+
+  .support-cta-section {
+    margin-bottom: $sp-70;
+
+    .support-cta-wrap {
+      .support-cta-title {
+        font-size: $fs-28;
+        text-align: center;
+      }
+    }
+  }
+
+  /* ==================
+    스위치2
+  ==================== */
+  .sub2-switch2-page-content {
+    .switch2-banner {
+      margin-bottom: $sp-70;
+    }
+
+    .sub2-switch2-hero {
+      margin-bottom: $sp-140;
+
+      iframe {
+        height: 164px;
+        margin-bottom: $sp-30;
+      }
+
+      .hero-text-wrap {
+        gap: $sp-20;
+        flex-direction: column;
+        justify-content: center;
+
+        .hero-title {
+          width: 190px;
+        }
+
+        .hero-desc {
+          font-size: $fs-20;
+          text-align: center;
+
+          p {
+            .en {
+              font-size: $fs-24;
+            }
+
+            strong {
+              font-size: $fs-24;
+            }
+          }
+
+          .footnote {
+            font-size: $fs-16;
+          }
+        }
+      }
+    }
+
+    .sub2-switch-mode {
+      .switch-main {
+        .switch2-bg {
+          top: 7%;
+        }
+
+        .overlay {
+          top: 7%;
+        }
+      }
+    }
+
+    .sub2-sitch2-function {
+      .sub2-title {
+        p {
+          font-size: $fs-32;
+        }
+      }
+
+      .sub2-page2-responsive-content-wrap {
+        .sub2-page2-responsive-con-card {
+          display: flex;
+          align-items: center;
+          gap: $sp-10;
+          margin-bottom: $sp-100;
+
+          .card-img {
+            width: 129px;
+            height: 139px;
+          }
+
+          .card-text-wrap {
+            flex: 1;
+            position: relative;
+
+            .card-number {
+              width: 150px;
+              position: absolute;
+              right: 0;
+              left: auto;
+              top: -50px;
+              z-index: -1;
+            }
+
+            .card-text {
+              font-size: $fs-18;
+              margin-bottom: 0;
+
+              br {
+                display: none;
+              }
+            }
+
+            .card-point-text-container {
+              .card-point-text-wrap {
+                display: none;
+              }
+
+              .mobile-text {
+                margin-top: $sp-10;
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* ==================
+    스위치
+  ==================== */
+
+  .sub2-switch-intro {
+    height: 210px;
+    width: 400px;
+    margin: auto;
+
+    .intro-title {
+      top: -50%;
+
+      img {
+        width: 130px;
+        height: auto;
+      }
+    }
+
+    .intro-switch-frame {
+      width: 100%;
+
+      .center-img {
+        width: 273px;
+        height: 105px;
+      }
+
+      .left-img,
+      .right-img {
+        width: 128px;
+      }
+
+      .left-img {
+        left: -0.8%;
+      }
+
+      .right-img {
+        right: 0.7%;
+      }
+    }
+
+    .intro-title img.aos-animate {
+      transform: translateY(-20px) scale(1.2);
+    }
+
+    .center-img img.aos-animate {
+      transform: translateY(-10px);
+    }
+
+    .left-img.aos-animate img {
+      transform: translateY(-10px);
+    }
+
+    .right-img.aos-animate img {
+      transform: translateY(-35px);
+    }
+  }
+
+  .sub2-switch-mode {
+    margin: $sp-70 auto;
+
+    .switch-main {
+      height: 183px;
+    }
+
+    .layer--bg {
+      width: 183px;
+      height: 103px;
+      top: 5%;
+    }
+
+    .overlay {
+      width: 183px;
+      top: 5%;
+      padding: $sp-10;
+      height: 30%;
+
+      .overlay-inner {
+
+
+        h3 {
+          font-size: $fs-16;
+        }
+
+        p {
+          font-size: $fs-12;
+        }
+      }
+
+
+    }
+
+    .switch-modes {
+      .mode {
+        font-size: $fs-18;
+        border-radius: $r-sm;
+      }
+    }
+  }
+
+  .joy-con-wrap {
+    margin: $sp-140 0;
+    height: auto;
+    gap: $sp-5;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -15%;
+      width: 100px;
+      height: 125px;
+    }
+
+    .left-joy {
+      left: 0%;
+    }
+
+    .rigth-joy {
+      right: 0%;
+    }
+
+    .joy-con-text-wrap {
+      gap: $sp-20;
+
+      h3 {
+        font-size: $fs-32;
+        margin-bottom: $sp-15;
+      }
+
+      .first-text {
+        width: 80%;
+        margin: auto;
+
+        .en {
+          font-size: $fs-24;
+        }
+
+        .ko {
+          font-size: $fs-20;
+        }
+      }
+
+      .second-text {
+        font-size: $fs-18;
+      }
+
+      .small-text {
+        font-size: $fs-14;
+        padding: $sp-10;
+      }
+
+
+    }
+  }
+
+  .spec-section {
+    margin-bottom: $sp-140;
+
+    .spec-wrap {
+      flex-direction: column;
+      gap: $sp-30;
+    }
+
+    .spec-nav {
+      grid-template-columns: repeat(5, 1fr);
+
+    }
+
+
+    .spec-nav-icon {
+      width: 72px;
+    }
+  }
+
+  .product-lineup-section {
+    margin-bottom: $sp-140;
+
+    .product-lineup-grid {
+
+      .product-card {
+
+        .product-card-image-wrap {
+          flex: 0.8;
+
+          /* 빨간 라벨 */
+          .product-card-badge {
+            bottom: 5px;
+            font-size: $fs-14;
+            width: 105px;
+            height: 20px;
+            line-height: 20px;
+          }
+        }
+
+        .product-card-body {
+          flex: 1.2;
+
+          .product-card-title-en {
+            font-size: $fs-18;
+          }
+
+          .product-card-title-ko {
+            font-size: $fs-16;
+          }
+
+          .product-card-date,
+          .product-card-price {
+            font-size: $fs-12;
+          }
+        }
+      }
+    }
+
+  }
+
+  .switch-family-section {
+    margin-bottom: $sp-70;
+
+    .switch-family-card {
+      height: 620px;
+      gap: $sp-30;
+
+      .switch-family-title {
+        font-size: $fs-28;
+      }
+
+      .switch-family-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: $sp-15;
+
+        .switch-family-item {
+          .switch-family-circle {
+            width: 150px;
+            height: 150px;
+          }
+        }
+      }
+    }
+
+  }
+
+  /* ==================
+    주변기기
+  ==================== */
+  .sub2-product-page-content {
+    .product-title {
+      font-size: $fs-32;
+      margin-bottom: $sp-30;
+    }
+
+    .controller-wrap,
+    .joy-con-product-wrap {
+      margin-bottom: $sp-140;
+    }
+
+    .controller-hero-wrap,
+    .joy-con-hero-wrap {
+      position: relative;
+      background: #fff;
+      height: 200px;
+      margin-bottom: 180px;
+
+      .hero-main {
+        bottom: -80%;
+      }
+
+      .hero-copy {
+        height: 200px;
+        gap: $sp-5;
+        padding-top: $sp-10;
+
+        .card-bottom {
+          display: flex;
+        }
+      }
+    }
+
+    .card-wraps {
+      gap: $sp-20;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      box-shadow: $download-box-shadow;
+      border-radius: $r-xl;
+
+      .card-body {
+        height: 318px;
+
+        .mb {
+          display: none;
+        }
+      }
+
+      .card-img {
+        height: 318px;
+        width: 100%;
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          display: block;
+          overflow: hidden;
+          transition: opacity .25s ease;
+          will-change: transform;
+        }
+      }
+
+      .card-text {
+        position: relative;
+        z-index: 2;
+        opacity: 0;
+        transition: opacity .25s ease, transform .25s ease;
+      }
+
+      .hover-overlay-l {
+        left: 0;
+      }
+
+      &:hover {
+        .hover-overlay-r {
+          transform: translateX(0);
+        }
+
+        .hover-overlay-l {
+          transform: translateX(0);
+        }
+      }
+
+      &:hover {
+        .card-img img {
+          opacity: .4;
+        }
+
+        .card-text {
+          opacity: 1;
+        }
+      }
+
+    }
+
+    .card-title {
+      font-size: $fs-18;
+
+      .en {
+        font-size: $fs-20;
+      }
+
+      img {
+        width: 167px;
+      }
+    }
+
+
+    .etc-wrap {
+      .card-grid {
+        grid-template-columns: repeat(1, 1fr);
+
+        .sm-card {
+          height: 318px;
+          padding: $sp-20;
+
+          .card-text {
+            gap: $sp-15;
+          }
+        }
+      }
+    }
+
+    .desc01 {
+      font-size: $fs-16;
+    }
+
+    .desc02 {
+      font-size: $fs-14;
+    }
+
+    .card-bottom {
+      flex-direction: column;
+      gap: $sp-5;
+      font-size: $fs-12;
+    }
+
+    .spacific {
+      font-size: $fs-14;
+    }
+  }
+
+  /* ==================
+    아미보
+  ==================== */
+  .sub2-amiibo-page-content {
+    .amiibo-intro {
+      flex-direction: column;
+
+      .intro-left {
+        img {
+          width: 260px;
+          height: 190px;
+        }
+
+        .intor-opacity-img {
+          width: 200px;
+          height: 110px;
+        }
+      }
+
+      .intro-right {
+        gap: $sp-30;
+
+        h2 {
+          font-size: $fs-28;
+        }
+
+        .intro-desc {
+          font-size: $fs-20;
+        }
+      }
+    }
+
+    .amiibo-feature-wrap {
+      .amiibo-feature {
+        height: 570px;
+        padding: $sp-15;
+
+        .feature-image-wrap {
+          width: 100%;
+
+          img {
+            width: 288px;
+            margin: 0;
+          }
+
+          .amiibo-product {
+            width: 107px;
+            right: 0;
+          }
+
+          .amiibo-product-l {
+            width: 107px;
+          }
+        }
+
+        .feature-text {
+          .feature-title {
+            margin-bottom: $sp-30;
+
+            img {
+              width: 50px;
+
+            }
+
+            h3 {
+              font-size: $fs-28;
+            }
+          }
+
+          h4 {
+            font-size: $fs-20;
+            margin-bottom: $sp-30;
+            text-align: center;
+          }
+
+          p {
+            text-align: center;
+            font-size: $fs-16;
+          }
+        }
+      }
+
+      .right-type {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .amiibo-lineup {
+      h2 {
+        font-size: $fs-36;
+
+        .en {
+          font-size: $fs-40;
+        }
+      }
+    }
+
+    .amiibo-lineup-stage {
+      .stage-light {
+        bottom: 20%;
+        width: 100%;
+        height: 150%;
+        clip-path: polygon(35% 100%, 65% 100%, 90% 0%, 10% 0%);
+      }
+    }
+
+    .amiibo-lineup-swiper {
+      .swiper-slide {
+        height: 250px;
+      }
+
+    }
+  }
+}
+
+// ===== 푸터 =====
+@media (max-width: $bp-tablet) {
+  .footer {
+    height: auto;
+    padding: $sp-40;
+
+    .footer-content {
+      .footer-top-icon {
+        gap: $sp-30;
+        flex-direction: column;
+        align-items: flex-start;
+        order: 2;
+
+        .footer-top-sns {
+          ul {
+            li {
+              a {
+                width: 52px;
+                height: 52px;
+              }
+            }
+          }
+        }
+
+        .footer-top-site {
+          flex-direction: column;
+          gap: $sp-10;
+          width: 100%;
+
+          .footer-icon-long {
+            height: 65px;
+            width: 100%;
+          }
+        }
+      }
+
+      .footer-bottom-text {
+        order: 1;
+        flex-direction: column;
+        gap: $sp-5;
+
+        &-left {
+          gap: $sp-5;
+        }
+
+        &-right {
+          text-align: left;
+          gap: $sp-5;
+        }
+      }
+    }
+  }
+
+  .footer-bottom-text01 {
+    display: none;
+  }
+
+  .footer-bottom-text02 {
+    line-height: $lh-text;
+
+    .footer-line-break {
+      display: block;
+    }
+  }
+
+  .responsive-copyright {
+    display: block !important;
+    order: 3;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .footer {
+    font-size: $fs-18;
+
+    .footer-top-sns {
+      ul {
+        li {
+          a {
+            width: 38px !important;
+            height: 38px !important;
+          }
+        }
+      }
+    }
+
+    .footer-top-site {
+      .footer-icon-long {
+        height: 45px !important;
+      }
+    }
+  }
+
+  .footer-line-break-mb {
+    display: block;
+  }
+
+  .responsive-copyright {
+    font-size: $fs-14;
+  }
+}

@@ -1,0 +1,389 @@
+// 이너
+@mixin inner($inner) {
+  width: $inner;
+  margin: auto;
+
+  @media (max-width: $bp-tablet) {
+    width: 90%;
+  }
+
+  @media (max-width: $bp-mobile) {}
+}
+
+// 수직 수평 중앙 정렬
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// 양쪽 끝 정렬 + 수직 정렬
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//  양끝 여백 정렬
+@mixin flex-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+// 오른쪽 정렬
+@mixin flex-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+// 말줄임 처리 (한 줄 또는 다중 처리)
+@mixin text-ellipsis($lines: 1) {
+  @if $lines ==1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @else {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+    overflow: hidden;
+  }
+}
+
+//  글씨 들어가는 곳
+@mixin text($fs, $fw, $color) {
+  font-family: $ff-suit;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh-text;
+  color: $color;
+}
+
+// 섹션 위아래패딩 150px
+@mixin section-margin {
+  padding: $sp-section 0;
+
+  @media (max-width: $bp-tablet) {
+    padding: $sp-100 0;
+  }
+
+  @media (max-width: $bp-mobile) {
+    padding: $sp-70 0;
+  }
+}
+
+@mixin main-section-title {
+  text-align: center;
+  font-family: $ff-kanit;
+  font-weight: $fw-b;
+  font-size: $fs-60;
+  margin-bottom: $sp-100;
+
+  @media (max-width: $bp-tablet) {
+    margin-bottom: $sp-50;
+    font-size: $fs-52;
+  }
+
+  @media (max-width: $bp-mobile) {
+    margin-bottom: $sp-30;
+    font-size: $fs-40;
+  }
+}
+
+// 기본 버튼 - 화이트
+@mixin more-btn($color, $border) {
+  width: 130px;
+  height: 50px;
+  font-size: $fs-20;
+  font-weight: $fw-b;
+  border-radius: $r-2xl;
+  background: rgba(0, 0, 0, 0.15);
+  color: $color;
+  border: 4px solid $border;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &:hover {
+    color: $c-white;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -140px;
+    top: 0;
+    background: $c-main;
+    transition: $tr-s;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    left: 0;
+  }
+
+  @media (max-width: $bp-mobile) {
+    width: 100px;
+    height: 45px;
+    font-size: $fs-18;
+    font-weight: $fw-b;
+    border-radius: $r-2xl;
+    background: transparent;
+    color: $color;
+    border: 3px solid $border;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: -140px;
+      top: 0;
+      background: $c-main;
+      transition: $tr-s;
+      z-index: -1;
+    }
+
+    &:hover::before {
+      left: 0;
+    }
+  }
+}
+
+// 서브 MORE 버튼 이미지 정렬
+@mixin more-btn-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+
+// 소프트웨어 캐릭터 풀페이지 섹션 너비 높이
+@mixin full-section-size {
+  width: 100%;
+  height: 100vh;
+}
+
+// 소프트웨어 캐릭터 글래스모피즘
+@mixin glassmorphism {
+  //background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  box-shadow:
+    7px 6px 14px rgba(0, 0, 0, 0.25),
+    inset 0 0 1px rgba(255, 255, 255, 1);
+
+  @media (max-width: $bp-tablet) {
+    box-shadow:
+      4px 4px 5px rgba(0, 0, 0, 0.1),
+      inset 0 0 1px rgba(255, 255, 255, 1);
+  }
+
+  @media (max-width: $bp-mobile) {
+    box-shadow:
+      3px 3px 3px rgba(0, 0, 0, 0.1),
+      inset 0 0 1px rgba(255, 255, 255, 1);
+  }
+}
+
+// 소프트웨어 캐릭터 섹션 타이틀
+@mixin sub-char-title {
+  margin-bottom: $sp-20;
+  width: 460px;
+  height: 58px;
+
+  @media (max-width: $bp-tablet) {
+    margin-bottom: $sp-50;
+    width: 100%;
+    height: 42px;
+    @include flex-center;
+
+  }
+
+  @media (max-width: $bp-mobile) {
+    width: 100%;
+    height: 33px;
+    margin-bottom: $sp-30;
+  }
+}
+
+
+@mixin sub-char-name {
+  margin-bottom: $sp-40;
+
+  @media (max-width: $bp-mobile) {
+    width: 279px;
+  }
+}
+
+// 소프트웨어 캐릭터 뉴스 타이틀 
+@mixin sub-news-title {
+  img {
+    margin-bottom: $sp-80;
+    height: 58px;
+  }
+
+  @media (max-width: $bp-tablet) {
+    @include flex-center;
+
+    img {
+      margin-bottom: $sp-50;
+      width: 201px;
+      height: 50px;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    @include flex-center;
+
+    img {
+      margin-bottom: $sp-25;
+      width: 297px;
+      height: 33px;
+    }
+  }
+}
+
+// 소프트웨어 캐릭터 뉴스 날짜
+@mixin sub-text-date {
+  font-family: $ff-suit;
+  font-weight: $fw-r;
+  font-size: $fs-16;
+  line-height: $lh-text;
+  color: $c-gray99;
+}
+
+
+// header
+// 아이콘 텍스트 사이
+@mixin between-icon-text($gap) {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}
+
+// 헤더 검색, 로그인 버튼 폰트
+@mixin header-btn-font {
+  font-family: $ff-kanit;
+  font-size: $fs-20;
+  font-weight: $fw-md;
+}
+
+
+// 탑버튼
+@mixin topbtn($border) {
+  width: 155px;
+  height: 65px;
+  border-radius: $sp-50;
+  font-family: $ff-kanit;
+  font-size: $fs-24;
+  font-weight: $fw-b;
+  color: $c-text-main;
+  @include flex-center;
+  gap: $sp-20;
+  border: 3px solid $border;
+  background: $c-white;
+
+  @media (max-width: $bp-tablet) {
+    width: 145px;
+    height: 62px;
+  }
+
+  @media (max-width: $bp-mobile) {
+    width: 100px;
+    height: 43px;
+    font-size: $fs-16;
+  }
+}
+
+@mixin tobtn-img {
+  position: absolute;
+  left: 50%;
+  bottom: 42px;
+  width: 80px;
+  height: 80px;
+
+  transform: translate(-50%, 0);
+  transition: 0.25s ease;
+  pointer-events: none;
+  z-index: 5;
+
+  @media (max-width: $bp-mobile) {
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+  }
+
+}
+
+// 서브페이지 티이틀 제목
+@mixin sub-title-ko {
+  font-size: $fs-40;
+  font-weight: $fw-b;
+
+  @media (max-width: $bp-tablet) {
+    font-size: $fs-32;
+  }
+
+  @media (max-width: $bp-mobile) {
+    font-size: $fs-24;
+  }
+}
+
+@mixin sub-title-en {
+  font-size: $fs-48;
+  font-weight: $fw-semi-b;
+  font-family: $ff-kanit;
+
+  @media (max-width: $bp-tablet) {
+    font-size: $fs-40;
+  }
+
+  @media (max-width: $bp-mobile) {
+    font-size: $fs-32;
+  }
+}
+
+
+// 바로가기 버튼
+@mixin goto-btn {
+  text-align: center;
+  border: 3px solid $c-main;
+  border-radius: $r-2xl;
+  padding: $sp-10 $sp-20;
+  color: $c-main;
+  font-size: $fs-28;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    color: $c-white;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $c-main;
+    top: 0;
+    left: -400px;
+    z-index: -1;
+    transition: $tr-s;
+  }
+
+  &:hover::before {
+    left: 0;
+  }
+
+  @media (max-width: $bp-tablet) {
+    font-size: $fs-20;
+  }
+}

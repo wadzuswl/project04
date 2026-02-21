@@ -1,0 +1,1022 @@
+@import 'variables', 'mixins', 'reset', 'fonts', 'header', 'footer', 'common';
+
+// 메인비주얼
+@media (max-width: $bp-tablet) {
+  .sub-page-main-visual {
+    height: 100vh;
+    margin-top: 0;
+
+    .sub-page-mv-title-wrap {
+      gap: $sp-40;
+
+      .sub-page-big-title {
+
+        .big-title-img,
+        .big-title-img-mb {
+          display: none;
+        }
+
+        .big-title-img-tablet {
+          display: block;
+        }
+
+        p {
+          font-size: $fs-40;
+        }
+      }
+    }
+
+    .sub-page-scroll-btn-wrap {
+      display: none;
+    }
+  }
+
+  // 콘텐츠 올라오는 거
+  .sub-whole-content-container {
+    // 헤더 길이만큼 + 간격 너비만큼
+    padding-top: 150px;
+    position: relative;
+    z-index: 2;
+    border-radius: 80px 80px 0 0;
+    transform: translateY(80px);
+    transition: transform 800ms ease;
+    background: $c-white;
+
+    .sub-page-tab-menu {
+      @include flex-center;
+      gap: $sp-50;
+      margin-bottom: 100px;
+
+      .sub-page-tab-btn {
+        @include flex-center;
+        flex-direction: column;
+        gap: 15px;
+
+        &:hover .sub-page-tab-btn-bar {
+          background: $c-main;
+        }
+
+        &-icon {
+          width: 45px;
+          height: 45px;
+        }
+
+        &-text {
+          font-size: $fs-16;
+        }
+
+        &-bar {
+          width: 120px;
+        }
+      }
+    }
+  }
+
+  // FAQ 
+  .sub6-faq-page-content {
+    .inner {
+      .sub6-title-wrap {
+        margin-bottom: $sp-50;
+      }
+
+      .faq-search {
+        margin-bottom: $sp-50;
+        padding: $sp-10 $sp-25;
+
+        .search-text-l {
+          svg {
+            width: 37px;
+            height: 40px;
+          }
+
+          input {
+            font-size: $fs-22;
+          }
+        }
+
+        button {
+          height: 45px;
+          font-size: $fs-22;
+        }
+      }
+
+      .faq-list {
+        margin-bottom: $sp-50;
+
+        .faq-item {
+          .faq-item-q {
+            font-size: $fs-22;
+
+            .icon-act {
+              width: 25px;
+              height: 25px;
+
+              &::before,
+              &::after {
+                width: 22px;
+                height: 5px;
+              }
+            }
+          }
+
+          .faq-item-a {
+            h6 {
+              font-size: $fs-22;
+            }
+
+            p {
+              font-size: $fs-20;
+            }
+
+            .faq-item-a-smtxt {
+              font-size: $fs-16;
+            }
+          }
+        }
+      }
+
+      .faq-more-btn {
+        margin-bottom: $sp-100;
+      }
+    }
+  }
+
+}
+
+@media (max-width: $bp-mobile) {
+  .sub-page-main-visual {
+    .sub-page-mv-title-wrap {
+      gap: $sp-15;
+
+      .sub-page-big-title {
+
+        .big-title-img,
+        .big-title-img-tablet {
+          display: none;
+        }
+
+        .big-title-img-mb {
+          display: block;
+        }
+
+        p {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .sub-page-scroll-btn-wrap {
+      display: none;
+    }
+  }
+
+  // 콘텐츠 올라오는 거
+  .sub-whole-content-container {
+    // 헤더 길이만큼 + 간격 너비만큼
+    padding-top: 115px;
+    position: relative;
+    z-index: 2;
+    border-radius: 50px 50px 0 0;
+    transform: translateY(80px);
+    transition: opacity 800ms ease, transform 800ms ease;
+    background: $c-white;
+
+    .sub-page-tab-menu {
+      @include flex-center;
+      gap: $sp-10;
+      margin-bottom: 70px;
+
+      .sub-page-tab-btn {
+        @include flex-center;
+        flex-direction: column;
+        gap: 15px;
+
+        &:hover .sub-page-tab-btn-bar {
+          background: $c-main;
+        }
+
+        &-icon {
+          width: 45px;
+          height: 45px;
+        }
+
+        &-text {
+          font-size: $fs-16;
+          margin-bottom: 0;
+        }
+
+        &-bar {
+          width: 83px;
+          height: 4px;
+        }
+      }
+    }
+  }
+
+  // FAQ 
+  .sub6-faq-page-content {
+    .inner {
+      .sub6-title-wrap {
+        margin-bottom: $sp-30;
+      }
+
+      .faq-search {
+        margin-bottom: $sp-50;
+        padding: $sp-10;
+
+        .search-text-l {
+          gap: $sp-10;
+
+          svg {
+            width: 30px;
+            height: 33px;
+          }
+
+          input {
+            font-size: $fs-16;
+          }
+        }
+
+        button {
+          height: 40px;
+          font-size: $fs-20;
+          padding: 0 $sp-15;
+        }
+      }
+
+      .faq-list {
+        margin-bottom: $sp-50;
+
+        .faq-item {
+          .faq-item-q {
+            font-size: $fs-18;
+            height: auto;
+            padding: $sp-10;
+
+            .icon-act {
+              width: 25px;
+              height: 25px;
+
+              &::before,
+              &::after {
+                width: 16px;
+                height: 3px;
+              }
+            }
+          }
+
+          .faq-item-a {
+            padding: $sp-10;
+
+            h6 {
+              font-size: $fs-18;
+            }
+
+            p {
+              font-size: $fs-18;
+            }
+
+            .faq-item-a-smtxt {
+              font-size: $fs-14;
+            }
+          }
+        }
+      }
+
+      .faq-more-btn {
+        margin-bottom: $sp-100;
+      }
+    }
+  }
+}
+
+// 스위치2
+@media (max-width: $bp-tablet) {
+  .sub6-switch2-page-content {
+    .inner {
+      .sub6-title-wrap {
+        margin-bottom: $sp-50;
+      }
+    }
+
+    .top-section {
+      margin-bottom: $sp-70;
+      width: 100%;
+
+      .page1-slide {
+        width: 80%;
+
+        .top-slide-wrap {
+          .top-slide-img {
+            height: 200px;
+          }
+
+          .top-slide-text-box {
+            .step-box {
+              width: 75px;
+              height: 25px;
+              font-size: $fs-18;
+              border-radius: 20px 20px 0 0;
+            }
+
+            .desc-box {
+              font-size: $fs-16;
+              height: 150px;
+            }
+          }
+        }
+      }
+    }
+
+    .middle-section {
+      margin-bottom: $sp-70;
+
+      .middle-card-wrap {
+        .middle-card {
+          height: 110px;
+
+          .middle-card-img {
+            width: 100px;
+            height: 65px;
+          }
+
+          .middle-card-title {
+            font-size: $fs-22;
+          }
+
+          .middle-card-btn {
+            width: 153px;
+            height: 40px;
+            line-height: 40px;
+            font-size: $fs-20;
+          }
+
+          .middle-click-card {
+            font-size: $fs-14;
+          }
+        }
+      }
+    }
+
+    .bottom-section {
+      margin-bottom: $sp-70;
+
+      .bottom-tab-menu {
+        gap: $sp-10;
+
+        .bottom-tab-btn {
+          height: 40px;
+          font-size: $fs-16;
+        }
+      }
+
+      .bottom-tab-con-wrap {
+        .bottom-tab-con {
+          .acc-item {
+            .acc-item-title {
+              font-size: $fs-22;
+
+              .icon-act {
+                width: 25px;
+                height: 25px;
+              }
+            }
+
+            .acc-item-desc {
+              p {
+                font-size: $fs-20;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .notice-section {
+      margin-bottom: $sp-70;
+
+      .big-title {
+        font-size: $fs-32;
+      }
+
+      .notice-btn-wrap {
+        gap: 15px;
+
+        a {
+          p {
+            font-size: $fs-20;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-button-next.page1-next-btn,
+  .swiper-button-prev.page1-prev-btn {
+    width: 50px;
+    height: 50px;
+    top: 65% !important;
+    font-size: $fs-32;
+  }
+
+  .swiper-button-next.page1-next-btn {
+    right: 0 !important;
+  }
+
+  .swiper-button-prev.page1-prev-btn {
+    left: 0 !important;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .sub6-switch2-page-content {
+    .inner {
+      .sub6-title-wrap {
+        margin-bottom: $sp-30;
+      }
+    }
+
+    .top-section {
+      margin-bottom: $sp-50;
+    }
+
+    .middle-section {
+      margin-bottom: $sp-50;
+
+      .middle-card-wrap {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .bottom-section {
+      margin-bottom: $sp-50;
+
+      .bottom-tab-menu {
+        gap: $sp-10;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        justify-content: flex-start;
+        margin-bottom: $sp-30;
+
+        .bottom-tab-btn {
+          flex-shrink: 0;
+        }
+      }
+
+      .bottom-tab-con-wrap {
+        .bottom-tab-con {
+          .acc-item {
+            .acc-item-title {
+              font-size: $fs-18;
+
+              .icon-act {
+                width: 18px;
+                height: 18px;
+
+                &::before,
+                &::after {
+                  width: 18px;
+                  height: 4px;
+                }
+              }
+            }
+
+            .acc-item-desc {
+              p {
+                font-size: $fs-18;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .notice-section {
+      .block {
+        display: block;
+      }
+
+      .big-title {
+        font-size: $fs-28;
+      }
+
+      .notice-btn-wrap {
+        gap: 15px;
+        flex-direction: column;
+        margin-bottom: $sp-50;
+
+        a {
+          align-self: center;
+
+          p {
+            font-size: $fs-20;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-button-next.page1-next-btn,
+  .swiper-button-prev.page1-prev-btn {
+    width: 50px;
+    height: 50px;
+    top: 65% !important;
+    font-size: $fs-32;
+  }
+
+  .swiper-button-next.page1-next-btn {
+    right: 0 !important;
+  }
+
+  .swiper-button-prev.page1-prev-btn {
+    left: 0 !important;
+  }
+}
+
+// 수리지원
+@media (max-width: $bp-tablet) {
+  .sub6-repair-page-content {
+    .repair-support-container {
+      .repair-support-banner {
+        padding: 0 45px;
+        margin: 100px 0 0 0;
+        background-image: url(../images/sub6/repair-support-banner01-tablet.png);
+        background-size: contain;
+
+        .repair-support-banner-text {
+          .repair-support-banner-title {
+            font-size: $fs-36;
+            margin-bottom: 30px;
+          }
+
+          .repair-support-banner-desc {
+            width: 432px;
+            font-size: $fs-16;
+          }
+
+          .repair-support-banner-links {
+            gap: 20px;
+            margin-top: 30px;
+
+            li {
+              a {
+                font-size: $fs-16;
+              }
+
+              img {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+      }
+
+
+      .caution {
+
+        /* 제목 */
+        .caution-title {
+          margin-bottom: 80px;
+          font-size: $fs-32;
+        }
+
+        .caution-list {
+          grid-template-columns: repeat(2, 1fr);
+
+          /* 카드 */
+          .caution-item {
+            padding-top: $sp-30;
+
+            /* 아이콘 */
+            .caution-icon {
+              height: 60px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            /* 텍스트 */
+            .caution-text {
+              @include text($fs-22, $fw-semi-b, $c-black);
+            }
+
+            /* 링크 */
+            .caution-link {
+              font-size: $fs-18;
+            }
+          }
+        }
+      }
+
+      // pdf다운로드
+      .repair-support-download {
+        margin-top: 30px;
+        height: 60px;
+
+        .repair-support-download-laft {
+          .repair-support-download-pdf {
+            width: 40px;
+            height: 40px;
+          }
+
+          .repair-support-download-text {
+            font-size: $fs-16;
+            font-weight: $fw-md;
+          }
+        }
+
+        .repair-support-download-actions {
+          gap: 10px;
+
+          .repair-support-download-btn {
+            font-size: $fs-16;
+            font-weight: $fw-md;
+          }
+        }
+      }
+
+      // NEXT 버튼
+      .repair-support-next-btn {
+        margin: 50px auto 100px auto;
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .sub6-repair-page-content {
+    .repair-support-container {
+      .repair-support-banner {
+        padding: 0 20px;
+        margin: 100px 0;
+        height: 300px;
+        background-image: url(../images/sub6/repair-support-banner01-mobile.png);
+        background-size: cover;
+        align-items: center;
+
+        .repair-support-banner-text {
+          margin-top: 0;
+
+          .repair-support-banner-title {
+            font-size: $fs-24;
+            margin-bottom: 5px;
+          }
+
+          .repair-support-banner-desc {
+            width: 100%;
+            font-size: $fs-18;
+            margin-bottom: 3px;
+          }
+
+          .repair-support-banner-link {
+            a {
+              font-size: $fs-14;
+              font-weight: $fw-semi-b;
+            }
+          }
+
+          .repair-support-banner-links {
+            gap: 10px;
+            margin-top: 15px;
+
+            li {
+              gap: 5px;
+
+              a {
+                font-size: $fs-14;
+              }
+
+              img {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      .caution {
+        margin-top: 100px;
+
+        /* 제목 */
+        .caution-title {
+          margin-bottom: 45px;
+          font-size: $fs-24;
+        }
+
+        .caution-list {
+          grid-template-columns: repeat(1, 1fr);
+          gap: $sp-20;
+
+          /* 카드 */
+          .caution-item {
+            height: 250px;
+            border-bottom: none;
+            padding-top: 0;
+            justify-content: center;
+
+            /* 아이콘 */
+            .caution-icon {
+              width: 100%;
+              height: 60px;
+              margin-bottom: 20px;
+
+              img {
+                width: 100%;
+                height: 60px;
+              }
+            }
+
+            .caution-text {
+              text-align: center;
+              @include text($fs-18, $fw-semi-b, $c-black);
+            }
+
+            /* 링크 */
+            .caution-link {
+              text-align: center;
+              margin-top: -3px;
+              font-size: $fs-14;
+
+              &:hover::before {
+                width: 75px;
+                left: 47%;
+                transform: translateX(-50%);
+              }
+            }
+          }
+        }
+      }
+
+      // pdf다운로드
+      .repair-support-download {
+        height: auto;
+        padding: 0 20px;
+        border-radius: $r-lg;
+        margin-top: 15px;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px;
+
+        .repair-support-download-laft {
+          flex: 1;
+          gap: 5px;
+
+          .repair-support-download-pdf {
+            width: 50px;
+            height: 50px;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+
+          .repair-support-download-text {
+            font-size: $fs-14;
+          }
+        }
+
+        .repair-support-download-actions {
+          margin-top: $sp-10;
+          gap: 20px;
+          width: 100%;
+          justify-content: space-around;
+
+          .repair-support-download-btn {
+            border: 1px solid $c-middle-line;
+            padding: 5px;
+            border-radius: 10px;
+            background: $c-white;
+          }
+        }
+      }
+
+      // NEXT 버튼
+      .repair-support-next-btn {
+        width: 100px;
+        height: 45px;
+        font-size: $fs-18;
+        font-weight: $fw-b;
+        border-radius: $r-2xl;
+        background: $c-white;
+        color: $c-main;
+        border: 3px solid $c-main;
+        z-index: 1;
+        margin: 45px auto 70px auto;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: -140px;
+          top: 0;
+          background: $c-main;
+          transition: $tr-s;
+          z-index: -1;
+        }
+
+        &:hover::before {
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+/* 스위치 1 타블릿 */
+@media (max-width: $bp-tablet) {
+  .sub6-switch-page-content {
+    .sub6-switch-page-content-wrap {
+      width: 90%;
+
+      .sub-title {
+        margin-bottom: $sp-50;
+      }
+
+      .switch-page-content-start {
+        .switch-page-swiper {
+          gap: $sp-10;
+
+          img {
+            width: 223px;
+            height: 275px;
+          }
+        }
+      }
+
+      .switch-page-content-how {
+        padding: $sp-50 0;
+
+        .switch-button-box {
+          gap: $sp-15;
+
+          .switch-button {
+            height: 230px;
+
+            .switch-button-icon {
+              display: flex;
+              justify-content: center;
+              width: 80%;
+              height: 140px;
+            }
+
+            .switch-button-text {
+              @include text($fs-20, $fw-b, $c-gray66);
+              line-height: 20px;
+              margin-top: 20px;
+            }
+          }
+        }
+
+        .switch-banner-box {
+          padding: $sp-70 0;
+
+          .switch-banner {
+            height: 110px;
+            gap: $sp-20;
+            background-size: cover;
+
+            .switch-banner-desc {
+              .switch-banner-text {
+                @include text($fs-20, $fw-extra-b, $c-text-main);
+                line-height: 24px;
+              }
+
+              .switch-banner-button {
+                width: 120px;
+                height: 35px;
+                border-width: 3px;
+                margin-top: 5px;
+                font-size: $fs-18;
+              }
+            }
+          }
+        }
+
+        .swith-page-content-help {
+          padding: $sp-70 0 $sp-140 0;
+
+          .ko {
+            font-weight: $fw-extra-b;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 스위치 1 모바일 */
+@media (max-width: 500px) {
+  .sub6-switch-page-content {
+    .sub6-switch-page-content-wrap {
+      width: 90%;
+
+      .sub-title {
+        margin-bottom: $sp-40;
+      }
+
+      .switch-page-content-start {
+        display: block;
+        position: relative;
+        align-items: center;
+
+        .switch-page-swiper {
+          gap: $sp-10;
+
+          img {}
+        }
+
+        .swiper-pagination {
+          display: block;
+          position: absolute;
+          top: 285px;
+          margin: auto 0;
+
+          .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background: rgba($c-black, 0.5);
+            transition: $tr-r;
+          }
+
+          .swiper-pagination-bullet-active {
+            background: $c-main;
+          }
+        }
+      }
+
+      .switch-page-content-how {
+        padding: $sp-70 0;
+        margin: auto 0;
+
+        .switch-button-box {
+          gap: $sp-10;
+          grid-template-columns: repeat(2, 1fr);
+
+          .switch-button {
+            height: 180px;
+
+            .switch-button-icon {
+              display: flex;
+              justify-content: center;
+              width: 50%;
+              height: 70px;
+            }
+
+            .switch-button-text {
+              @include text($fs-18, $fw-b, $c-gray66);
+              line-height: 20px;
+              margin-top: 15px;
+              padding: $sp-5;
+            }
+          }
+        }
+
+        .switch-banner-box {
+          padding: $sp-70 0;
+          grid-template-columns: repeat(1, 1fr);
+
+          .switch-banner {
+            background-size: contain;
+
+            .switch-banner-desc {
+              .switch-banner-text {
+                @include text($fs-18, $fw-extra-b, $c-text-main);
+                line-height: 20px;
+              }
+
+              .switch-banner-button {
+                width: 120px;
+                height: 35px;
+                border-width: 2px;
+                margin-top: 5px;
+                font-size: $fs-18;
+              }
+            }
+          }
+        }
+
+        .switch-page-content-help {
+          padding: $sp-70 0 $sp-140 0;
+
+          .sub-title {
+            .ko {
+              font-size: $fs-28;
+              font-weight: $fw-extra-b;
+            }
+          }
+
+          .switch-help-button-box {
+            display: flex;
+            gap: $sp-20;
+            align-items: center;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

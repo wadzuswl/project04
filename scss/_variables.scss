@@ -1,0 +1,144 @@
+/* 폰트 패밀리 */
+$ff-suit: 'Suit', sans-serif;
+$ff-kanit: "Kanit", sans-serif;
+$ff-mbcgulim: 'Mbc1961GLM';
+
+
+/* 폰트 사이즈 */
+$fs-12: 12px;
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-20: 20px;
+$fs-22: 22px;
+$fs-24: 24px;
+$fs-28: 28px;
+$fs-32: 32px;
+$fs-36: 36px;
+$fs-40: 40px;
+$fs-44: 44px;
+$fs-48: 48px;
+$fs-52: 52px;
+$fs-56: 56px;
+$fs-60: 60px;
+
+
+/* 폰트 두께 */
+$fw-extra-b: 800;
+$fw-b: 700;
+$fw-semi-b: 600;
+$fw-md: 500;
+$fw-r: 400;
+
+
+/* 행간 */
+$lh-text: 1.5;
+$lh-title: 50px;
+
+/* border + 컬러 붙여서 써야 함 */
+$border-xs: 2px solid;
+$border-sm: 3px solid;
+$border-md: 4px solid;
+$border-lg: 6px solid;
+$border-xl: 8px solid;
+
+/* border-radius */
+$r-xs: 5px;
+$r-sm: 10px;
+$r-md: 15px;
+$r-lg: 20px;
+$r-xl: 30px;
+$r-2xl: 50px;
+$r-full: 50%;
+
+/* border-color */
+$border-color-light: rgba(255, 255, 255, 0.2);
+
+/* 그림자 */
+$series-game-title-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+$series-main-card-shadow1: 0 0 10px rgb(255, 255, 255);
+$series-main-card-shadow2: 0 0 30px rgba(255, 255, 255, 0.5);
+$card-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+$download-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+$box-shadow-default: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+/* 서브 캐릭터 페이지 설명 박스 글래스모피즘 효과 */
+$glass-bg-color: rgba(255, 255, 255, 0.5);
+$glass-blur-9: 9px; //backdrop-filter: blur($glass-blur);
+$glass-blur-6: 6px; //backdrop-filter: blur($glass-blur);
+$glass-shadow-sub: 7px 6px 14px rgba(0, 0, 0, 0.25), inset 0 0 10px rgb(255, 255, 255);
+
+
+/* 컬러 */
+// 메인 컬러
+$c-main: #E60012;
+$c-footer-bg: #37415C;
+$c-pagination: rgba($c-main, 0.36);
+
+// 주요 색상
+$c-black: #333333;
+$c-white: #FFFFFF;
+
+// 서브 색상
+$c-zelda: #B99F65;
+$c-kurby: #3C1ED2;
+$c-mario: #FF2B31;
+$c-pikmin: #00C501;
+$c-modong: #1AC8B9;
+
+// 주요 텍스트 색상
+$c-text-main: $c-black;
+$c-gray55: #555;
+$c-gray66: #666;
+$c-gray77: #777;
+$c-gray99: #999;
+
+// 배경색
+$c-box-bg: #f8f8f8;
+
+// 중간선 색
+$c-middle-line: #efefef;
+
+// 그라디언트
+$sub-series-overlay-gradient: linear-gradient(to bottom, rgba(221, 221, 221, 0.7), rgba(85, 85, 85, 0.7));
+$main-software-overlay-gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+$g-redbtn-hover: linear-gradient(45deg, rgb(249, 212, 133), $c-main);
+
+/* 간격 */
+$sp-5: 5px;
+$sp-10: 10px;
+$sp-15: 15px;
+$sp-20: 20px;
+$sp-25: 25px;
+$sp-30: 30px;
+$sp-40: 40px;
+$sp-50: 50px;
+$sp-60: 60px;
+$sp-70: 70px;
+$sp-80: 80px;
+$sp-90: 90px;
+$sp-100: 100px;
+$sp-110: 110px;
+$sp-120: 120px;
+$sp-130: 130px;
+$sp-140: 140px;
+$sp-section: 150px;
+
+/* break-point */
+$bp-mobile: 420px;
+$bp-tablet: 1024px;
+
+/* 트랜지션 */
+$tr-f: 0.15s;
+$tr-r: 0.3s;
+$tr-s: 0.5s;
+$ease-default: ease-in-out;
+
+/* 이너 */
+$inner-main: 1440px;
+$inner-sub-char-sw: 1666px;
+$inner-sub: 1300px;
+
+/* 캐릭터 이름 흰색으로 바꾸기 */
+$char-name-filter: brightness(0) invert(1);

@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닌텐도 - 소프트웨어 '커비'</title>
+  <!--swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="scss/sub3-kirby.css">
+  <link rel="stylesheet" href="scss/kirby-responsive.css">
+  <link rel="icon" href="images/common/favicon.svg">
+</head>
+
+<body class="page-sub">
+  <!-- 헤더 -->
+  <header class="header">
+    <nav>
+      <a href="index.html" class="logo"></a>
+      <div class="header-click-wrap">
+        <ul class="gnb">
+          <li class="main-menu"><a href="sub1.html">한국닌텐도</a></li>
+          <li class="main-menu"><a href="sub2.html">제품소개</a></li>
+          <li class="main-menu" data-nav="navSw"><a href="#none">소프트웨어</a></li>
+          <li class="main-menu"><a href="sub4.html">영상</a></li>
+          <li class="main-menu"><a href="sub5.html">뉴스</a></li>
+          <li class="main-menu"><a href="sub6.html">고객지원</a></li>
+        </ul>
+        <div class="utility">
+          <button class="header-search-section">
+            <div class="search-icon"></div>
+            <p class="search-text">SEARCH</p>
+          </button>
+          <div class="header-cart"></div>
+          <button class="header-login-section">
+            <div class="login-icon"></div>
+            <div class="login-text">LOGIN / SIGN UP</div>
+          </button>
+          <div class="header-kr"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- 서브헤더 -->
+  <div class="sub-header">
+    <a href="index.html" class="sub-header-home-icon"></a>
+    <a class="sub-header-text" href="#subSeries">Series</a>
+    <a class="sub-header-text" href="#subChar">Charactors</a>
+    <a class="sub-header-text" href="#subNews">News</a>
+  </div>
+  <!-- 서브내비 -->
+  <div class="sub-nav-container" id="navSw">
+    <div class="sub-nav-title-wrap">
+      <div class="sub-nav-title-icon sub-nav-title-icon-sw"></div>
+      <h2>SOFTWARE</h2>
+    </div>
+    <div class="sub-nav-lnb-wrap">
+      <a href="sub3-mario.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">마리오</p>
+      </a>
+      <a href="sub3-animalCrossing.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">동물의 숲</p>
+      </a>
+      <a href="sub3-zelda.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">젤다</p>
+      </a>
+      <a href="sub3-kirby.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">커비</p>
+      </a>
+      <a href="sub3-pikmin.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">피크민</p>
+      </a>
+    </div>
+  </div>
+  <!-- 태블릿, 모바일 내비 -->
+  <div class="responsive-nav-body">
+    <div class="r-nav-left-wrap">
+      <button class="r-nav-hamburger-btn"></button>
+      <a href="index.html" class="r-nav-home-btn"></a>
+    </div>
+    <button class="r-nav-center-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="r-nav-right-wrap">
+      <button class="r-nav-cart-btn"></button>
+      <button class="r-nav-login-btn"></button>
+    </div>
+  </div>
+  <div class="responsive-nav-container">
+    <div class="r-nav-container-header">
+      <div class="r-nav-container-logo"></div>
+      <button class="r-nav-container-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="r-nav-container-body">
+      <div class="r-nav-tab-wrap">
+        <button class="r-nav-tab-btn r-nav-tab-btn1 active" data-rnav="rNavCom">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">COMPANY</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn2" data-rnav="rNavPro">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">PRODUCT</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn3" data-rnav="rNavSw">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SOFTWARE</p>
+        </button>
+        <a href="sub4.html" class="r-nav-tab-btn r-nav-tab-btn4">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">VIDEO</p>
+        </a>
+        <a href="sub5.html" class="r-nav-tab-btn r-nav-tab-btn5">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">NEWS</p>
+        </a>
+        <button class="r-nav-tab-btn r-nav-tab-btn6" data-rnav="rNavSup">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SUPPORT</p>
+        </button>
+      </div>
+      <div class="r-nav-content-wrap">
+        <ul class="r-nav-lnb-wrap active" id="rNavCom">
+          <li>
+            <a href="sub1.html#subComCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">한국닌텐도</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주요 사업</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">연혁</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">찾아오시는 길</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavPro">
+          <li>
+            <a href="sub2.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주변기기</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">아미보</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSw">
+          <li>
+            <a href="sub3-mario.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">마리오</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-animalCrossing.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">동물의 숲</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-zelda.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">젤다</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-kirby.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">커비</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-pikmin.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">피크민</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSup">
+          <li>
+            <a href="sub6.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">FAQ</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">수리접수</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--메인비주얼-->
+  <section class="main-visual" id="mainVisual" aria-label="메인 비주얼">
+
+    <!--배경 영상 (YouTube Iframe)-->
+    <div class="main-visual-media" aria-hidden="true">
+      <img class="main-visual-img-res" src="images/kirby/main-visual-reponsive-bg.png" alt="메인비주얼의 이미지">
+      <video class="main-visual-video" src="https://yellowpado.dothome.co.kr/video/kirby-main.mp4" autoplay muted
+        playsinline loop>
+      </video>
+
+    </div>
+
+    <!--중앙 로고 영역-->
+    <div class="main-visual-content">
+      <h1 class="main-visual-title">
+        <img src="images/kirby/kirby-logo.png" alt="Nintendo kirby" class="main-visual-logo">
+      </h1>
+    </div>
+
+    <!--스크롤 안내-->
+    <a href="#main-content" class="main-visual-scroll" aria-label="아래로 이동">
+      <div class="main-visual-scroll-icon-wrap">
+        <img src="images/pikmin/main-visual-arrow.png" alt="스크롤 이미지">
+      </div>
+      <span class="main-visual-scroll-text">SCROLL</span>
+    </a>
+
+  </section>
+
+  <!--소프트웨어-->
+  <section class="sub-software sub-software--pikmin" id="subSw">
+    <div class="sub-software-container">
+      <!--소프트웨어 랩-->
+      <div class="sub-software-wrap">
+        <!--위쪽 비디오 영역-->
+        <div class="top-nintendo-video">
+          <!--캐릭터에디션 닌텐도-->
+          <img src="images/kirby/sub-kirby-nintendo.png" alt="닌텐도이미지">
+          <!--게임 소개 영상-->
+          <video src="https://yellowpado.dothome.co.kr/video/kirby-intro.mp4" type="video/mp4" alt="게임소개영상" autoplay
+            muted playsinline></video>
+          <!--커스텀 일시정지 버튼-->
+          <button class="video-pause-btn" aria-label="pause">
+            <img src="images/kirby/sub-kirby-playbtn.png" alt="일시정지">
+          </button>
+        </div>
+        <!--아래 택스트 영역-->
+        <div class="bottom-wrap">
+          <div class="sub-software-img">
+            <!--캐릭터 이미지-->
+            <img src="images/kirby/sub-kirby-software-charactor.png" alt="캐릭터 이미지">
+          </div>
+          <div class="bottom-text">
+            운석 충돌로 미지의 행성에 불시착한 우주 비행사 올리마. 이곳은 치명적인 ‘산소’와 사나운 생명체로 가득한 위험한 세계 .남은 생존 시간은 단 30일, 흩어진 우주선 부품을 찾아야 한다. 신비한
+            생명체 ‘피크민’과 함께, 귀환을 위한 모험이 지금 시작된다.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--시리즈-->
+  <section class="sub-series sub-series--bg" id="subSeries">
+    <div class="sub-series-slide-wrap">
+      <!--왼쪽-->
+      <div class="sub-series-left-wrap">
+        <!--데스크탑에서만 보이는 숫자-->
+        <div class="sub-series-number active"><img src="images/pikmin/sub-series-num01.png" alt="01"></div>
+        <div class="sub-series-number"><img src="images/pikmin/sub-series-num02.png" alt="02"></div>
+        <div class="sub-series-number"><img src="images/pikmin/sub-series-num03.png" alt="03"></div>
+        <div class="sub-series-number"><img src="images/pikmin/sub-series-num04.png" alt="04"></div>
+
+        <!--설명 텍스트-->
+        <div class="sub-series-left active" data-ssIndex="0">
+          <div class="sub-series-title-wrap">
+            <!--sub-series-num-title >> 반응형에서만 보이는 영역-->
+            <div class="sub-series-num-title sub-series-num-title1"></div>
+            <div class="sub-series-text-title-wrap">
+              <div class="sub-series-section-title"></div>
+              <h3 class="sub-series-title">별의 커비 디럭스</h3>
+            </div>
+          </div>
+          <p class="sub-series-desc">
+            분홍 공 커비가 적을 ‘빨아들여 능력 카피’하고 화려하게 뒤집는 액션!최대 4명이 한 Switch로 와글와글 협력 플레이 가능 !
+          </p>
+        </div>
+        <div class="sub-series-left" data-ssIndex="1">
+          <div class="sub-series-title-wrap">
+            <!--sub-series-num-title >> 반응형에서만 보이는 영역-->
+            <div class="sub-series-num-title sub-series-num-title2"></div>
+            <div class="sub-series-text-title-wrap">
+              <div class="sub-series-section-title"></div>
+              <h3 class="sub-series-title">커비의 드림뷔페</h3>
+            </div>
+          </div>
+
+          <p class="sub-series-desc">
+            커비가 작아지고 말았다? 다채로운 디저트 스테이지를 무대로 펼쳐지는 액션 레이스!딸기를 먹어 커비를 키우고 속도를 올려라!
+          </p>
+        </div>
+        <div class="sub-series-left" data-ssIndex="2">
+          <div class="sub-series-title-wrap">
+            <!--sub-series-num-title >> 반응형에서만 보이는 영역-->
+            <div class="sub-series-num-title sub-series-num-title3"></div>
+            <div class="sub-series-text-title-wrap">
+              <div class="sub-series-section-title"></div>
+              <h3 class="sub-series-title">별의 커비 디스커버리</h3>
+            </div>
+          </div>
+          <p class="sub-series-desc">
+            분홍 공 커비가 적을 ‘빨아들여 능력 카피’하고
+            화려하게 뒤집는 액션! 최대 4명이 한 Switch로 와글와글 협력 플레이 가능!
+          </p>
+        </div>
+        <div class="sub-series-left" data-ssIndex="3">
+          <div class="sub-series-title-wrap">
+            <!--sub-series-num-title >> 반응형에서만 보이는 영역-->
+            <div class="sub-series-num-title sub-series-num-title4"></div>
+            <div class="sub-series-text-title-wrap">
+              <div class="sub-series-section-title"></div>
+              <h3 class="sub-series-title">커비의 에어 라이더</h3>
+            </div>
+          </div>
+          <p class="sub-series-desc">
+            다채로운 코스를 무대로 펼쳐지는 짜릿한 액션 레이스!적을 공격하며 속도를 올리고 질주 본능을 깨워라! 바람을 타고 상쾌하게 돌파하며 끝없는 모험을 만끽!
+          </p>
+        </div>
+
+        <!--컨트롤 버튼-->
+        <div class="sub-series-control-btn-wrap" aria-label="슬라이드 이동">
+          <button type="button" class="sub-series-control-btn-prev" aria-label="이전">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="sub-series-page-count"><span class="sub-series-page-current">01</span>/<span
+              class="sub-series-page-total">04</span></div>
+          <button type="button" class="sub-series-control-btn-next" aria-label="다음">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <!--데스크탑에서는 안 보임, 반응형에서만-->
+        <button type="button" class="more-btn sub-series-btn">
+          <img src="images/kirby/kirby-star.png" alt="별 이미지">
+          MORE
+          <img src="images/kirby/kirby-star.png" alt="별 이미지">
+        </button>
+      </div>
+
+      <!--오른쪽-->
+      <div class="sub-series-right-wrap">
+        <!--viewport-->
+        <div class="sub-series-viewport">
+          <!--track-->
+          <div class="sub-series-track">
+            <!--slide-->
+            <div class="sub-series-slide-wrap active">
+              <div class="sub-series-slide sub-series-slide1--img">
+                <div class="sub-series-slide-notice">
+                  <div class="sub-series-slide-notice-icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="sub-series-slide-wrap">
+              <div class="sub-series-slide sub-series-slide2--img"></div>
+            </div>
+            <div class="sub-series-slide-wrap">
+              <div class="sub-series-slide sub-series-slide3--img"></div>
+            </div>
+            <div class="sub-series-slide-wrap">
+              <div class="sub-series-slide sub-series-slide4--img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--캐릭터-->
+  <section class="sub-character" id="subChar">
+    <div class="sub-character-container inner">
+
+      <!--섹션 타이틀-->
+      <div class="sub-character-title">
+        <img src="images/kirby/character-title.png" alt="캐릭터섹션_타이틀" class="sub-character-title-img">
+      </div>
+
+      <div class="sub-character-wrap">
+        <!--1) 큰 이미지 Swiper-->
+        <div class="sub-character-left">
+          <div class="swiper left-Swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="character-left-img" src="images/kirby/kirby.png " /></div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/kirby/waddle.png" /></div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/kirby/dede.png" /></div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/kirby/dark.png" /></div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/kirby/coo.png" /></div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/kirby/ribon.png" /></div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/kirby/character-more-img.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--2) 썸네일 Swiper-->
+        <div class="sub-character-right">
+          <div thumbsSlider="" class="swiper right-Swiper">
+            <div class="swiper-wrapper">
+
+              <!--커비-->
+              <div class="swiper-slide" data-nameimg="images/kirby/name-kirby.svg"
+                data-desc="새봄바람과 함께 푸푸푸랜드에 찾아온 모험의 용사. 적을 빨아들이고 능력을 카피해, 변신하기도 합니다. 무기를 휘두르고, 신기한 기술도 사용하고, 때로는 모습을 바꿔 활약!">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/kirby/kirby.png" alt="커비" />
+                  <img class="character-thum-bg" src="images/kirby/thumbnail-bg01.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!--웨이들 디-->
+              <div class="swiper-slide" data-nameimg="images/kirby/name-waddle.svg"
+                data-desc="웨이들 디는 푸푸푸랜드 곳곳에서 볼 수 있는 귀엽고 둥글둥글한 생명체로, 대부분은 우호적이지만 때로는 디디디 대왕을 따르기도 합니다.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/kirby/waddle.png" alt="웨이들 디" />
+                  <img class="character-thum-bg" src="images/kirby/thumbnail-bg02.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!--디디디-->
+              <div class="swiper-slide" data-nameimg="images/kirby/name-dede.svg"
+                data-desc="디디디 대왕은 푸푸푸랜드의 자칭 왕으로 커다란 해머를 휘두르는 강력한 전사입니다. 모험 속에서 중요한 역할을 맡으며, 그의 행동은 항상 푸푸푸랜드의 운명을 좌우합니다.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/kirby/dede.png" alt="킹 디디디" />
+                  <img class="character-thum-bg" src="images/kirby/thumbnail-bg03.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!--다크 나이트-->
+              <div class="swiper-slide" data-nameimg="images/kirby/name-dark.svg"
+                data-desc="어둠의 힘을 지닌 그림자 전사, 다크 메타 나이트! 커비와 맞서 싸우거나, 때로는 동료가 되어 스릴 넘치는 모험을 함께 합니다.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/kirby/dark.png" alt="다크 나이트" />
+                  <img class="character-thum-bg" src="images/kirby/thumbnail-bg04.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!--쿠우-->
+              <div class="swiper-slide" data-nameimg="images/kirby/name-coo.svg"
+                data-desc="하늘을 나는 부엉이 친구, 커비 쿠우! 공중에서 자유롭게 날며 커비의 모험을 돕고, 위험을 피하며 팀을 지원합니다.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/kirby/coo.png" alt="쿠우" />
+                  <img class="character-thum-bg" src="images/kirby/thumbnail-bg01.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!--리본-->
+              <div class="swiper-slide" data-nameimg="images/kirby/name-riborn.svg"
+                data-desc="작고 귀여운 외모지만, 날아다니며 Kirby와 함께 모험을 돕고 때로는 중요한 전투를 함께하는 특별한 동료입니다.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/kirby/ribon.png" alt="리본" />
+                  <img class="character-thum-bg" src="images/kirby/thumbnail-bg02.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!--그외 캐릭터 더보기-->
+              <div class="swiper-slide" data-nameimg="images/kirby/name-more.svg"
+                data-desc="더 많은 커비의 친구들을 보고싶다면 하단의 MORE 버튼을 클릭해주세요!">
+                <div class="sub-character-Thumbnail more">
+                  <img class="character-right-img" src="images/kirby/character-more-img.png" alt="더보기" />
+                  <img class="character-thum-bg" src="images/kirby/thumbnailbg-more.png" alt="썸네일 배경">
+                </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!--3) 텍스트 박스-->
+        <div class="sub-character-text-box">
+          <div class="sub-character-group">
+            <img class="sub-character-name-img" src="images/kirby/name-kirby.svg" alt="캐릭터 이름">
+            <div class="sub-character-desc">
+              <p>
+                봄바람과 함께 푸푸푸랜드에 찾아온 모험의 용사. 적을 빨아들이고 능력을 카피해, 변신하기도 합니다. 무기를 휘두르고, 신기한 기술도 사용하고, 때로는 모습을 바꿔 활약!
+              </p>
+            </div>
+            <div class="sub-character-more-btn">
+              <a href="#none" class="more-link">
+                MORE
+              </a>
+            </div>
+            </img>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+
+  <!--뉴스-->
+  <section class="sub-news" id="subNews">
+    <div class="sub-news-container inner">
+      <h2 class="sub-section-title">
+        <img src="images/kirby/sub-kirby-news-title.svg" alt="타이틀">
+      </h2>
+
+      <div class="sub-news-wrap">
+        <a href="#none">
+          <div class="sub-news-card">
+            <div class="sub-news-img-box">
+              <button class="more-btn">MORE</button>
+              <div class="sub-news-img">
+                <img src="images/kirby/sub-kirby01-news-img01.png" alt="뉴스 이미지01">
+              </div>
+            </div>
+            <div class="sub-news-text-box">
+              <div class="sub-news-card-title">
+                <p>「별의 커비 팝업 스토어 in DAEGU」 10월 14일(월) 오픈!</p>
+              </div>
+              <div class="sub-news-card-date">
+                <p>2025.10.14</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#none">
+          <div class="sub-news-card">
+            <div class="sub-news-img-box">
+              <button class="more-btn">MORE</button>
+              <div class="sub-news-img">
+                <img src="images/kirby/sub-kirby02-news-img02.png" alt="뉴스 이미지02">
+              </div>
+            </div>
+            <div class="sub-news-text-box">
+              <div class="sub-news-card-title">
+                <p>언제나 커비와 『안아줘, 커비』 낭독 영상 제6탄이 공개되었습니다!</p>
+              </div>
+              <div class="sub-news-card-date">
+                <p>2025.10.10</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <div class="sub-news-card">
+          <div class="sub-news-img-box">
+            <button class="more-btn">MORE</button>
+            <div class="sub-news-img">
+              <img src="images/kirby/sub-kirby03-news-img03.png" alt="뉴스 이미지03">
+            </div>
+          </div>
+          <div class="sub-news-text-box">
+            <div class="sub-news-card-title">
+              <p>새로운 카피 능력과 마버로아의 테마 파크가 등장!? 『별의 커비 Wii 디럭스』의 최신 정보를 소개합니다.</p>
+            </div>
+            <div class="sub-news-card-date">
+              <p>2025.09.10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="sub-news-btn more-btn">
+        <img src="images/kirby/kirby-star.png" alt="별 이미지">
+        <a href="#none">MORE</a>
+        <img src="images/kirby/kirby-star.png" alt="별 이미지">
+      </button>
+    </div>
+  </section>
+
+
+  <!--뉴스 반응형-->
+  <div class="sub-news-responsive-wrap">
+    <h2 class="sub-section-title">
+      <img src="images/kirby/sub-kirby-news-title.svg" alt="타이틀">
+    </h2>
+    <section class="sub-news-tablet swiper">
+      <div class="swiper-wrapper sub-news-wrap">
+        <!--카드 1-->
+        <div class="swiper-slide sub-news-card" data-link="software-pikmin.html">
+          <div class="sub-news-img-box">
+            <div class="sub-news-img">
+              <img src="images/kirby/sub-kirby01-news-img01.png" alt="뉴스 이미지01">
+            </div>
+          </div>
+          <div class="sub-news-text-box">
+            <div class="sub-news-card-title">
+              <p>「별의 커비 팝업 스토어 in DAEGU」 10월 14일(월) 오픈!</p>
+            </div>
+            <div class="sub-news-card-date">
+              <p>2025.10.14</p>
+            </div>
+          </div>
+          <img src="images/pikmin/sub-news-card-t.svg" class="news-card">
+        </div>
+
+        <!--카드 2-->
+        <div class="swiper-slide sub-news-card" data-link="software-pikmin.html">
+          <div class="sub-news-img-box">
+            <div class="sub-news-img">
+              <img src="images/kirby/sub-kirby02-news-img02.png" alt="뉴스 이미지02">
+            </div>
+          </div>
+          <div class="sub-news-text-box">
+            <div class="sub-news-card-title">
+              <p>
+                언제나 커비와 『안아줘, 커비』 낭독 영상 제6탄이 공개되었습니다!
+              </p>
+            </div>
+            <div class="sub-news-card-date">
+              <p>2025.10.10</p>
+            </div>
+          </div>
+          <img src="images/pikmin/sub-news-card-t.svg" class="news-card">
+        </div>
+
+        <!--카드 3-->
+        <div class="swiper-slide sub-news-card" data-link="software-pikmin.html">
+          <div class="sub-news-img-box">
+            <div class="sub-news-img">
+              <img src="images/kirby/sub-kirby03-news-img03.png" alt="뉴스 이미지03">
+            </div>
+          </div>
+          <div class="sub-news-text-box">
+            <div class="sub-news-card-title">
+              <p>
+                새로운 카피 능력과 마버로아의 테마 파크가 등장!? 『별의 커비 Wii 디럭스』의 최신 정보를 소개합니다.
+              </p>
+            </div>
+            <div class="sub-news-card-date">
+              <p>2025.09.10</p>
+            </div>
+          </div>
+          <img src="images/pikmin/sub-news-card-t.svg" class="news-card">
+        </div>
+      </div>
+      <div class="swiper-pagination-box">
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <!--다운로드 박스-->
+  <section class="sub-download">
+    <div class="sub-download-box-container inner">
+
+      <div class="sub-download-box">
+        <div class="sub-download-wrap">
+          <!--왼쪽 영역-->
+          <div class="download-left">
+
+            <!-- 로고 이미지-->
+            <div class="download-game-logo-img">
+              <img class="game-logo-img" src="images/kirby/kirby-logo.png" alt="피크민 로고 이미지">
+            </div>
+
+            <!--다운로드 버튼-->
+            <a href="#" class="download-btn">
+              <span class="btn-bg"></span>
+              <span class="btn-nails"></span>
+              <span class="btn-text">DOWNLOAD</span>
+            </a>
+
+          </div>
+          <!--오른쪽 영역-->
+          <div class="download-right">
+            <div class="download-character">
+              <div class="download-character-img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--풋터-->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-top-icon">
+        <div class="footer-top-sns">
+          <ul>
+            <li><a href="#none" class="footer-icon-youtube"></a></li>
+            <li><a href="#none" class="footer-icon-kakaostroy"></a></li>
+            <li><a href="#none" class="footer-icon-facebook"></a></li>
+            <li><a href="#none" class="footer-icon-x"></a></li>
+            <li><a href="#none" class="footer-icon-kakaotalk"></a></li>
+          </ul>
+        </div>
+        <div class="footer-top-site">
+          <a href="#none" class="footer-icon-long footer-icon-mynintendo"></a>
+          <a href="#none" class="footer-icon-long footer-icon-amiibo"></a>
+        </div>
+      </div>
+      <div class="footer-bottom-text">
+        <div class="footer-bottom-text-left">
+          <div class="footer-bottom-atags">
+            <a href="#none" class="footer-bottom-atag">이용약관</a>
+            <a href="#none" class="footer-bottom-atag">개인정보처리방침</a>
+          </div>
+          <p class="footer-bottom-text01">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+          <p class="footer-bottom-text02">상호명 : 한국닌텐도주식회사<span class="footer-line-break-mb"></span>대표자명 : 미우라 타카히로<span
+              class="footer-line-break"></span>사업자등록번호
+            : 120-87-03578</p>
+        </div>
+        <div class="footer-bottom-text-right">
+          <p class="footer-bottom-text03">고객지원 문의전화 : 1670-9900</p>
+          <p class="footer-bottom-text04">(평일 오전 9시 30분~오후 5시 30분)</p>
+          <p class="footer-bottom-text05">※토/일/공휴일/회사 정기휴일 및 특별휴일 제외</p>
+        </div>
+      </div>
+      <p class="responsive-copyright">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+    </div>
+
+  </footer>
+  <!--쇼핑 버튼-->
+  <div class="fixed-cart">
+    <div class="cart-panel">
+      <a href="#none" class="cart-text">장바구니 바로가기 ></a>
+    </div>
+    <button class="cart-btn">
+      <i class="fa-solid fa-bag-shopping"></i>
+    </button>
+  </div>
+
+  <!--탑버튼-->
+  <div class="top-btn-wrap" id="topBtn">
+    <div class="top-btn-img">
+      <img src="images/kirby/top-img.png" alt="">
+    </div>
+    <div class="top-btn">
+      <button>TOP <i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </div>
+
+  <!--swiper-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="js/sub3.js"></script>
+  <script src="js/header.js"></script>
+
+</body>
+
+</html>

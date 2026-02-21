@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닌텐도 - 제품소개</title>
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="scss/sub2.css">
+  <link rel="stylesheet" href="scss/sub2-responsive.css">
+  <link rel="icon" href="images/common/favicon.svg">
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+    <nav>
+      <a href="index.html" class="logo"></a>
+      <div class="header-click-wrap">
+        <ul class="gnb">
+          <li class="main-menu"><a href="sub1.html">한국닌텐도</a></li>
+          <li class="main-menu"><a href="sub2.html">제품소개</a></li>
+          <li class="main-menu" data-nav="navSw"><a href="#none">소프트웨어</a></li>
+          <li class="main-menu"><a href="sub4.html">영상</a></li>
+          <li class="main-menu"><a href="sub5.html">뉴스</a></li>
+          <li class="main-menu"><a href="sub6.html">고객지원</a></li>
+        </ul>
+        <div class="utility">
+          <button class="header-search-section">
+            <div class="search-icon"></div>
+            <p class="search-text">SEARCH</p>
+          </button>
+          <div class="header-cart"></div>
+          <button class="header-login-section">
+            <div class="login-icon"></div>
+            <div class="login-text">LOGIN / SIGN UP</div>
+          </button>
+          <div class="header-kr"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- 서브헤더 -->
+  <div class="sub-header">
+    <a href="index.html" class="sub-header-home-icon"></a>
+    <a class="sub-header-text" href="#subSeries">Series</a>
+    <a class="sub-header-text" href="#subChar">Charactors</a>
+    <a class="sub-header-text" href="#subNews">News</a>
+  </div>
+  <!-- 서브내비 -->
+  <div class="sub-nav-container" id="navSw">
+    <div class="sub-nav-title-wrap">
+      <div class="sub-nav-title-icon sub-nav-title-icon-sw"></div>
+      <h2>SOFTWARE</h2>
+    </div>
+    <div class="sub-nav-lnb-wrap">
+      <a href="sub3-mario.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">마리오</p>
+      </a>
+      <a href="sub3-animalCrossing.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">동물의 숲</p>
+      </a>
+      <a href="sub3-zelda.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">젤다</p>
+      </a>
+      <a href="sub3-kirby.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">커비</p>
+      </a>
+      <a href="sub3-pikmin.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">피크민</p>
+      </a>
+    </div>
+  </div>
+  <!-- 태블릿, 모바일 내비 -->
+  <div class="responsive-nav-body">
+    <div class="r-nav-left-wrap">
+      <button class="r-nav-hamburger-btn"></button>
+      <a href="index.html" class="r-nav-home-btn"></a>
+    </div>
+    <button class="r-nav-center-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="r-nav-right-wrap">
+      <button class="r-nav-cart-btn"></button>
+      <button class="r-nav-login-btn"></button>
+    </div>
+  </div>
+  <div class="responsive-nav-container">
+    <div class="r-nav-container-header">
+      <div class="r-nav-container-logo"></div>
+      <button class="r-nav-container-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="r-nav-container-body">
+      <div class="r-nav-tab-wrap">
+        <button class="r-nav-tab-btn r-nav-tab-btn1 active" data-rnav="rNavCom">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">COMPANY</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn2" data-rnav="rNavPro">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">PRODUCT</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn3" data-rnav="rNavSw">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SOFTWARE</p>
+        </button>
+        <a href="sub4.html" class="r-nav-tab-btn r-nav-tab-btn4">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">VIDEO</p>
+        </a>
+        <a href="sub5.html" class="r-nav-tab-btn r-nav-tab-btn5">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">NEWS</p>
+        </a>
+        <button class="r-nav-tab-btn r-nav-tab-btn6" data-rnav="rNavSup">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SUPPORT</p>
+        </button>
+      </div>
+      <div class="r-nav-content-wrap">
+        <ul class="r-nav-lnb-wrap active" id="rNavCom">
+          <li>
+            <a href="sub1.html#subComCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">한국닌텐도</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주요 사업</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">연혁</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">찾아오시는 길</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavPro">
+          <li>
+            <a href="sub2.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주변기기</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">아미보</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSw">
+          <li>
+            <a href="sub3-mario.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">마리오</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-animalCrossing.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">동물의 숲</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-zelda.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">젤다</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-kirby.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">커비</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-pikmin.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">피크민</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSup">
+          <li>
+            <a href="sub6.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">FAQ</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">수리접수</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 메인비주얼 -->
+  <section class="sub-page-main-visual sub-page-main-visual-02">
+    <div class="sub-page-mv-title-wrap">
+      <p>제품소개</p>
+      <div class="sub-page-big-title">
+        <img src="images/sub2/product-title-pc.svg" alt="제품소개 타이틀" class="big-title-img">
+        <img src="images/sub2/product-title-tb.svg" alt="제품소개 타이틀" class="big-title-img-tablet">
+        <img src="images/sub2/product-title-mb.svg" alt="제품소개 타이틀" class="big-title-img-mb">
+      </div>
+    </div>
+
+    <div class="sub-page-scroll-btn-wrap">
+      <div class="sub-page-scroll-icon">
+        <img src="images/sub2/scroll-btn.svg" alt="스크롤 아이콘">
+      </div>
+      <p class="sub-page-scroll-text">SCROLL</p>
+    </div>
+  </section>
+
+  <!-- 콘텐츠 시트 -->
+  <div class="sub-whole-content-container" id="subPageCon">
+
+    <div class="sub-page-tab-menu-wrap">
+      <!-- 탭 메뉴 -->
+      <div class="sub-page-tab-menu">
+        <div class="sub-page-tab-btn" data-sub-tab="subTabCon1">
+          <div class="sub-page-tab-btn-icon"></div>
+          <p class="sub-page-tab-btn-text">스위치 2</p>
+          <div class="sub-page-tab-btn-bar active"></div>
+        </div>
+
+        <div class="sub-page-tab-btn" data-sub-tab="subTabCon2">
+          <div class="sub-page-tab-btn-icon"></div>
+          <p class="sub-page-tab-btn-text">스위치</p>
+          <div class="sub-page-tab-btn-bar"></div>
+        </div>
+
+        <div class="sub-page-tab-btn" data-sub-tab="subTabCon3">
+          <div class="sub-page-tab-btn-icon"></div>
+          <p class="sub-page-tab-btn-text">주변기기</p>
+          <div class="sub-page-tab-btn-bar"></div>
+        </div>
+
+        <div class="sub-page-tab-btn" data-sub-tab="subTabCon4">
+          <div class="sub-page-tab-btn-icon"></div>
+          <p class="sub-page-tab-btn-text">아미보</p>
+          <div class="sub-page-tab-btn-bar"></div>
+        </div>
+      </div>
+
+      <!-- 스위치2 콘텐츠 -->
+      <section class="sub2-switch2-page-content" id="subTabCon1">
+        <!-- 배너 -->
+        <div class="sub2-banner switch2-banner">
+          <img src="images/sub2/switch2-banner.png" alt="배너이미지">
+        </div>
+        <!-- 스위치2 영상 -->
+        <div class="sub2-switch2-hero inner" >
+          <iframe src="https://khj544.dothome.co.kr/Video/hero-movie-av1.mp4" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic"></iframe>
+          <div class="hero-text-wrap">
+            <div class="hero-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <img src="images/sub2/hero-title.svg" alt="히어로아이콘">
+            </div>
+            <div class="hero-desc" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="600"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <p>
+                <span class="en">「NINTENDO SWITCH」</span>가 "<strong>2</strong>"가 되었습니다. 화면은 크고 선명하고 매끄럽게 새로운 <span
+                  class="en">JOY-CON</span>은 마그넷으로 착 달라붙 듯 장착되며, 마우스가 되기도 합니다. 그리고 "<strong>2</strong>"이기에 플레이할 수 있는 개로운
+                게임. <span class="en">NINTENDO SWITCH</span>의 게임도 플레이할 수 있습니다<sup>*</sup>
+              </p>
+              <p class="footnote">
+                <sup>*</sup>일부 소프트웨어 제외
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 스위치2 소개 -->
+        <div class="sub2-switch-mode inner" ata-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="250"
+          data-aos-duration="1000"data-aos-easing="ease-out-cubic">
+          <div class="switch-main">
+
+            <!-- 뒤: 모드별로 바뀌는 거실 이미지 -->
+            <img id="bgImage" class="layer layer--bg switch2-bg" src="images/sub2/sub2-tv-img.png" alt="닌텐도하는 캐릭터들">
+
+            <!-- 앞: 고정 프레임 -->
+            <img id="frameImage" class="layer layer--frame" src="images/sub2/switch2-three-modes.png" alt="닌텐도기기 틀">
+
+            <div class="overlay" id="overlay">
+              <div class="overlay-inner">
+                <h3 id="mainTitle"></h3>
+                <p id="mainText"></p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="switch-modes">
+            <div class="mode" data-bg="images/sub2/switch2-handled-img.png" data-title="휴대모드" data-text="갖고다니며 플레이" data-bg="images/sub2/switch-handled-img.png" data-title="휴대모드" data-text="갖고다니며 플레이" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1200" data-aos-delay="350" data-aos-easing="ease-out-cubic">
+              <img src="images/sub2/switch2-handled-img.png" class="top-img" alt="휴대모드이미지">
+              <img src="images/sub2/sub2-handled.png" class="mode-icon" alt="휴대모드아이콘">
+              <p>HAND</p>
+            </div>
+
+            <div class="mode" data-bg="images/sub2/switch2-tvmode-img.png" data-title="TV모드" data-text="TV의 큰 화면으로 즐긴다" data-bg="images/sub2/switch-tvmode-img.png" data-title="TV모드" data-text="TV의 큰 화면으로 즐긴다" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <img src="images/sub2/switch2-tvmode-img.png" class="top-img" alt="티비모드이미지">
+              <img src="images/sub2/sub2-tv-mode.png" class="mode-icon" alt="티비모드아이콘">
+              <p>TV MODE</p>
+            </div>
+
+            <div class="mode" data-bg="images/sub2/switch2-tabletop-img.png" data-title="테이블모드" data-text="화면을 공유한다" data-bg="images/sub2/switch-tabletop-img.png" data-title="테이블모드" data-text="화면을 공유한다" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="750"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <img src="images/sub2/switch2-tabletop-img.png" class="top-img" alt="테이블모드이미지">
+              <img src="images/sub2/sub2-tabletop.png" class="mode-icon" alt="테이블모드아이콘">
+              <p>TABLETOP</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 스위치2 핵심 기능 -->
+        <div class="sub2-sitch2-function inner" data-bg="images/sub2/switch2-tabletop-img.png" data-title="테이블모드" data-text="화면을 공유한다" data-bg="images/sub2/switch-tabletop-img.png" data-title="테이블모드" data-text="화면을 공유한다" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="450"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+          <h2 class="sub2-title">
+            새로운 플레이 경험을 위한 핵심 기능
+            <p class="en">NINTENDO SWITCH 2</p>
+          </h2>
+          <div class="function-wrap">
+            <div class="sub2-page2-slide-content-wrap">
+              <div class="slide-pagenation">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="slide-stage">
+                <!-- 스크롤 콘텐츠 -->
+                <div class="sub2-page2-slide-content-box active">
+                  <div class="slide-img"></div>
+                  <div class="slide-text-wrap">
+                    <img src="images/sub1/sub1-page2-slide-number1.png" alt="01">
+                    <p class="slide-text">
+                      <span class="en">「NINTENDO SWITCH 2 」</span>독을 <br>
+                      TV에 연결하면
+                    </p>
+                    <div class="slide-box-text-wrap">
+                      <div class="slide-box-text">아주 작은 부분까지 세밀하게 그려진 </div>
+                      <div class="slide-box-text">게임 세계가TV의 큰 화면에 펼쳐집니다.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub2-page2-slide-content-box">
+                  <div class="slide-img"></div>
+                  <div class="slide-text-wrap">
+                    <img src="images/sub1/sub1-page2-slide-number2.png" alt="02">
+                    <p class="slide-text">
+                      자유로운 각도 안정적인 스탠드
+                    </p>
+                    <div class="slide-box-text-wrap">
+                      <div class="slide-box-text">테이블 등에서 세워 사용하는 본체 뒷면의 스탠드.</div>
+                      <div class="slide-box-text">안정적이고 커다란 스탠드는 프리 스톱 방식으로 </div>
+                      <div class="slide-box-text">보기 편한 각도로 자유롭게 기울여 플레이할 수 있습니다.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub2-page2-slide-content-box">
+                  <div class="slide-img"></div>
+                  <div class="slide-text-wrap">
+                    <img src="images/sub1/sub1-page2-slide-number3.png" alt="03">
+                    <p class="slide-text">
+                      착하고 본체에 달라붙는 <span class="en">JOY-CON 2</span>
+                    </p>
+                    <div class="slide-box-text-wrap">
+                      <div class="slide-box-text">새로운 컨트롤러 「Joy-Con 2」.</div>
+                      <div class="slide-box-text">마그넷으로 본체에 장착할 수 있습니다.</div>
+                      <div class="slide-box-text">강력한 자력으로 흔들림 없이 튼튼하게 고정.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub2-page2-slide-content-box">
+                  <div class="slide-img"></div>
+                  <div class="slide-text-wrap">
+                    <img src="images/sub1/sub1-page2-slide-number4.png" alt="04">
+                    <p class="slide-text">
+                      <span class="big">슥</span>하고 <span class="en">JOY-CON 2</span>로 마우스 조작
+                    </p>
+                    <div class="slide-box-text-wrap">
+                      <div class="slide-box-text">책상 위나 바지 위. 「Joy-Con 2」의 측면을 </div>
+                      <div class="slide-box-text">아래로 향해 슬라이딩하면 마우스 조작도 가능</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub2-page2-slide-content-box">
+                  <div class="slide-img"></div>
+                  <div class="slide-text-wrap">
+                    <img src="images/sub1/sub1-page2-slide-number5.png" alt="05">
+                    <p class="slide-text">
+                      새로운 버튼 「<span class="en red">C</span> 버튼」 <br>
+                      같이 하고 싶은 순간에 함께
+                    </p>
+                    <div class="slide-box-text-wrap">
+                      <div class="slide-box-text">NINTENDO SWITCH 2의 새로운 기능 게임챗</div>
+                      <div class="slide-box-text">버튼하나로 게임 도중에 언제든지 가볍게 챗 시작 가능.</div>
+                      <div class="slide-box-text">챗 중에는 플레이하고 있는 화면을 공유하는 것도 가능.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sub2-page2-responsive-content-wrap">
+            <div class="sub2-page2-responsive-con-card">
+              <div class="card-img card-img1"></div>
+              <div class="card-text-wrap">
+                <img src="images/sub1/sub1-page2-slide-number1.png" alt="01" class="card-number">
+                <p class="card-text">
+                  <span class="en">「NINTENDO SWITCH 2 」</span>독을 <br>
+                  TV에 연결하면
+                </p>
+                <div class="card-point-text-container">
+                  <div class="card-point-text-wrap">
+                    <div class="card-box-text">아주 작은 부분까지 세밀하게 그려진 </div>
+                    <div class="card-box-text">게임 세계가TV의 큰 화면에 펼쳐집니다.</div>
+                  </div>
+                  <div class="mobile-text">아주 작은 부분까지 세밀하게 그려진 게임 세계가TV의 큰 화면에 펼쳐집니다.</div>
+                </div>
+              </div>
+            </div>
+            <div class="sub2-page2-responsive-con-card">
+              <div class="card-img card-img2"></div>
+              <div class="card-text-wrap">
+                <img src="images/sub1/sub1-page2-slide-number2.png" alt="02" class="card-number">
+                <p class="card-text">
+                  자유로운 각도 안정적인 스탠드
+                </p>
+                <div class="card-point-text-container">
+                  <div class="card-point-text-wrap">
+                    <div class="card-box-text">테이블 등에서 세워 사용하는 본체 뒷면의 스탠드.</div>
+                    <div class="card-box-text">안정적이고 커다란 스탠드는 프리 스톱 방식으로 </div>
+                    <div class="card-box-text">보기 편한 각도로 자유롭게 기울여 플레이할 수 있습니다.</div>
+                  </div>
+                  <div class="mobile-text">테이블 등에서 세워 사용하는 본체 뒷면의 스탠드. 안정적이고 커다란 스탠드는 프리 스톱 방식으로 보기 편한 각도로 자유롭게 기울여 플레이할
+                    수 있습니다.</div>
+                </div>
+              </div>
+            </div>
+            <div class="sub2-page2-responsive-con-card">
+              <div class="card-img card-img3"></div>
+              <div class="card-text-wrap">
+                <img src="images/sub1/sub1-page2-slide-number3.png" alt="03" class="card-number">
+                <p class="card-text">
+                  착하고 본체에 달라붙는 <span class="en">JOY-CON 2</span>
+                </p>
+                <div class="card-point-text-container">
+                  <div class="card-point-text-wrap">
+                    <div class="card-box-text">새로운 컨트롤러 「Joy-Con 2」.</div>
+                    <div class="card-box-text">마그넷으로 본체에 장착할 수 있습니다.</div>
+                    <div class="card-box-text">강력한 자력으로 흔들림 없이 튼튼하게 고정.</div>
+                  </div>
+                  <div class="mobile-text">새로운 컨트롤러 「Joy-Con 2」. 마그넷으로 본체에 장착할 수 있습니다. 강력한 자력으로 흔들림 없이 튼튼하게 고정.</div>
+                </div>
+              </div>
+            </div>
+            <div class="sub2-page2-responsive-con-card">
+              <div class="card-img card-img4"></div>
+              <div class="card-text-wrap">
+                <img src="images/sub1/sub1-page2-slide-number4.png" alt="04" class="card-number">
+                <p class="card-text">
+                  <span class="big">슥</span>하고 <span class="en">JOY-CON 2</span>로 마우스 조작
+                </p>
+                <div class="card-point-text-container">
+                  <div class="card-point-text-wrap">
+                    <div class="card-box-text">책상 위나 바지 위. 「Joy-Con 2」의 측면을 </div>
+                    <div class="card-box-text">아래로 향해 슬라이딩하면 마우스 조작도 가능</div>
+                  </div>
+                  <div class="mobile-text">책상 위나 바지 위. 「Joy-Con 2」의 측면을 아래로 향해 슬라이딩하면 마우스 조작도 가능</div>
+                </div>
+              </div>
+            </div>
+            <div class="sub2-page2-responsive-con-card">
+              <div class="card-img card-img5"></div>
+              <div class="card-text-wrap">
+                <img src="images/sub1/sub1-page2-slide-number5.png" alt="05" class="card-number">
+                <p class="card-text">
+                  새로운 버튼 「<span class="en red">C</span> 버튼」 <br>
+                  같이 하고 싶은 순간에 함께
+                </p>
+                <div class="card-point-text-container">
+                  <div class="card-point-text-wrap">
+                    <div class="card-box-text">NINTENDO SWITCH 2의 새로운 기능 게임챗</div>
+                    <div class="card-box-text">버튼하나로 게임 도중에 언제든지 가볍게 챗 시작 가능.</div>
+                    <div class="card-box-text">챗 중에는 플레이하고 있는 화면을 공유하는 것도 가능.</div>
+                  </div>
+                  <div class="mobile-text">NINTENDO SWITCH 2의 새로운 기능 게임챗. 버튼하나로 게임 도중에 언제든지 가볍게 챗 시작 가능. 챗 중에는 플레이하고 있는
+                    화면을 공유하는 것도 가능.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 상품라인업 -->
+        <div class="product-lineup-section inner">
+          <h2 class="sub2-title">상품 라인업</h2>
+          <div class="product-lineup-grid">
+
+            <!-- 카드 1 -->
+            <article class="product-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <div class="product-card-image-wrap">
+                <img src="images/sub2/sub2-switch2-product1.png" alt="제품1">
+                <span class="product-card-badge">본체+소프트웨어</span>
+              </div>
+
+              <div class="product-card-body">
+                <h3 class="product-card-title-en">NINTENDO SWITCH 2</h3>
+                <p class="product-card-title-ko sub-en">Npokémon LEGENDS Z-A</p>
+
+                <p class="product-card-date">발매일: 2025.10.16</p>
+                <p class="product-card-price">희망소비자가격: 688,000원</p>
+              </div>
+            </article>
+
+            <!-- 카드 2 -->
+            <article class="product-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="250"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <div class="product-card-image-wrap">
+                <img src="images/sub2/sub2-switch2-product2.png" alt="제품2">
+                <span class="product-card-badge">본체+소프트웨어</span>
+              </div>
+
+              <div class="product-card-body">
+                <h3 class="product-card-title-en">NINTENDO SWITCH 2</h3>
+                <p class="product-card-title-ko">마리오 카트 월드 세트</p>
+
+                <p class="product-card-date">발매일: 2025.06.05</p>
+                <p class="product-card-price">희망소비자가격: 688,000원</p>
+              </div>
+            </article>
+
+            <!-- 카드 3 -->
+            <article class="product-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <div class="product-card-image-wrap">
+                <img src="images/sub2/sub2-switch2-product3.png" alt="제품3">
+                <span class="product-card-badge">세트내용</span>
+              </div>
+
+              <div class="product-card-body">
+                <h3 class="product-card-title-en">NINTENDO SWITCH 2</h3>
+                <p class="product-card-title-ko">닌텐도 스위치 2</p>
+
+                <p class="product-card-date">발매일: 2025.06.05</p>
+                <p class="product-card-price">희망소비자가격: 648,000원</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- 도움 -->
+        <div class="support-cta-section inner" data-aos="fade-up" data-aos-anchor-placement="top-bottom" 
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+          <div class="support-cta-wrap">
+
+            <h2 class="support-cta-title">
+              스위치2에 대한 도움이 필요하신가요?
+            </h2>
+
+            <p class="support-cta-desc">
+              닌텐도 스위치2 서포트에서 안내해 드릴게요
+            </p>
+
+            <a href="sub6.html#subTabCon1" class="support-cta-button">
+              스위치2 서포트 바로가기
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M3.5 16.3333H23.3333L17.5 10.5" stroke="#E60012" stroke-width="2" stroke-linecap="square" />
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 스위치 콘텐츠 -->
+      <section class="sub2-switch-page-content" id="subTabCon2">
+        <!-- 배너 -->
+        <div class="sub2-banner">
+          <img src="images/sub2/switch-banner.png" alt="배너이미지">
+        </div>
+
+        <!-- 인트로 영역 -->
+        <div class="sub2-switch-intro">
+          <div class="intro-title">
+            <img src="images/sub2/sub2-title-switch.svg" data-aos="fade-up" alt="3가지 모드 타이틀" >
+          </div>
+          <div class="intro-switch-frame">
+            <div class="center-img">
+              <img src="images/sub2/nintendo-center.png" data-aos="fade-up" data-aos-duration="1000" alt="가운데 닌텐도">
+            </div>
+            <div class="left-img" data-aos="fade-up" data-aos-duration="1200" >
+              <img src="images/sub2/nintendo-left.png" alt="왼쪽">
+            </div>
+            <div class="right-img" data-aos="fade-up"  data-aos-duration="1200">
+              <img src="images/sub2/nintendo-right.png" alt="오른쪽">
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- 스위치 소개 -->
+        <div class="sub2-switch-mode inner" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+          <div class="switch-main">
+
+            <!-- 뒤: 모드별로 바뀌는 거실 이미지 -->
+            <img id="bgImage" class="layer layer--bg" src="images/sub2/sub2-tv-img.png" alt="닌텐도하는캐릭터들">
+
+            <!-- 앞: 고정 프레임 -->
+            <img id="frameImage" class="layer layer--frame" src="images/sub2/switch-three-modes.png" alt="닌텐도 틀">
+
+            <div class="overlay" id="overlay">
+              <div class="overlay-inner">
+                <h3 id="mainTitle"></h3>
+                <p id="mainText"></p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="switch-modes">
+            <div class="mode" data-bg="images/sub2/switch-handled-img.png" data-title="휴대모드" data-text="갖고다니며 플레이" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1200" data-aos-delay="150" data-aos-easing="ease-out-cubic">
+              <img src="images/sub2/switch-handled-img.png" class="top-img" alt="휴대모드이미지">
+              <img src="images/sub2/sub2-handled.png" class="mode-icon" alt="휴대모드아이콘">
+              <p>HAND</p>
+            </div>
+
+            <div class="mode" data-bg="images/sub2/switch-tvmode-img.png" data-title="TV모드" data-text="TV의 큰 화면으로 즐긴다" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <img src="images/sub2/switch-tvmode-img.png" class="top-img" alt="티미모드이미지">
+              <img src="images/sub2/sub2-tv-mode.png" class="mode-icon" alt="티비모드아이콘">
+              <p>TV MODE</p>
+            </div>
+
+            <div class="mode" data-bg="images/sub2/switch-tabletop-img.png" data-title="테이블모드" data-text="화면을 공유한다" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="450"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <img src="images/sub2/switch-tabletop-img.png" class="top-img" alt="테이블모드이미지">
+              <img src="images/sub2/sub2-tabletop.png" class="mode-icon" alt="테이블모드아이콘">
+              <p>TABLETOP</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 조이콘 소개 -->
+        <div class="joy-con-wrap">
+          <img src="images/sub2/joy-con-left.png" class="left-joy" alt="조이콘 왼쪽" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
+
+          <div class="joy-con-text-wrap" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-out-cubic">
+            <h3>JOY-CON</h3>
+            <p class="first-text"><span class="en">NINTENDO SWITCH</span><span class="ko">의 컨트롤러</span></p>
+            <p class="second-text">버튼을 넘어, 움직임까지 담다 <br>
+              Nintendo Joy-Con, 플레이의 자유를 손에 쥐다.</p>
+            <p class="small-text">
+              Nintendo Switch에 탈착해 사용하는 컨트롤러로, 버튼·모션·분리 플레이까지 하나로 즐길 수 있어요
+            </p>
+          </div>
+
+          <img src="images/sub2/joy-con-right.png" class="rigth-joy" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200"alt="조이콘 오른쪽">
+
+        </div>
+
+        <!-- 기능사양 -->
+        <div class="spec-section inner" >
+          <h2 class="sub2-title">기능 사양</h2>
+          <div class="spec-wrap">
+
+            <!-- 왼쪽 기능사양 네비 -->
+            <div class="spec-nav" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1600" data-aos-easing="ease-out-cubic">
+              <button class="spec-nav-item active" data-main="images/sub2/sub2-nav01-img.png">
+
+                <span class="spec-nav-icon">
+                  <img class="spec-nav-default" src="images/sub2/sub2-nav01.png" alt="네비1">
+                  <img class="spec-nav-active" src="images/sub2/sub2-nav01-click.png" alt="클릭네비1">
+                </span>
+
+              </button>
+
+              <button class="spec-nav-item" data-main="images/sub2/sub2-nav02-img.png">
+
+                <span class="spec-nav-icon">
+                  <img class="spec-nav-default" src="images/sub2/sub2-nav02.png" alt="네비2">
+                  <img class="spec-nav-active" src="images/sub2/sub2-nav02-click.png" alt="클릭네비2">
+                </span>
+
+              </button>
+
+              <button class="spec-nav-item" data-main="images/sub2/sub2-nav03-img.png">
+
+                <span class="spec-nav-icon">
+                  <img class="spec-nav-default" src="images/sub2/sub2-nav03.png" alt="네비3">
+                  <img class="spec-nav-active" src="images/sub2/sub2-nav03-click.png" alt="클릭네비3">
+                </span>
+
+              </button>
+
+              <button class="spec-nav-item" data-main="images/sub2/sub2-nav04-img.png">
+
+                <span class="spec-nav-icon">
+                  <img class="spec-nav-default" src="images/sub2/sub2-nav04.png" alt="네비4">
+                  <img class="spec-nav-active" src="images/sub2/sub2-nav04-click.png" alt="클릭네비4">
+                </span>
+
+              </button>
+
+              <button class="spec-nav-item" data-main="images/sub2/sub2-nav05-img.png">
+
+                <span class="spec-nav-icon">
+                  <img class="spec-nav-default" src="images/sub2/sub2-nav05.png" alt="네비5">
+                  <img class="spec-nav-active" src="images/sub2/sub2-nav05-click.png" alt="클릭네비5">
+                </span>
+
+              </button>
+            </div>
+
+            <!-- 오른쪽 기능사양 이미지 -->
+            <div class="spec-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1600" data-aos-delay="300" data-aos-easing="ease-out-cubic">
+              <img id="spec-main-image" src="images/sub2/sub2-nav01-img.png" alt="설명이미지">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 상품라인업 -->
+        <div class="product-lineup-section inner">
+          <h2 class="sub2-title">상품 라인업</h2>
+          <div class="product-lineup-grid">
+
+            <!-- 카드 1 -->
+            <article class="product-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <div class="product-card-image-wrap">
+                <img src="images/sub2/sub2-switch-product1.png" alt="제품1">
+                <span class="product-card-badge">본체+소프트웨어</span>
+              </div>
+
+              <div class="product-card-body">
+                <h3 class="product-card-title-en">NINTENDO SWITCH</h3>
+                <p class="product-card-title-ko">Nintendo Switch Sports 세트</p>
+
+                <p class="product-card-date">발매일 2023.04.13</p>
+                <p class="product-card-price">희망소비자가 448,000원</p>
+              </div>
+            </article>
+
+            <!-- 카드 2 -->
+            <article class="product-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="250"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <div class="product-card-image-wrap">
+                <img src="images/sub2/sub2-switch-product2.png" alt="제품2">
+                <span class="product-card-badge">포토갤러리+세트</span>
+              </div>
+
+              <div class="product-card-body">
+                <h3 class="product-card-title-en">NINTENDO SWITCH</h3>
+                <p class="product-card-title-ko">모여봐요 동물의 숲 에디션</p>
+
+                <p class="product-card-date">발매일 2020.03.20</p>
+                <p class="product-card-price">희망소비자가 360,000원</p>
+              </div>
+            </article>
+
+            <!-- 카드 3 -->
+            <article class="product-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <div class="product-card-image-wrap">
+                <img src="images/sub2/sub2-switch-product3.png" alt="제품3">
+                <span class="product-card-badge">세트내용</span>
+              </div>
+
+              <div class="product-card-body">
+                <h3 class="product-card-title-en">NINTENDO SWITCH</h3>
+                <p class="product-card-title-ko">네온 블루·네온 레드</p>
+
+                <p class="product-card-date">발매일 2019.08.01</p>
+                <p class="product-card-price">희망소비자가 360,000원</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- 스위치 패밀리 -->
+        <div class="switch-family-section inner">
+          <div class="switch-family-card">
+            <h2 class="switch-family-title">NINTENDO SWITCH FAMILY</h2>
+
+            <div class="switch-family-grid">
+              <!-- item 1 -->
+              <a class="switch-family-item" href="#family-1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" 
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <div class="switch-family-circle">
+                  <img class="switch-family-image" src="images/sub2/sub2-switch.png" alt="Nintendo Switch">
+
+                  <div class="switch-family-overlay">
+                    <span class="switch-family-more">MORE</span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- item 2 -->
+              <a class="switch-family-item" href="#family-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="250"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <div class="switch-family-circle">
+                  <img class="switch-family-image" src="images/sub2/sub2-switch-oled.png" alt="Nintendo Switch OLED">
+
+                  <div class="switch-family-overlay">
+                    <span class="switch-family-more">MORE</span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- item 3 -->
+              <a class="switch-family-item" href="#family-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <div class="switch-family-circle">
+                  <img class="switch-family-image" src="images/sub2/sub2-switch-lite.png" alt="Nintendo Switch Lite">
+
+                  <div class="switch-family-overlay">
+                    <span class="switch-family-more">MORE</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 도움 -->
+        <div class="support-cta-section inner" data-aos="fade-up" data-aos-anchor-placement="top-bottom" 
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+          <div class="support-cta-wrap">
+
+            <h2 class="support-cta-title">
+              스위치에 대한 도움이 필요하신가요?
+            </h2>
+
+            <p class="support-cta-desc">
+              닌텐도 스위치 서포트에서 안내해 드릴게요
+            </p>
+
+            <a href="sub6.html#subTabCon2" class="support-cta-button">
+              스위치 서포트 바로가기
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M3.5 16.3333H23.3333L17.5 10.5" stroke="#E60012" stroke-width="2" stroke-linecap="square" />
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 주변기기 -->
+      <section class="sub2-product-page-content inner" id="subTabCon3">
+        <div class="sub2-product-wrap">
+
+          <!-- 컨트롤러 -->
+          <div class="controller-wrap">
+            <h2 class="product-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">NINTENDO SWITCH CONTROLLER</h2>
+
+            <!-- 상단 5 썸네일 + 중앙 메인 이미지 겹침 -->
+            <div class="controller-hero-wrap hero-wrap" >
+              <div class="hero-images" data-aos="fade-up" data-aos-anchor-placement="top-bottom" 
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <img src="images/sub2/controller-hero.png" alt="컨트롤러 이미지">
+              </div>
+              <!-- 중앙 겹치는 메인 이미지 -->
+              <div class="hero-main" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="550"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <img src="images/sub2/controller-switch.png" alt="컨트롤러">
+              </div>
+              <!-- 중앙 텍스트(호버 시 나타나는) -->
+              <div class="hero-copy">
+                <h4 class="card-title"> <span class="en">NINTENDO SWITCH PRO 2</span> 컨트롤러 </h4>
+                <p class="desc01"> 그립 형태로 장시간이라도 쾌적하게 TV모드 및 테이블 모드로 <br> 게임을 플레이 할 수 있는 무선 컨트롤러</p>
+                <p class="desc02">*사용할 수 있는 소프트웨어는 소프트웨어 공식 홈페이지 등을 확인해주세요</p>
+                <div class="card-bottom">
+                  <p>희망소비자가격: 109,800원</p>
+                  <p>발매일: 2025.06.05</p>
+                  <p>동봉품: USB 충전 케이블</p>
+                </div>
+                <div class="spacific">
+                  <i class="fa-solid fa-circle-chevron-right"></i> 주요사양
+                </div>
+              </div>
+            </div>
+
+            <!-- 중단 카드 2개 (왼쪽 텍스트+이미지 / 오른쪽 이미지+텍스트) -->
+            <div class="card-wraps" >
+              <a class="card " href="#none" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="450"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <div class="card-body">
+                  <div class="card-left">
+                    <h4 class="card-title"> <span class="en"> NINTENDO SWITCH PRO</span> 컨트롤러 </h4>
+                    <p class="desc01">잡기 편한 그립형이기 때문에, TV모드나 테이블 모드에서 게임을 장시간 쾌적하게 플레이할 수 있는 무선 커트롤러</p>
+                    <p class="desc02">*사용할 수 있는 소프트 내용은 각 소프트의 ‘대응컨트로러’를 참조하십시오.</p>
+                    <div class="card-bottom">
+                      <p>희망소비자가격: 77,800원</p>
+                      <p>발매일: 2017.12.01</p>
+                      <p>동봉품: USB 충전 케이블</p>
+                    </div>
+                    <div class="spacific">
+                      <i class="fa-solid fa-circle-chevron-right"></i> 주요사양
+                    </div>
+                  </div>
+                  <div class="card-right card-title mb">
+                    <h4><span class="en">NINTENDO SWITCH PRO </span>컨트롤러</h4>
+                  </div>
+                </div>
+                <div class="card-img hover-overlay-r">
+                  <img src="images/sub2/controller-item1.png" alt="컨트롤러">
+                </div>
+              </a>
+
+              <a class="card " href="#none" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="650"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <div class="card-body">
+                  <div class="card-left card-title mb">
+                    <h4 class="card-title"> <span class="en">NINTENDO SWITCH2 PRO</span> 컨트롤러 </h4>
+                    <img src="images/sub2/controller-edition.png" alt="컨트롤러에디션">
+                  </div>
+                  <div class="card-right">
+                    <h4 class="card-title"> <span class="en">NINTENDO SWITCH2 PRO</span> 컨트롤러 </h4>
+                    <h5><span class="en">BIOHAZARD requiem</span> 에디션</h5>
+                    <p class="desc01">『BIOHAZARD requiem』 특별 디자인의 Nintendo Switch 2 Pro 컨트롤러입니다.</p>
+                    <div class="card-bottom">
+                      <p>희망소비자가격: 129,800원</p>
+                      <p>발매일: 2026.02.27</p>
+                    </div>
+                    <div class="spacific">
+                      <i class="fa-solid fa-circle-chevron-right"></i> 자세히 보기
+                    </div>
+                    <div class="spacific">
+                      <i class="fa-solid fa-circle-chevron-right"></i> 공식홈페이지
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card-img hover-overlay-l">
+                  <img src="images/sub2/controller-item2.png" alt="컨트롤러2">
+                </div>
+              </a>
+            </div>
+
+            <div class="btn-wrap"><button class="sub2-more-btn">MORE</button></div>
+          </div>
+
+          <!-- 조이콘 -->
+          <div class="joy-con-product-wrap">
+            <h2 class="product-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="250"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">NNINTENDO SWITCH JOY-CON</h2>
+
+            <!-- 상단 5 썸네일 + 중앙 메인 이미지 겹침 -->
+            <div class="joy-con-hero-wrap hero-wrap" >
+              <div class="hero-images" data-aos="fade-up" data-aos-anchor-placement="top-bottom" 
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <img src="images/sub2/joy-con-hero.png" alt="조이콘 이미지">
+              </div>
+              <!-- 중앙 겹치는 메인 이미지 -->
+              <div class="hero-main" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="550"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <img src="images/sub2/joy-con.png" alt="조이콘">
+              </div>
+              <!-- 중앙 텍스트(호버 시 나타나는) -->
+              <div class="hero-copy">
+                <h4 class="card-title"> <span class="en">JOY-CON2 (L) / (R) </h4>
+                <p class="desc01"> ｢Joy-Con 2 (L)｣와 ｢Joy-Con 2 (R)｣에 동일한 색상의 ｢Joy-Con 2 스트랩｣이 2개 동봉된 세트</p>
+                <p class="desc02">*｢Joy-Con 2 (L) 라이트 블루｣, ｢Joy-Con 2 (R) 라이트 레드｣는 각각 단품으로도 구매 가능</p>
+                <div class="card-bottom">
+                  <p>희망소비자가격: 109,800원</p>
+                  <p>발매일: 2025.02.12</p>
+                  <p>동봉품: Joy-con2 스트랩</p>
+                </div>
+                <div class="spacific">
+                  <i class="fa-solid fa-circle-chevron-right"></i> 주요사양
+                </div>
+              </div>
+            </div>
+
+            <!-- 중단 카드 2개 (왼쪽 텍스트+이미지 / 오른쪽 이미지+텍스트) -->
+            <div class="card-wraps">
+
+              <a class="card " href="#none" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="450"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <div class="card-body">
+                  <div class="card-left">
+                    <h4 class="card-title"><span class="en"> JOY-CON (L) / (R) </span></h4>
+                    <p class="desc01">
+                      「Joy-Con(L)」과 「Joy-Con(R)」에 「Joy-Con 스트랩(블랙)」 2개가 포함된 세트
+                    </p>
+                    <p class="desc02">
+                      *Nintendo Switch Lite 에 사용하는 경우 별도 Joy-Con 충전 그립 필요
+                    </p>
+                    <div class="card-bottom">
+                      <p>희망소비자가격: 79,800원</p>
+                      <p>발매일: 2024.03.22</p>
+                      <p>동봉품: Joy-con 스트랩</p>
+                    </div>
+                    <div class="spacific">
+                      <i class="fa-solid fa-circle-chevron-right"></i> 주요사양
+                    </div>
+                  </div>
+                  <div class="card-right card-title mb">
+                    <h4><span class="en"> JOY-CON (L) / (R) </span></h4>
+                  </div>
+                </div>
+                <div class="card-img hover-overlay-r">
+                  <img src="images/sub2/joy-con-item1.png" alt="조이콘아이템1">
+                </div>
+              </a>
+
+              <a class="card " href="#none" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="650"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <div class="card-body">
+                  <div class="card-left card-title mb">
+                    <h4 class="card-title"> <span class="en"> JOY-CON 2 </span> 충전그립 </h4>
+                  </div>
+                  <div class="card-right">
+                    <h4 class="card-title"> <span class="en">JOY-CON 2 </span> 충전그립</h4>
+                    <p class="desc01">
+                      ｢Joy-Con 2 (L)｣와 ｢Joy-Con 2 (R)｣을 장착하여 그립형의 컨트롤러로 사용할 수 있습니다.동봉된 USB 충전 케이블 또는 ｢Nintendo Switch 2
+                      AC 어댑터｣로 플레이 중에도 ｢Joy-Con 2｣를 충전할 수 있어 배터리 부족을 걱정하지 않아도 됩니다.
+                    </p>
+                    <p class="desc02">
+                      *본 상품에 ｢Joy-Con 2｣는 동봉되어 있지 않습니다.
+                    </p>
+                    <div class="card-bottom">
+                      <p>희망소비자가격: 44,000원</p>
+                      <p>발매일: 2025.06.05</p>
+                      <p>동봉품: USB 충전케이블</p>
+                    </div>
+                    <div class="spacific">
+                      <i class="fa-solid fa-circle-chevron-right"></i> 주요사양
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card-img hover-overlay-l">
+                  <img src="images/sub2/joy-con-item2.png" alt="조이콘아이템2">
+                </div>
+              </a>
+
+              <a class="card " href="#none" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="850"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <div class="card-body">
+                  <div class="card-left">
+                    <h4 class="card-title"> <span class="en">JOY-CON </span> 충전그립</h4>
+                    <p class="desc01">
+                      「Joy-Con(L)」과 「Joy-Con(R)」을 장착해서 그립형의 컨트롤러로써 사용할 수 있습니다. 동봉된 USB 충전 케이블을 사용해서 플레이하며 「Joy-Con」을 충전할
+                      수 있기 때문에 배터리 방전에 대한 염려가 없습니다.
+                    </p>
+                    <p class="desc02">
+                      *본 상품에 「Joy-Con」은 포함되어 있지 않습니다.
+                    </p>
+                    <div class="card-bottom">
+                      <p>희망소비자가격: 27,800원</p>
+                      <p>발매일: 2017.12.01</p>
+                      <p>동봉품: USB 충전 케이블</p>
+                    </div>
+                    <div class="spacific">
+                      <i class="fa-solid fa-circle-chevron-right"></i> 주요사양
+                    </div>
+                  </div>
+                  <div class="card-right card-title mb">
+                    <h4 class="card-title"> <span class="en">NINTENDO SWITCH2 PRO</span> 컨트롤러 </h4>
+                  </div>
+                </div>
+                <div class="card-img hover-overlay-r">
+                  <img src="images/sub2/joy-con-item3.png" alt="조이콘아이템3">
+                </div>
+              </a>
+            </div>
+
+            <div class="btn-wrap"><button class="sub2-more-btn">MORE</button></div>
+          </div>
+
+          <!-- 기타 -->
+          <div class="etc-wrap">
+            <h2 class="product-title ko" data-aos="fade-up" data-aos-anchor-placement="top-bottom" 
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">기타</h2>
+            <!-- (하단 2x2 카드) -->
+
+            <div class="card-grid">
+
+              <div class="card hover-overlay sm-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="150"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <div class="card-img">
+                  <img src="images/sub2/ect1.png" alt="기타1">
+                </div>
+                <div class="card-text">
+                  <h4 class="card-title"> <span class="en">NINTENDO SWITCH 2 </span> 카메라</h4>
+                  <p class="desc01">
+                    Nintendo Switch 2 전용 USB 카메라입니다.TV 모드에서도, 테이블 모드에서도, 휴대 모드에서도. 동봉된 USB-C 케이블을 본체에 연결만 하면 간단하게 영상 통화가
+                    가능
+                  </p>
+                  <div class="card-bottom">
+                    <p>희망소비자가격: 59,800원</p>
+                    <p>발매일: 2025.06.05</p>
+                    <p>동봉품: USB 케이블</p>
+                  </div>
+                  <div class="spacific">
+                    <i class="fa-solid fa-circle-chevron-right"></i> 주요사양
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card hover-overlay sm-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <div class="card-img">
+                  <img src="images/sub2/ect2.png" alt="기타2">
+                </div>
+                <div class="card-text">
+                  <h4 class="card-title"> <span class="en">NINTENDO SWITCH 2</span> 휴대용 케이스</h4>
+                  <p class="desc01">
+                    ｢Nintendo Switch 2｣본체용 휴대용 케이스와 화면을 흠집이나 오염으로부터 보호하는 보호 필름, 묻은 오염을 닦기 위한 천이 포함된 세트입니다.
+                  </p>
+                  <p class="desc02">
+                    *본 상품에 ｢Nintendo Switch 2 본체｣, ｢Joy-Con 2｣, ｢Joy-Con 2 스트랩｣은 동봉되어 있지 않습니다.
+                  </p>
+                  <div class="card-bottom">
+                    <p>희망소비자가격: 31,800원</p>
+                    <p>발매일: 2025.06.05</p>
+                  </div>
+                  <div class="spacific">
+                    <i class="fa-solid fa-circle-chevron-right"></i> 주요사양
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card hover-overlay sm-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="450"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <div class="card-img">
+                  <img src="images/sub2/ect3.png" alt="기타3">
+                </div>
+                <div class="card-text">
+                  <h4 class="card-title"> <span class="en">NINTENDO SWITCH 2 AC </span> 어댑터 </h4>
+                  <p class="desc01">
+                    ｢Nintendo Switch 2｣ 본체 또는 ｢Nintendo Switch 2 독｣에 연결해 사용하는 AC 어댑터입니다. AC 어댑터와 케이블을 분리할 수 있으며 컴팩트하게
+                    수납할
+                    수 있습니다.
+                  </p>
+                  <p class="desc02">
+                    *｢Nintendo Switch｣에서도 사용할 수 있습니다.
+                  </p>
+                  <div class="card-bottom">
+                    <p>희망소비자가격: 39,800원</p>
+                    <p>발매일: 2025.06.05</p>
+                  </div>
+                  <div class="spacific">
+                    <i class="fa-solid fa-circle-chevron-right"></i> 주요사양
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card hover-overlay sm-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+                <div class="card-img">
+                  <img src="images/sub2/ect4.png" alt="기타4">
+                </div>
+                <div class="card-text">
+                  <h4 class="card-title"> <span class="en">NINTENDO SWITCH </span> 충전 스탠드</h4>
+                  <p class="desc01">
+                    화면의 각도를 자유롭게 조절할 수 있는 테이블 모드용 스탠드. 자유롭게 조절 가능한 프리 스톱 방식으로 원하는 각도로 게임 가능. 충전하면서 게임 플레이 가능.
+                  </p>
+                  <p class="desc02">
+                    *충전은 본체 세트에 포함되어 있는 「Nintendo Switch AC 어댑터」를 사용해 주십시오. (AC 어댑터는 포함되어 있지 않습니다)
+                  </p>
+                  <div class="card-bottom">
+                    <p>희망소비자가격: 18,800원</p>
+                    <p>발매일: 2018.07.20</p>
+                  </div>
+                  <div class="spacific">
+                    <i class="fa-solid fa-circle-chevron-right"></i> 주요사양
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="btn-wrap"><button class="sub2-more-btn">MORE</button></div>
+
+          </div>
+
+        </div>
+
+        <!-- 도움 -->
+        <div class="support-cta-section inner" data-aos="fade-up" data-aos-anchor-placement="top-bottom" 
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+          <div class="support-cta-wrap">
+
+            <h2 class="support-cta-title">
+              편리한 플레이를 위한 아이템
+            </h2>
+
+            <p class="support-cta-desc">
+              닌텐도 주변 기기 구매하러 가기
+            </p>
+
+            <a href="#none" class="support-cta-button">
+              닌텐도 주변기기 사러가기
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M3.5 16.3333H23.3333L17.5 10.5" stroke="#E60012" stroke-width="2" stroke-linecap="square" />
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- 아미보 -->
+      <section class="sub2-amiibo-page-content" id="subTabCon4">
+
+        <!-- 상단 소개 영역 -->
+        <div class="amiibo-intro inner">
+          <div class="intro-left" data-aos="fade-up" data-aos-anchor-placement="top-bottom" 
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <img src="images/sub2/amiibo-banner-img.png" alt="amiibo">
+            <img src="images/sub2/mario-ment.png" class="intor-opacity-img" alt="">
+          </div>
+
+          <div class="intro-right" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="450"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <h2>게임 세계와 이어진다!</h2>
+            <p class="intro-desc">
+              Nintendo Switch Joy-Con에 <br>
+              amiibo를 터치하기만 해도 게임과 이어질 수 있습니다
+            </p>
+          </div>
+        </div>
+
+
+        <!-- 기능 설명 3단 -->
+        <div class="amiibo-feature-wrap inner">
+
+          <!-- 1 -->
+          <div class="amiibo-feature left-type" data-aos="fade-up" data-aos-anchor-placement="top-bottom" 
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <div class="feature-text" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <div class="feature-title" >
+                <img src="images/sub2/amiibo-icon01.png" alt="숫자아이콘1">
+                <h3>게임기에 등장</h3>
+              </div>
+              <h4 style="color: #DF001B;">예를 들면 「Splatoon2」에서는 </h4>
+              <p>amiibo를 아래 화면에 터치하면, 해당 캐릭터가 게임에 등장
+                선호하는 특정 장비 및 무기의 조합을 기록할 수 있습니다.</p>
+              <p>함께 사진을 찍을 수 있어, 촬영한 사진은 SNS에 업로드할 수 있습니다.
+                특정한 장비를 선물 받을 수 있습니다</p>
+            </div>
+            <div class="feature-image-wrap" >
+              <img src="images/sub2/amiibo-intro-img01.png" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic"alt="아미보설명이미지1">
+              <img src="images/sub2/amiibo-intro01.png" class="amiibo-product" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic" alt="아미보">
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="amiibo-feature right-type" data-aos="fade-up" data-aos-anchor-placement="top-bottom" 
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <div class="feature-image-wrap">
+              <img src="images/sub2/amiibo-intro-img02.png" alt="아미보설명이미지2" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <img src="images/sub2/amiibo-intro02.png" class="amiibo-product-l" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic" alt="아미보">
+            </div>
+            <div class="feature-text" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <div class="feature-title">
+                <img src="images/sub2/amiibo-icon02.png" alt="숫자아이콘2">
+                <h3>캐릭터 관련 아이템이나 능력 획득</h3>
+              </div>
+              <h4 style="color: #9FC10E;">예를 들면 「젤다의 전설 브레스 오브 더 와일드」에서는</h4>
+              <p>캐릭터 관련 아이템이나 능력을 획득할 수 있습니다.</p>
+            </div>
+
+          </div>
+
+          <!-- 3 -->
+          <div class="amiibo-feature left-type" data-aos="fade-up" data-aos-anchor-placement="top-bottom" 
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <div class="feature-text" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <div class="feature-title" >
+                <img src="images/sub2/amiibo-icon03.png" alt="숫자아이콘3">
+                <h3>amiibo가 성장 <br>
+                  더 강하게 육성하여 나만의 캐릭터로</h3>
+              </div>
+              <h4 style="color: #0098E6;">예를 들면 「수퍼 스매시브라더스 얼티밋」에서는 </h4>
+              <p>게임에 등장하는 FP(피규어 파이터)는 스스로 생각해서 배특한다!
+                배틀 중에 선응이나 성격도 성장!</p>
+              <p>육성한 캐릭터 정보를 amiibo를 다시 터치하여 기록하면,
+                세상에 단 하나뿐인 나만의 amiibo가 된다</p>
+            </div>
+            <div class="feature-image-wrap">
+              <img src="images/sub2/amiibo-intro-img03.png" alt="아미보설명이미지3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <img src="images/sub2/amiibo-intro03.png" class="amiibo-product" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic" alt="아미보">
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- 라인업 -->
+        <div class="amiibo-lineup">
+          <h2><span class="en">AMIIBO</span> 라인업</h2>
+
+          <!-- 아미보 슬라이드 영역 -->
+          <div class="amiibo-lineup-stage" data-aos="fade-up" data-aos-anchor-placement="top-bottom" 
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <div class="stage-light" aria-hidden="true"></div>
+
+            <div class="amiibo-lineup-swiper swiper">
+              <div class="swiper-wrapper" id="amiiboLineupWrapper"></div>
+            </div>
+          </div>
+
+          <!-- 하단 대형 배경 이미지 -->
+          <div class="amiibo-bg" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500"
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <img src="images/sub2/amiibo-product-img.png" alt="">
+          </div>
+        </div>
+
+        <!-- 도움 -->
+        <div class="support-cta-section inner" data-aos="fade-up" data-aos-anchor-placement="top-bottom" 
+          data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+          <div class="support-cta-wrap">
+
+            <h2 class="support-cta-title">
+              게임의 재미를 더하는 아미보!!
+            </h2>
+
+            <p class="support-cta-desc">
+              댜양한 아미보 제품을 상점에서 만나보세요
+            </p>
+
+            <a href="#none" class="support-cta-button">
+              아미보 제품 사러가기
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M3.5 16.3333H23.3333L17.5 10.5" stroke="#E60012" stroke-width="2" stroke-linecap="square" />
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+      </section>
+
+
+
+    </div>
+    <!-- 풋터 -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-top-icon">
+          <div class="footer-top-sns">
+            <ul>
+              <li><a href="#none" class="footer-icon-youtube"></a></li>
+              <li><a href="#none" class="footer-icon-kakaostroy"></a></li>
+              <li><a href="#none" class="footer-icon-facebook"></a></li>
+              <li><a href="#none" class="footer-icon-x"></a></li>
+              <li><a href="#none" class="footer-icon-kakaotalk"></a></li>
+            </ul>
+          </div>
+          <div class="footer-top-site">
+            <a href="#none" class="footer-icon-long footer-icon-mynintendo"></a>
+            <a href="#none" class="footer-icon-long footer-icon-amiibo"></a>
+          </div>
+        </div>
+        <div class="footer-bottom-text">
+          <div class="footer-bottom-text-left">
+            <div class="footer-bottom-atags">
+              <a href="#none" class="footer-bottom-atag">이용약관</a>
+              <a href="#none" class="footer-bottom-atag">개인정보처리방침</a>
+            </div>
+            <p class="footer-bottom-text01">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+            <p class="footer-bottom-text02">상호명 : 한국닌텐도주식회사<span class="footer-line-break-mb"></span>대표자명 : 미우라
+              타카히로<span class="footer-line-break"></span>사업자등록번호
+              : 120-87-03578</p>
+          </div>
+          <div class="footer-bottom-text-right">
+            <p class="footer-bottom-text03">고객지원 문의전화 : 1670-9900</p>
+            <p class="footer-bottom-text04">(평일 오전 9시 30분~오후 5시 30분)</p>
+            <p class="footer-bottom-text05">※토/일/공휴일/회사 정기휴일 및 특별휴일 제외</p>
+          </div>
+        </div>
+        <p class="responsive-copyright">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+      </div>
+
+    </footer>
+  </div>
+
+  <!-- 쇼핑 버튼 -->
+  <div class="fixed-cart">
+    <div class="cart-panel">
+      <a href="#none" class="cart-text">장바구니 바로가기 ></a>
+    </div>
+    <button class="cart-btn">
+      <i class="fa-solid fa-bag-shopping"></i>
+    </button>
+  </div>
+
+  <!-- 탑버튼 -->
+  <div class="top-btn-wrap" id="topBtn">
+    <div class="top-btn">
+      <button>TOP <i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="js/header.js"></script>
+  <script src="js/sub2.js"></script>
+
+
+</body>
+
+</html>

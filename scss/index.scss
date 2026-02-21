@@ -1,0 +1,1490 @@
+@import 'variables', 'mixins', 'reset', 'fonts', 'header', 'footer', 'common';
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.main-page-main-visual {
+  width: 100%;
+  height: 100vh;
+  background-color: $c-box-bg;
+
+  .main-mv-swiper {
+    width: 100%;
+    height: 100%;
+
+    .swiper-wrapper {
+      width: 100%;
+      height: 90vh;
+
+      .main-mv-swiper-wrap-mario {
+        width: 100%;
+        height: 100%;
+
+        .main-mv-swiper-bg {
+          width: 100%;
+          height: 100%;
+          background: url(../images/index/main-mv-bg-mario.png) no-repeat center / cover;
+          position: relative;
+
+          .main-mv-swiper-logo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+
+            &.active {
+              animation-name: logo-zoom;
+              animation-duration: 1s;
+              animation-iteration-count: 1;
+            }
+          }
+        }
+
+        .main-mv-swiper-char1 {
+          position: absolute;
+          right: 10%;
+          bottom: 5%;
+
+          &.active {
+            animation-name: char-move;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.8s;
+          }
+        }
+
+        .main-mv-swiper-char2 {
+          position: absolute;
+          right: 34%;
+          bottom: 5%;
+
+          &.active {
+            animation-name: char-move;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.9s;
+          }
+        }
+      }
+    }
+
+    .main-mv-swiper-wrap-zelda {
+      .main-mv-swiper-bg {
+        width: 100%;
+        height: 100%;
+        background: url(../images/index/main-mv-bg-zelda.png) no-repeat center / cover;
+        position: relative;
+
+        .main-mv-swiper-logo {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+
+          &.active {
+            animation-name: logo-zoom;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+          }
+        }
+
+        .main-mv-swiper-char {
+          position: absolute;
+          left: 25%;
+          top: 60px;
+
+          &.active {
+            animation-name: char-move;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.8s;
+          }
+        }
+      }
+    }
+
+    .main-mv-swiper-wrap-modong {
+      .main-mv-swiper-bg {
+        width: 100%;
+        height: 100%;
+        background: url(../images/index/main-mv-bg-modong.png) no-repeat center / cover;
+        position: relative;
+
+        .main-mv-swiper-logo {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+
+          &.active {
+            animation-name: logo-zoom;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+          }
+        }
+
+        .main-mv-swiper-char1 {
+          position: absolute;
+          left: 0;
+          bottom: 30px;
+
+          &.active {
+            animation-name: char-move;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.8s;
+          }
+        }
+
+        .main-mv-swiper-char2 {
+          position: absolute;
+          right: 135px;
+          bottom: 0;
+
+          &.active {
+            animation-name: char-move;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.8s;
+          }
+        }
+      }
+    }
+
+    .main-mv-swiper-wrap-kurby {
+      width: 100%;
+      height: 100%;
+      background: url(../images/index/main-mv-bg-kurby.png) no-repeat center / cover;
+      position: relative;
+
+      .main-mv-swiper-logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+        &.active {
+          animation-name: logo-zoom;
+          animation-duration: 1s;
+          animation-iteration-count: 1;
+        }
+      }
+
+      .main-mv-swiper-char1 {
+        position: absolute;
+        right: 35%;
+        bottom: 22%;
+        z-index: 2;
+
+        &.active {
+          animation-name: char-move;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-delay: 0.8s;
+        }
+      }
+
+      .main-mv-swiper-char2 {
+        position: absolute;
+        left: 20%;
+        top: 60px;
+
+        &.active {
+          animation-name: char-move;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+          animation-delay: 0.8s;
+        }
+      }
+    }
+
+    .main-mv-swiper-wrap-pikmin {
+      width: 100%;
+      height: 100%;
+      background: url(../images/index/main-mv-bg-pikmin.png) no-repeat center / cover;
+      position: relative;
+
+      .main-mv-swiper-logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+        &.active {
+          animation-name: logo-zoom;
+          animation-duration: 1s;
+          animation-iteration-count: 1;
+        }
+      }
+
+      .main-mv-swiper-char {
+        position: absolute;
+        right: 5%;
+        top: 35%;
+
+        &.active {
+          animation-name: char-move;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          animation-delay: 0.8s;
+        }
+      }
+    }
+  }
+}
+
+.main-page-main-visual {
+  .main-mv-swiper {
+    &-logo {
+
+      .main-mv-logo-img-tablet,
+      .main-mv-logo-img-mb {
+        display: none;
+      }
+    }
+
+    &-char {
+
+      .main-mv-char-img-tablet,
+      .main-mv-char-img-mb {
+        display: none;
+      }
+    }
+
+    &-char1 {
+
+      .main-mv-char-img-tablet,
+      .main-mv-char-img-mb {
+        display: none;
+      }
+    }
+
+    &-char2 {
+
+      .main-mv-char-img-tablet,
+      .main-mv-char-img-mb {
+        display: none;
+      }
+    }
+  }
+}
+
+.main-mv-swiper-pagination-wrap {
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 20;
+
+  .main-mv-swiper-pagination {
+    position: static;
+    margin: 0;
+    min-width: 320px;
+
+    .swiper-pagination-bullet {
+      width: 56px;
+      height: 56px;
+      border-radius: $r-sm;
+      opacity: 1;
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 56px;
+        height: 28px;
+        mask: url('../images/index/main-mv-pagenation-border-top.svg') no-repeat center / contain;
+        -webkit-mask: url('../images/index/main-mv-pagenation-border-top.svg') no-repeat center / contain;
+        clip-path: inset(0 100% 0 0);
+        -webkit-clip-path: inset(0 100% 0 0);
+        animation: none;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 56px;
+        height: 28px;
+        mask: url('../images/index/main-mv-pagenation-border-bottom.svg') no-repeat center / contain;
+        -webkit-mask: url('../images/index/main-mv-pagenation-border-bottom.svg') no-repeat center / contain;
+        clip-path: inset(0 100% 0 0);
+        -webkit-clip-path: inset(0 100% 0 0);
+        animation: none;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+
+      &::before,
+      &::after {
+        animation-name: fill-line;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    .swiper-pagination-bullet:nth-child(1) {
+      background: url(../images/index/main-mv-pagenation-mario.png) no-repeat center / cover;
+
+      &::before {
+        background-color: $c-mario;
+      }
+
+      &::after {
+        background-color: $c-mario;
+      }
+    }
+
+    .swiper-pagination-bullet:nth-child(2) {
+      background: url(../images/index/main-mv-pagenation-modong.png) no-repeat center / cover;
+
+      &::before {
+        background-color: $c-modong;
+      }
+
+      &::after {
+        background-color: $c-modong;
+      }
+    }
+
+    .swiper-pagination-bullet:nth-child(3) {
+      background: url(../images/index/main-mv-pagenation-zelda.png) no-repeat center / cover;
+
+      &::before {
+        background-color: $c-zelda;
+      }
+
+      &::after {
+        background-color: $c-zelda;
+      }
+    }
+
+    .swiper-pagination-bullet:nth-child(4) {
+      background: url(../images/index/main-mv-pagenation-kurby.png) no-repeat center / cover;
+
+      &::before {
+        background-color: $c-kurby;
+      }
+
+      &::after {
+        background-color: $c-kurby;
+      }
+    }
+
+    .swiper-pagination-bullet:nth-child(5) {
+      background: url(../images/index/main-mv-pagenation-pikmin.png) no-repeat center / cover;
+
+      &::before {
+        background-color: $c-pikmin;
+      }
+
+      &::after {
+        background-color: $c-pikmin;
+      }
+    }
+  }
+
+  .main-mv-swiper-pagination-stop {
+    min-width: 56px;
+    min-height: 56px;
+    border-radius: $r-full;
+    border: 2px solid $c-main;
+    font-size: $fs-32;
+    color: $c-main;
+    @include flex-center;
+  }
+}
+
+.main-mv-swiper-pagination-wrap.paused {
+  .swiper-pagination-bullet-active {
+
+    &::before,
+    &::after {
+      animation-play-state: paused;
+    }
+  }
+}
+
+@keyframes logo-zoom {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes char-move {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-15px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fill-line {
+  from {
+    clip-path: inset(0 100% 0 0);
+    -webkit-clip-path: inset(0 100% 0 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+    -webkit-clip-path: inset(0 0 0 0);
+  }
+}
+
+.main-section-title {
+  font-family: $ff-kanit;
+  font-size: $fs-60;
+  font-weight: $fw-b;
+  margin-bottom: $sp-100;
+}
+
+/* 메인 소프트웨어 */
+.main-software {
+  width: 100%;
+  padding: 0 $sp-section;
+
+  .software-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  /* 왼쪽 영역 */
+  .software-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-software-swiper-wrap {
+    height: 960px;
+    width: 100%;
+  }
+
+  /* 슬라이드 기본 */
+  .main-software-slide-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-software-slide-item img {
+    width: 610px;
+    height: 610px;
+    border-radius: $r-full;
+    object-fit: cover;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    transform: scale(0.6) translateX(0);
+    opacity: 0.5;
+    will-change: transform;
+    position: relative;
+  }
+
+  .swiper-slide-active {
+    z-index: 10;
+
+    img {
+      transform: scale(1.0) translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* 위ㆍ아래 */
+  .swiper-slide-prev img,
+  .swiper-slide-next img {
+    transform: scale(0.8) translateX(120px);
+    opacity: 0.7;
+    z-index: -10;
+  }
+
+  /* 오른쪽 영상 */
+  .software-right {
+    flex: 1;
+    position: relative;
+
+    .software-video-box {
+      width: 625px;
+      height: 475px;
+      overflow: hidden;
+      position: absolute;
+      border-radius: $r-sm;
+      top: 105px;
+      right: 65px;
+      z-index: 10;
+
+      .software-video {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border: 0;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .software-bg {
+    width: 930px;
+    height: 625px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .software-no {
+      width: 20px;
+      height: 30px;
+      position: absolute;
+      top: 115px;
+      left: 105px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+/* 데스크탑에서 태블릿 내용 모바일 안 보이게 하기 */
+.main-section-title-tb,
+.software-more,
+.main-software-mb {
+  display: none;
+}
+
+/* =========================
+   character section
+   ========================= */
+.character {
+  position: relative;
+  width: 100%;
+
+  padding-top: 10px;
+  height: auto;
+
+
+  /* 실제 콘텐츠 */
+  .character-content {
+    background: url(../images/index/main-character-bg.png) no-repeat;
+    width: 100%;
+    height: 1545px;
+    /* 고정으로 가야하는 이미지의 배경높이 */
+    margin-top: 100px;
+    border: 3px solid transparent;
+
+
+    .character-title {
+      img {
+        position: absolute;
+        left: 0;
+      }
+
+      h2 {
+        display: none;
+      }
+    }
+
+    .character-scroll-wrap {
+      position: relative;
+      width: 100%;
+      margin-top: 300px;
+
+      .character-body {
+        position: sticky;
+        width: 100%;
+        margin-top: 200px;
+        overflow: hidden;
+
+
+        /* 실제 가로 이동 트랙 */
+        .horizontal-track {
+          display: flex;
+          height: 100%;
+          will-change: transform;
+          width: max-content;
+
+          figure {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-shrink: 0;
+            font-family: $ff-mbcgulim;
+
+            .character-img {
+              img {
+                height: 500px;
+              }
+            }
+
+            .character-text {
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              gap: 75px;
+
+              h4 {
+                font-size: $fs-60;
+                color: $c-text-main;
+              }
+
+              button {
+                @include more-btn($c-main, $c-main);
+                color: $c-main;
+                background: $c-white;
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    .character-swiper-wrap {
+      display: none;
+    }
+  }
+
+  /* 스크롤용 더미 공간 */
+  .scroll-spacer {
+    height: 0;
+  }
+
+  /* decor band */
+  .decor-band {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: visible;
+    z-index: 1100;
+
+    &.decor-band--top {
+      top: 1%;
+      transform: rotate(5deg);
+    }
+
+    &.decor-band--bottom {
+      bottom: 22%;
+      transform: rotate(-5deg);
+
+      .decor-band-track,
+      .kart {
+        animation-direction: reverse;
+      }
+    }
+
+    .decor-band-track {
+      height: 200px;
+      position: relative;
+      transition: 0.4s ease;
+    }
+
+    .decor-band-strip {
+      width: 120vw;
+      height: 100%;
+      background: url("../images/index/game-strip.png") repeat-x 0 center;
+      background-size: auto 100%;
+      animation: strip-loop 10s linear infinite;
+      position: absolute;
+      left: -15px;
+    }
+
+    .decor-band-karts {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+    }
+
+    .kart {
+      position: absolute;
+      left: 0;
+      bottom: 100%;
+      width: 110px;
+      height: 99px;
+      cursor: pointer;
+      animation-name: kart-move;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      will-change: transform;
+      transition: $tr-r;
+
+
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+
+        &:hover {
+          transform: translateY(-10px);
+        }
+      }
+
+
+    }
+  }
+
+  /* kart lineup */
+
+  .kat-01 {
+    animation-duration: 7.5s;
+  }
+
+  .kat-02 {
+    animation-duration: 8.8s;
+  }
+
+  .kat-03 {
+    animation-duration: 6.9s;
+  }
+
+  .kat-04 {
+    animation-duration: 6.2s;
+  }
+
+  .kat-05 {
+    animation-duration: 5.6s;
+  }
+
+  .kat-06 {
+    animation-duration: 8.2s;
+  }
+
+  .kat-07 {
+    animation-duration: 10.1s;
+  }
+
+  .kat-08 {
+    animation-duration: 7.8s;
+  }
+
+  .kat-09 {
+    animation-duration: 8.8s;
+  }
+
+  .kat-10 {
+    animation-duration: 5.9s;
+  }
+
+  .kat-11 {
+    animation-duration: 6.4s;
+  }
+
+  /* keyframes */
+
+  @keyframes strip-loop {
+    to {
+      background-position-x: -1024px;
+    }
+  }
+
+  @keyframes kart-move {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(100vw);
+    }
+  }
+}
+
+
+
+/* 뉴스 */
+.news {
+  margin-top: -50px;
+  margin-bottom: 300px;
+  position: relative;
+
+  .news-container {
+    @include inner($inner-main);
+    @include flex-center;
+    flex-direction: column;
+
+    .news-main-title {
+      font-size: $fs-60;
+      font-weight: $fw-b;
+      font-family: $ff-kanit;
+      line-height: 60px;
+      text-align: center;
+      margin-bottom: $sp-130;
+    }
+
+    .news-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 620px;
+      gap: $sp-20;
+
+      .news-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        .news-card {
+          width: 345px;
+          height: 300px;
+          background: $c-white;
+          box-shadow: $card-shadow;
+          border-radius: $r-lg;
+          padding: $sp-25;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          cursor: pointer;
+
+          &.active,
+          &:hover {
+            background: $c-main;
+          }
+
+          &.active .news-card-title {
+            color: $c-white;
+          }
+
+          &:hover .news-card-title {
+            color: $c-white;
+          }
+
+          &.active .news-card-bottom .news-card-tag-icon path {
+            fill: $c-white;
+          }
+
+          &:hover .news-card-bottom .news-card-tag-icon path {
+            fill: $c-white;
+          }
+
+          &.active .news-card-bottom .news-card-date {
+            @include text($fs-24, $fw-b, $c-white);
+          }
+
+          &:hover .news-card-bottom .news-card-date {
+            @include text($fs-24, $fw-b, $c-white);
+          }
+
+          .news-card-title {
+            @include text($fs-28, $fw-b, $c-black);
+          }
+
+          .news-card-bottom {
+            display: flex;
+            justify-content: space-between;
+
+            .news-card-tag-icon path {
+              fill: $c-main;
+            }
+
+            .news-card-date {
+              @include text($fs-24, $fw-b, $c-gray99);
+            }
+          }
+        }
+      }
+
+      .news-detail {
+        width: 100%;
+        height: 100%;
+        padding: $sp-25;
+        background: $c-white;
+        box-shadow: $card-shadow;
+        border-radius: $r-lg;
+        background: $c-white;
+        cursor: pointer;
+
+        &:hover .news-content-img {
+          transform: scale(1.06);
+        }
+
+
+        .news-content {
+          display: none;
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+
+          &.active {
+            display: flex;
+          }
+
+          .news-content-link {
+            .news-content-thumbnail {
+              width: 100%;
+              height: 410px;
+              overflow: hidden;
+              border-radius: $r-md;
+
+              .news-content-img {
+                width: 100%;
+                height: 100%;
+                transition: $tr-r $ease-default;
+              }
+            }
+
+            .news-content-text {
+              padding-top: $sp-20;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              gap: $sp-10;
+              position: relative;
+
+              &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                top: 10px;
+                background: $c-middle-line;
+                overflow: visible;
+              }
+
+              .news-title-wrap {
+                display: flex;
+                align-items: center;
+                gap: $sp-10;
+
+                .news-content-tag-icon {
+                  width: 24px;
+                  height: 24px;
+
+                  .news-content-tag-img {
+                    width: 100%;
+                    height: 100%
+                  }
+                }
+
+                .news-title {
+                  @include text($fs-24, $fw-b, $c-black);
+                }
+              }
+
+              .news-desc {
+                @include text($fs-20, $fw-b, $c-black);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .news-progress {
+      display: none;
+    }
+
+    .news-more-btn {
+      @include more-btn($c-main, $c-main);
+      @include flex-center;
+      background: $c-white;
+      margin-top: 100px;
+
+      .news-more-btn-link {
+        .news-more-btn-text {
+          font-family: $ff-kanit;
+          font-size: $fs-20;
+          font-weight: $fw-b;
+          line-height: $lh-text;
+        }
+      }
+    }
+  }
+}
+
+
+/* 메인 비디오 */
+.main-video {
+  @include flex-center;
+  flex-direction: column;
+  padding: $sp-section 0;
+  position: relative;
+
+  .main-video-wrapper {
+    display: flex;
+    gap: $sp-40;
+    transform: translateX(240px);
+    /* 왼쪽과 오른쪽 간격 */
+    align-items: flex-start;
+  }
+
+  .main-video-left {
+    width: 830px;
+
+    img {
+      width: 100%;
+      display: block;
+      border-radius: 16px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .main-video-left iframe {
+      width: 100%;
+      height: 491px;
+      border: none;
+      border-radius: 20px;
+      border: 1px solid #000;
+    }
+
+    .video-bottom-wrap {
+      @include flex-between;
+      margin-top: $sp-20;
+
+      .video-text {
+        font-family: $ff-suit;
+        @include text($fs-32, $fw-semi-b, $c-text-main);
+        @include text-ellipsis;
+      }
+
+      .video-btn-wrap {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+
+        /* 버튼 */
+        div {
+          width: 50px;
+          height: 50px;
+          border-radius: $r-full;
+          background: $c-main;
+          @include flex-center;
+          cursor: pointer;
+          transition: $tr-r;
+
+          img {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+            object-position: center;
+          }
+
+          &:hover {
+            background: darkred;
+          }
+        }
+      }
+    }
+  }
+
+  .main-video-swiper {
+    width: calc(200px * 4 + 20px * 3); //오른쪽 슬라이드 폭 기준
+    overflow: hidden;
+
+    .main-video-item {
+      width: 200px !important;
+      cursor: pointer;
+
+      img {
+        width: 100% !important;
+        height: 491px;
+        object-fit: cover;
+        display: block;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .main-play-bg {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    z-index: -100;
+  }
+}
+
+.main-video-mb {
+  display: none;
+}
+
+/* 메인 스토어 */
+.main-store {
+  @include flex-center;
+  flex-direction: column;
+  padding: $sp-section 0;
+
+  .main-store-wrap {
+    width: $inner-sub;
+    display: flex;
+    flex-direction: column;
+    gap: $sp-30;
+
+    .main-store-visual {
+      @include flex-center;
+      flex-direction: column;
+      position: relative;
+      height: 730px;
+
+      .main-visual-txt {
+        position: absolute;
+        top: 640px;
+      }
+
+      .main-store-visual-logo {
+        position: absolute;
+        top: 20px;
+      }
+
+      .main-store-visual-img {
+        position: absolute;
+        top: 0;
+        z-index: -10;
+
+        img {
+          border-radius: $sp-20;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .main-store-card-wrap {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: $sp-20;
+
+      .main-store-card {
+        height: 230px;
+        position: relative;
+        border-radius: $r-sm;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: $box-shadow-default;
+
+        /* 이미지 영역 */
+        .main-store-card-img {
+          position: absolute;
+          inset: 0;
+          z-index: 1;
+          height: 80%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            transition: transform 0.35s ease;
+          }
+        }
+
+        /* 설명 영역 */
+        .main-store-card-desc {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 5;
+          height: 20%;
+          background: $c-box-bg;
+          padding: $sp-10 $sp-15;
+          overflow: hidden;
+          transition: height 0.35s ease, overflow 0.35s ease;
+
+          .main-store-card-title {
+            @include flex-between;
+
+            p {
+              line-height: 20px;
+              @include text($fs-20, $fw-semi-b, $c-text-main);
+              @include text-ellipsis(1);
+            }
+
+            .main-store-icon-box {
+              position: relative;
+              width: 42px;
+              height: 30px;
+
+              .main-store-icon {
+                position: absolute;
+                width: 22px;
+                height: 22px;
+                right: 0;
+                top: 0;
+                transition: opacity 0.25s ease, visibility 0.25s ease;
+              }
+
+              .store-icon-hover {
+                position: absolute;
+                width: 42px;
+                height: 22px;
+                right: 0;
+                top: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.25s ease, visibility 0.25s ease;
+              }
+            }
+          }
+
+          .main-store-explan {
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.25s ease;
+
+            img {
+              width: 100%;
+              display: block;
+            }
+          }
+        }
+
+        /* Hover 효과 */
+        &:hover {
+          box-shadow: $download-box-shadow;
+
+          .main-store-card-img img {
+            transform: scale(1.1);
+          }
+
+          .main-store-card-desc {
+            height: 60%;
+            overflow: visible;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: $sp-15;
+
+            .main-store-card-title {
+              .main-store-icon-box {
+                .main-store-icon {
+                  opacity: 0;
+                  visibility: hidden;
+                }
+
+                .store-icon-hover {
+                  opacity: 1;
+                  visibility: visible;
+                  z-index: 500;
+                }
+              }
+            }
+
+            .main-store-explan {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+/* 아미보 섹션 */
+.amiibo {
+  @include section-margin;
+  background: url(../images/index/amiibo-bg.png) no-repeat;
+
+  .main-section-title {
+    @include main-section-title;
+  }
+
+  .character-slider {
+    height: 370px;
+    padding: 20px 0;
+
+    .swiper-slide {
+      @include flex-center;
+      opacity: 0.75;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+
+      img {
+        height: 85%;
+        transform: scale(0.75);
+        transition: transform 0.4s ease;
+        object-fit: contain;
+        object-position: bottom;
+      }
+
+      &-active {
+        opacity: 1;
+
+        img {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+
+  &.amiibo {
+    position: relative;
+
+    .amiibo-mobile-curtain {
+      display: none;
+    }
+
+    &.is-open {
+      .amiibo-mobile-curtain {
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.amiibo-card-grid {
+  @include inner($inner-main);
+  padding-top: $sp-100;
+
+
+  .amiibo-card-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $sp-20;
+  }
+}
+
+.amiibo-card {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: 20px;
+  background: #121212;
+  overflow: hidden;
+
+  .light {
+    position: absolute;
+    bottom: 68px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180%;
+    height: 180%;
+    background: linear-gradient(to top,
+        rgba(255, 249, 195, 0.322),
+        rgba(255, 255, 255, 0.068),
+        transparent 70%);
+    clip-path: polygon(39% 100%,
+        61% 100%,
+        90% 0%,
+        10% 0%);
+    filter: blur(30px);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    -webkit-user-drag: none;
+    filter: grayscale(1) brightness(0.65);
+    transition: filter 0.6s ease;
+  }
+
+  .amiibo-toggle {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 3;
+    width: 56px;
+    height: 32px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #2b2b2b;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &.active {
+    .light {
+      opacity: 1;
+    }
+
+    img {
+      filter: none;
+    }
+
+    .amiibo-toggle::after {
+      transform: translateX(24px);
+    }
+  }
+}
+
+.btn-box {
+  @include flex-center;
+  margin-top: $sp-100;
+
+  .more {
+    @include more-btn($c-main, $c-main);
+    background: transparent;
+  }
+}
+
+.banner {
+  height: 450px;
+  margin: 150px 0;
+
+  .banner-container {
+    height: 100%;
+    @include inner($inner-main);
+
+    .banner-link {
+      .banner-img {
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/index/banner-desktop.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+  }
+}

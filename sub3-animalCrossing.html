@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닌텐도 - 소프트웨어 '모여봐요동물의숲' </title>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="scss/sub3-animalCrossing.css">
+  <link rel="stylesheet" href="scss/sub3-animalCrossing-respomsive.css">
+  <link rel="icon" href="images/common/favicon.svg">
+</head>
+
+<body class="page-sub">
+  <!-- 헤더 -->
+  <header class="header">
+    <nav>
+      <a href="index.html" class="logo"></a>
+      <div class="header-click-wrap">
+        <ul class="gnb">
+          <li class="main-menu"><a href="sub1.html">한국닌텐도</a></li>
+          <li class="main-menu"><a href="sub2.html">제품소개</a></li>
+          <li class="main-menu" data-nav="navSw"><a href="#none">소프트웨어</a></li>
+          <li class="main-menu"><a href="sub4.html">영상</a></li>
+          <li class="main-menu"><a href="sub5.html">뉴스</a></li>
+          <li class="main-menu"><a href="sub6.html">고객지원</a></li>
+        </ul>
+        <div class="utility">
+          <button class="header-search-section">
+            <div class="search-icon"></div>
+            <p class="search-text">SEARCH</p>
+          </button>
+          <div class="header-cart"></div>
+          <button class="header-login-section">
+            <div class="login-icon"></div>
+            <div class="login-text">LOGIN / SIGN UP</div>
+          </button>
+          <div class="header-kr"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- 서브헤더 -->
+  <div class="sub-header">
+    <a href="index.html" class="sub-header-home-icon"></a>
+    <a class="sub-header-text" href="#subSeries">Series</a>
+    <a class="sub-header-text" href="#subChar">Charactors</a>
+    <a class="sub-header-text" href="#subNews">News</a>
+  </div>
+  <!-- 서브내비 -->
+  <div class="sub-nav-container" id="navSw">
+    <div class="sub-nav-title-wrap">
+      <div class="sub-nav-title-icon sub-nav-title-icon-sw"></div>
+      <h2>SOFTWARE</h2>
+    </div>
+    <div class="sub-nav-lnb-wrap">
+      <a href="sub3-mario.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">마리오</p>
+      </a>
+      <a href="sub3-animalCrossing.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">동물의 숲</p>
+      </a>
+      <a href="sub3-zelda.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">젤다</p>
+      </a>
+      <a href="sub3-kirby.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">커비</p>
+      </a>
+      <a href="sub3-pikmin.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">피크민</p>
+      </a>
+    </div>
+  </div>
+  <!-- 태블릿, 모바일 내비 -->
+  <div class="responsive-nav-body">
+    <div class="r-nav-left-wrap">
+      <button class="r-nav-hamburger-btn"></button>
+      <a href="index.html" class="r-nav-home-btn"></a>
+    </div>
+    <button class="r-nav-center-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="r-nav-right-wrap">
+      <button class="r-nav-cart-btn"></button>
+      <button class="r-nav-login-btn"></button>
+    </div>
+  </div>
+  <div class="responsive-nav-container">
+    <div class="r-nav-container-header">
+      <div class="r-nav-container-logo"></div>
+      <button class="r-nav-container-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="r-nav-container-body">
+      <div class="r-nav-tab-wrap">
+        <button class="r-nav-tab-btn r-nav-tab-btn1 active" data-rnav="rNavCom">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">COMPANY</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn2" data-rnav="rNavPro">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">PRODUCT</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn3" data-rnav="rNavSw">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SOFTWARE</p>
+        </button>
+        <a href="sub4.html" class="r-nav-tab-btn r-nav-tab-btn4">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">VIDEO</p>
+        </a>
+        <a href="sub5.html" class="r-nav-tab-btn r-nav-tab-btn5">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">NEWS</p>
+        </a>
+        <button class="r-nav-tab-btn r-nav-tab-btn6" data-rnav="rNavSup">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SUPPORT</p>
+        </button>
+      </div>
+      <div class="r-nav-content-wrap">
+        <ul class="r-nav-lnb-wrap active" id="rNavCom">
+          <li>
+            <a href="sub1.html#subComCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">한국닌텐도</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주요 사업</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">연혁</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">찾아오시는 길</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavPro">
+          <li>
+            <a href="sub2.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주변기기</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">아미보</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSw">
+          <li>
+            <a href="sub3-mario.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">마리오</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-animalCrossing.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">동물의 숲</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-zelda.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">젤다</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-kirby.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">커비</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-pikmin.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">피크민</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSup">
+          <li>
+            <a href="sub6.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">FAQ</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">수리접수</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 메인비주얼 -->
+  <section class="main-visual" id="mainVisual" aria-label="메인 비주얼">
+
+    <!-- 배경 영상 -->
+    <div class="main-visual-media" aria-hidden="true">
+      <img class="main-visual-img-res" src="images/animalCrossing/main-visual-responsive.png" alt="메인비주얼의 이미지">
+      <video class="main-visual-video" src="https://hd1156.dothome.co.kr/videos/animalCrossing.mp4" autoplay muted
+        playsinline loop>
+      </video>
+
+    </div>
+
+    <!-- 중앙 로고 영역 -->
+    <div class="main-visual-content">
+      <h1 class="main-visual-title">
+        <img src="images/animalCrossing/animalCrossing-logo.png" alt="Nintendo Pikmin" class="main-visual-logo">
+      </h1>
+    </div>
+
+    <!-- 스크롤 안내 -->
+    <a href="#main-content" class="main-visual-scroll" aria-label="아래로 이동">
+      <div class="main-visual-scroll-icon-wrap">
+        <img src="images/pikmin/main-visual-arrow.png" alt="스크롤 이미지">
+      </div>
+      <span class="main-visual-scroll-text">SCROLL</span>
+    </a>
+
+  </section>
+
+  <!-- 소프트웨어 -->
+  <section class="sub-software sub-software--animalCrossing" id="subSw">
+    <div class="sub-software-container">
+      <!-- 소프트웨어 랩 -->
+      <div class="sub-software-wrap">
+        <!-- 위쪽 비디오 영역 -->
+        <div class="top-nintendo-video">
+          <!-- 캐릭터에디션 닌텐도 -->
+          <img src="images/animalCrossing/nintendo.png" alt="닌텐도이미지">
+          <!-- 게임 소개 영상 -->
+          <video src="https://hd1156.dothome.co.kr/videos/animalCrossing-software.mp4" type="video/mp4" alt="게임소개영상"
+            autoplay muted playsinline></video>
+          <!-- 커스텀 일시정지 버튼 -->
+          <button class="video-pause-btn" aria-label="pause">
+            <img src="images/animalCrossing/play-btn.png" alt="일시정지">
+          </button>
+        </div>
+        <!-- 아래 택스트 영역 -->
+        <div class="bottom-wrap">
+          <!-- 캐릭터 이미지 -->
+          <div class="sub-software-img"></div>
+          <div class="bottom-text">
+            새로운 생활을 위해 찾아온 자연 그대로의 무인도, 스스로 만들고 교류하며 하루하루 섬을 채워간다. 아무것도 없던 곳에 지금보니 모두가 있었다.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 시리즈 -->
+  <section class="sub-series sub-series--bg" id="subSeries">
+    <div class="sub-series-slide-wrap">
+      <!-- 왼쪽 -->
+      <div class="sub-series-left-wrap">
+        <!-- 데스크탑에서만 보이는 숫자 -->
+        <div class="sub-series-number active"><img src="images/animalCrossing/series-num01.png" alt="01"></div>
+        <div class="sub-series-number"><img src="images/animalCrossing/series-num02.png" alt="02"></div>
+        <div class="sub-series-number"><img src="images/animalCrossing/series-num03.png" alt="03"></div>
+        <div class="sub-series-number"><img src="images/animalCrossing/series-num04.png" alt="04"></div>
+
+        <!-- 설명 텍스트 -->
+        <div class="sub-series-left active" data-ssIndex="0">
+          <div class="sub-series-title-wrap">
+            <!-- sub-series-num-title >> 반응형에서만 보이는 영역 -->
+            <div class="sub-series-num-title sub-series-num-title1"></div>
+            <div class="sub-series-text-title-wrap">
+              <div class="sub-series-section-title"></div>
+              <h3 class="sub-series-title">놀러오세요 동물의 숲</h3>
+            </div>
+          </div>
+          <p class="sub-series-desc">
+            DS로 출시되어 동물의 숲이 본격적으로 대중과 만난 작품.
+            자유로운 생활과 소소한 재미를 널리 알렸고,
+            많은 플레이어의 기억 속에 처음으로 남은 시리즈.
+          </p>
+        </div>
+        <div class="sub-series-left" data-ssIndex="1">
+          <div class="sub-series-title-wrap">
+            <!-- sub-series-num-title >> 반응형에서만 보이는 영역 -->
+            <div class="sub-series-num-title sub-series-num-title2"></div>
+            <div class="sub-series-text-title-wrap">
+              <div class="sub-series-section-title"></div>
+              <h3 class="sub-series-title">타운으로 놀러가요 동물의 숲</h3>
+            </div>
+          </div>
+
+          <p class="sub-series-desc">
+            Wii로 출시되어 마을 밖 ‘타운’이 새롭게 추가되어 더 넓은 생활을 경험할 수 있는 작품.
+            전작의 요소를 발전시키고 온라인 플레이를 강화해, 친구들과 함께 마을을 오가며 즐기는 재미를 확장한 시리즈.
+          </p>
+        </div>
+        <div class="sub-series-left" data-ssIndex="2">
+          <div class="sub-series-title-wrap">
+            <!-- sub-series-num-title >> 반응형에서만 보이는 영역 -->
+            <div class="sub-series-num-title sub-series-num-title3"></div>
+            <div class="sub-series-text-title-wrap">
+              <div class="sub-series-section-title"></div>
+              <h3 class="sub-series-title">튀어나와요 동물의 숲</h3>
+            </div>
+          </div>
+          <p class="sub-series-desc">
+            3DS로 출시되어 플레이어가 촌장이 되어 마을을 직접 가꾸는 경험을 담은 작품.
+            더 많은 꾸미기 요소와 변화가 있는 마을 생활로, 나만의 동물의 숲을 만드는 재미가 강조된 시리즈.
+          </p>
+        </div>
+        <div class="sub-series-left" data-ssIndex="3">
+          <div class="sub-series-title-wrap">
+            <!-- sub-series-num-title >> 반응형에서만 보이는 영역 -->
+            <div class="sub-series-num-title sub-series-num-title4"></div>
+            <div class="sub-series-text-title-wrap">
+              <div class="sub-series-section-title"></div>
+              <h3 class="sub-series-title">모여봐요 동물의 숲</h3>
+            </div>
+          </div>
+          <p class="sub-series-desc">
+            스위치로 출시되어 무인도에서 생활을 시작해 섬을 발전시켜 가는 콘셉트의 작품.
+            자유로운 꾸미기와 협동 플레이가 더해져, 누구나 편하게 즐길 수 있는 ‘섬 라이프’의 매력을 크게 보여준 시리즈.
+          </p>
+        </div>
+
+        <!-- 컨트롤 버튼 -->
+        <div class="sub-series-control-btn-wrap" aria-label="슬라이드 이동">
+          <button type="button" class="sub-series-control-btn-prev" aria-label="이전">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="sub-series-page-count"><span class="sub-series-page-current">01</span>/<span
+              class="sub-series-page-total">04</span></div>
+          <button type="button" class="sub-series-control-btn-next" aria-label="다음">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <!-- 데스크탑에서는 안 보임, 반응형에서만 -->
+        <button type="button" class="more-btn sub-series-btn">
+          <img src="images/animalCrossing/button-leaf-left.png" alt="나뭇잎 아이콘 이미지">
+          MORE
+          <img src="images/animalCrossing/button-leaf-right.png" alt="나뭇잎 아이콘 이미지">
+        </button>
+      </div>
+
+      <!-- 오른쪽 -->
+      <div class="sub-series-right-wrap">
+        <!-- viewport -->
+        <div class="sub-series-viewport">
+          <!-- track -->
+          <div class="sub-series-track">
+            <!-- slide -->
+            <div class="sub-series-slide-wrap active">
+              <div class="sub-series-slide sub-series-slide1--img">
+                <div class="sub-series-slide-notice">
+                  <div class="sub-series-slide-notice-icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="sub-series-slide-wrap">
+              <div class="sub-series-slide sub-series-slide2--img"></div>
+            </div>
+            <div class="sub-series-slide-wrap">
+              <div class="sub-series-slide sub-series-slide3--img"></div>
+            </div>
+            <div class="sub-series-slide-wrap">
+              <div class="sub-series-slide sub-series-slide4--img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 캐릭터 -->
+  <section class="sub-character" id="subChar">
+    <div class="sub-character-container inner">
+      <!-- 섹션 타이틀 -->
+      <div class="sub-character-title">
+        <img src="images/animalCrossing/character-title.svg" alt="캐릭터섹션_타이틀" class="sub-character-title-img">
+      </div>
+
+      <div class="sub-character-wrap">
+        <!-- 1) 큰 이미지 Swiper -->
+        <div class="sub-character-left">
+          <div class="swiper left-Swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="character-left-img" src="images/animalCrossing/tom-Nook.png" />
+              </div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/animalCrossing/isabelle.png" />
+              </div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/animalCrossing/timmy-tommy.png" />
+              </div>
+              <div class="swiper-slide"><img class="character-left-img"
+                  src="images/animalCrossing/blathers-celeste.png" /></div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/animalCrossing/sable-mabel.png" />
+              </div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/animalCrossing/kk.png" /></div>
+              <div class="swiper-slide"><img class="character-left-img" src="images/animalCrossing/redd.png" /></div>
+              <div class="swiper-slide"><img class="character-left-img"
+                  src="images/animalCrossing/character-more.png" /></div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 2) 썸네일 Swiper -->
+        <div class="sub-character-right">
+          <div thumbsSlider="" class="swiper right-Swiper">
+            <div class="swiper-wrapper">
+
+              <!-- 너굴 -->
+              <div class="swiper-slide" data-nameimg="images/animalCrossing/tom-nook-name.svg"
+                data-desc="너굴은 너구리 캐릭터로 말끝의 “~구리” 말투가 특징입니다. 초기작부터 등장한 대표 캐릭터로, 플레이어의 정착을 돕는 중심 캐릭터입니다. 그는 게으르게 눈을 감고 미소가 없어 보이며, 말할 때 코가 움직입니다.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/animalCrossing/tom-Nook-thumbnail.png" alt="너굴" />
+                  <img class="character-thum-bg" src="images/animalCrossing/thumbnail-bg-pupple.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!-- 여울이 -->
+              <div class="swiper-slide" data-nameimg="images/animalCrossing/isabelle-name.svg"
+                data-desc="여울은 안내소에서 플레이어의 섬 생활을 돕는 상냥한 비서 강아지입니다. 노란 시츄 모습에 종이 달린 리본을 묶은 귀여운 헤어스타일이 특징이며, 계절에 따라 다양한 안내소 유니폼을 입습니다.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/animalCrossing/isabelle-thumbnail.png" alt="여울이" />
+                  <img class="character-thum-bg" src="images/animalCrossing/thumbnail-bg-blue.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!-- 콩돌&밤돌 -->
+              <div class="swiper-slide" data-nameimg="images/animalCrossing/timmy-tommy-name.svg"
+                data-desc="콩돌이와 밤돌인 너굴의 제자인 쌍둥이 너구리로, 함께 가게를 운영하는 캐릭터입니다. 초기엔 너굴 백화점 2층에서 일했으며, 이후 자신들만의 상점을 차렸고 둘 중 누가 형인지는 알 수 없습니다.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/animalCrossing/timmy-tommy-thumbnail.png"
+                    alt="콩돌이와 밤돌이" />
+                  <img class="character-thum-bg" src="images/animalCrossing/thumbnail-bg-yellow.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!-- 부엉&부옥 -->
+              <div class="swiper-slide" data-nameimg="images/animalCrossing/blathers-celeste-name.svg"
+                data-desc="부엉과 부옥은 올빼미 남매로, 각각 감정이 뚜렷한 성격과 따뜻한 말투가 특징이다. 부엉은 곤충을 무서워하지만 지식을 전해주는 박물관 관장이고, 부옥은 별똥별 이벤트와 DIY 레시피를 전해주는 천문학자 역할을 맡고 있다.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/animalCrossing/blathers-celeste-thumbnail.png"
+                    alt="부엉이와 부옥이 이미지" />
+                  <img class="character-thum-bg" src="images/animalCrossing/thumbnail-bg-pink.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!-- 고욱&고순 -->
+              <div class="swiper-slide" data-nameimg="images/animalCrossing/sable-mabel-name.svg"
+                data-desc="고옥이와 고순이는 에이블 시스터즈 재봉점을 함께 운영하는 고슴도치 자매입니다. 수줍고 말수가 적은 언니 고옥이와, 밝고 친절하게 손님을 맞이하는 동생 고순이가 서로 다른 매력으로 가게를 이끌고 있습니다.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/animalCrossing/sable-mabel-thumbnail.png"
+                    alt="고옥이와 고순이 이미지" />
+                  <img class="character-thum-bg" src="images/animalCrossing/thumbnail-bg-green.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!-- k.k -->
+              <div class="swiper-slide" data-nameimg="images/animalCrossing/kk-name.svg"
+                data-desc="토타케케(K.K. Slider)는 동물의 숲 시리즈에 등장하는 뮤지션 강아지로, 플레이어를 위해 기타 연주와 노래를 들려주는 특별한 캐릭터입니다. 흰 털에 검은 눈과 코가 특징이며, 옷 대신 기타를 들고 다니는 잭 러셀 테리어 모습으로 유명합니다.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/animalCrossing/kk-thumbnail.png" alt="k.k 이미지" />
+                  <img class="character-thum-bg" src="images/animalCrossing/thumbnail-bg-white.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!-- 여욱 -->
+              <div class="swiper-slide" data-nameimg="images/animalCrossing/redd-name.svg"
+                data-desc="여욱은 블랙마켓 성격의 여욱 마켓을 운영하는 여우로, 가구와 미술품을 비싸게 판매한다. 친절한 척하지만 가품을 섞어 파는 등 언행이 수상해 사기꾼 같은 인상을 준다. 말끝에 항상 “~다요” 를 붙이는 것이 특징이다.">
+                <div class="sub-character-Thumbnail">
+                  <img class="character-right-img" src="images/animalCrossing/redd-thumbnail.png" alt="여욱 이미지" />
+                  <img class="character-thum-bg" src="images/animalCrossing/thumbnail-bg-red.png" alt="썸네일 배경">
+                </div>
+              </div>
+
+              <!-- 그외 캐릭터 더보기 -->
+              <div class="swiper-slide" data-nameimg="images/animalCrossing/character-more-name.svg"
+                data-desc="더 많은 동물의 숲 캐릭터을 보고싶다면 하단의 MORE 버튼을 클릭해주세요!">
+                <div class="sub-character-Thumbnail more">
+                  <img class="character-right-img" src="images/animalCrossing/character-more.png" alt="더보기" />
+                  <img class="character-thum-bg" src="images/pikmin/thumbnailbg-more.png" alt="썸네일 배경 이미지">
+                </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 3) 텍스트 박스 -->
+        <div class="sub-character-text-box">
+          <div class="sub-character-group">
+            <img class="sub-character-name-img" src="images/animalCrossing/tom-nook-name.svg" alt="캐릭터 이름 이미지">
+            <div class="sub-character-desc">
+              <p>
+                너굴은 너구리 캐릭터로 말끝의 “~구리” 말투가 특징입니다. 초기작부터 등장한 대표 캐릭터로, 플레이어의 정착을 돕는 중심 캐릭터입니다. 그는 게으르게 눈을 감고 미소가 없어 보이며,
+                말할 때 코가 움직입니다.
+              </p>
+            </div>
+            <div class="sub-character-more-btn">
+              <a href="#none" class="more-link">
+                MORE
+              </a>
+            </div>
+            </img>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+
+  <!--뉴스-->
+  <section class="sub-news" id="subNews">
+    <div class="sub-news-container inner">
+      <h2 class="sub-section-title">
+        <img src="images/animalCrossing/news-title.svg" alt="타이틀">
+      </h2>
+      <div class="sub-news-wrap">
+        <a href="#none">
+          <div class="sub-news-card tack01">
+            <div class="sub-news-img-box">
+              <button class="more-btn">
+                MORE
+              </button>
+              <div class="sub-news-img">
+                <img src="images/animalCrossing/news-img01.png" alt="뉴스 이미지01">
+              </div>
+            </div>
+            <div class="sub-news-text-box">
+              <div class="sub-news-card-title">
+                <p>[모여봐요 동물의 숲] 무료 촬영 이벤트가 진행됩니다.</p>
+              </div>
+              <div class="sub-news-card-date">
+                <p>2026.01.17</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#none">
+          <div class="sub-news-card tack02">
+            <div class="sub-news-img-box">
+              <button class="more-btn">
+                MORE
+              </button>
+              <div class="sub-news-img">
+                <img src="images/animalCrossing/news-img02.png" alt="뉴스 이미지02">
+              </div>
+            </div>
+            <div class="sub-news-text-box">
+              <div class="sub-news-card-title">
+                <p>
+                  「TETRIS® 99」 제49회 테트1 컵 『모여봐요 동물의 숲』 컬래버레이션 축제!! 제2탄입니다.
+                </p>
+              </div>
+              <div class="sub-news-card-date">
+                <p>2026.01.06</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#none">
+          <div class="sub-news-card tack03">
+            <div class="sub-news-img-box">
+              <button class="more-btn">
+                MORE
+              </button>
+              <div class="sub-news-img">
+                <img src="images/animalCrossing/news-img03.png" alt="뉴스 이미지03">
+              </div>
+            </div>
+            <div class="sub-news-text-box">
+              <div class="sub-news-card-title">
+                <p>『모여봐요 동물의 숲』의 뉴 이어 2026 마이 디자인을 배포합니다. 1월의 아이콘 파츠와 새로운 월페이퍼도 소개합니다.</p>
+              </div>
+              <div class="sub-news-card-date">
+                <p>2026.12.23</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <button class="sub-news-btn more-btn">
+        <img src="images/animalCrossing/button-leaf-left.png" alt="꽃 이미지">
+        <a href="#none">MORE</a>
+        <img src="images/animalCrossing/button-leaf-right.png" alt="꽃 이미지">
+      </button>
+    </div>
+  </section>
+
+  <!-- 뉴스 반응형 -->
+  <div class="sub-news-responsive-wrap">
+    <h2 class="sub-section-title">
+      <img src="images/pikmin/sub-pikmin-news-title.svg" alt="타이틀">
+    </h2>
+    <section class="sub-news-tablet swiper">
+      <div class="swiper-wrapper sub-news-wrap">
+        <!--카드 1-->
+        <div class="swiper-slide sub-news-card tack01" data-link="#">
+          <div class="sub-news-img-box">
+            <div class="sub-news-img">
+              <img src="images/animalCrossing/news-img01.png" alt="뉴스 이미지01">
+            </div>
+          </div>
+          <div class="sub-news-text-box">
+            <div class="sub-news-card-title">
+              <p>
+                [모여봐요 동물의 숲] 무료 촬영 이벤트가 진행됩니다.
+              </p>
+            </div>
+            <div class="sub-news-card-date">
+              <p>2026.01.17</p>
+            </div>
+          </div>
+          <img src="images/pikmin/sub-news-card-t.svg" class="news-card">
+        </div>
+
+        <!--카드 2-->
+        <div class="swiper-slide sub-news-card tack02" data-link="#">
+          <div class="sub-news-img-box">
+            <div class="sub-news-img">
+              <img src="images/animalCrossing/news-img02.png" alt="뉴스 이미지02">
+            </div>
+          </div>
+          <div class="sub-news-text-box">
+            <div class="sub-news-card-title">
+              <p>
+                「TETRIS® 99」 제49회 테트1 컵 『모여봐요 동물의 숲』 컬래버레이션 축제!! 제2탄입니다.
+              </p>
+            </div>
+            <div class="sub-news-card-date">
+              <p>2026.01.06</p>
+            </div>
+          </div>
+          <img src="images/pikmin/sub-news-card-t.svg" class="news-card">
+        </div>
+
+        <!--카드 3-->
+        <div class="swiper-slide sub-news-card tack03" data-link="#">
+          <div class="sub-news-img-box">
+            <div class="sub-news-img">
+              <img src="images/animalCrossing/news-img03.png" alt="뉴스 이미지03">
+            </div>
+          </div>
+          <div class="sub-news-text-box">
+            <div class="sub-news-card-title">
+              <p>
+                『모여봐요 동물의 숲』의 뉴 이어 2026 마이 디자인을 배포합니다. 1월의 아이콘 파츠와 새로운 월페이퍼도 소개합니다.
+              </p>
+            </div>
+            <div class="sub-news-card-date">
+              <p>2026.12.23</p>
+            </div>
+          </div>
+          <img src="images/pikmin/sub-news-card-t.svg" class="news-card">
+        </div>
+      </div>
+      <div class="swiper-pagination-box">
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <!-- 다운로드 박스 -->
+  <section class="sub-download">
+    <div class="sub-download-box-container inner">
+
+      <div class="sub-download-box">
+        <div class="sub-download-wrap">
+          <!-- 왼쪽 영역 -->
+          <div class="download-left">
+
+            <!--  로고 이미지 -->
+            <div class="download-game-logo-img">
+              <img class="game-logo-img" src="images/animalCrossing/animalCrossing-logo.png" alt="피크민 로고 이미지">
+            </div>
+
+            <!-- 다운로드 버튼 -->
+            <a href="#none" class="download-btn">
+              <span class="btn-bg"></span>
+              <span class="btn-nails"></span>
+              <span class="btn-text">DOWNLOAD</span>
+            </a>
+
+          </div>
+          <!-- 오른쪽 영역 -->
+          <div class="download-right">
+            <div class="download-character">
+              <div class="download-character-img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 풋터 -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-top-icon">
+        <div class="footer-top-sns">
+          <ul>
+            <li><a href="#none" class="footer-icon-youtube"></a></li>
+            <li><a href="#none" class="footer-icon-kakaostroy"></a></li>
+            <li><a href="#none" class="footer-icon-facebook"></a></li>
+            <li><a href="#none" class="footer-icon-x"></a></li>
+            <li><a href="#none" class="footer-icon-kakaotalk"></a></li>
+          </ul>
+        </div>
+        <div class="footer-top-site">
+          <a href="#none" class="footer-icon-long footer-icon-mynintendo"></a>
+          <a href="#none" class="footer-icon-long footer-icon-amiibo"></a>
+        </div>
+      </div>
+      <div class="footer-bottom-text">
+        <div class="footer-bottom-text-left">
+          <div class="footer-bottom-atags">
+            <a href="#none" class="footer-bottom-atag">이용약관</a>
+            <a href="#none" class="footer-bottom-atag">개인정보처리방침</a>
+          </div>
+          <p class="footer-bottom-text01">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+          <p class="footer-bottom-text02">상호명 : 한국닌텐도주식회사<span class="footer-line-break-mb"></span>대표자명 : 미우라 타카히로<span
+              class="footer-line-break"></span>사업자등록번호
+            : 120-87-03578</p>
+        </div>
+        <div class="footer-bottom-text-right">
+          <p class="footer-bottom-text03">고객지원 문의전화 : 1670-9900</p>
+          <p class="footer-bottom-text04">(평일 오전 9시 30분~오후 5시 30분)</p>
+          <p class="footer-bottom-text05">※토/일/공휴일/회사 정기휴일 및 특별휴일 제외</p>
+        </div>
+      </div>
+      <p class="responsive-copyright">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+    </div>
+
+  </footer>
+  <!-- 쇼핑 버튼 -->
+  <div class="fixed-cart">
+    <div class="cart-panel">
+      <a href="#none" class="cart-text">장바구니 바로가기 ></a>
+    </div>
+    <button class="cart-btn">
+      <i class="fa-solid fa-bag-shopping"></i>
+    </button>
+  </div>
+
+  <!-- 탑버튼 -->
+  <div class="top-btn-wrap" id="topBtn">
+    <div class="top-btn-img">
+      <img src="images/animalCrossing/top-btn.png" alt="탑버튼 이미지">
+    </div>
+    <div class="top-btn">
+      <button>TOP <i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </div>
+
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="js/sub3.js"></script>
+  <script src="js/header.js"></script>
+
+</body>
+
+</html>

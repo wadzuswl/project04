@@ -1,0 +1,677 @@
+@import 'variables', 'mixins', 'reset', 'fonts', 'header', 'footer', 'common';
+
+body {
+  font-family: $ff-suit;
+}
+
+// 메인 비주얼
+.sub-page-main-visual {
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: relative;
+  margin-top: 60px;
+  // 충돌방지
+  padding-top: 1px;
+  transform: scale(1.03);
+  clip-path: circle(0% at 50% 50%);
+  animation-name: reveal;
+  animation-duration: 1.1s;
+  animation-timing-function: $ease-default;
+  animation-delay: 0.8s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  // !! 배경 이미지 변경
+  &-06 {
+    background: url(../images/sub6/sub6-main-visual-bg.jpg) no-repeat center / cover;
+  }
+
+  .sub-page-mv-title-wrap {
+    @include flex-center;
+    flex-direction: column;
+    gap: $sp-30;
+    margin-top: 300px;
+
+    .sub-page-big-title {
+
+      .big-title-img-tablet,
+      .big-title-img-mb {
+        display: none;
+      }
+    }
+
+    p {
+      font-size: 48px;
+      font-weight: $fw-b;
+      color: $c-white;
+    }
+  }
+
+  .sub-page-scroll-btn-wrap {
+    @include flex-center;
+    flex-direction: column;
+    gap: $sp-5;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    animation: sparkle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    .sub-page-scroll-text {
+      font-family: $ff-kanit;
+      font-size: $fs-20;
+      font-weight: $fw-r;
+      color: $c-white;
+    }
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: scale(1.03);
+    clip-path: circle(0% at 50% 50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    clip-path: circle(150% at 50% 50%);
+  }
+}
+
+// 콘텐츠 올라오는 거
+.sub-whole-content-container {
+  // 헤더 길이만큼 + 간격 너비만큼
+  padding-top: 210px;
+  position: relative;
+  z-index: 2;
+  border-radius: 200px 200px 0 0;
+  transform: translateY(80px);
+  transition: transform 800ms ease;
+  background: $c-white;
+
+  &.is-active {
+    transform: translateY(0);
+  }
+
+  .sub-content-wrap {
+    @include inner($inner-main);
+  }
+}
+
+// 탭메뉴
+.sub-page-tab-menu {
+  @include flex-center;
+  gap: $sp-100;
+  margin-bottom: 150px;
+
+  .sub-page-tab-btn {
+    @include flex-center;
+    flex-direction: column;
+    gap: 15px;
+
+    &:hover .sub-page-tab-btn-bar {
+      background: $c-main;
+    }
+
+    &-icon {
+      width: 66px;
+      height: 66px;
+      border-radius: $r-sm;
+    }
+
+    &-text {
+      margin-bottom: 5px;
+    }
+
+    &-bar {
+      width: 190px;
+      height: 10px;
+      border-radius: 50px;
+      background: #d9d9d9;
+      transition: $tr-r;
+
+      &.active {
+        background: $c-main;
+      }
+    }
+
+    &:nth-child(1) {
+      .sub-page-tab-btn-icon {
+        background: url(../images/sub6/sub6-tab-btn-icon1.png) no-repeat center / cover;
+      }
+    }
+
+    &:nth-child(2) {
+      .sub-page-tab-btn-icon {
+        background: url(../images/sub6/sub6-tab-btn-icon2.png) no-repeat center / cover;
+      }
+    }
+
+    &:nth-child(3) {
+      .sub-page-tab-btn-icon {
+        background: url(../images/sub6/sub6-tab-btn-icon3.png) no-repeat center / cover;
+      }
+    }
+
+    &:nth-child(4) {
+      .sub-page-tab-btn-icon {
+        background: url(../images/sub6/sub6-tab-btn-icon4.png) no-repeat center / cover;
+      }
+    }
+  }
+}
+
+/* ===================================
+   Repair Support Page
+=================================== */
+.sub6-repair-page-content {
+  .repair-support-container {
+    @include inner($inner-sub);
+
+    // 스텝 순서
+    .steps {
+      position: relative;
+
+      .steps-header {
+        text-align: center;
+        margin-bottom: 100px;
+
+        .steps-title {
+          font: $fw-semi-b $fs-48 $ff-kanit;
+        }
+
+        .steps-sub-title {
+          font-size: $sp-40;
+          font-weight: $fw-b;
+        }
+      }
+
+      /* 회색 길 */
+      .steps-road {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 186px;
+        background: url("../images/sub6-2/steps-road.png") no-repeat center / cover;
+      }
+
+      /* 마리오 */
+      .steps-mario {
+        position: absolute;
+        left: 25%;
+        bottom: 150px;
+        width: 60px;
+        z-index: 3;
+      }
+
+      /* ================= 리스트 공동스타일 ================= */
+      .steps-list {
+        display: flex;
+        justify-content: space-between;
+        height: 440px;
+        z-index: 2;
+
+        .steps-item {
+          width: 25%;
+          text-align: center;
+
+          .steps-text {
+            margin-bottom: $sp-30;
+
+            .steps-title,
+            .steps-desc {
+              font-weight: $fw-b;
+              font-size: $fs-20;
+            }
+          }
+
+          .steps-marker {
+            width: 150px;
+            height: 190px;
+            margin: 0 auto;
+            background: no-repeat center / contain;
+            position: relative;
+
+            .steps-marker-circle {
+              @include flex-center;
+              width: 120px;
+              height: 120px;
+              border-radius: 50%;
+              background: $c-white;
+              position: absolute;
+              top: 15px;
+              left: 50%;
+              transform: translateX(-50%);
+
+              img {
+                width: 50px;
+                height: 50px;
+              }
+            }
+          }
+        }
+      }
+
+      // 스텝아이템별 스타일
+      .steps-list {
+        .steps-item {
+          width: 25%;
+          text-align: center;
+
+          /* ================= STEP 1 ================= */
+          &:nth-child(1) {
+            transform: translateY(28px);
+
+            .steps-text {
+              color: #6284c4;
+            }
+
+            .steps-marker {
+              background-image: url("../images/sub6-2/steps-step1-marker.svg");
+
+              .steps-marker-circle {
+                border: 3px solid #6284c4;
+              }
+            }
+          }
+
+          /* ================= STEP 2 ================= */
+          &:nth-child(2) {
+            transform: translateY(5px);
+
+            .steps-text {
+              color: #44a0bd;
+            }
+
+            .steps-marker {
+              background-image: url("../images/sub6-2/steps-step2-marker.svg");
+
+              .steps-marker-circle {
+                border: 3px solid #44a0bd;
+              }
+            }
+          }
+
+          /* ================= STEP 3 ================= */
+          &:nth-child(3) {
+            transform: translateY(85px);
+
+            .steps-text {
+              color: #8eab51;
+            }
+
+            .steps-marker {
+              background-image: url("../images/sub6-2/steps-step3-marker.svg");
+
+              .steps-marker-circle {
+                border: 3px solid #8eab51;
+              }
+            }
+          }
+
+          /* ================= STEP 4 ================= */
+          &:nth-child(4) {
+            transform: translateY(45px);
+
+            .steps-text {
+              color: #e3dc69;
+            }
+
+            .steps-marker {
+              background-image: url("../images/sub6-2/steps-step4-marker.svg");
+
+              .steps-marker-circle {
+                border: 3px solid #e3dc69;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+    //스텝 1,2,3,4섹션 공통 scss
+    .repair-step-section {
+      margin: 200px 0;
+
+      /* ===== 공통 헤더 ===== */
+      .repair-step-header {
+        text-align: center;
+        margin-bottom: 100px;
+
+        .repair-step-title {
+          font-size: $fs-48;
+          font-weight: $fw-semi-b;
+          font-family: $ff-kanit;
+        }
+
+        .repair-step-subtitle {
+          font-size: $sp-40;
+          font-weight: $fw-b;
+        }
+      }
+
+      /* ===== 카드 공통 ===== */
+      .repair-step-card-wrap {
+        display: flex;
+        gap: $sp-20;
+        justify-content: center;
+        margin-bottom: $sp-50;
+
+        .repair-step-card {
+          flex: 1;
+          height: 420px;
+          border: 3px solid $c-main;
+          border-radius: 15px;
+          background: $c-white;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .repair-step-card-top {
+            flex: 1;
+            @include flex-center;
+            flex-direction: column;
+            gap: $sp-25;
+            padding: 0 20px;
+
+            .repair-step-card-icon {
+              @include flex-center;
+              width: 125px;
+              height: 125px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            .repair-step-card-desc {
+              @include text($fs-20, $fw-semi-b, $c-black);
+              text-align: center;
+            }
+          }
+
+          .repair-step-card-bottom {
+            @include flex-center;
+            height: 60px;
+            background: $c-main;
+            color: $c-white;
+            gap: $sp-20;
+            border-radius: 0 0 10px 10px;
+
+            .repair-step-number {
+              width: 40px;
+              height: 40px;
+              font-size: $fs-32;
+              font-weight: $fw-b;
+
+              border: 3px solid $c-white;
+              border-radius: 50%;
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            .repair-step-label {
+              font-size: $fs-32;
+              font-weight: $fw-b;
+            }
+          }
+        }
+      }
+
+      // 하단 공통 안내
+      .repair-step-notice {
+        margin-top: $sp-50;
+
+        .repair-step-notice-title {
+          font-size: $sp-20;
+          font-weight: $fw-b;
+          margin-bottom: $sp-5;
+        }
+
+        .repair-step-notice-list {
+          display: flex;
+          flex-direction: column;
+          gap: $sp-5;
+
+
+          .repair-step-notice-text {
+            font-size: $sp-20;
+            font-weight: $fw-md;
+            color: $c-gray55;
+          }
+        }
+      }
+    }
+
+    // 스텝 1 섹션
+    .repair-step-process {
+      display: flex;
+      flex-direction: column;
+      gap: $sp-30;
+      margin-top: $sp-30;
+
+      .repair-step-process-item {
+        position: relative;
+        padding-left: $sp-15;
+        font-size: $fs-20;
+        font-weight: $fw-semi-b;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 4px;
+          height: 30px;
+          background: $c-main;
+          border-radius: 5px;
+        }
+      }
+    }
+
+
+    // 스텝2,4 섹션
+    .step02,
+    .step04 {
+      .repair-step-card-wrap {
+        margin-bottom: $sp-50;
+      }
+    }
+
+    // 스텝3 섹션
+    .step03 {
+      .flowchart-img {
+        height: 1328px;
+        background: url(../images/sub6-2/step03-flowchart-desktop.png) no-repeat center;
+      }
+    }
+
+    // 온라인 수리 접수 신청 배너
+    .repair-support-banner {
+      height: 360px;
+
+      background-image: url("../images/sub6-2/banner-desktop.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      display: flex;
+      justify-content: space-between;
+
+      padding: 0 100px;
+
+      .repair-support-banner-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .repair-apply-banner-desc {
+          font-size: $fs-32;
+          font-weight: $fw-extra-b;
+
+          strong {
+            font-size: $fs-48;
+            font-weight: 900;
+            color: $c-main;
+          }
+        }
+
+        .repair-support-banner-links {
+          display: flex;
+          gap: 120px;
+          margin-top: 30px;
+
+          li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &:hover a {
+              color: $c-main;
+            }
+
+            &:hover .support-banner-arrow-icon {
+              background: url(../images/sub6-2/repair-support-banner-arrow-red.svg);
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+
+            .support-banner-arrow-icon {
+              width: 26px;
+              height: 26px;
+              background: url(../images/sub6-2/repair-support-banner-arrow.svg);
+              transition: $tr-r;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+
+            a {
+              font-size: $fs-24;
+              font-weight: $fw-b;
+              white-space: nowrap;
+              transition: $tr-r;
+            }
+          }
+        }
+      }
+
+      // 오른쪽 마리오 영역
+      .repair-apply-banner-figure {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 160px;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .repair-support-notice {
+      background: #FEF0F1;
+      width: 100%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      gap: $sp-20;
+      border-radius: $r-lg;
+      margin-top: $sp-30;
+      padding-left: $sp-25;
+
+      .repair-support-notice-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .repair-support-notice-desc {
+        font-size: $fs-20;
+        font-weight: $fw-semi-b;
+
+        strong {
+          color: $c-main;
+        }
+      }
+    }
+
+    // NEXT 버튼
+    .repair-support-prev-btn {
+      @include flex-center;
+      width: 130px;
+      height: 50px;
+      font-size: $fs-20;
+      font-weight: $fw-b;
+      border-radius: $r-2xl;
+      background: $c-white;
+      color: $c-main;
+      border: 4px solid $c-main;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      margin: 200px auto;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -140px;
+        top: 0;
+        background: $c-main;
+        transition: $tr-s;
+        z-index: -1;
+      }
+
+      &:hover::before {
+        left: 0;
+      }
+
+      &:hover {
+        color: $c-white;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+/* 탭 콘텐츠 기본 숨김 */
+.sub6-switch2-page-content,
+.sub6-switch-page-content,
+.sub6-faq-page-content,
+.sub6-repair-page-content {
+  display: none;
+}
+
+/* 활성 탭 콘텐츠만 보이기 */
+.sub-tab-active {
+  display: block;
+}

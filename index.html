@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닌텐도</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="scss/index.css">
+  <link rel="stylesheet" href="scss/index-responsive.css">
+  <link rel="icon" href="images/common/favicon.svg">
+
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+    <nav>
+      <a href="index.html" class="logo"></a>
+      <div class="header-click-wrap">
+        <ul class="gnb">
+          <li class="main-menu"><a href="sub1.html">한국닌텐도</a></li>
+          <li class="main-menu"><a href="sub2.html">제품소개</a></li>
+          <li class="main-menu" data-nav="navSw"><a href="#none">소프트웨어</a></li>
+          <li class="main-menu"><a href="sub4.html">영상</a></li>
+          <li class="main-menu"><a href="sub5.html">뉴스</a></li>
+          <li class="main-menu"><a href="sub6.html">고객지원</a></li>
+        </ul>
+        <div class="utility">
+          <button class="header-search-section">
+            <div class="search-icon"></div>
+            <p class="search-text">SEARCH</p>
+          </button>
+          <div class="header-cart"></div>
+          <button class="header-login-section">
+            <div class="login-icon"></div>
+            <div class="login-text">LOGIN / SIGN UP</div>
+          </button>
+          <div class="header-kr"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- 서브헤더 -->
+  <div class="sub-header">
+    <a href="index.html" class="sub-header-home-icon"></a>
+    <a class="sub-header-text" href="#subSeries">Series</a>
+    <a class="sub-header-text" href="#subChar">Charactors</a>
+    <a class="sub-header-text" href="#subNews">News</a>
+  </div>
+  <!-- 서브내비 -->
+  <div class="sub-nav-container" id="navSw">
+    <div class="sub-nav-title-wrap">
+      <div class="sub-nav-title-icon sub-nav-title-icon-sw"></div>
+      <h2>SOFTWARE</h2>
+    </div>
+    <div class="sub-nav-lnb-wrap">
+      <a href="sub3-mario.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">마리오</p>
+      </a>
+      <a href="sub3-animalCrossing.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">동물의 숲</p>
+      </a>
+      <a href="sub3-zelda.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">젤다</p>
+      </a>
+      <a href="sub3-kirby.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">커비</p>
+      </a>
+      <a href="sub3-pikmin.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">피크민</p>
+      </a>
+    </div>
+  </div>
+  <!-- 태블릿, 모바일 내비 -->
+  <div class="responsive-nav-body">
+    <div class="r-nav-left-wrap">
+      <button class="r-nav-hamburger-btn"></button>
+      <a href="index.html" class="r-nav-home-btn"></a>
+    </div>
+    <button class="r-nav-center-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="r-nav-right-wrap">
+      <button class="r-nav-cart-btn"></button>
+      <button class="r-nav-login-btn"></button>
+    </div>
+  </div>
+  <div class="responsive-nav-container">
+    <div class="r-nav-container-header">
+      <div class="r-nav-container-logo"></div>
+      <button class="r-nav-container-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="r-nav-container-body">
+      <div class="r-nav-tab-wrap">
+        <button class="r-nav-tab-btn r-nav-tab-btn1 active" data-rnav="rNavCom">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">COMPANY</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn2" data-rnav="rNavPro">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">PRODUCT</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn3" data-rnav="rNavSw">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SOFTWARE</p>
+        </button>
+        <a href="sub4.html" class="r-nav-tab-btn r-nav-tab-btn4">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">VIDEO</p>
+        </a>
+        <a href="sub5.html" class="r-nav-tab-btn r-nav-tab-btn5">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">NEWS</p>
+        </a>
+        <button class="r-nav-tab-btn r-nav-tab-btn6" data-rnav="rNavSup">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SUPPORT</p>
+        </button>
+      </div>
+      <div class="r-nav-content-wrap">
+        <ul class="r-nav-lnb-wrap active" id="rNavCom">
+          <li>
+            <a href="sub1.html#subComCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">한국닌텐도</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주요 사업</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">연혁</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">찾아오시는 길</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavPro">
+          <li>
+            <a href="sub2.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주변기기</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">아미보</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSw">
+          <li>
+            <a href="sub3-mario.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">마리오</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-animalCrossing.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">동물의 숲</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-zelda.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">젤다</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-kirby.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">커비</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-pikmin.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">피크민</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSup">
+          <li>
+            <a href="sub6.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">FAQ</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">수리접수</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 메인비주얼 -->
+  <section class="main-page-main-visual">
+    <div class="swiper main-mv-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide main-mv-swiper-wrap-mario">
+          <div class="main-mv-swiper-bg">
+            <div class="main-mv-swiper-logo">
+              <img src="images/index/main-mv-logo-mario.png" alt="마리오 로고" class="main-mv-logo-img">
+              <img src="images/index/main-mv-logo-mario-tablet.png" alt="마리오 로고" class="main-mv-logo-img-tablet">
+              <img src="images/index/main-mv-logo-mario-mb.png" alt="마리오 로고" class="main-mv-logo-img-mb">
+            </div>
+            <div class="main-mv-swiper-char1">
+              <img src="images/index/main-mv-char-mario.png" alt="마리오" class="main-mv-char-img">
+              <img src="images/index/main-mv-char-mario-tablet.png" alt="마리오" class="main-mv-char-img-tablet">
+              <img src="images/index/main-mv-char-mario-mb.png" alt="마리오" class="main-mv-char-img-mb">
+            </div>
+            <div class="main-mv-swiper-char2">
+              <img src="images/index/main-mv-char-mario-dust.png" alt="먼지" class="main-mv-char-img">
+              <img src="images/index/main-mv-char-mario-dust-tablet.png" alt="먼지" class="main-mv-char-img-tablet">
+              <img src="images/index/main-mv-char-mario-dust-mb.png" alt="먼지" class="main-mv-char-img-mb">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide main-mv-swiper-wrap-modong">
+          <div class="main-mv-swiper-bg">
+            <div class="main-mv-swiper-logo">
+              <img src="images/index/main-mv-logo-modong.png" alt="동물의 숲 로고" class="main-mv-logo-img">
+              <img src="images/index/main-mv-logo-modong-tablet.png" alt="동물의 숲 로고" class="main-mv-logo-img-tablet">
+              <img src="images/index/main-mv-logo-modong-mb.png" alt="동물의 숲 로고" class="main-mv-logo-img-mb">
+            </div>
+            <div class="main-mv-swiper-char1">
+              <img src="images/index/main-mv-char-left-modong.png" alt="동물의 숲 주민들" class="main-mv-char-img">
+              <img src="images/index/main-mv-char-front-modong-tablet.png" alt="동물의 숲 주민들"
+                class="main-mv-char-img-tablet">
+              <img src="images/index/main-mv-char-front-modong-mb.png" alt="동물의 숲 주민들" class="main-mv-char-img-mb">
+            </div>
+            <div class="main-mv-swiper-char2">
+              <img src="images/index/main-mv-char-right-modong.png" alt="동물의 숲 주민들" class="main-mv-char-img">
+              <img src="images/index/main-mv-char-back-modong-tablet.png" alt="동물의 숲 주민들"
+                class="main-mv-char-img-tablet">
+              <img src="images/index/main-mv-char-back-modong-mb.png" alt="동물의 숲 주민들" class="main-mv-char-img-mb">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide main-mv-swiper-wrap-zelda">
+          <div class="main-mv-swiper-bg">
+            <div class="main-mv-swiper-logo">
+              <img src="images/index/main-mv-logo-zelda.png" alt="젤다 로고" class="main-mv-logo-img">
+              <img src="images/index/main-mv-logo-zelda-tablet.png" alt="젤다 로고" class="main-mv-logo-img-tablet">
+              <img src="images/index/main-mv-logo-zelda-mb.png" alt="젤다 로고" class="main-mv-logo-img-mb">
+            </div>
+            <div class="main-mv-swiper-char">
+              <img src="images/index/main-mv-char-zelda.png" alt="젤다와 링크" class="main-mv-char-img">
+              <img src="images/index/main-mv-char-zelda-tablet.png" alt="젤다와 링크" class="main-mv-char-img-tablet">
+              <img src="images/index/main-mv-char-zelda-mb.png" alt="젤다와 링크" class="main-mv-char-img-mb">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide main-mv-swiper-wrap-kurby">
+          <div class="main-mv-swiper-bg">
+            <div class="main-mv-swiper-logo">
+              <img src="images/index/main-mv-logo-kurby.png" alt="커비 로고" class="main-mv-logo-img">
+              <img src="images/index/main-mv-logo-kurby-tablet.png" alt="커비 로고" class="main-mv-logo-img-tablet">
+              <img src="images/index/main-mv-logo-kurby-mb.png" alt="커비 로고" class="main-mv-logo-img-mb">
+            </div>
+            <div class="main-mv-swiper-char1">
+              <img src="images/index/main-mv-char-front-kurby.png" alt="웨이들 디" class="main-mv-char-img">
+              <img src="images/index/main-mv-char-front-kurby-tablet.png" alt="웨이들 디" class="main-mv-char-img-tablet">
+              <img src="images/index/main-mv-char-front-kurby-mb.png" alt="웨이들 디" class="main-mv-char-img-mb">
+            </div>
+            <div class="main-mv-swiper-char2">
+              <img src="images/index/main-mv-char-back-kurby.png" alt="커비와 친구들" class="main-mv-char-img">
+              <img src="images/index/main-mv-char-back-kurby-tablet.png" alt="웨이들 디" class="main-mv-char-img-tablet">
+              <img src="images/index/main-mv-char-back-kurby-mb.png" alt="웨이들 디" class="main-mv-char-img-mb">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide main-mv-swiper-wrap-pikmin">
+          <div class="main-mv-swiper-bg">
+            <div class="main-mv-swiper-logo">
+              <img src="images/index/main-mv-logo-pikmin.png" alt="피크민 로고" class="main-mv-logo-img">
+              <img src="images/index/main-mv-logo-pikmin-tablet.png" alt="피크민 로고" class="main-mv-logo-img-tablet">
+              <img src="images/index/main-mv-logo-pikmin-mb.png" alt="피크민 로고" class="main-mv-logo-img-mb">
+            </div>
+            <div class="main-mv-swiper-char">
+              <img src="images/index/main-mv-char-pikmin.png" alt="피크민" class="main-mv-char-img">
+              <img src="images/index/main-mv-char-pikmin-tablet.png" alt="피크민" class="main-mv-char-img-tablet">
+              <img src="images/index/main-mv-char-pikmin-mb.png" alt="피크민" class="main-mv-char-img-mb">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="main-mv-swiper-pagination-wrap">
+        <button class="main-mv-swiper-pagination-stop">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <div class="swiper-pagination main-mv-swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 메인 소프트웨어 -->
+  <section class="main-software">
+    <div class="software-wrap">
+
+      <!-- 왼쪽 슬라이드 -->
+      <div class="software-left">
+        <div class="swiper main-software-swiper-wrap">
+          <div class="swiper-wrapper main-software-swiper">
+            <div class="swiper-slide main-software-slide-item"
+              data-video="https://hd1156.dothome.co.kr/videos/main-software-video01.mp4"
+              data-no="images/index/main-software-no01.svg">
+              <img src="images/index/main-software-item-img01.png" alt="슬라이드 이미지">
+            </div>
+            <div class="swiper-slide main-software-slide-item"
+              data-video="https://hd1156.dothome.co.kr/videos/main-software-video02.mp4"
+              data-no="images/index/main-software-no02.svg">
+              <img src="images/index/main-software-item-img02.png" alt="슬라이드 이미지">
+            </div>
+            <div class="swiper-slide main-software-slide-item"
+              data-video="https://hd1156.dothome.co.kr/videos/main-software-video03.mp4"
+              data-no="images/index/main-software-no03.svg">
+              <img src="images/index/main-software-item-img03.png" alt="슬라이드 이미지">
+            </div>
+            <div class="swiper-slide main-software-slide-item"
+              data-video="https://hd1156.dothome.co.kr/videos/main-software-video04.mp4"
+              data-no="images/index/main-software-no04.svg">
+              <img src="images/index/main-software-item-img04.png" alt="슬라이드 이미지">
+            </div>
+            <div class="swiper-slide main-software-slide-item"
+              data-video="https://hd1156.dothome.co.kr/videos/main-software-video05.mp4"
+              data-no="images/index/main-software-no05.svg">
+              <img src="images/index/main-software-item-img05.png" alt="슬라이드 이미지">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 오른쪽 영상 -->
+      <div class="software-right">
+        <h2 class="main-section-title-tb">SOFTWARE</h2>
+        <div class="software-video-box">
+          <video class="software-video" muted autoplay playsinline></video>
+        </div>
+        <div class="software-bg">
+          <img src="images/index/software-bg.png" alt="소프트웨어">
+          <div class="software-no">
+            <img src="images/index/main-software-no01.svg">
+          </div>
+        </div>
+        <button class="software-more">MORE</button>
+      </div>
+    </div>
+  </section>
+
+  <!--메인 소프트웨어 모바일-->
+  <section class="main-software-mb">
+    <div class="software-mb-wrap">
+      <h2 class="main-section-title-mb">SOFTWARE</h2>
+      <div class="software-mb-video-box">
+        <video class="software-mb-video" muted autoplay playsinline></video>
+      </div>
+
+      <div class="software-btn-box">
+        <button data-video="https://hd1156.dothome.co.kr/videos/main-software-video01.mp4">
+          <img src="./images/index/main-software-item-img01.png" alt="탭 버튼1">
+        </button>
+        <button data-video="https://hd1156.dothome.co.kr/videos/main-software-video02.mp4">
+          <img src="./images/index/main-software-item-img02.png" alt="탭 버튼2">
+        </button>
+        <button data-video="https://hd1156.dothome.co.kr/videos/main-software-video03.mp4">
+          <img src="./images/index/main-software-item-img03.png" alt="탭 버튼3">
+        </button>
+        <button data-video="https://hd1156.dothome.co.kr/videos/main-software-video04.mp4">
+          <img src="./images/index/main-software-item-img04.png" alt="탭 버튼4">
+        </button>
+        <button data-video="https://hd1156.dothome.co.kr/videos/main-software-video05.mp4">
+          <img src="./images/index/main-software-item-img05.png" alt="탭 버튼5">
+        </button>
+      </div>
+      <button class="software-more-mb">MORE</button>
+    </div>
+  </section>
+
+  <!-- 캐릭터 소개  -->
+  <section class="character">
+
+    <!-- TOP DECOR -->
+    <div class="decor-band decor-band--top">
+      <div class="decor-band-track">
+        <div class="decor-band-strip"></div>
+      </div>
+
+      <div class="decor-band-karts">
+        <div class="kart kat-01"><img src="images/index/kart-top-01.png" alt=""></div>
+        <div class="kart kat-02"><img src="images/index/kart-top-02.png" alt=""></div>
+        <div class="kart kat-03"><img src="images/index/kart-top-03.png" alt=""></div>
+        <div class="kart kat-04"><img src="images/index/kart-top-04.png" alt=""></div>
+        <div class="kart kat-05"><img src="images/index/kart-top-05.png" alt=""></div>
+      </div>
+    </div>
+
+
+    <div class="character-content">
+      <!-- CONTENT -->
+      <div class="character-title">
+        <img src="images/index/main-character-title.png" alt="">
+        <h2>CHARACTER</h2>
+      </div>
+
+      <div class="character-scroll-wrap">
+        <div class="character-body">
+          <div class="horizontal-track">
+            <figure>
+              <div class="character-img">
+                <img src="images/index/char-mario.png" alt="">
+              </div>
+              <div class="character-text">
+                <h4>마리오</h4>
+                <img src="images/index/char-mario-desc.svg" alt="">
+                <a href="sub3-mario.html"><button>MORE</button></a>
+              </div>
+            </figure>
+            <figure>
+              <div class="character-img">
+                <img src="images/index/char-bamdol.png" alt="">
+              </div>
+              <div class="character-text">
+                <h4>콩돌이&밤돌이</h4>
+                <img src="images/index/char-bamdol-desc.svg" alt="">
+                <a href="sub3-animalCrossing.html"><button>MORE</button></a>
+              </div>
+            </figure>
+            <figure>
+              <div class="character-img">
+                <img src="images/index/char-link.png" alt="">
+              </div>
+              <div class="character-text">
+                <h4>링크</h4>
+                <img src="images/index/char-link-desc.svg" alt="">
+                <a href="sub3-zelda.html"><button>MORE</button></a>
+              </div>
+            </figure>
+            <figure>
+              <div class="character-img">
+                <img src="images/index/char-kirby.png" alt="">
+              </div>
+              <div class="character-text">
+                <h4>커비</h4>
+                <img src="images/index/char-kirby-desc.svg" alt="">
+                <a href="sub3-kirby.html"><button>MORE</button></a>
+              </div>
+            </figure>
+            <figure>
+              <div class="character-img">
+                <img src="images/index/char-bluepikmin.png" alt="">
+              </div>
+              <div class="character-text">
+                <h4>파랑 피크민</h4>
+                <img src="images/index/char-bluepikmin-desc.svg" alt="">
+                <a href="sub3-pikmin.html"><button>MORE</button></a>
+              </div>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 캐릭터 테블릿부터 스와이프 되는 부분 -->
+      <div class="character-swiper-wrap character-body--tablet">
+        <div class="swiper character-swiper">
+          <div class="swiper-wrapper">
+            <figure class="swiper-slide" data-icon="images/index/pagination-mario.png">
+              <div class="character-img">
+                <img src="images/index/char-mario.png" alt="">
+              </div>
+              <div class="character-text">
+                <h4>마리오</h4>
+                <img src="images/index/char-mario-desc.svg" alt="">
+                <a href="sub3-mario.html"><button>MORE</button></a>
+              </div>
+            </figure>
+            <figure class="swiper-slide" data-icon="images/index/pagination-nugul.png">
+              <div class="character-img">
+                <img src="images/index/char-bamdol.png" alt="">
+              </div>
+              <div class="character-text">
+                <h4>콩돌이&밤돌이</h4>
+                <img src="images/index/char-bamdol-desc.svg" alt="">
+                <a href="sub3-animalCrossing.html"><button>MORE</button></a>
+              </div>
+            </figure>
+            <figure class="swiper-slide" data-icon="images/index/pagination-link.png">
+              <div class="character-img">
+                <img src="images/index/char-link.png" alt="">
+              </div>
+              <div class="character-text">
+                <h4>링크</h4>
+                <img src="images/index/char-link-desc.svg" alt="">
+                <a href="sub3-zelda.html"><button>MORE</button></a>
+              </div>
+            </figure>
+            <figure class="swiper-slide" data-icon="images/index/pagination-kirby.png">
+              <div class="character-img">
+                <img src="images/index/char-kirby.png" alt="">
+              </div>
+              <div class="character-text">
+                <h4>커비</h4>
+                <img src="images/index/char-kirby-desc.svg" alt="">
+                <a href="sub3-kirby.html"><button>MORE</button></a>
+              </div>
+            </figure>
+            <figure class="swiper-slide" data-icon="images/index/pagination-pikmin.png">
+              <div class="character-img">
+                <img src="images/index/char-bluepikmin.png" alt="">
+              </div>
+              <div class="character-text">
+                <h4>파랑 피크민</h4>
+                <img src="images/index/char-bluepikmin-desc.svg" alt="">
+                <a href="sub3-pikmin.html"><button>MORE</button></a>
+              </div>
+            </figure>
+          </div>
+
+          <div class="pagination"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 스크롤 거리 확보용 -->
+    <div class="scroll-spacer"></div>
+
+    <!-- BOTTOM DECOR -->
+    <div class="decor-band decor-band--bottom">
+      <div class="decor-band-track">
+        <div class="decor-band-strip"></div>
+      </div>
+
+      <div class="decor-band-karts">
+        <div class="kart kat-06"><img src="images/index/kart-bottom-01.png" alt=""></div>
+        <div class="kart kat-07"><img src="images/index/kart-bottom-02.png" alt=""></div>
+        <div class="kart kat-08"><img src="images/index/kart-bottom-03.png" alt=""></div>
+        <div class="kart kat-09"><img src="images/index/kart-bottom-04.png" alt=""></div>
+        <div class="kart kat-10"><img src="images/index/kart-bottom-05.png" alt=""></div>
+        <div class="kart kat-11"><img src="images/index/kart-bottom-06.png" alt=""></div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- 뉴스 -->
+  <section class="news" id="newsSection">
+    <div class="news-container inner">
+      <!-- 타이틀 -->
+      <h2 class="news-main-title">NEWS</h2>
+
+      <div class="news-wrap">
+
+        <!-- 왼쪽 카드 목록 -->
+        <ul class="news-list">
+
+          <!-- 카드 1 -->
+          <li class="news-card active" data-news="1">
+            <p class="news-card-title">
+              『슈퍼 마리오 갤럭시』 요시의 등장 알리는 최신 영상을 공개!
+            </p>
+            <div class="news-card-bottom">
+              <svg class="news-card-tag-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_464_194)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.575 7.8H16.2V1.425C16.2 0.675 15.6 0 14.775 0H9.15C8.4 0 7.725 0.6 7.725 1.425V7.8H1.425C0.675 7.8 0 8.4 0 9.225V14.85C0 15.6 0.6 16.275 1.425 16.275H7.8V22.65C7.8 23.4 8.4 24.075 9.225 24.075H14.85C15.6 24.075 16.275 23.475 16.275 22.65V16.275H22.65C23.4 16.275 24.075 15.675 24.075 14.85V9.225C24 8.4 23.4 7.8 22.575 7.8ZM5.625 12.675H2.85C2.475 12.675 2.175 12.375 2.175 12C2.175 11.625 2.475 11.325 2.85 11.325H5.7C6.075 11.325 6.375 11.625 6.375 12C6.375 12.375 6 12.675 5.625 12.675ZM12.675 21.15C12.675 21.525 12.375 21.825 12 21.825C11.625 21.825 11.325 21.525 11.325 21.15V18.3C11.325 17.925 11.625 17.625 12 17.625C12.375 17.625 12.675 17.925 12.675 18.3V21.15ZM12.675 5.625C12.675 6 12.375 6.3 12 6.3C11.625 6.3 11.325 6 11.325 5.625V2.85C11.325 2.475 11.625 2.175 12 2.175C12.375 2.175 12.675 2.475 12.675 2.85V5.625ZM21.15 12.675H18.3C17.925 12.675 17.625 12.375 17.625 12C17.625 11.625 17.925 11.325 18.3 11.325H21.15C21.525 11.325 21.825 11.625 21.825 12C21.9 12.375 21.6 12.675 21.15 12.675Z"
+                    fill="none" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_464_194">
+                    <rect width="24" height="24" fill="none" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="news-card-date">2026.01.26</span>
+            </div>
+          </li>
+
+          <!-- 카드 2 -->
+          <li class="news-card" data-news="2">
+            <p class="news-card-title">
+              『닌텐도 2026 새해 이벤트』가 영등포 타임스퀘어에서 개최 예정!
+            </p>
+            <div class="news-card-bottom">
+              <svg class="news-card-tag-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_464_194)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.575 7.8H16.2V1.425C16.2 0.675 15.6 0 14.775 0H9.15C8.4 0 7.725 0.6 7.725 1.425V7.8H1.425C0.675 7.8 0 8.4 0 9.225V14.85C0 15.6 0.6 16.275 1.425 16.275H7.8V22.65C7.8 23.4 8.4 24.075 9.225 24.075H14.85C15.6 24.075 16.275 23.475 16.275 22.65V16.275H22.65C23.4 16.275 24.075 15.675 24.075 14.85V9.225C24 8.4 23.4 7.8 22.575 7.8ZM5.625 12.675H2.85C2.475 12.675 2.175 12.375 2.175 12C2.175 11.625 2.475 11.325 2.85 11.325H5.7C6.075 11.325 6.375 11.625 6.375 12C6.375 12.375 6 12.675 5.625 12.675ZM12.675 21.15C12.675 21.525 12.375 21.825 12 21.825C11.625 21.825 11.325 21.525 11.325 21.15V18.3C11.325 17.925 11.625 17.625 12 17.625C12.375 17.625 12.675 17.925 12.675 18.3V21.15ZM12.675 5.625C12.675 6 12.375 6.3 12 6.3C11.625 6.3 11.325 6 11.325 5.625V2.85C11.325 2.475 11.625 2.175 12 2.175C12.375 2.175 12.675 2.475 12.675 2.85V5.625ZM21.15 12.675H18.3C17.925 12.675 17.625 12.375 17.625 12C17.625 11.625 17.925 11.325 18.3 11.325H21.15C21.525 11.325 21.825 11.625 21.825 12C21.9 12.375 21.6 12.675 21.15 12.675Z"
+                    fill="none" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_464_194">
+                    <rect width="24" height="24" fill="none" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="news-card-date">2026.01.26</span>
+            </div>
+          </li>
+
+          <!-- 카드 3 -->
+          <li class="news-card" data-news="3">
+            <p class="news-card-title">
+              Nintendo Switch Online으로 더욱 즐거워지는 『모여봐요 동물의 숲』 콘텐츠를 소개합니다.
+            </p>
+            <div class="news-card-bottom">
+              <svg class="news-card-tag-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_464_194)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.575 7.8H16.2V1.425C16.2 0.675 15.6 0 14.775 0H9.15C8.4 0 7.725 0.6 7.725 1.425V7.8H1.425C0.675 7.8 0 8.4 0 9.225V14.85C0 15.6 0.6 16.275 1.425 16.275H7.8V22.65C7.8 23.4 8.4 24.075 9.225 24.075H14.85C15.6 24.075 16.275 23.475 16.275 22.65V16.275H22.65C23.4 16.275 24.075 15.675 24.075 14.85V9.225C24 8.4 23.4 7.8 22.575 7.8ZM5.625 12.675H2.85C2.475 12.675 2.175 12.375 2.175 12C2.175 11.625 2.475 11.325 2.85 11.325H5.7C6.075 11.325 6.375 11.625 6.375 12C6.375 12.375 6 12.675 5.625 12.675ZM12.675 21.15C12.675 21.525 12.375 21.825 12 21.825C11.625 21.825 11.325 21.525 11.325 21.15V18.3C11.325 17.925 11.625 17.625 12 17.625C12.375 17.625 12.675 17.925 12.675 18.3V21.15ZM12.675 5.625C12.675 6 12.375 6.3 12 6.3C11.625 6.3 11.325 6 11.325 5.625V2.85C11.325 2.475 11.625 2.175 12 2.175C12.375 2.175 12.675 2.475 12.675 2.85V5.625ZM21.15 12.675H18.3C17.925 12.675 17.625 12.375 17.625 12C17.625 11.625 17.925 11.325 18.3 11.325H21.15C21.525 11.325 21.825 11.625 21.825 12C21.9 12.375 21.6 12.675 21.15 12.675Z"
+                    fill="none" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_464_194">
+                    <rect width="24" height="24" fill="none" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="news-card-date">2026.01.26</span>
+            </div>
+          </li>
+
+          <!-- 카드 4 -->
+          <li class="news-card" data-news="4">
+            <p class="news-card-title">
+              로젤리나·쿠파7 등장! 『슈퍼 마리오브라더스 원더 Switch2 Edition』 3월 26일 발매.
+            </p>
+            <div class="news-card-bottom">
+              <svg class="news-card-tag-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_464_194)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.575 7.8H16.2V1.425C16.2 0.675 15.6 0 14.775 0H9.15C8.4 0 7.725 0.6 7.725 1.425V7.8H1.425C0.675 7.8 0 8.4 0 9.225V14.85C0 15.6 0.6 16.275 1.425 16.275H7.8V22.65C7.8 23.4 8.4 24.075 9.225 24.075H14.85C15.6 24.075 16.275 23.475 16.275 22.65V16.275H22.65C23.4 16.275 24.075 15.675 24.075 14.85V9.225C24 8.4 23.4 7.8 22.575 7.8ZM5.625 12.675H2.85C2.475 12.675 2.175 12.375 2.175 12C2.175 11.625 2.475 11.325 2.85 11.325H5.7C6.075 11.325 6.375 11.625 6.375 12C6.375 12.375 6 12.675 5.625 12.675ZM12.675 21.15C12.675 21.525 12.375 21.825 12 21.825C11.625 21.825 11.325 21.525 11.325 21.15V18.3C11.325 17.925 11.625 17.625 12 17.625C12.375 17.625 12.675 17.925 12.675 18.3V21.15ZM12.675 5.625C12.675 6 12.375 6.3 12 6.3C11.625 6.3 11.325 6 11.325 5.625V2.85C11.325 2.475 11.625 2.175 12 2.175C12.375 2.175 12.675 2.475 12.675 2.85V5.625ZM21.15 12.675H18.3C17.925 12.675 17.625 12.375 17.625 12C17.625 11.625 17.925 11.325 18.3 11.325H21.15C21.525 11.325 21.825 11.625 21.825 12C21.9 12.375 21.6 12.675 21.15 12.675Z"
+                    fill="none" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_464_194">
+                    <rect width="24" height="24" fill="none" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="news-card-date">2026.01.23</span>
+            </div>
+          </li>
+
+        </ul>
+
+
+        <!-- 오른쪽 상세 카드 영역 -->
+        <div class="news-detail">
+
+          <!-- 상세 1 -->
+          <article class="news-content active" data-news="1">
+            <a href="#none" class="news-content-link">
+              <div class="news-content-thumbnail">
+                <img class="news-content-img" src="images/index/news-detail-img01.png" alt="뉴스 이미지">
+              </div>
+
+              <div class="news-content-text">
+                <div class="news-title-wrap">
+                  <div class="news-content-tag-icon">
+                    <img class="news-content-tag-img" src="images/index/news-gamwnews-icon.svg" alt="뉴스아이콘">
+                  </div>
+                  <h3 class="news-title">
+                    『슈퍼 마리오 갤럭시』 요시의 등장 알리는 최신 영상을 공개!
+                  </h3>
+                </div>
+                <p class="news-desc">이번에 공개된 최신 티저 영상을 통해, 많은 분들이 기다려 주신 요시의 등장을 살짝 예고하게 되었습니다.
+                  영상에서는 마리오가 광활한 우주를 모험하는 모습과 함께, 마지막 장면에서 요시의 존재를 암시하는 장면이 담겨 있습니다.</p>
+              </div>
+            </a>
+          </article>
+
+
+          <!-- 상세 2 -->
+          <article class="news-content" data-news="2">
+            <a href="#none" class="news-content-link">
+              <div class="news-content-thumbnail">
+                <img class="news-content-img" src="images/index/news-detail-img02.png" alt="뉴스 이미지">
+              </div>
+
+              <div class="news-content-text">
+                <div class="news-title-wrap">
+                  <div class="news-content-tag-icon">
+                    <img class="news-content-tag-img" src="images/index/news-gamwnews-icon.svg" alt="뉴스아이콘">
+                  </div>
+                  <h3 class="news-title">『닌텐도 2026 새해 이벤트』가 영등포 타임스퀘어에서 개최 예정!</h3>
+                </div>
+                <p class="news-desc">
+                  영등포 타임스퀘어에서 1월 31일(토) ~ 2월 1일(일) 기간 동안 『닌텐도 2026 새해 이벤트』가 개최됩니다. 관심있으신 분들은 방문하여 『모여봐요 동물의 숲』을 테마로 한
+                  다양한
+                  콘텐츠를
+                  즐겨보세요!
+                </p>
+              </div>
+            </a>
+          </article>
+
+
+
+          <!-- 상세 3 -->
+          <article class="news-content" data-news="3">
+            <a href="#none" class="news-content-link">
+              <div class="news-content-thumbnail">
+                <img class="news-content-img" src="images/index/news-detail-img03.png" alt="뉴스 이미지">
+              </div>
+
+              <div class="news-content-text">
+                <div class="news-title-wrap">
+                  <div class="news-content-tag-icon">
+                    <img class="news-content-tag-img" src="images/index/news-gamwnews-icon.svg" alt="뉴스아이콘">
+                  </div>
+                  <h3 class="news-title">
+                    Nintendo Switch Online 더욱 즐거워지는 『모여봐요 동물의 숲』
+                  </h3>
+                </div>
+                <p class="news-desc">
+                  『모여봐요 동물의 숲 Nintendo Switch 2 Edition』이 발매되었습니다. 자유로운 무인도에서 동물들과 함께 즐거운 생활을 보내고 계신가요?
+                </p>
+              </div>
+            </a>
+          </article>
+
+
+          <!-- 상세 4 -->
+          <article class="news-content" data-news="4">
+            <a href="#none" class="news-content-link">
+              <div class="news-content-thumbnail">
+                <img class="news-content-img" src="images/index/news-detail-img04.png" alt="뉴스 이미지">
+              </div>
+
+              <div class="news-content-text">
+                <div class="news-title-wrap">
+                  <div class="news-content-tag-icon">
+                    <img class="news-content-tag-img" src="images/index/news-gamwnews-icon.svg" alt="뉴스아이콘">
+                  </div>
+                  <h3 class="news-title">
+                    『슈퍼 마리오브라더스 원더 Switch2 Edition』 발매.
+                  </h3>
+                </div>
+                <p class="news-desc">Nintendo Switch 소프트웨어 『슈퍼 마리오브라더스 원더』에 새로운 구역 「방울 파크」가 추가되어 Nintendo Switch 2에
+                  등장합니다. 우선, 이 영상을 확인해 주세요.</p>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+      <div class="news-progress">
+        <div class="news-progress-bar"></div>
+      </div>
+      <div class="news-more-btn">
+        <a href="sub5.html" class="news-more-btn-link">
+          <span class="news-more-btn-text">MORE</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 메인 비디오 -->
+  <section class="main-video" style="overflow: hidden;">
+    <h2 class="main-section-title">PLAY VIDEO</h2>
+    <div class="main-video-wrapper" style="display:flex; gap:24px;">
+      <!--왼쪽 고정 영역-->
+      <div class="main-video-left">
+        <img src="images/index/main-play-video-slide-img01.png" class="main-left-img" id="main-left-img">
+        <div class="video-bottom-wrap">
+          <div class="video-text">
+          </div>
+          <div class="video-btn-wrap">
+            <div class="button-prev">
+              <img src="images/index/main-video-tab-before.svg" alt="이전">
+            </div>
+            <div class="button-next">
+              <img src="images/index/main-video-tab-next.svg" alt="다음">
+            </div>
+            <div class="button-more">
+              <a href="none">
+                <img src="images/index/main-video-tab-plus.svg" alt="더 보기">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--오른쪽 카드 영역-->
+      <div class="swiper main-video-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide main-video-item" data-img="images/index/main-play-video-slide-img01.png"
+            data-text="친구모아 아일랜드 두근두근 라이프 Direct 2026.1.29" data-video="https://www.youtube.com/watch?v=kbD6QML55Fc">
+            <img src="images/index/main-play-video-slide-img01.png">
+          </div>
+          <div class="swiper-slide main-video-item" data-img="images/index/main-play-video-slide-img02.png"
+            data-text="『슈퍼 마리오 갤럭시』 요시 공개 영상" data-video="https://www.youtube.com/watch?v=36NN8SXbwkM">
+            <img src="images/index/main-play-video-slide-img02.png">
+          </div>
+          <div class="swiper-slide main-video-item" data-img="images/index/main-play-video-slide-img03.png"
+            data-text="「Pokémon Pokopia」 특별 영상 (30초 버전)" data-video="https://www.youtube.com/watch?v=cSMBwR2HnVw">
+            <img src="images/index/main-play-video-slide-img03.png">
+          </div>
+          <div class="swiper-slide main-video-item" data-img="images/index/main-play-video-slide-img04.png"
+            data-text="다양한 「플러스」를 소개 I 슈퍼 마리오브라더스 원더 Nintendo Switch 2 Edition + 다 함께 방울 파크"
+            data-video="https://www.youtube.com/watch?v=M6N17AcAPGo">
+            <img src="images/index/main-play-video-slide-img04.png">
+          </div>
+          <div class="swiper-slide main-video-item" data-img="images/index/main-play-video-slide-img05.png"
+            data-text="동키콩 리턴즈 HD 무료 업데이트 안내" data-video="https://www.youtube.com/watch?v=BvHXyvg5Hxs">
+            <img src="images/index/main-play-video-slide-img05.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="images/index/main-play-video-bg.png" alt="배경" class="main-play-bg">
+  </section>
+
+  <!-- 메인 비디오 모바일 -->
+  <div class="main-video-mb">
+    <div class="main-section-title-mb">PLAY VIDEO</div>
+    <div class="main-video-mb-wrapper">
+      <div class="main-video-card-mb">
+        <div class="main-video-area">
+          <iframe src="https://www.youtube.com/embed/kbD6QML55Fc" frameborder="0"></iframe>
+        </div>
+        <div class="main-video-mb-bottom">
+          <div class="video-mb-text">
+            Virtual Boy - Nintendo Classics 타이틀・기능 소개
+          </div>
+          <div class="button-more">
+            <a href="none">
+              <img src="images/index/main-video-tab-plus.svg" alt="더 보기">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-video-card-mb">
+        <div class="main-video-area">
+          <iframe src="https://www.youtube.com/embed/cSMBwR2HnVw" frameborder="0"></iframe>
+        </div>
+        <div class="main-video-mb-bottom">
+          <div class="video-mb-text">
+            [공식]「Pokémon Pokopia」 특별 영상(30초 버전)
+          </div>
+          <div class="button-more">
+            <a href="none">
+              <img src="images/index/main-video-tab-plus.svg" alt="더 보기">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-video-card-mb">
+        <div class="main-video-area">
+          <iframe src="https://www.youtube.com/embed/36NN8SXbwkM" frameborder="0"></iframe>
+        </div>
+        <div class="main-video-mb-bottom">
+          <div class="video-mb-text">
+            『슈퍼 마리오 갤럭시』 요시 공개 영상
+          </div>
+          <div class="button-more">
+            <a href="none">
+              <img src="images/index/main-video-tab-plus.svg" alt="더 보기">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <button class="main-video-more">MORE</button>
+    </div>
+  </div>
+
+
+  <!--메인 스토어-->
+  <section class="main-store">
+    <h2 class="main-section-title">STORE</h2>
+
+    <div class="main-store-wrap">
+      <div class="main-store-visual">
+        <div class="main-visual-txt">
+          <img src="images/index/main-store-visual-txt.png" alt="글자" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+        </div>
+        <div class="main-store-visual-logo">
+          <img src="images/index/main-store-visual-logo.png" alt="로고">
+        </div>
+        <div class="main-store-visual-img">
+          <img src="images/index/main-store-visual.png" alt="이미지">
+        </div>
+      </div>
+
+      <div class="main-store-card-wrap">
+        <div class="main-store-card">
+          <div class="main-store-card-img">
+            <img src="images/index/main-store-card-img01.png" alt="설명">
+          </div>
+          <div class="main-store-card-desc">
+            <div class="main-store-card-title">
+              <p>커비의 에어 라이더</p>
+              <div class="main-store-icon-box">
+                <img src="images/index/main-store-icon.svg" alt="아이콘" class="main-store-icon">
+                <img src="images/index/main-store-icon-hover.svg" alt="더 보기" class="store-icon-hover">
+              </div>
+            </div>
+            <div class="main-store-explan">
+              <img src="images/index/main-store-card-explan01.svg" alt="설명">
+            </div>
+          </div>
+        </div>
+
+        <div class="main-store-card">
+          <div class="main-store-card-img">
+            <img src="images/index/main-store-card-img02.png" alt="설명">
+          </div>
+          <div class="main-store-card-desc">
+            <div class="main-store-card-title">
+              <p>젤다무쌍 봉인 전기</p>
+              <div class="main-store-icon-box">
+                <img src="images/index/main-store-icon.svg" alt="아이콘" class="main-store-icon">
+                <img src="images/index/main-store-icon-hover.svg" alt="더 보기" class="store-icon-hover">
+              </div>
+            </div>
+            <div class="main-store-explan">
+              <img src="images/index/main-store-card-explan01.svg" alt="설명">
+            </div>
+          </div>
+        </div>
+
+        <div class="main-store-card">
+          <div class="main-store-card-img">
+            <img src="images/index/main-store-card-img03.png" alt="설명">
+          </div>
+          <div class="main-store-card-desc">
+            <div class="main-store-card-title">
+              <p>Pokémon LEGENDS Z-A</p>
+              <div class="main-store-icon-box">
+                <img src="images/index/main-store-icon.svg" alt="아이콘" class="main-store-icon">
+                <img src="images/index/main-store-icon-hover.svg" alt="더 보기" class="store-icon-hover">
+              </div>
+            </div>
+            <div class="main-store-explan">
+              <img src="images/index/main-store-card-explan01.svg" alt="설명">
+            </div>
+          </div>
+        </div>
+
+        <div class="main-store-card">
+          <div class="main-store-card-img">
+            <img src="images/index/main-store-card-img04.png" alt="설명">
+          </div>
+          <div class="main-store-card-desc">
+            <div class="main-store-card-title">
+              <p>마리오 갤럭시 + 마리오 갤럭시 2</p>
+              <div class="main-store-icon-box">
+                <img src="images/index/main-store-icon.svg" alt="아이콘" class="main-store-icon">
+                <img src="images/index/main-store-icon-hover.svg" alt="더 보기" class="store-icon-hover">
+              </div>
+            </div>
+            <div class="main-store-explan">
+              <img src="images/index/main-store-card-explan01.svg" alt="설명">
+            </div>
+          </div>
+        </div>
+
+        <div class="main-store-card">
+          <div class="main-store-card-img">
+            <img src="images/index/main-store-card-img05.png" alt="설명">
+          </div>
+          <div class="main-store-card-desc">
+            <div class="main-store-card-title">
+              <p>마리오 카트 월드</p>
+              <div class="main-store-icon-box">
+                <img src="images/index/main-store-icon.svg" alt="아이콘" class="main-store-icon">
+                <img src="images/index/main-store-icon-hover.svg" alt="더 보기" class="store-icon-hover">
+              </div>
+            </div>
+            <div class="main-store-explan">
+              <img src="images/index/main-store-card-explan01.svg" alt="설명">
+            </div>
+          </div>
+        </div>
+
+        <div class="main-store-card">
+          <div class="main-store-card-img">
+            <img src="images/index/main-store-card-img06.png" alt="설명">
+          </div>
+          <div class="main-store-card-desc">
+            <div class="main-store-card-title">
+              <p>동키콩 바난자</p>
+              <div class="main-store-icon-box">
+                <img src="images/index/main-store-icon.svg" alt="아이콘" class="main-store-icon">
+                <img src="images/index/main-store-icon-hover.svg" alt="더 보기" class="store-icon-hover">
+              </div>
+            </div>
+            <div class="main-store-explan">
+              <img src="images/index/main-store-card-explan01.svg" alt="설명">
+            </div>
+          </div>
+        </div>
+
+        <div class="main-store-card">
+          <div class="main-store-card-img">
+            <img src="images/index/main-store-card-img07.png" alt="설명">
+          </div>
+          <div class="main-store-card-desc">
+            <div class="main-store-card-title">
+              <p>피크민 4</p>
+              <div class="main-store-icon-box">
+                <img src="images/index/main-store-icon.svg" alt="아이콘" class="main-store-icon">
+                <img src="images/index/main-store-icon-hover.svg" alt="더 보기" class="store-icon-hover">
+              </div>
+            </div>
+            <div class="main-store-explan">
+              <img src="images/index/main-store-card-explan01.svg" alt="설명">
+            </div>
+          </div>
+        </div>
+
+        <div class="main-store-card">
+          <div class="main-store-card-img">
+            <img src="images/index/main-store-card-img08.png" alt="설명">
+          </div>
+          <div class="main-store-card-desc">
+            <div class="main-store-card-title">
+              <p>모여봐요 동물의 숲</p>
+              <div class="main-store-icon-box">
+                <img src="images/index/main-store-icon.svg" alt="아이콘" class="main-store-icon">
+                <img src="images/index/main-store-icon-hover.svg" alt="더 보기" class="store-icon-hover">
+              </div>
+            </div>
+            <div class="main-store-explan">
+              <img src="images/index/main-store-card-explan01.svg" alt="설명">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 아미보 섹션 -->
+  <section class="main-section amiibo">
+    <!-- 모바일 커튼 오버레이 -->
+    <div class="amiibo-mobile-curtain" id="amiiboCurtain">
+      <div class="curtain-top" aria-hidden="true"></div>
+
+      <div class="curtain curtain-left" aria-hidden="true"></div>
+      <div class="curtain curtain-right" aria-hidden="true"></div>
+
+
+
+      <div class="touch">
+        <span class="touch-icon" aria-hidden="true">
+        </span>
+      </div>
+    </div>
+    <!-- 무대 조명 -->
+    <div class="stage-light" aria-hidden="true"></div>
+
+    <!-- 섹션 타이틀 -->
+    <h2 class="main-section-title">AMIBO</h2>
+
+    <!-- 상단 캐릭터 스와이퍼 -->
+    <div class="character-slider swiper">
+      <div class="swiper-wrapper" id="amiiboWrapper"></div>
+    </div>
+
+    <!-- 카드 그리드 -->
+    <div class="amiibo-card-grid">
+      <div class="amiibo-card-list">
+        <!-- 아미보 불빛카드 -->
+        <div class="amiibo-card">
+          <div class="light"></div>
+          <img src="images/index/card-amiibo01.png" alt="아미보 이미지 1">
+          <button class="amiibo-toggle" aria-label="빛 효과 토글"></button>
+        </div>
+
+        <div class="amiibo-card none">
+          <div class="light"></div>
+          <img src="images/index/card-amiibo02.png" alt="아미보 이미지 2">
+          <button class="amiibo-toggle" aria-label="빛 효과 토글"></button>
+        </div>
+
+        <div class="amiibo-card none">
+          <div class="light"></div>
+          <img src="images/index/card-amiibo03.png" alt="아미보 이미지 3">
+          <button class="amiibo-toggle" aria-label="빛 효과 토글"></button>
+        </div>
+
+        <div class="amiibo-card">
+          <div class="light"></div>
+          <img src="images/index/card-amiibo04.png" alt="아미보 이미지 4">
+          <button class="amiibo-toggle" aria-label="빛 효과 토글"></button>
+        </div>
+
+        <div class="amiibo-card">
+          <div class="light"></div>
+          <img src="images/index/card-amiibo05.png" alt="아미보 이미지 5">
+          <button class="amiibo-toggle" aria-label="빛 효과 토글"></button>
+        </div>
+
+        <div class="amiibo-card none">
+          <div class="light"></div>
+          <img src="images/index/card-amiibo06.png" alt="아미보 이미지 6">
+          <button class="amiibo-toggle" aria-label="빛 효과 토글"></button>
+        </div>
+
+        <div class="amiibo-card">
+          <div class="light"></div>
+          <img src="images/index/card-amiibo07.png" alt="아미보 이미지 7">
+          <button class="amiibo-toggle" aria-label="빛 효과 토글"></button>
+        </div>
+
+        <div class="amiibo-card none">
+          <div class="light"></div>
+          <img src="images/index/card-amiibo08.png" alt="아미보 이미지 8">
+          <button class="amiibo-toggle" aria-label="빛 효과 토글"></button>
+        </div>
+      </div>
+
+    </div>
+    <div class="btn-box">
+      <a href="sub2.html"><button class="more">MORE</button></a>
+    </div>
+
+  </section>
+
+  <!-- 배너 -->
+  <section class="banner" id="banner">
+    <div class="banner-container inner">
+      <a href="#none" class="banner-link">
+        <div class="banner-img" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200"
+          data-aos-easing="ease-out-cubic"></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 풋터 -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-top-icon">
+        <div class="footer-top-sns">
+          <ul>
+            <li><a href="#none" class="footer-icon-youtube"></a></li>
+            <li><a href="#none" class="footer-icon-kakaostroy"></a></li>
+            <li><a href="#none" class="footer-icon-facebook"></a></li>
+            <li><a href="#none" class="footer-icon-x"></a></li>
+            <li><a href="#none" class="footer-icon-kakaotalk"></a></li>
+          </ul>
+        </div>
+        <div class="footer-top-site">
+          <a href="#none" class="footer-icon-long footer-icon-mynintendo"></a>
+          <a href="#none" class="footer-icon-long footer-icon-amiibo"></a>
+        </div>
+      </div>
+      <div class="footer-bottom-text">
+        <div class="footer-bottom-text-left">
+          <div class="footer-bottom-atags">
+            <a href="#none" class="footer-bottom-atag">이용약관</a>
+            <a href="#none" class="footer-bottom-atag">개인정보처리방침</a>
+          </div>
+          <p class="footer-bottom-text01">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+          <p class="footer-bottom-text02">상호명 : 한국닌텐도주식회사<span class="footer-line-break-mb"></span>대표자명 : 미우라 타카히로<span
+              class="footer-line-break"></span>사업자등록번호
+            : 120-87-03578</p>
+        </div>
+        <div class="footer-bottom-text-right">
+          <p class="footer-bottom-text03">고객지원 문의전화 : 1670-9900</p>
+          <p class="footer-bottom-text04">(평일 오전 9시 30분~오후 5시 30분)</p>
+          <p class="footer-bottom-text05">※토/일/공휴일/회사 정기휴일 및 특별휴일 제외</p>
+        </div>
+      </div>
+      <p class="responsive-copyright">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+    </div>
+
+  </footer>
+  <!-- 쇼핑 버튼 -->
+  <div class="fixed-cart">
+    <div class="cart-panel">
+      <a href="#none" class="cart-text">장바구니 바로가기 ></a>
+    </div>
+    <button class="cart-btn">
+      <i class="fa-solid fa-bag-shopping"></i>
+    </button>
+  </div>
+
+  <!-- 탑버튼 -->
+  <div class="top-btn-wrap" id="topBtn">
+    <div class="top-btn">
+      <button>TOP <i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </div>
+
+  <!-- Swiper CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="js/index.js"></script>
+  <script src="js/header.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닌텐도 - 영상</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="scss/sub4.css">
+  <link rel="stylesheet" href="scss/sub4-responsive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="icon" href="images/common/favicon.svg">
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+    <nav>
+      <a href="index.html" class="logo"></a>
+      <div class="header-click-wrap">
+        <ul class="gnb">
+          <li class="main-menu"><a href="sub1.html">한국닌텐도</a></li>
+          <li class="main-menu"><a href="sub2.html">제품소개</a></li>
+          <li class="main-menu" data-nav="navSw"><a href="#none">소프트웨어</a></li>
+          <li class="main-menu"><a href="sub4.html">영상</a></li>
+          <li class="main-menu"><a href="sub5.html">뉴스</a></li>
+          <li class="main-menu"><a href="sub6.html">고객지원</a></li>
+        </ul>
+        <div class="utility">
+          <button class="header-search-section">
+            <div class="search-icon"></div>
+            <p class="search-text">SEARCH</p>
+          </button>
+          <div class="header-cart"></div>
+          <button class="header-login-section">
+            <div class="login-icon"></div>
+            <div class="login-text">LOGIN / SIGN UP</div>
+          </button>
+          <div class="header-kr"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- 서브헤더 -->
+  <div class="sub-header">
+    <a href="index.html" class="sub-header-home-icon"></a>
+    <a class="sub-header-text" href="#subSeries">Series</a>
+    <a class="sub-header-text" href="#subChar">Charactors</a>
+    <a class="sub-header-text" href="#subNews">News</a>
+  </div>
+  <!-- 서브내비 -->
+  <div class="sub-nav-container" id="navSw">
+    <div class="sub-nav-title-wrap">
+      <div class="sub-nav-title-icon sub-nav-title-icon-sw"></div>
+      <h2>SOFTWARE</h2>
+    </div>
+    <div class="sub-nav-lnb-wrap">
+      <a href="sub3-mario.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">마리오</p>
+      </a>
+      <a href="sub3-animalCrossing.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">동물의 숲</p>
+      </a>
+      <a href="sub3-zelda.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">젤다</p>
+      </a>
+      <a href="sub3-kirby.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">커비</p>
+      </a>
+      <a href="sub3-pikmin.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">피크민</p>
+      </a>
+    </div>
+  </div>
+  <!-- 태블릿, 모바일 내비 -->
+  <div class="responsive-nav-body">
+    <div class="r-nav-left-wrap">
+      <button class="r-nav-hamburger-btn"></button>
+      <a href="index.html" class="r-nav-home-btn"></a>
+    </div>
+    <button class="r-nav-center-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="r-nav-right-wrap">
+      <button class="r-nav-cart-btn"></button>
+      <button class="r-nav-login-btn"></button>
+    </div>
+  </div>
+  <div class="responsive-nav-container">
+    <div class="r-nav-container-header">
+      <div class="r-nav-container-logo"></div>
+      <button class="r-nav-container-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="r-nav-container-body">
+      <div class="r-nav-tab-wrap">
+        <button class="r-nav-tab-btn r-nav-tab-btn1 active" data-rnav="rNavCom">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">COMPANY</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn2" data-rnav="rNavPro">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">PRODUCT</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn3" data-rnav="rNavSw">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SOFTWARE</p>
+        </button>
+        <a href="sub4.html" class="r-nav-tab-btn r-nav-tab-btn4">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">VIDEO</p>
+        </a>
+        <a href="sub5.html" class="r-nav-tab-btn r-nav-tab-btn5">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">NEWS</p>
+        </a>
+        <button class="r-nav-tab-btn r-nav-tab-btn6" data-rnav="rNavSup">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SUPPORT</p>
+        </button>
+      </div>
+      <div class="r-nav-content-wrap">
+        <ul class="r-nav-lnb-wrap active" id="rNavCom">
+          <li>
+            <a href="sub1.html#subComCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">한국닌텐도</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주요 사업</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">연혁</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">찾아오시는 길</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavPro">
+          <li>
+            <a href="sub2.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주변기기</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">아미보</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSw">
+          <li>
+            <a href="sub3-mario.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">마리오</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-animalCrossing.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">동물의 숲</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-zelda.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">젤다</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-kirby.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">커비</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-pikmin.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">피크민</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSup">
+          <li>
+            <a href="sub6.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">FAQ</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">수리접수</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!--영상 소개 배너-->
+  <section class="sub-page-main-visual sub-page-main-visual-06">
+    <div class="sub-page-mv-title-wrap">
+      <p>영상 소개</p>
+      <div class="sub-page-big-title">
+        <img src="images/sub4/sub9-main-visual-title.svg" alt="고객지원 타이틀" class="big-title-img">
+        <img src="images/sub4/sub9-main-visual-title-tablet.svg" alt="고객지원 타이틀" class="big-title-img-tablet">
+        <img src="images/sub4/sub9-main-visual-title-mb.svg" alt="고객지원 타이틀" class="big-title-img-mb">
+      </div>
+    </div>
+
+    <div class="sub-page-scroll-btn-wrap">
+      <div class="sub-page-scroll-icon">
+        <img src="images/sub6/scroll-btn.svg" alt="스크롤 아이콘">
+      </div>
+      <p class="sub-page-scroll-text">SCROLL</p>
+    </div>
+  </section>
+
+  <!--영상 소개 시작-->
+  <div class="sub-whole-content-container" id="subPageCon">
+    <section class="video-intro">
+      <div class="video-new-game">
+        <div class="video-new-game-wrap">
+          <div class="sub-title">
+            <h2 class="en">NEW GAME</h2>
+            <p class="ko">
+              『슈퍼 마리오브라더스 원더』에 새로운 구역 「방울 파크」가 추가되어 Nintendo Switch 2에 등장! !
+            </p>
+          </div>
+          <div class="video-new-game-bg">
+            <img src="./images/sub4/video-new-game-bg.png" alt="배경 이미지">
+            <div class="video-new-game-video" data-aos="fade-up">
+              <iframe src="https://www.youtube.com/embed/M6N17AcAPGo" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <img src="./images/sub4/new-game-mario.png" class="new-game-mario">
+            <img src="./images/sub4/new-game-block.png" class="new-game-block">
+            <img src="./images/sub4/new-game-block-responsive.png" class="new-game-block-responsive">
+          </div>
+        </div>
+      </div>
+
+      <div class="video-now-playing">
+        <div class="sub-title">
+          <h2 class="en">NOW PLAYING</h2>
+          <p class="ko">
+            지금 바로 닌텐도 관련 영상을 확인해보세요!
+          </p>
+        </div>
+        <div class="now-playing-ch">
+          <img src="./images/sub4/now-playing-ch.png" alt="캐릭터 이미지">
+        </div>
+
+        <div class="now-playing-video-box" data-aos="fade-up">
+          <iframe src="https://www.youtube.com/embed/M6N17AcAPGo" frameborder="0" allowfullscreen
+            id="data-video"></iframe>
+          <div class="now-playing-block">
+            <img src="./images/sub4/now-playing-block.png" alt="블록 이미지">
+          </div>
+          <div class="now-playing-block">
+            <img src="./images/sub4/now-playing-block.png" alt="블록 이미지">
+          </div>
+        </div>
+        <div class="swiper now-playing-video-swiper first-swiper">
+          <div class="swiper-wrapper now-playing-video-swiper-wrap">
+            <div class="swiper-slide now-playing-swiper-item" data-video="kbD6QML55Fc">
+              <img src="./images/sub4/now-playing-swiper-item-img01.png" alt="첫 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="36NN8SXbwkM">
+              <img src="./images/sub4/now-playing-swiper-item-img02.png" alt="두 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="cSMBwR2HnVw">
+              <img src="./images/sub4/now-playing-swiper-item-img03.png" alt="세 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="M6N17AcAPGo">
+              <img src="./images/sub4/now-playing-swiper-item-img04.png" alt="네 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="BvHXyvg5Hxs">
+              <img src="./images/sub4/now-playing-swiper-item-img05.png" alt="다섯 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="qbV5ocA0RXc">
+              <img src="./images/sub4/now-playing-swiper-item-img06.png" alt="여섯 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="3QUOW2QS9mk">
+              <img src="./images/sub4/now-playing-swiper-item-img07.png" alt="일곱 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="2E0KmSOiCnQ">
+              <img src="./images/sub4/now-playing-swiper-item-img08.png" alt="여덟 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="-S-aGjkISVU">
+              <img src="./images/sub4/now-playing-swiper-item-img09.png" alt="아홉 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="26N8CSCbBiI">
+              <img src="./images/sub4/now-playing-swiper-item-img10.png" alt="열 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="MIuH4NBLFaY">
+              <img src="./images/sub4/now-playing-swiper-item-img11.png" alt="열 한번째 썸네일">
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper now-playing-video-swiper second-swiper">
+          <div class="swiper-wrapper now-playing-video-swiper-wrap">
+            <div class="swiper-slide now-playing-swiper-item" data-video="kbD6QML55Fc">
+              <img src="./images/sub4/now-playing-swiper-item-img01.png" alt="첫 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="36NN8SXbwkM">
+              <img src="./images/sub4/now-playing-swiper-item-img02.png" alt="두 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="cSMBwR2HnVw">
+              <img src="./images/sub4/now-playing-swiper-item-img03.png" alt="세 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="M6N17AcAPGo">
+              <img src="./images/sub4/now-playing-swiper-item-img04.png" alt="네 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="BvHXyvg5Hxs">
+              <img src="./images/sub4/now-playing-swiper-item-img05.png" alt="다섯 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="qbV5ocA0RXc">
+              <img src="./images/sub4/now-playing-swiper-item-img06.png" alt="여섯 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="3QUOW2QS9mk">
+              <img src="./images/sub4/now-playing-swiper-item-img07.png" alt="일곱 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="2E0KmSOiCnQ">
+              <img src="./images/sub4/now-playing-swiper-item-img08.png" alt="여덟 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="-S-aGjkISVU">
+              <img src="./images/sub4/now-playing-swiper-item-img09.png" alt="아홉 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="26N8CSCbBiI">
+              <img src="./images/sub4/now-playing-swiper-item-img10.png" alt="열 번째 썸네일">
+            </div>
+            <div class="swiper-slide now-playing-swiper-item" data-video="MIuH4NBLFaY">
+              <img src="./images/sub4/now-playing-swiper-item-img11.png" alt="열 한번째 썸네일">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-review">
+        <div class="sub-title">
+          <h2 class="en">NOW REVIEW</h2>
+        </div>
+
+        <div class="video-review-wrap" data-aos="fade-up">
+          <div class="review-card" data-href="https://www.youtube.com/watch?v=wbYmp05laWU">
+            <button class="more-btn">MORE</button>
+            <div class="review-card-img">
+              <img src="./images/sub4/video-review-img01.png" alt="첫 번째 리뷰 이미지">
+            </div>
+          </div>
+          <div class="review-card" data-href="https://www.youtube.com/watch?v=R_ulFXkXm9o">
+            <button class="more-btn">MORE</button>
+            <div class="review-card-img">
+              <img src="./images/sub4/video-review-img02.png" alt="두 번째 리뷰 이미지">
+            </div>
+          </div>
+          <div class="review-card" data-href="https://www.youtube.com/watch?v=hu6Ml5Yff5Q">
+            <button class="more-btn">MORE</button>
+            <div class="review-card-img">
+              <img src="./images/sub4/video-review-img03.png" alt="세 번째 리뷰 이미지">
+            </div>
+          </div>
+          <div class="review-card" data-href="https://www.youtube.com/watch?v=civTq_t-TN8">
+            <button class="more-btn">MORE</button>
+            <div class="review-card-img">
+              <img src="./images/sub4/video-review-img04.png" alt="네 번째 리뷰 이미지">
+            </div>
+          </div>
+          <div class="review-card" data-href="https://www.youtube.com/watch?v=EF8sKv5OGgs">
+            <button class="more-btn">MORE</button>
+            <div class="review-card-img">
+              <img src="./images/sub4/video-review-img05.png" alt="다섯 번째 리뷰 이미지">
+            </div>
+          </div>
+          <div class="review-card" data-href="https://www.youtube.com/watch?v=zWZCO6IRRTo">
+            <button class="more-btn">MORE</button>
+            <div class="review-card-img">
+              <img src="./images/sub4/video-review-img06.png" alt="여섯 번째 리뷰 이미지">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--풋터-->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-top-icon">
+          <div class="footer-top-sns">
+            <ul>
+              <li><a href="#none" class="footer-icon-youtube"></a></li>
+              <li><a href="#none" class="footer-icon-kakaostroy"></a></li>
+              <li><a href="#none" class="footer-icon-facebook"></a></li>
+              <li><a href="#none" class="footer-icon-x"></a></li>
+              <li><a href="#none" class="footer-icon-kakaotalk"></a></li>
+            </ul>
+          </div>
+          <div class="footer-top-site">
+            <a href="#none" class="footer-icon-long footer-icon-mynintendo"></a>
+            <a href="#none" class="footer-icon-long footer-icon-amiibo"></a>
+          </div>
+        </div>
+        <div class="footer-bottom-text">
+          <div class="footer-bottom-text-left">
+            <div class="footer-bottom-atags">
+              <a href="#none" class="footer-bottom-atag">이용약관</a>
+              <a href="#none" class="footer-bottom-atag">개인정보처리방침</a>
+            </div>
+            <p class="footer-bottom-text01">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+            <p class="footer-bottom-text02">상호명 : 한국닌텐도주식회사<span class="footer-line-break-mb"></span>대표자명 : 미우라
+              타카히로<span class="footer-line-break"></span>사업자등록번호
+              : 120-87-03578</p>
+          </div>
+          <div class="footer-bottom-text-right">
+            <p class="footer-bottom-text03">고객지원 문의전화 : 1670-9900</p>
+            <p class="footer-bottom-text04">(평일 오전 9시 30분~오후 5시 30분)</p>
+            <p class="footer-bottom-text05">※토/일/공휴일/회사 정기휴일 및 특별휴일 제외</p>
+          </div>
+        </div>
+        <p class="responsive-copyright">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+      </div>
+
+    </footer>
+  </div>
+
+  <!--쇼핑 버튼-->
+  <div class="fixed-cart">
+    <div class="cart-panel">
+      <a href="#none" class="cart-text">장바구니 바로가기 ></a>
+    </div>
+    <button class="cart-btn">
+      <i class="fa-solid fa-bag-shopping"></i>
+    </button>
+  </div>
+
+  <!--탑버튼-->
+  <div class="top-btn-wrap" id="topBtn">
+    <div class="top-btn">
+      <button>TOP <i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/sub4.js"></script>
+  <script src="js/header.js"></script>
+
+
+  <script>
+    const firstSwiper = new Swiper('.first-swiper', {
+      slidesPerView: 5,
+      spaceBetween: 20,
+      loop: true,
+      speed: 4000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      freeMode: true,
+      freeModeMomentum: false,
+    });
+
+    const secondSwiper = new Swiper('.second-swiper', {
+      slidesPerView: 5,
+      spaceBetween: 20,
+      loop: true,
+      speed: 4000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+        reverseDirection: true,    //반대 방향
+      },
+      freeMode: true,
+      freeModeMomentum: false,
+    });
+  </script>
+
+
+</body>
+
+</html>

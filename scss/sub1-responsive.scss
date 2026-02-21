@@ -1,0 +1,728 @@
+@import 'variables', 'mixins', 'reset', 'fonts', 'header', 'footer', 'common';
+
+@media (max-width: $bp-tablet) {
+  .sub-page-main-visual {
+    height: 100vh;
+    margin-top: 0;
+
+    .sub-page-mv-title-wrap {
+      gap: $sp-40;
+
+      .sub-page-big-title {
+
+        .big-title-img,
+        .big-title-img-mb {
+          display: none;
+        }
+
+        .big-title-img-tablet {
+          display: block;
+        }
+
+        p {
+          font-size: $fs-40;
+        }
+      }
+    }
+
+    .sub-page-scroll-btn-wrap {
+      display: none;
+    }
+  }
+
+  // 콘텐츠 올라오는 거
+  .sub-whole-content-container {
+    // 헤더 길이만큼 + 간격 너비만큼
+    padding-top: 150px;
+    position: relative;
+    z-index: 2;
+    border-radius: 80px 80px 0 0;
+    transform: translateY(80px);
+    transition: transform 800ms ease;
+    background: $c-white;
+
+    .sub-page-tab-menu {
+      @include flex-center;
+      gap: $sp-50;
+      margin-bottom: 100px;
+
+      .sub-page-tab-btn {
+        @include flex-center;
+        flex-direction: column;
+        gap: 15px;
+
+        &:hover .sub-page-tab-btn-bar {
+          background: $c-main;
+        }
+
+        &-icon {
+          width: 45px;
+          height: 45px;
+        }
+
+        &-text {
+          font-size: $fs-16;
+        }
+
+        &-bar {
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .sub-page-main-visual {
+    .sub-page-mv-title-wrap {
+      gap: $sp-15;
+
+      .sub-page-big-title {
+
+        .big-title-img,
+        .big-title-img-tablet {
+          display: none;
+        }
+
+        .big-title-img-mb {
+          display: block;
+        }
+
+        p {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .sub-page-scroll-btn-wrap {
+      display: none;
+    }
+  }
+
+  // 콘텐츠 올라오는 거
+  .sub-whole-content-container {
+    // 헤더 길이만큼 + 간격 너비만큼
+    padding-top: 115px;
+    position: relative;
+    z-index: 2;
+    border-radius: 50px 50px 0 0;
+    transform: translateY(80px);
+    transition: transform 800ms ease;
+    background: $c-white;
+
+    .sub-page-tab-menu {
+      @include flex-center;
+      gap: $sp-10;
+      margin-bottom: 70px;
+
+      .sub-page-tab-btn {
+        @include flex-center;
+        flex-direction: column;
+        gap: 15px;
+
+        &:hover .sub-page-tab-btn-bar {
+          background: $c-main;
+        }
+
+        &-icon {
+          width: 45px;
+          height: 45px;
+        }
+
+        &-text {
+          font-size: $fs-16;
+          margin-bottom: 0;
+        }
+
+        &-bar {
+          width: 83px;
+          height: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-tablet) {
+  .sub1-title-wrap {
+    margin-bottom: $sp-100;
+  }
+
+  .sub1-page1-content {
+    .sub1-page1-earth {
+      height: 408px;
+    }
+
+    .sub1-page1-banner {
+      height: 300px;
+
+      strong {
+        font-size: 50px;
+      }
+    }
+
+    .inner {
+      .sub1-page1-top-container {
+        grid-gap: $sp-80;
+        margin-bottom: 100px;
+
+        .sub1-page1-top-card {
+          gap: $sp-20;
+
+          &-text-wrap {
+            .sub1-page1-top-card-title-wrap {
+              flex-direction: column;
+              align-items: flex-end;
+              gap: 0;
+              margin-bottom: $sp-20;
+
+              .sub1-page1-top-card-title-en {
+                font-size: $fs-40;
+              }
+
+              .sub1-page1-top-card-title-ko {
+                font-size: $fs-16;
+              }
+            }
+
+            .sub1-page1-top-card-desc {
+              @include text($fs-20, $fw-semi-b, $c-text-main);
+              text-align: right;
+            }
+          }
+
+          &-img {
+            width: 380px;
+            height: 203px;
+          }
+
+          &:nth-child(2n) .sub1-page1-top-card-title-wrap {
+            align-items: flex-start;
+          }
+
+          &:nth-child(2n) .sub1-page1-top-card-desc {
+            text-align: left;
+          }
+        }
+      }
+
+      .sub1-page1-bottom-container {
+        display: none;
+      }
+
+      .subBottomSlide {
+        display: block;
+        margin: $sp-100 0;
+
+        .slide-card-wrap {
+          width: 100%;
+          margin-bottom: $sp-50;
+
+          .slide-card-img {
+            width: 100%;
+            height: 320px;
+            border-radius: $r-md;
+            margin-bottom: $sp-10;
+
+            &1 {
+              background: url(../images/sub1/sub1-page1-bottom-card1.png) no-repeat center / cover;
+            }
+
+            &2 {
+              background: url(../images/sub1/sub1-page1-bottom-card2.png) no-repeat center / cover;
+            }
+
+            &3 {
+              background: url(../images/sub1/sub1-page1-bottom-card3.png) no-repeat center / cover;
+            }
+          }
+
+          .slide-card-text {
+            @include text($sp-20, $fw-semi-b, $c-text-main);
+
+            span {
+              color: $c-main;
+            }
+          }
+        }
+
+        .swiper-pagination.subBottomSlide-pagenation {
+          .swiper-pagination-bullet {
+            background: url(../images/sub1/sub1-page1-mario-cap-w.png) no-repeat center / cover;
+            width: 25px;
+            height: 25px;
+            opacity: 1;
+
+            &-active {
+              background: url(../images/sub1/sub1-page1-mario-cap-r.png) no-repeat center / cover;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sub1-page2-content {
+    .sub1-page2-slide-wrap {
+      display: none;
+    }
+
+    .sub1-page2-responsive-wrap {
+      display: block;
+
+      .inner {
+        @include inner($inner-main);
+
+        .sub1-page2-responsive-content-wrap {
+          .sub1-page2-responsive-con-card {
+            display: flex;
+            align-items: center;
+            gap: $sp-20;
+            margin-bottom: $sp-100;
+
+            .card-img {
+              width: 212px;
+              height: 230px;
+              border-radius: $r-md;
+              flex-shrink: 0;
+
+              &1 {
+                background: url(../images/sub1/sub1-page2-slide1.png) no-repeat center / cover;
+              }
+
+              &2 {
+                background: url(../images/sub1/sub1-page2-slide2.png) no-repeat center / cover;
+              }
+
+              &3 {
+                background: url(../images/sub1/sub1-page2-slide3.png) no-repeat center / cover;
+              }
+
+              &4 {
+                background: url(../images/sub1/sub1-page2-slide4.png) no-repeat center / cover;
+              }
+
+              &5 {
+                background: url(../images/sub1/sub1-page2-slide5.png) no-repeat center / cover;
+              }
+            }
+
+            .card-text-wrap {
+              flex: 1;
+              position: relative;
+
+              .card-number {
+                width: 150px;
+                position: absolute;
+                left: 0;
+                top: -50px;
+                z-index: -1;
+              }
+
+              .card-text {
+                font-size: $fs-20;
+                font-weight: $fw-b;
+                margin-bottom: $sp-20;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @keyframes flow {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .sub1-page3-content {
+    .inner {
+      .sub1-page3-big-title {
+        @include text($fs: 50px, $fw: 900, $color: $c-text-main);
+        margin-bottom: $sp-70;
+      }
+
+      .since-text {
+        font-size: $fs-28;
+        margin-bottom: $sp-25;
+      }
+
+      .to-text {
+        font-size: $fs-36;
+        margin-bottom: $sp-70;
+      }
+
+      .sub1-page3-card-wrap {
+        margin-bottom: 100px;
+
+        .sub1-page3-card {
+          flex-direction: row-reverse;
+
+          .card-text-wrap {
+            width: calc(100% - 122px);
+
+            .card-date {
+              font-size: $fs-16;
+            }
+
+            .card-title {
+              font-size: $fs-24;
+            }
+
+            .card-desc {
+              @include text($fs-20, $fw-semi-b, $c-text-main);
+            }
+          }
+
+          img {
+            width: 122px;
+          }
+
+          .img-odd {
+            transform: scaleX(-1);
+          }
+        }
+
+        .dots-img {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .sub1-page4-content {
+    .inner {
+      .location-img {
+        height: 403px;
+        margin-bottom: $sp-50;
+
+        .location-text {
+          @include text($fs: $fs-24, $fw: 900, $color: $c-text-main);
+        }
+
+        .location-left {
+          left: $sp-20;
+          top: $sp-20;
+        }
+
+        .location-right {
+          right: $sp-20;
+          bottom: $sp-20;
+        }
+
+        .location-spot {
+          width: 15px;
+          height: 23px;
+        }
+      }
+
+      .location-wrap {
+        gap: $sp-20;
+        margin-bottom: $sp-70;
+
+        .location-iframe {
+          width: 334px;
+          height: 222px;
+        }
+
+        .location-info-container {
+          margin-top: 0;
+          gap: $sp-20;
+
+          .location-info-wrap {
+            .location-info-title {
+              margin-bottom: $sp-5;
+
+              .location-info-icon {
+                width: 20px;
+                height: 20px;
+              }
+
+              .location-info-title-text {
+                font-size: $fs-20;
+              }
+            }
+
+            .location-info-desc {
+              @include text($fs-16, $fw-semi-b, $c-text-main);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .sub1-title-wrap {
+    margin-bottom: $sp-50;
+  }
+
+  .sub1-page1-content {
+    .sub1-page1-earth {
+      height: 212px;
+    }
+
+    .sub1-page1-banner {
+      height: 200px;
+
+      strong {
+        font-size: 28px;
+      }
+    }
+
+    .inner {
+      .sub1-page1-top-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: $sp-10;
+        margin-bottom: 100px;
+
+        .sub1-page1-top-card {
+          gap: $sp-10;
+          flex-direction: column-reverse;
+
+          &-text-wrap {
+            .sub1-page1-top-card-title-wrap {
+              flex-direction: row;
+              align-items: center;
+              gap: $sp-5;
+              margin-bottom: $sp-5;
+
+              .sub1-page1-top-card-title-en {
+                font-size: $fs-18;
+              }
+
+              .sub1-page1-top-card-title-ko {
+                font-size: 12px;
+              }
+            }
+
+            .sub1-page1-top-card-desc {
+              @include text($fs-14, $fw-semi-b, $c-text-main);
+              text-align: left;
+            }
+          }
+
+          &-img {
+            width: 100%;
+            height: 94px;
+          }
+
+          &:nth-child(2n) {
+            flex-direction: column-reverse;
+          }
+
+          &:nth-child(2n) .sub1-page1-top-card-title-wrap {
+            align-items: center;
+          }
+        }
+      }
+
+      .sub1-page1-bottom-container {
+        display: none;
+      }
+
+      .subBottomSlide {
+        margin: $sp-70 0;
+
+        .slide-card-deco {
+          height: 35px;
+        }
+
+        .slide-card-wrap {
+          .slide-card-img {
+            height: 150px;
+          }
+
+          .slide-card-text {
+            @include text($fs-16, $fw-semi-b, $c-text-main);
+          }
+        }
+      }
+    }
+  }
+
+  .sub1-page2-content {
+    .sub1-page2-slide-wrap {
+      display: none;
+    }
+
+    .sub1-page2-responsive-wrap {
+      display: block;
+
+      .inner {
+        @include inner($inner-main);
+
+        .sub1-page2-responsive-content-wrap {
+          .sub1-page2-responsive-con-card {
+            display: flex;
+            align-items: center;
+            gap: $sp-10;
+            margin-bottom: $sp-100;
+
+            .card-img {
+              width: 129px;
+              height: 139px;
+            }
+
+            .card-text-wrap {
+              flex: 1;
+              position: relative;
+
+              .card-number {
+                width: 150px;
+                position: absolute;
+                right: 0;
+                left: auto;
+                top: -50px;
+                z-index: -1;
+              }
+
+              .card-text {
+                font-size: $fs-16;
+                margin-bottom: 0;
+              }
+
+              .card-point-text-container {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sub1-page3-content {
+    .inner {
+      .sub1-page3-big-title {
+        @include text($fs: 28px, $fw: 900, $color: $c-text-main);
+        margin-bottom: $sp-70;
+      }
+
+      .date-text-wrap-mb {
+        @include flex-center;
+        gap: $sp-30;
+        margin-bottom: $sp-70;
+
+        .since-text {
+          font-size: $fs-16;
+          margin-bottom: 0;
+        }
+
+        .circle-wrap-mb {
+          display: flex;
+          justify-content: center;
+          gap: $sp-10;
+
+          .circle {
+            width: 10px;
+            height: 10px;
+            border-radius: $r-full;
+            background: $c-main;
+            animation-name: dot-blink;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+
+            &1 {
+              opacity: 0.2;
+              animation-delay: 0s;
+            }
+
+            &2 {
+              opacity: 0.4;
+              animation-delay: 0.5s;
+            }
+
+            &3 {
+              opacity: 0.6;
+              animation-delay: 1s;
+            }
+          }
+        }
+
+        .to-text {
+          font-size: $fs-24;
+          margin-bottom: 0;
+        }
+      }
+
+      .circle-wrap {
+        display: none;
+      }
+
+      .sub1-page3-card-wrap {
+        margin-bottom: 100px;
+
+        .sub1-page3-card {
+          flex-direction: row-reverse;
+
+          .card-text-wrap {
+            width: calc(100% - 122px);
+
+            .card-date {
+              font-size: $fs-16;
+            }
+
+            .card-title {
+              font-size: $fs-24;
+            }
+
+            .card-desc {
+              @include text($fs-20, $fw-semi-b, $c-text-main);
+            }
+          }
+
+          img {
+            width: 122px;
+          }
+        }
+      }
+    }
+  }
+
+  .sub1-page4-content {
+    .inner {
+      .location-img {
+        height: 211px;
+        margin-bottom: $sp-30;
+
+        .location-text {
+          @include text($fs: $fs-14, $fw: 900, $color: $c-text-main);
+        }
+
+        .location-left {
+          left: $sp-5;
+          top: $sp-5;
+        }
+
+        .location-right {
+          right: $sp-5;
+          bottom: $sp-5;
+        }
+
+        .location-spot {
+          width: 10px;
+          height: 15px;
+          left: 53%;
+          top: 34%;
+        }
+      }
+
+      .location-wrap {
+        flex-direction: column;
+
+        .location-iframe {
+          width: 100%;
+          height: 222px;
+        }
+      }
+    }
+  }
+}

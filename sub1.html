@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닌텐도 - 한국닌텐도</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="scss/sub1.css">
+  <link rel="stylesheet" href="scss/sub1-responsive.css">
+  <link rel="icon" href="images/common/favicon.svg">
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+    <nav>
+      <a href="index.html" class="logo"></a>
+      <div class="header-click-wrap">
+        <ul class="gnb">
+          <li class="main-menu"><a href="sub1.html">한국닌텐도</a></li>
+          <li class="main-menu"><a href="sub2.html">제품소개</a></li>
+          <li class="main-menu" data-nav="navSw"><a href="#none">소프트웨어</a></li>
+          <li class="main-menu"><a href="sub4.html">영상</a></li>
+          <li class="main-menu"><a href="sub5.html">뉴스</a></li>
+          <li class="main-menu"><a href="sub6.html">고객지원</a></li>
+        </ul>
+        <div class="utility">
+          <button class="header-search-section">
+            <div class="search-icon"></div>
+            <p class="search-text">SEARCH</p>
+          </button>
+          <div class="header-cart"></div>
+          <button class="header-login-section">
+            <div class="login-icon"></div>
+            <div class="login-text">LOGIN / SIGN UP</div>
+          </button>
+          <div class="header-kr"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- 서브헤더 -->
+  <div class="sub-header">
+    <a href="index.html" class="sub-header-home-icon"></a>
+    <a class="sub-header-text" href="#subSeries">Series</a>
+    <a class="sub-header-text" href="#subChar">Charactors</a>
+    <a class="sub-header-text" href="#subNews">News</a>
+  </div>
+  <!-- 서브내비 -->
+  <div class="sub-nav-container" id="navSw">
+    <div class="sub-nav-title-wrap">
+      <div class="sub-nav-title-icon sub-nav-title-icon-sw"></div>
+      <h2>SOFTWARE</h2>
+    </div>
+    <div class="sub-nav-lnb-wrap">
+      <a href="sub3-mario.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">마리오</p>
+      </a>
+      <a href="sub3-animalCrossing.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">동물의 숲</p>
+      </a>
+      <a href="sub3-zelda.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">젤다</p>
+      </a>
+      <a href="sub3-kirby.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">커비</p>
+      </a>
+      <a href="sub3-pikmin.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">피크민</p>
+      </a>
+    </div>
+  </div>
+  <!-- 태블릿, 모바일 내비 -->
+  <div class="responsive-nav-body">
+    <div class="r-nav-left-wrap">
+      <button class="r-nav-hamburger-btn"></button>
+      <a href="index.html" class="r-nav-home-btn"></a>
+    </div>
+    <button class="r-nav-center-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="r-nav-right-wrap">
+      <button class="r-nav-cart-btn"></button>
+      <button class="r-nav-login-btn"></button>
+    </div>
+  </div>
+  <div class="responsive-nav-container">
+    <div class="r-nav-container-header">
+      <div class="r-nav-container-logo"></div>
+      <button class="r-nav-container-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="r-nav-container-body">
+      <div class="r-nav-tab-wrap">
+        <button class="r-nav-tab-btn r-nav-tab-btn1 active" data-rnav="rNavCom">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">COMPANY</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn2" data-rnav="rNavPro">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">PRODUCT</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn3" data-rnav="rNavSw">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SOFTWARE</p>
+        </button>
+        <a href="sub4.html" class="r-nav-tab-btn r-nav-tab-btn4">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">VIDEO</p>
+        </a>
+        <a href="sub5.html" class="r-nav-tab-btn r-nav-tab-btn5">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">NEWS</p>
+        </a>
+        <button class="r-nav-tab-btn r-nav-tab-btn6" data-rnav="rNavSup">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SUPPORT</p>
+        </button>
+      </div>
+      <div class="r-nav-content-wrap">
+        <ul class="r-nav-lnb-wrap active" id="rNavCom">
+          <li>
+            <a href="sub1.html#subComCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">한국닌텐도</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주요 사업</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">연혁</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">찾아오시는 길</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavPro">
+          <li>
+            <a href="sub2.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주변기기</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">아미보</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSw">
+          <li>
+            <a href="sub3-mario.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">마리오</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-animalCrossing.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">동물의 숲</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-zelda.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">젤다</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-kirby.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">커비</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-pikmin.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">피크민</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSup">
+          <li>
+            <a href="sub6.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">FAQ</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">수리접수</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="sub-page-main-visual sub-page-main-visual-01">
+    <div class="sub-page-mv-title-wrap">
+      <p>한국닌텐도</p>
+      <div class="sub-page-big-title">
+        <img src="images/sub1/sub1-main-visual-title.svg" alt="고객지원 타이틀" class="big-title-img">
+        <img src="images/sub1/sub1-main-visual-title-tb.svg" alt="고객지원 타이틀" class="big-title-img-tablet">
+        <img src="images/sub1/sub1-main-visual-title-mb.svg" alt="고객지원 타이틀" class="big-title-img-mb">
+      </div>
+    </div>
+
+    <div class="sub-page-scroll-btn-wrap">
+      <div class="sub-page-scroll-icon">
+        <img src="images/sub6/scroll-btn.svg" alt="스크롤 아이콘">
+      </div>
+      <p class="sub-page-scroll-text">SCROLL</p>
+    </div>
+  </section>
+
+  <!-- 콘텐츠 시트 -->
+  <div class="sub-whole-content-container" id="subPageCon1">
+
+    <div class="sub-page-tab-menu-wrap">
+      <!-- 탭 메뉴 -->
+      <div class="sub-page-tab-menu">
+        <div class="sub-page-tab-btn" data-sub-tab="subComCon1">
+          <div class="sub-page-tab-btn-icon"></div>
+          <p class="sub-page-tab-btn-text">한국닌텐도</p>
+          <div class="sub-page-tab-btn-bar active"></div>
+        </div>
+
+        <div class="sub-page-tab-btn" data-sub-tab="subComCon2">
+          <div class="sub-page-tab-btn-icon"></div>
+          <p class="sub-page-tab-btn-text">주요 사업</p>
+          <div class="sub-page-tab-btn-bar"></div>
+        </div>
+
+        <div class="sub-page-tab-btn" data-sub-tab="subComCon3">
+          <div class="sub-page-tab-btn-icon"></div>
+          <p class="sub-page-tab-btn-text">연혁</p>
+          <div class="sub-page-tab-btn-bar"></div>
+        </div>
+
+        <div class="sub-page-tab-btn" data-sub-tab="subComCon4">
+          <div class="sub-page-tab-btn-icon"></div>
+          <p class="sub-page-tab-btn-text">오시는 길</p>
+          <div class="sub-page-tab-btn-bar"></div>
+        </div>
+      </div>
+
+      <!-- 한국닌텐도 -->
+      <section class="sub1-page1-content" id="subComCon1">
+        <div class="sub1-title-wrap">
+          <h2 class="sub1-title-ko">전 세계와 즐거움을 나누는 글로벌 엔터테인먼트 기업</h2>
+          <h2 class="sub1-title-en">NINTENDO KOREA</h2>
+        </div>
+        <div class="sub1-page1-earth" data-aos="fade-up" data-aos-duration="800"></div>
+        <div class="inner">
+          <div class="sub1-page1-top-container">
+            <div class="sub1-page1-top-card" data-aos="fade-up">
+              <div class="sub1-page1-top-card-text-wrap">
+                <div class="sub1-page1-top-card-title-wrap">
+                  <h2 class="sub1-page1-top-card-title-en">CONSUMERS</h2>
+                  <p class="sub1-page1-top-card-title-ko">고객</p>
+                </div>
+                <p class="sub1-page1-top-card-desc">
+                  고객이 안심하고 즐길 수 있는 제품을 만들기 위해 노력합니다.
+                </p>
+              </div>
+              <div class="sub1-page1-top-card-img">
+              </div>
+            </div>
+            <div class="sub1-page1-top-card" data-aos="fade-up">
+              <div class="sub1-page1-top-card-text-wrap">
+                <div class="sub1-page1-top-card-title-wrap">
+                  <h2 class="sub1-page1-top-card-title-en">SUPPLY CHAIN</h2>
+                  <p class="sub1-page1-top-card-title-ko">공급망</p>
+                </div>
+                <p class="sub1-page1-top-card-desc">
+                  전 공급망 전반에 걸쳐 사회적 책임 (CSR) 활동을 적극적으로 추진합니다.
+                </p>
+              </div>
+              <div class="sub1-page1-top-card-img">
+              </div>
+            </div>
+            <div class="sub1-page1-top-card" data-aos="fade-up">
+              <div class="sub1-page1-top-card-text-wrap">
+                <div class="sub1-page1-top-card-title-wrap">
+                  <h2 class="sub1-page1-top-card-title-en">EMPLOYEES</h2>
+                  <p class="sub1-page1-top-card-title-ko">임직원</p>
+                </div>
+                <p class="sub1-page1-top-card-desc">
+                  모든 임직원이 각자의 잠재력을 최대한 발휘할 수 있는 근무 환경을 조성합니다.
+                </p>
+              </div>
+              <div class="sub1-page1-top-card-img">
+              </div>
+            </div>
+            <div class="sub1-page1-top-card" data-aos="fade-up">
+              <div class="sub1-page1-top-card-text-wrap">
+                <div class="sub1-page1-top-card-title-wrap">
+                  <h2 class="sub1-page1-top-card-title-en">ENVIRONMENT</h2>
+                  <p class="sub1-page1-top-card-title-ko">환경</p>
+                </div>
+                <p class="sub1-page1-top-card-desc">
+                  다양한 방식으로 환경에 미치는 영향을 줄이기 위해 지속적으로 노력합니다.
+                </p>
+              </div>
+              <div class="sub1-page1-top-card-img">
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="sub1-page1-banner">
+          <div class="inner">
+            <strong data-aos="zoom-in" data-aos-duration="800">
+              함께하는<br>
+              <span>모든 사람들</span>에게<br>
+              전하는 미소
+            </strong>
+          </div>
+        </div>
+        <div class="inner">
+          <div class="sub1-page1-bottom-container">
+            <div class="sub1-page1-bottom-card">
+              <div class="sub1-page1-bottom-card-img-wrap">
+                <div class="mario-img one-mario"></div>
+                <div class="sub1-page1-bottom-card-img"></div>
+              </div>
+              <p class="sub1-page1-bottom-card-text">
+                닌텐도의 사명은 <span>우리와 인연을 맺는 모든 사람에게 미소를 전하는 것</span>입니다. 1889년 일본 교토에서 시작된 닌텐도는 창의성과 독자적인 철학을 바탕으로 전 세계가
+                함께
+                즐길 수 있는 새로운 경험을 만들어왔습니다.
+              </p>
+            </div>
+            <div class="sub1-page1-bottom-card">
+              <div class="sub1-page1-bottom-card-img-wrap">
+                <div class="mario-img two-mario"></div>
+                <div class="sub1-page1-bottom-card-img"></div>
+              </div>
+              <p class="sub1-page1-bottom-card-text">
+                오늘날 우리는 비디오 게임과 엔터테인먼트 산업을 통해 캐릭터와 세계관, 그리고 즐거움을 <span>전 세계와 공유</span>하고 있습니다.
+              </p>
+            </div>
+            <div class="sub1-page1-bottom-card">
+              <div class="sub1-page1-bottom-card-img-wrap">
+                <div class="mario-img three-mario"></div>
+                <div class="sub1-page1-bottom-card-img"></div>
+              </div>
+              <p class="sub1-page1-bottom-card-text">
+                한국닌텐도는 2006년 설립 이후, <span>최고의 제품과 서비스를 제공</span>하며 글로벌 닌텐도 가족의 일원으로서 고객과 직원 모두의 <span>가치를 소중히</span> 여기고
+                있습니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper subBottomSlide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-card-wrap">
+                  <img src="images/sub1/sub1-page1-mario-one.png" alt="마리오" class="slide-card-deco slide-card-deco1">
+                  <div class="slide-card-img slide-card-img1"></div>
+                  <p class="slide-card-text">
+                    닌텐도의 사명은 <span>우리와 인연을 맺는 모든 사람에게 미소를 전하는 것</span>입니다. 1889년 일본 교토에서 시작된 닌텐도는 창의성과 독자적인 철학을 바탕으로 전
+                    세계가 함께 즐길 수 있는 새로운 경험을 만들어왔습니다.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-card-wrap">
+                  <img src="images/sub1/sub1-page1-mario-two.png" alt="마리오" class="slide-card-deco slide-card-deco2">
+                  <div class="slide-card-img slide-card-img2"></div>
+                  <p class="slide-card-text">
+                    오늘날 우리는 비디오 게임과 엔터테인먼트 산업을 통해 캐릭터와 세계관, 그리고 즐거움을 <span>전 세계와 공유</span>하고 있습니다.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-card-wrap">
+                  <img src="images/sub1/sub1-page1-mario-three.png" alt="마리오" class="slide-card-deco slide-card-deco3">
+                  <div class="slide-card-img slide-card-img3"></div>
+                  <p class="slide-card-text">
+                    한국닌텐도는 2006년 설립 이후, <span>최고의 제품과 서비스를 제공</span>하며 글로벌 닌텐도 가족의 일원으로서 고객과 직원 모두의 <span>가치를 소중히</span>
+                    여기고 있습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination subBottomSlide-pagenation"></div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 주요사업 -->
+      <section class="sub1-page2-content" id="subComCon2">
+        <div class="sub1-page2-slide-wrap">
+          <div class="inner">
+            <div class="sub1-title-wrap">
+              <h2 class="sub1-title-ko">누구나 즐길 수 있는 엔터테인먼트</h2>
+              <h2 class="sub1-title-en">NINTENDO BUSINESS</h2>
+            </div>
+            <div class="sub1-page2-slide-content-wrap">
+              <div class="slide-pagenation">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="slide-stage">
+                <!-- 스크롤 콘텐츠 -->
+                <div class="sub1-page2-slide-content-box active">
+                  <div class="slide-img"></div>
+                  <div class="slide-text-wrap">
+                    <img src="images/sub1/sub1-page2-slide-number1.png" alt="01">
+                    <p class="slide-text">
+                      한국닌텐도는 Nintendo Switch 본체와 주변기기, 그리고 다양한 게임 소프트웨어의 국내 공식 유통을 담당하고 있습니다. 국내 시장에 맞춘 정식 발매를 통해, 고객이
+                      안심하고 즐길 수 있는 게임 환경을 제공합니다.
+                    </p>
+                    <div class="slide-box-text-wrap">
+                      <div class="slide-box-text">Nintendo Switch 본체 및 주변기기 공식 유통</div>
+                      <div class="slide-box-text">퍼스트 파티 및 서드 파티 게임 소프트웨어 국내 출시</div>
+                      <div class="slide-box-text">패키지 및 다운로드 소프트웨어 판매</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub1-page2-slide-content-box">
+                  <div class="slide-img"></div>
+                  <div class="slide-text-wrap">
+                    <img src="images/sub1/sub1-page2-slide-number2.png" alt="02">
+                    <p class="slide-text">
+                      한국닌텐도는 글로벌 닌텐도 콘텐츠를 한국 시장에 맞게 현지화하고, 국내 이용자에게 효과적으로 전달하기 위한 마케팅 활동을 전개하고 있습니다.
+                    </p>
+                    <div class="slide-box-text-wrap">
+                      <div class="slide-box-text">게임 및 시스템 한국어화</div>
+                      <div class="slide-box-text">한국 시장에 최적화된 마케팅 및 프로모션 기획</div>
+                      <div class="slide-box-text">온·오프라인 캠페인 및 브랜드 커뮤니케이션 운영</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub1-page2-slide-content-box">
+                  <div class="slide-img"></div>
+                  <div class="slide-text-wrap">
+                    <img src="images/sub1/sub1-page2-slide-number3.png" alt="03">
+                    <p class="slide-text">
+                      고객이 제품을 더욱 편리하고 안전하게 이용할 수 있도록 체계적인 고객 지원 서비스를 제공합니다.
+                    </p>
+                    <div class="slide-box-text-wrap">
+                      <div class="slide-box-text">공식 고객센터 운영</div>
+                      <div class="slide-box-text">제품 A/S 및 상담 서비스 제공</div>
+                      <div class="slide-box-text">사용 가이드 및 제품 관련 정보 지원</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub1-page2-slide-content-box">
+                  <div class="slide-img"></div>
+                  <div class="slide-text-wrap">
+                    <img src="images/sub1/sub1-page2-slide-number4.png" alt="04">
+                    <p class="slide-text">
+                      국내 다양한 파트너사와의 협력을 통해 안정적인 유통 환경을 구축하고, 닌텐도 콘텐츠의 접근성을 높이고 있습니다.
+                    </p>
+                    <div class="slide-box-text-wrap">
+                      <div class="slide-box-text">국내 유통사 및 리테일 파트너와의 협업</div>
+                      <div class="slide-box-text">온라인·오프라인 판매 채널 관리</div>
+                      <div class="slide-box-text">서드 파티 개발사 및 비즈니스 파트너 협력</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sub1-page2-slide-content-box">
+                  <div class="slide-img"></div>
+                  <div class="slide-text-wrap">
+                    <img src="images/sub1/sub1-page2-slide-number5.png" alt="05">
+                    <p class="slide-text">
+                      한국닌텐도는 게임을 넘어, 전 연령층이 함께 즐길 수 있는 브랜드 경험을 제공하고자 다양한 활동을 이어가고 있습니다.
+                    </p>
+                    <div class="slide-box-text-wrap">
+                      <div class="slide-box-text">체험 행사 및 오프라인 이벤트 운영</div>
+                      <div class="slide-box-text">가족 단위 고객을 위한 참여형 프로그램 기획</div>
+                      <div class="slide-box-text">닌텐도 IP를 활용한 브랜드 경험 콘텐츠 제공</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sub1-page2-responsive-wrap">
+          <div class="inner">
+            <div class="sub1-title-wrap">
+              <h2 class="sub1-title-ko">누구나 즐길 수 있는 엔터테인먼트</h2>
+              <h2 class="sub1-title-en">NINTENDO BUSINESS</h2>
+            </div>
+            <div class="sub1-page2-responsive-content-wrap">
+              <div class="sub1-page2-responsive-con-card">
+                <div class="card-img card-img1"></div>
+                <div class="card-text-wrap">
+                  <img src="images/sub1/sub1-page2-slide-number1.png" alt="01" class="card-number">
+                  <p class="card-text">
+                    한국닌텐도는 Nintendo Switch 본체와 주변기기, 그리고 다양한 게임 소프트웨어의 국내 공식 유통을 담당하고 있습니다. 국내 시장에 맞춘 정식 발매를 통해, 고객이
+                    안심하고 즐길 수 있는 게임 환경을 제공합니다.
+                  </p>
+                </div>
+              </div>
+              <div class="sub1-page2-responsive-con-card">
+                <div class="card-img card-img2"></div>
+                <div class="card-text-wrap">
+                  <img src="images/sub1/sub1-page2-slide-number2.png" alt="02" class="card-number">
+                  <p class="card-text">
+                    한국닌텐도는 글로벌 닌텐도 콘텐츠를 한국 시장에 맞게 현지화하고, 국내 이용자에게 효과적으로 전달하기 위한 마케팅 활동을 전개하고 있습니다.
+                  </p>
+                </div>
+              </div>
+              <div class="sub1-page2-responsive-con-card">
+                <div class="card-img card-img3"></div>
+                <div class="card-text-wrap">
+                  <img src="images/sub1/sub1-page2-slide-number3.png" alt="03" class="card-number">
+                  <p class="card-text">
+                    고객이 제품을 더욱 편리하고 안전하게 이용할 수 있도록 체계적인 고객 지원 서비스를 제공합니다.
+                  </p>
+                </div>
+              </div>
+              <div class="sub1-page2-responsive-con-card">
+                <div class="card-img card-img4"></div>
+                <div class="card-text-wrap">
+                  <img src="images/sub1/sub1-page2-slide-number4.png" alt="04" class="card-number">
+                  <p class="card-text">
+                    국내 다양한 파트너사와의 협력을 통해 안정적인 유통 환경을 구축하고, 닌텐도 콘텐츠의 접근성을 높이고 있습니다.
+                  </p>
+                </div>
+              </div>
+              <div class="sub1-page2-responsive-con-card">
+                <div class="card-img card-img5"></div>
+                <div class="card-text-wrap">
+                  <img src="images/sub1/sub1-page2-slide-number5.png" alt="05" class="card-number">
+                  <p class="card-text">
+                    한국닌텐도는 게임을 넘어, 전 연령층이 함께 즐길 수 있는 브랜드 경험을 제공하고자 다양한 활동을 이어가고 있습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 연혁 -->
+      <section class="sub1-page3-content" id="subComCon3">
+        <div class="inner">
+          <h1 class="sub1-page3-big-title" data-aos="zoom-in" data-aos-duration="800">
+            변합없는 방향으로<br>
+            걸어온 <span>닌텐도 코리아</span>의 여정을<br>
+            소개합니다.
+          </h1>
+          <div class="date-text-wrap-mb">
+            <p class="since-text">SINCE 2006</p>
+            <div class="circle-wrap-mb">
+              <div class="circle circle1"></div>
+              <div class="circle circle2"></div>
+              <div class="circle circle3"></div>
+            </div>
+            <p class="to-text">TO <span id="year">2006</span></p>
+          </div>
+          <div class="circle-wrap">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+            <div class="circle circle5"></div>
+          </div>
+          <div class="sub1-title-wrap">
+            <h2 class="sub1-title-ko">놀이의 가치를 확장해온 여정</h2>
+            <h2 class="sub1-title-en">NINTENDO HISTORY</h2>
+          </div>
+          <div class="sub1-page3-card-wrap">
+            <div class="sub1-page3-card" data-aos="fade-up">
+              <div class="card-text-wrap">
+                <p class="card-date">2006.7.</p>
+                <h3 class="card-title">한국닌텐도 설립</h3>
+                <p class="card-desc">
+                  한국닌텐도주식회사가 공식적으로 설립되어 대한민국 시장에서 닌텐도 제품을 직접 유통·판매하기 시작했습니다.
+                </p>
+              </div>
+              <img src="images/sub1/sub1-page3-char1.png" alt="픽셀 마리오" class="img-odd">
+            </div>
+            <div class="dots-img">
+              <img src="images/sub1/sub1-page3-dots.png" alt="점점점" class="dots">
+            </div>
+            <div class="sub1-page3-card sub1-page3-card-even" data-aos="fade-up">
+              <div class="card-text-wrap">
+                <p class="card-date">2017.12.</p>
+                <h3 class="card-title">Nintendo Switch 국내 정식 발매</h3>
+                <p class="card-desc">
+                  닌텐도의 하이브리드 게임기 Nintendo Switch가 한국에서 공식 출시되었습니다.
+                </p>
+              </div>
+              <img src="images/sub1/sub1-page3-char2.png" alt="픽셀 커비">
+            </div>
+            <div class="dots-img">
+              <img src="images/sub1/sub1-page3-dots-reverse.png" alt="점점점" class="dots-reverse">
+            </div>
+            <div class="sub1-page3-card" data-aos="fade-up">
+              <div class="card-text-wrap">
+                <p class="card-date">2018.</p>
+                <h3 class="card-title">Switch 타이틀 한국어 지원 확대</h3>
+                <p class="card-desc">
+                  Nintendo Switch용 다양한 게임의 한국어 대응 및 정식 발매를 지원하며 한국 게이머 경험을 확장했습니다.
+                </p>
+              </div>
+              <img src="images/sub1/sub1-page3-char3.png" alt="픽셀 젤다" class="img-odd">
+            </div>
+            <div class="dots-img">
+              <img src="images/sub1/sub1-page3-dots.png" alt="점점점" class="dots">
+            </div>
+            <div class="sub1-page3-card sub1-page3-card-even" data-aos="fade-up">
+              <div class="card-text-wrap">
+                <p class="card-date">2019.4.</p>
+                <h3 class="card-title">Nintendo Switch Online 한국 서비스 시작</h3>
+                <p class="card-desc">
+                  Nintendo Switch Online이 한국에서 공식 서비스되며, 멀티플레이 및 클래식 게임 지원이 확대되었습니다.
+                </p>
+              </div>
+              <img src="images/sub1/sub1-page3-char4.png" alt="픽셀 여울">
+            </div>
+            <div class="dots-img">
+              <img src="images/sub1/sub1-page3-dots-reverse.png" alt="점점점" class="dots-reverse">
+            </div>
+            <div class="sub1-page3-card" data-aos="fade-up">
+              <div class="card-text-wrap">
+                <p class="card-date">2025.6.</p>
+                <h3 class="card-title">Nintendo Switch 2 한국 발매</h3>
+                <p class="card-desc">
+                  닌텐도는 2025년 6월 5일 Nintendo Switch 2를 전 세계 동시 출시했으며, 한국에서도 공식 발매가 이루어졌습니다.
+                </p>
+              </div>
+              <img src="images/sub1/sub1-page3-char5.png" alt="픽셀 피크민" class="img-odd">
+            </div>
+            <div class="dots-img">
+              <img src="images/sub1/sub1-page3-dots.png" alt="점점점" class="dots">
+            </div>
+            <div class="sub1-page3-card sub1-page3-card-even" data-aos="fade-up">
+              <div class="card-text-wrap">
+                <p class="card-date">현재</p>
+                <h3 class="card-title">다양한 한국어 대응 타이틀 정식 출시</h3>
+                <p class="card-desc">
+                  다양한 한국어 대응 타이틀이 정식 출시되면서 국내 소프트웨어 라인업이 확장되고 있습니다.
+                </p>
+              </div>
+              <img src="images/sub1/sub1-page3-char6.png" alt="픽셀 키노피오">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 오시는길 -->
+      <section class="sub1-page4-content" id="subComCon4">
+        <div class="inner">
+          <div class="sub1-title-wrap">
+            <h2 class="sub1-title-ko">닌텐도를 만나는 곳</h2>
+            <h2 class="sub1-title-en">NINTENDO LOCATION</h2>
+          </div>
+          <div class="location-img">
+            <p class="location-text location-left" data-aos="fade-right">
+              닌텐도는 일본 교토 본사를 중심으로<br>
+              전 세계 <span>약 65개</span>의 법인과 자회사를 통해<br>
+              <span>글로벌 네트워크</span>를 운영하고 있습니다.
+            </p>
+            <p class="location-text location-right" data-aos="fade-left">
+              그리고 지금,<br>
+              한국에서 이어지고 있는 <span>한국닌텐도</span>의<br>
+              위치와 정보를 안내합니다.<br>
+            <div class="location-spot">
+              <img src="images/sub1/sub1-page4-map-spot.png" alt="지도 스팟">
+            </div>
+            </p>
+          </div>
+          <div class="location-wrap">
+            <div class="location-iframe" data-aos="fade-right">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.75897894187!2d126.96887727643025!3d37.56074192445938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2e5ba7a0a4d%3A0x98af6f32986b186f!2z7ZWc6rWt64uM7YWQ64-E!5e0!3m2!1sko!2skr!4v1771262253241!5m2!1sko!2skr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="location-info-container" data-aos="fade-left">
+              <div class="location-info-wrap">
+                <div class="location-info-title">
+                  <span class="location-info-icon location-info-icon1"></span>
+                  <span class="location-info-title-text">주소</span>
+                </div>
+                <p class="location-info-desc">
+                  서울특별시 중구 통일로2길 16 AIA타워 2층
+                </p>
+              </div>
+              <div class="location-info-wrap">
+                <div class="location-info-title">
+                  <span class="location-info-icon location-info-icon2"></span>
+                  <span class="location-info-title-text">전화번호</span>
+                </div>
+                <p class="location-info-desc">
+                  대표전화 | 02-2192-1700<br>
+                  고객지원 | 1670-9900
+                </p>
+              </div>
+              <div class="location-info-wrap">
+                <div class="location-info-title">
+                  <span class="location-info-icon location-info-icon3"></span>
+                  <span class="location-info-title-text">팩스</span>
+                </div>
+                <p class="location-info-desc">
+                  02-2192-1777
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 풋터 -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-top-icon">
+          <div class="footer-top-sns">
+            <ul>
+              <li><a href="#none" class="footer-icon-youtube"></a></li>
+              <li><a href="#none" class="footer-icon-kakaostroy"></a></li>
+              <li><a href="#none" class="footer-icon-facebook"></a></li>
+              <li><a href="#none" class="footer-icon-x"></a></li>
+              <li><a href="#none" class="footer-icon-kakaotalk"></a></li>
+            </ul>
+          </div>
+          <div class="footer-top-site">
+            <a href="#none" class="footer-icon-long footer-icon-mynintendo"></a>
+            <a href="#none" class="footer-icon-long footer-icon-amiibo"></a>
+          </div>
+        </div>
+        <div class="footer-bottom-text">
+          <div class="footer-bottom-text-left">
+            <div class="footer-bottom-atags">
+              <a href="#none" class="footer-bottom-atag">이용약관</a>
+              <a href="#none" class="footer-bottom-atag">개인정보처리방침</a>
+            </div>
+            <p class="footer-bottom-text01">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+            <p class="footer-bottom-text02">상호명 : 한국닌텐도주식회사<span class="footer-line-break-mb"></span>대표자명 : 미우라
+              타카히로<span class="footer-line-break"></span>사업자등록번호
+              : 120-87-03578</p>
+          </div>
+          <div class="footer-bottom-text-right">
+            <p class="footer-bottom-text03">고객지원 문의전화 : 1670-9900</p>
+            <p class="footer-bottom-text04">(평일 오전 9시 30분~오후 5시 30분)</p>
+            <p class="footer-bottom-text05">※토/일/공휴일/회사 정기휴일 및 특별휴일 제외</p>
+          </div>
+        </div>
+        <p class="responsive-copyright">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+      </div>
+
+    </footer>
+  </div>
+
+  <!-- 쇼핑 버튼 -->
+  <div class="fixed-cart">
+    <div class="cart-panel">
+      <a href="#none" class="cart-text">장바구니 바로가기 ></a>
+    </div>
+    <button class="cart-btn">
+      <i class="fa-solid fa-bag-shopping"></i>
+    </button>
+  </div>
+
+  <!-- 탑버튼 -->
+  <div class="top-btn-wrap" id="topBtn">
+    <!-- <div class="top-btn-img">
+      <img src="images/zelda/sub-zelda-top-btn-char.png" alt="젤다 탑버튼 이미지">
+    </div> -->
+    <div class="top-btn">
+      <button>TOP <i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/sub1.js"></script>
+  <script src="js/header.js"></script>
+
+</body>
+
+</html>

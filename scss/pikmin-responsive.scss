@@ -1,0 +1,988 @@
+@import 'variables', 'mixins', 'reset', 'fonts', 'header', 'footer', 'common';
+
+
+/* 메인 비주얼 */
+
+@media (max-width: $bp-tablet) and (min-width: $bp-mobile) {
+  .main-visual {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+
+    /* 비디오 */
+    .main-visual-media {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+
+      .main-visual-img-res {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .main-visual-video {
+        display: none;
+      }
+    }
+
+    .main-visual-content {
+      animation: none;
+    }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .main-visual {
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+    background: #000;
+
+    /* 비디오 */
+    .main-visual-media {
+
+      .main-visual-img-res {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .main-visual-video {
+        display: none;
+      }
+    }
+
+    .main-visual-content {
+      width: 268px;
+      height: 200px;
+      @include flex-center;
+      animation: none;
+
+      .main-visual-title {
+        .main-visual-logo {
+          object-fit: cover;
+        }
+      }
+    }
+
+    .main-visual-scroll {
+      display: none;
+    }
+  }
+}
+
+/* 소프트웨어 */
+@media (max-width:1440px) {
+  .sub-software {
+    // 소프트웨어 바뀌는 배경
+    background: url(../images/pikmin/sub-pikmin-software-bg-pc-1440px.svg);
+    background-position: center;
+
+    .sub-software-container {
+      max-width: 1440px;
+      width: 90%;
+      margin: auto;
+
+      // 비디오와 택스트가 들어가는 랩
+      .sub-software-wrap {
+        max-width: 1010px;
+
+        // 상단 비디오 영역
+        .top-nintendo-video {
+          position: relative;
+          width: 100%;
+
+          img {
+            width: 100%;
+            display: block;
+          }
+
+          video {
+            width: 57.5%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+      }
+    }
+  }
+
+
+}
+
+@media (max-width: $bp-tablet) {
+
+  .sub-software {
+    height: auto;
+    width: 100%;
+    padding: 100px 0;
+    background: url(../images/pikmin/sub-pikmin-software-bg-tablet.png);
+    background-size: cover;
+
+    .sub-software-container {
+      justify-content: center;
+
+      .sub-software-wrap {
+        width: 100%;
+
+        .top-nintendo-video {
+          img {
+            display: none;
+          }
+
+          video {
+            transform: translate(0, 0);
+            width: 100%;
+            position: static;
+          }
+        }
+
+        .bottom-wrap {
+          margin-top: $sp-40;
+          display: flex;
+          justify-content: space-between;
+          gap: $sp-30;
+          align-items: center;
+
+          .sub-software-img {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            position: static;
+          }
+
+          .bottom-text {
+            flex: 1.5;
+            font-size: $fs-22;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .sub-software {
+    height: 510px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .sub-software-container {
+      .sub-software-wrap {
+        .bottom-wrap {
+          margin-top: $sp-25;
+          gap: 0;
+
+          .sub-software-img {
+            display: none;
+          }
+
+          .bottom-text {
+            flex: 1.5;
+            font-size: $fs-18;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+// 시리즈
+@media (max-width: $bp-tablet) {
+  .sub-series {
+    height: auto;
+    padding: $sp-100 0;
+
+    &--bg {
+      background: url(../images/pikmin/sub-pikmin-series-tablet-bg.png) no-repeat center / cover;
+    }
+
+    .sub-series-slide-wrap {
+      flex-direction: column-reverse;
+      gap: $sp-50;
+
+      .sub-series-left-wrap {
+        width: 90%;
+
+        .sub-series-number {
+          display: none;
+
+          &.active {
+            display: none;
+          }
+        }
+
+        .sub-series-left {
+          margin-bottom: $sp-40;
+
+          .sub-series-title-wrap {
+            display: flex;
+            align-items: center;
+            gap: $sp-20;
+            margin-bottom: $sp-40;
+
+            .sub-series-num-title {
+              width: 150px;
+              height: 110px;
+              display: block;
+            }
+
+            .sub-series-text-title-wrap {
+              margin-bottom: 0;
+
+              .sub-series-section-title {
+                margin-bottom: 0;
+              }
+            }
+          }
+
+          .sub-series-desc {
+            width: 100%;
+            text-align: center;
+          }
+        }
+
+        .sub-series-control-btn-wrap {
+          display: none;
+        }
+
+        .sub-series-btn {
+          display: flex;
+          margin: 0 auto;
+        }
+      }
+
+      .sub-series-right-wrap {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+
+        .sub-series-viewport {
+          padding-right: $sp-30;
+          padding-left: 0;
+
+          .sub-series-track {
+            gap: $sp-30;
+
+            .sub-series-slide-wrap {
+              width: 78vw;
+              height: 78vw;
+              min-width: 320px;
+              min-height: 320px;
+              flex-grow: 0;
+              flex-shrink: 0;
+              flex-basis: auto;
+              transform: translateY($sp-100);
+              transition: transform $tr-s $ease-default;
+
+              &.active {
+                transform: translateY(0);
+              }
+
+              .sub-series-slide {
+                width: 100%;
+                height: 100%;
+                border-radius: $r-full;
+                overflow: hidden;
+                position: relative;
+
+                &.active {
+                  transform: translateY(0);
+                }
+
+                .sub-series-slide-notice {
+                  width: 100%;
+                  height: 100%;
+                  background: rgba($c-black, 0.5);
+                  @include flex-center;
+                  display: none;
+
+                  &-icon {
+                    width: 90px;
+                    height: 90px;
+                    background: url(../images/pikmin/sub-pikmin-series-overlay-icon.svg) no-repeat center / cover;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .sub-series {
+    padding: $sp-70 0;
+
+    &--bg {
+      background: url(../images/pikmin/sub-pikmin-series-mobile-bg.png) no-repeat center / cover;
+    }
+
+    .sub-series-left-wrap {
+      .sub-series-left {
+        .sub-series-title-wrap {
+          margin-bottom: $sp-20 !important;
+
+          .sub-series-num-title {
+            width: 80px !important;
+            height: 60px !important;
+          }
+
+          .sub-series-text-title-wrap {
+            .sub-series-section-title {
+              width: 100px;
+              height: 20px;
+            }
+
+            .sub-series-title {
+              font-size: $fs-32;
+            }
+          }
+        }
+
+        .sub-series-desc {
+          font-size: $fs-18 !important;
+        }
+      }
+
+      .sub-series-btn {
+        @include more-btn($c-white, $c-white);
+      }
+    }
+
+    .sub-series-right-wrap {
+      .sub-series-viewport {
+        padding-left: $sp-20;
+        padding-right: $sp-20;
+
+        .sub-series-slide-wrap {
+          width: 75vw !important;
+          height: 75vw !important;
+          min-width: 260px !important;
+          min-height: 260px !important;
+
+          .sub-series-slide {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 캐릭터 */
+
+@media (max-width: $bp-tablet) and (min-width: $bp-mobile) {
+  .sub-character {
+    height: 100%;
+    padding: $sp-100 0;
+    background-image: url(../images/pikmin/charcter-bg-tablet.png);
+
+    .sub-character-container {
+
+      .sub-character-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $sp-20;
+        height: auto;
+
+        /*  큰 이미지 swiper */
+        .sub-character-left {
+          order: 2;
+          width: 100%;
+
+          .left-Swiper {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+
+            .character-left-img {
+              width: 100%;
+              height: auto;
+              max-height: 610px;
+              object-fit: contain;
+            }
+          }
+
+          /* 오른쪽 썸네일 swiper  */
+          .sub-character-right {
+            order: 1;
+            width: 100%;
+            height: 180px;
+            @include flex-center;
+
+            .right-Swiper {
+              height: inherit;
+
+              .swiper-wrapper {
+                .swiper-slide {
+                  width: 116px;
+
+                  .sub-character-Thumbnail {
+                    width: 115px;
+                    height: 135px;
+                  }
+                }
+              }
+            }
+          }
+
+          /* 오른쪽 텍스트 */
+          .sub-character-text-box {
+            order: 3;
+            width: 100%;
+            max-width: 680px;
+            height: auto;
+            backdrop-filter: none;
+            box-shadow: none;
+            background-color: transparent;
+            margin-left: 0;
+            padding: 0 $sp-50 0 $sp-50;
+
+            .sub-character-group {
+              @include flex-center;
+              flex-direction: column;
+              text-align: center;
+
+              .sub-character-name-img {
+                margin-bottom: 0;
+              }
+
+              .sub-character-more-btn {
+                bottom: $sp-60;
+                right: auto;
+                left: 50%;
+                transform: translate(-50%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .sub-character {
+    height: auto;
+    background-position: right;
+    padding: $sp-70 0 100px 0;
+
+    .sub-character-container {
+
+      .sub-character-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 0;
+
+        /*  큰 이미지 swiper */
+        .sub-character-left {
+          order: 2;
+          width: 100%;
+
+          .left-Swiper {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            margin: 25px 0 10px 0;
+          }
+
+          .character-left-img {
+            width: 100%;
+            height: auto;
+            max-height: 375px;
+            object-fit: contain;
+          }
+        }
+
+        /* 오른쪽 썸네일 swiper */
+        .sub-character-right {
+          order: 1;
+          width: 100%;
+          height: 135px;
+          @include flex-center;
+
+          .right-Swiper {
+            height: inherit;
+
+            .swiper-wrapper {
+              .swiper-slide {
+                width: 87px;
+
+                .sub-character-Thumbnail {
+                  width: 80px;
+                  height: 100px;
+                }
+              }
+            }
+          }
+        }
+
+        /*  오른쪽 텍스트 */
+        .sub-character-text-box {
+          order: 3;
+          width: 100%;
+          max-width: 680px;
+          height: auto;
+          padding: 0;
+          backdrop-filter: none;
+          box-shadow: none;
+          background-color: transparent;
+          margin-left: 0;
+
+          .sub-character-group {
+            @include flex-center;
+            flex-direction: column;
+            text-align: center;
+
+            .sub-character-name-img {
+              margin-bottom: $sp-5;
+            }
+
+            .sub-character-desc {
+              p {
+                font-size: $fs-18;
+              }
+            }
+
+            .sub-character-more-btn {
+              bottom: -$sp-70;
+              right: auto;
+              left: 50%;
+              transform: translate(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 뉴스 타블렛 */
+@media (max-width: $bp-tablet) {
+  .sub-news {
+    display: none;
+  }
+
+  .sub-news-responsive-wrap {
+    display: block;
+    background: url(../images/pikmin/sub-pikmin-news-tablet-bg.png) no-repeat center / cover;
+    width: 100%;
+    @include flex-center;
+    flex-direction: column;
+    padding: $sp-100 0;
+
+    .sub-section-title {
+      @include sub-news-title;
+    }
+
+    .sub-news-tablet {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+
+      .sub-news-wrap {
+        width: 100%;
+      }
+
+      .sub-news-card {
+        width: auto;
+        min-height: 405px;
+        border-radius: $r-md;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0.7);
+        transition: $tr-r;
+        position: relative;
+        cursor: pointer;
+        padding: $sp-20;
+
+        .sub-news-img-box {
+          border-radius: $r-sm;
+          overflow: hidden;
+          z-index: 10;
+
+          .sub-news-img {
+
+            img {
+              width: 100%;
+              height: 100%;
+              display: block;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+
+        .sub-news-text-box {
+          width: 382px;
+          display: flex;
+          flex-direction: column;
+          padding-top: $sp-20;
+          gap: $sp-50;
+          z-index: 10;
+
+          .sub-news-card-title {
+            @include text($fs-18, $fw-md, $c-text-main);
+            height: 50px;
+            text-align: justify;
+          }
+
+          .sub-news-card-date {
+            @include flex-right;
+
+            p {
+              @include sub-text-date;
+            }
+          }
+        }
+
+        .more-btn {
+          @include more-btn($c-white, $c-white);
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 5;
+        }
+
+        .news-card {
+          position: absolute;
+          object-fit: contain;
+          z-index: 0;
+        }
+      }
+
+      .swiper-slide-active {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+
+/* 뉴스 모바일 */
+@media (max-width: $bp-mobile) {
+  .sub-news {
+    display: none;
+  }
+
+  .sub-news-responsive-wrap {
+    background: url(../images/pikmin/sub-pikmin-news-mobile-bg.png) no-repeat center / cover;
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    padding: $sp-100 0;
+
+    .sub-section-title {
+      @include sub-news-title;
+    }
+
+    .sub-news-tablet {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .sub-news-wrap {
+        display: flex;
+      }
+
+      .sub-news-card {
+        width: 100%;
+        padding: $sp-15;
+        border-radius: $r-md;
+        position: relative;
+        cursor: pointer;
+        transform: scale(0.8);
+        transition: transform 0.4s ease;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .sub-news-img-box {
+          border-radius: $r-xs;
+          position: relative;
+          overflow: hidden;
+          width: 85%;
+          height: auto;
+
+          .sub-news-img img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+
+        .sub-news-text-box {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          gap: $sp-20;
+        }
+
+        .news-card {
+          position: absolute;
+          width: 90%;
+          height: 90%;
+          top: 5%;
+          left: 5%;
+          z-index: -20;
+        }
+      }
+
+      .swiper-slide-active {
+        transform: scale(1);
+        z-index: 2;
+      }
+    }
+
+    .swiper-pagination-box {
+      .swiper-pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $sp-10;
+        z-index: 100;
+
+        .swiper-pagination-bullet {
+          width: 15px;
+          height: 15px;
+          background: $c-white;
+          opacity: 0.8;
+        }
+
+        .swiper-pagination-bullet-active {
+          background: $c-main;
+        }
+      }
+    }
+  }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, 0px);
+  left: 0;
+  top: var(--swiper-pagination-top, auto);
+  width: 100%;
+}
+
+/* 다운로드박스 */
+@media (max-width: $bp-tablet) and (min-width: $bp-mobile) {
+  .sub-download {
+    padding: 70px 0 70px 0;
+
+    .sub-download-box-container {
+      .sub-download-box {
+        height: 240px;
+        background-image: url(../images/pikmin/download-box-bg-mb.png);
+        background-size: cover;
+
+        .sub-download-wrap {
+          gap: 60px;
+
+          .download-left {
+            gap: 15px;
+
+            .download-game-logo-img {
+              width: 236px;
+              height: 110px;
+            }
+
+            .download-btn {
+              height: 55px;
+            }
+          }
+
+          .download-right {
+            width: 220px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .sub-download {
+    padding: 45px 0 45px 0;
+
+    .sub-download-box-container {
+      .sub-download-box {
+        height: 210px;
+
+        .sub-download-wrap {
+          flex-direction: column;
+          align-items: center;
+          gap: 0;
+
+          .download-left {
+            order: 2;
+
+            .download-game-logo-img {
+              display: none;
+            }
+
+            .download-btn {
+              width: 238px;
+              height: 55px;
+              margin-bottom: $sp-15;
+
+              /* 텍스트 */
+              .btn-text {
+                font-size: $fs-28;
+                font-weight: $fw-md;
+              }
+            }
+          }
+
+          .download-right {
+            order: 1;
+            width: 150px;
+
+            .download-character {
+              .download-character-img {
+                background-position: center -20%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 푸터
+@media (max-width: $bp-tablet) {
+  .footer {
+    height: auto;
+    padding: $sp-40;
+
+    .footer-content {
+      .footer-top-icon {
+        gap: $sp-30;
+        flex-direction: column;
+        align-items: flex-start;
+        order: 2;
+
+        .footer-top-sns {
+          ul {
+            li {
+              a {
+                width: 52px;
+                height: 52px;
+              }
+            }
+          }
+        }
+
+        .footer-top-site {
+          flex-direction: column;
+          gap: $sp-10;
+          width: 100%;
+
+          .footer-icon-long {
+            height: 65px;
+            width: 100%;
+          }
+        }
+      }
+
+      .footer-bottom-text {
+        order: 1;
+        flex-direction: column;
+        gap: $sp-5;
+
+        &-left {
+          gap: $sp-5;
+        }
+
+        &-right {
+          text-align: left;
+          gap: $sp-5;
+        }
+      }
+    }
+  }
+
+  .footer-bottom-text01 {
+    display: none;
+  }
+
+  .footer-bottom-text02 {
+    line-height: $lh-text;
+
+    .footer-line-break {
+      display: block;
+    }
+  }
+
+  .responsive-copyright {
+    display: block !important;
+    order: 3;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .footer {
+    font-size: $fs-18;
+
+    .footer-top-sns {
+      ul {
+        li {
+          a {
+            width: 38px !important;
+            height: 38px !important;
+          }
+        }
+      }
+    }
+
+    .footer-top-site {
+      .footer-icon-long {
+        height: 45px !important;
+      }
+    }
+  }
+
+  .footer-line-break-mb {
+    display: block;
+  }
+
+  .responsive-copyright {
+    font-size: $fs-14;
+  }
+}

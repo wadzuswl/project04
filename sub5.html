@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닌텐도 - 뉴스</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="scss/sub5.css">
+  <link rel="stylesheet" href="scss/sub5-responsive.css">
+  <link rel="icon" href="images/common/favicon.svg">
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+    <nav>
+      <a href="index.html" class="logo"></a>
+      <div class="header-click-wrap">
+        <ul class="gnb">
+          <li class="main-menu"><a href="sub1.html">한국닌텐도</a></li>
+          <li class="main-menu"><a href="sub2.html">제품소개</a></li>
+          <li class="main-menu" data-nav="navSw"><a href="#none">소프트웨어</a></li>
+          <li class="main-menu"><a href="sub4.html">영상</a></li>
+          <li class="main-menu"><a href="sub5.html">뉴스</a></li>
+          <li class="main-menu"><a href="sub6.html">고객지원</a></li>
+        </ul>
+        <div class="utility">
+          <button class="header-search-section">
+            <div class="search-icon"></div>
+            <p class="search-text">SEARCH</p>
+          </button>
+          <div class="header-cart"></div>
+          <button class="header-login-section">
+            <div class="login-icon"></div>
+            <div class="login-text">LOGIN / SIGN UP</div>
+          </button>
+          <div class="header-kr"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- 서브헤더 -->
+  <div class="sub-header">
+    <a href="index.html" class="sub-header-home-icon"></a>
+    <a class="sub-header-text" href="#subSeries">Series</a>
+    <a class="sub-header-text" href="#subChar">Charactors</a>
+    <a class="sub-header-text" href="#subNews">News</a>
+  </div>
+  <!-- 서브내비 -->
+  <div class="sub-nav-container" id="navSw">
+    <div class="sub-nav-title-wrap">
+      <div class="sub-nav-title-icon sub-nav-title-icon-sw"></div>
+      <h2>SOFTWARE</h2>
+    </div>
+    <div class="sub-nav-lnb-wrap">
+      <a href="sub3-mario.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">마리오</p>
+      </a>
+      <a href="sub3-animalCrossing.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">동물의 숲</p>
+      </a>
+      <a href="sub3-zelda.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">젤다</p>
+      </a>
+      <a href="sub3-kirby.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">커비</p>
+      </a>
+      <a href="sub3-pikmin.html" class="sub-nav-lnb">
+        <div class="sub-nav-icon"></div>
+        <p class="sub-nav-text">피크민</p>
+      </a>
+    </div>
+  </div>
+  <!-- 태블릿, 모바일 내비 -->
+  <div class="responsive-nav-body">
+    <div class="r-nav-left-wrap">
+      <button class="r-nav-hamburger-btn"></button>
+      <a href="index.html" class="r-nav-home-btn"></a>
+    </div>
+    <button class="r-nav-center-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="r-nav-right-wrap">
+      <button class="r-nav-cart-btn"></button>
+      <button class="r-nav-login-btn"></button>
+    </div>
+  </div>
+  <div class="responsive-nav-container">
+    <div class="r-nav-container-header">
+      <div class="r-nav-container-logo"></div>
+      <button class="r-nav-container-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="r-nav-container-body">
+      <div class="r-nav-tab-wrap">
+        <button class="r-nav-tab-btn r-nav-tab-btn1 active" data-rnav="rNavCom">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">COMPANY</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn2" data-rnav="rNavPro">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">PRODUCT</p>
+        </button>
+        <button class="r-nav-tab-btn r-nav-tab-btn3" data-rnav="rNavSw">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SOFTWARE</p>
+        </button>
+        <a href="sub4.html" class="r-nav-tab-btn r-nav-tab-btn4">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">VIDEO</p>
+        </a>
+        <a href="sub5.html" class="r-nav-tab-btn r-nav-tab-btn5">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">NEWS</p>
+        </a>
+        <button class="r-nav-tab-btn r-nav-tab-btn6" data-rnav="rNavSup">
+          <div class="r-nav-tab-btn-icon"></div>
+          <p class="r-nav-tab-btn-text">SUPPORT</p>
+        </button>
+      </div>
+      <div class="r-nav-content-wrap">
+        <ul class="r-nav-lnb-wrap active" id="rNavCom">
+          <li>
+            <a href="sub1.html#subComCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">한국닌텐도</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주요 사업</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">연혁</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub1.html#subComCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">찾아오시는 길</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavPro">
+          <li>
+            <a href="sub2.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">주변기기</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub2.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">아미보</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSw">
+          <li>
+            <a href="sub3-mario.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">마리오</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-animalCrossing.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">동물의 숲</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-zelda.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">젤다</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-kirby.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">커비</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub3-pikmin.html" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">피크민</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="r-nav-lnb-wrap" id="rNavSup">
+          <li>
+            <a href="sub6.html#subTabCon1" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치2</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon2" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">스위치</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon3" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">FAQ</p>
+            </a>
+          </li>
+          <li>
+            <a href="sub6.html#subTabCon4" class="r-nav-lnb">
+              <div class="r-nav-lnb-icon"></div>
+              <p class="r-nav-lnb-text">수리접수</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 메인비주얼 -->
+  <section class="sub-page-main-visual sub-page-main-visual-05">
+    <div class="sub-page-mv-title-wrap">
+      <p>뉴스</p>
+      <h2 class="sub-page-big-title">
+        <!-- !! 타이틀 svg 변경 -->
+        <img src="images/sub5/sub5-main-visual-title.svg" alt="뉴스 타이틀" class="big-title-img">
+        <img src="images/sub5/sub5-main-visual-title-tablet.svg" alt="뉴스 타이틀" class="big-title-img-tablet">
+        <img src="images/sub5/sub5-main-visual-title-mb.svg" alt="뉴스 타이틀" class="big-title-img-mb">
+      </h2>
+    </div>
+    <div class="sub-page-scroll-btn-wrap">
+      <div class="sub-page-scroll-icon">
+        <img src="images/sub5/scroll-btn.svg" alt="스크롤 아이콘">
+      </div>
+      <p class="sub-page-scroll-text">SCROLL</p>
+    </div>
+  </section>
+
+  <!-- 콘텐츠 시트 -->
+  <div class="sub-whole-content-container" id="subPageCon">
+    <div class="sub-page-tab-menu-wrap">
+      <section class="sub5-news" data-aos="fade-up">
+        <div class="news-container inner">
+          <!-- 뉴스 탭 -->
+          <div class="news-tabs" data-aos="fade-up">
+            <ul class="news-tabs-list">
+
+              <li class="news-tab active">
+                <button type="button" class="news-tab-btn">
+                  <span class="news-tab-name">전체</span>
+                </button>
+              </li>
+
+              <li class="news-tab">
+                <button type="button" class="news-tab-btn">
+                  <svg class="news-tab-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M18.8125 6.43689H13.5V1.17597C13.5 0.557039 13 0 12.3125 0H7.625C7 0 6.4375 0.495146 6.4375 1.17597V6.43689H1.1875C0.5625 6.43689 0 6.93204 0 7.61286V12.2549C0 12.8738 0.5 13.4308 1.1875 13.4308H6.5V18.6917C6.5 19.3107 7 19.8677 7.6875 19.8677H12.375C13 19.8677 13.5625 19.3726 13.5625 18.6917V13.4308H18.875C19.5 13.4308 20.0625 12.9357 20.0625 12.2549V7.61286C20 6.93204 19.5 6.43689 18.8125 6.43689ZM4.6875 10.46H2.375C2.0625 10.46 1.8125 10.2124 1.8125 9.90291C1.8125 9.59345 2.0625 9.34587 2.375 9.34587H4.75C5.0625 9.34587 5.3125 9.59345 5.3125 9.90291C5.3125 10.2124 5 10.46 4.6875 10.46ZM10.5625 17.4539C10.5625 17.7634 10.3125 18.0109 10 18.0109C9.6875 18.0109 9.4375 17.7634 9.4375 17.4539V15.1019C9.4375 14.7925 9.6875 14.5449 10 14.5449C10.3125 14.5449 10.5625 14.7925 10.5625 15.1019V17.4539ZM10.5625 4.64199C10.5625 4.95146 10.3125 5.19903 10 5.19903C9.6875 5.19903 9.4375 4.95146 9.4375 4.64199V2.35194C9.4375 2.04248 9.6875 1.7949 10 1.7949C10.3125 1.7949 10.5625 2.04248 10.5625 2.35194V4.64199ZM17.625 10.46H15.25C14.9375 10.46 14.6875 10.2124 14.6875 9.90291C14.6875 9.59345 14.9375 9.34587 15.25 9.34587H17.625C17.9375 9.34587 18.1875 9.59345 18.1875 9.90291C18.25 10.2124 18 10.46 17.625 10.46Z"
+                      fill="none" />
+                  </svg>
+                  <span class="news-tab-name">게임뉴스</span>
+                </button>
+              </li>
+
+              <li class="news-tab">
+                <button type="button" class="news-tab-btn">
+                  <svg class="news-tab-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.8117 12.0287C11.2494 12.0287 11.1869 11.0481 11.1869 9.80603C11.1869 8.56393 11.1869 7.51795 11.8117 7.58333C12.3739 7.6487 12.4988 8.49856 12.4988 9.74065C12.4364 11.0481 12.3739 12.0287 11.8117 12.0287ZM8.18833 12.0287C7.62609 12.0287 7.56362 10.9827 7.56362 9.80603C7.56362 8.56393 7.68856 7.71407 8.2508 7.6487C8.87551 7.58333 8.87551 8.6293 8.87551 9.8714C8.81304 11.0481 8.75057 12.0287 8.18833 12.0287ZM19.9954 7.6487C19.9329 7.45258 19.1208 7.25646 16.497 6.92959C14.8728 6.73347 13.311 6.60272 13.2485 6.60272C13.1236 6.60272 12.9986 6.47198 12.9361 6.34123C12.5613 5.29525 12.124 4.1839 11.6867 3.2033C10.6872 0.719109 10.2499 0 9.93752 0C9.68764 0 9.31281 0.719109 8.18833 3.26868C7.50115 4.83764 6.93891 6.4066 6.93891 6.4066C6.87643 6.53735 6.75149 6.6681 6.62655 6.6681C6.62655 6.6681 5.06477 6.73347 3.44051 6.92959C0.879193 7.19109 0.0670669 7.38721 0.00459562 7.58333C-0.0578756 7.84482 0.504366 8.43318 2.44097 10.329C3.62793 11.5057 4.87735 12.5517 4.87735 12.5517C5.0023 12.6171 5.0023 12.7478 5.0023 12.8132V12.8786C5.0023 12.8786 4.62747 14.5129 4.25264 16.2126C3.87781 18.1738 3.56546 19.7428 3.81534 19.9389C4.06523 20.2004 4.93982 19.6121 7.06385 18.37C8.50069 17.5201 9.81258 16.6049 9.87505 16.6049C10 16.5395 10.1249 16.5395 10.2499 16.6049C10.2499 16.6049 11.6242 17.5201 12.9986 18.37C15.1226 19.6774 15.9348 20.135 16.2471 19.9389C16.497 19.7428 16.2471 18.5661 15.8098 16.2126C15.4975 14.5129 15.0602 12.8786 15.0602 12.8786V12.8132C15.0602 12.6825 15.1226 12.6171 15.1851 12.5517C15.1851 12.5517 16.3721 11.5057 17.6215 10.3944C19.4956 8.49856 20.0579 7.84482 19.9954 7.6487Z"
+                      fill="none" />
+                  </svg>
+                  <span class="news-tab-name">이벤트</span>
+                </button>
+              </li>
+
+              <li class="news-tab">
+                <button type="button" class="news-tab-btn">
+                  <svg class="news-tab-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.3276 0.24961C10.4524 0.0624025 10.702 0 10.9516 0L16.8175 0.124805C17.0671 0.124805 17.2543 0.24961 17.4415 0.374415L19.6256 2.5585C19.8128 2.74571 19.8752 2.93292 19.8752 3.18253L20 9.04836C20 9.29797 19.9376 9.54758 19.7504 9.73479L9.76599 19.7192C9.39158 20.0936 8.82995 20.0936 8.45554 19.7192L0.280811 11.5445C-0.0936038 11.17 -0.0936038 10.6084 0.280811 10.234L10.3276 0.24961ZM14.5086 2.80811C13.7598 3.55694 13.7598 4.74259 14.5086 5.49142C15.2574 6.24025 16.4431 6.24025 17.1919 5.49142C17.9407 4.74259 17.9407 3.55694 17.1919 2.80811C16.4431 2.05928 15.195 2.05928 14.5086 2.80811Z"
+                      fill="none" />
+                  </svg>
+                  <span class="news-tab-name">프로모션</span>
+                </button>
+              </li>
+
+              <li class="news-tab">
+                <button type="button" class="news-tab-btn">
+                  <svg class="news-tab-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 20 20" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.2 13.5H19.7C19.8 13.5 19.9 13.5 19.9 13.5C20 13.6 20.1 13.6 20.1 13.7C20.2 13.7 20.2 13.8 20.3 13.9C20.3 14 20.3 14.1 20.3 14.1V14.2C20.3 14.2 20.3 14.3 20.3 14.4C20.2 14.5 20.2 14.6 20.1 14.6C20.1 14.7 20 14.7 19.9 14.8C19.9 14.8 19.8 14.8 19.7 14.8H10.2C10.1 14.8 10 14.8 9.9 14.8C9.8 14.7 9.8 14.7 9.7 14.6C9.7 14.6 9.6 14.5 9.6 14.4C9.5 14.3 9.5 14.2 9.5 14.2V14.1C9.5 14.1 9.5 14 9.6 13.9C9.6 13.8 9.7 13.7 9.7 13.7C9.8 13.6 9.8 13.6 9.9 13.5C10 13.5 10.1 13.5 10.2 13.5ZM10.2 18.7H19.7C19.8 18.7 20 18.7 20.1 18.9C20.3 19 20.3 19.2 20.3 19.3V19.3C20.3 19.5 20.3 19.7 20.1 19.8C20 19.9 19.8 20 19.7 20H10.2C10 20 9.8 19.9 9.7 19.8C9.6 19.7 9.5 19.5 9.5 19.3V19.3C9.5 19.2 9.6 19 9.7 18.9C9.8 18.7 10 18.7 10.2 18.7ZM1.3 -0.3H19C19.3 -0.3 19.7 -0.2 19.9 0.1C20.2 0.3 20.3 0.7 20.3 1V10C20.3 10.4 20.2 10.7 19.9 11C19.7 11.2 19.3 11.4 19 11.4H1.3C1 11.4 0.6 11.2 0.4 11C0.1 10.7 0 10.4 0 10L0 1C0 0.7 0.1 0.3 0.4 0.1C0.6 -0.2 1 -0.3 1.3 -0.3ZM1.3 13.5H5.6C5.9 13.5 6.3 13.7 6.5 13.9C6.8 14.2 6.9 14.5 6.9 14.8V18.7C6.9 19 6.8 19.4 6.5 19.6C6.3 19.9 5.9 20 5.6 20H1.3C1 20 0.6 19.9 0.4 19.6C0.1 19.4 0 19 0 18.7L0 14.8C0 14.5 0.1 14.2 0.4 13.9C0.6 13.7 1 13.5 1.3 13.5ZM10.2 16.1H19.7C19.8 16.1 20 16.2 20.1 16.3C20.3 16.4 20.3 16.6 20.3 16.7V16.7C20.3 16.9 20.3 17.1 20.1 17.2C20 17.3 19.8 17.4 19.7 17.4H10.2C10 17.4 9.8 17.3 9.7 17.2C9.6 17.1 9.5 16.9 9.5 16.7V16.7C9.5 16.6 9.6 16.4 9.7 16.3C9.8 16.2 10 16.1 10.2 16.1L10.2 16.1Z"
+                      fill="none" />
+                  </svg>
+                  <span class="news-tab-name">보도자료</span>
+                </button>
+              </li>
+
+              <li class="news-tab">
+                <button type="button" class="news-tab-btn">
+                  <svg class="news-tab-icon" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M13.4502 5.1087e-05C13.6792 -0.00246376 13.8999 0.087958 14.0644 0.25167C14.2289 0.415381 14.3238 0.639155 14.3286 0.874371V4.67556H14.4242C15.0096 4.68173 15.5689 4.92563 15.9799 5.354C16.3909 5.78236 16.6203 6.3604 16.6178 6.96188V7.05539C16.6227 7.65848 16.3944 8.23892 15.9832 8.66931C15.5719 9.0997 15.0112 9.34489 14.4242 9.35106H14.3286V13.1382C14.3238 13.3734 14.2289 13.5972 14.0644 13.7609C13.8999 13.9246 13.6792 14.0151 13.4502 14.0125L8.64874 10.4966H6.55065L7.06494 14.5268C7.05421 14.927 6.88974 15.3065 6.60746 15.5825C6.32519 15.8585 5.94807 16.0084 5.5585 15.9996H4.803C4.41343 16.0084 4.03631 15.8585 3.75404 15.5825C3.47177 15.3065 3.3073 14.927 3.29657 14.5268L2.78229 10.4966H1.54892C1.11868 10.4735 0.714706 10.2769 0.424905 9.94941C0.135105 9.62192 -0.0170612 9.1901 0.00152228 8.74792V5.24597C-0.0158632 4.80411 0.136715 4.37297 0.426273 4.04576C0.715831 3.71854 1.11911 3.52154 1.54892 3.49733H8.62599L13.4502 5.1087e-05ZM17.1822 9.72978C17.209 9.7051 17.2403 9.68612 17.2744 9.67393C17.3084 9.66174 17.3444 9.65658 17.3803 9.65876C17.4163 9.66093 17.4515 9.67039 17.4839 9.68659C17.5163 9.70279 17.5452 9.72541 17.569 9.75316L19.4441 11.9086C19.4947 11.9626 19.523 12.0346 19.523 12.1096C19.523 12.1846 19.4947 12.2566 19.4441 12.3107C19.3936 12.3594 19.3268 12.3862 19.2575 12.3855C19.2197 12.385 19.1823 12.3764 19.1478 12.3603C19.1133 12.3442 19.0825 12.321 19.0573 12.292L17.1594 10.1365C17.1115 10.0788 17.0871 10.0043 17.0913 9.92847C17.0955 9.85268 17.1281 9.7815 17.1822 9.72978ZM14.4242 5.80703H14.3286V8.18686H14.4242C14.5692 8.18625 14.7127 8.15622 14.8464 8.0985C14.9801 8.04078 15.1013 7.9565 15.2033 7.85051C15.3052 7.74451 15.3857 7.61888 15.4402 7.48083C15.4948 7.34277 15.5222 7.19502 15.521 7.04604V6.95253C15.5222 6.80333 15.4948 6.65534 15.4403 6.51703C15.3858 6.37871 15.3054 6.25277 15.2035 6.1464C15.1017 6.04003 14.9804 5.95531 14.8467 5.89708C14.713 5.83885 14.5694 5.80825 14.4242 5.80703ZM19.7536 6.54576C19.8217 6.5547 19.8843 6.58883 19.9296 6.64176C19.975 6.69469 20 6.76279 20 6.8333C20 6.90382 19.975 6.97192 19.9296 7.02485C19.8843 7.07778 19.8217 7.11191 19.7536 7.12085H17.6282C17.5601 7.11191 17.4975 7.07778 17.4522 7.02485C17.4068 6.97192 17.3818 6.90382 17.3818 6.8333C17.3818 6.76279 17.4068 6.69469 17.4522 6.64176C17.4975 6.58883 17.5601 6.5547 17.6282 6.54576H19.7536ZM19.0391 1.4027C19.0641 1.37598 19.0942 1.35472 19.1274 1.34019C19.1606 1.32567 19.1964 1.31819 19.2325 1.31819C19.2686 1.31819 19.3043 1.32567 19.3376 1.34019C19.3708 1.35472 19.4009 1.37598 19.4259 1.4027C19.4765 1.45672 19.5048 1.52877 19.5048 1.60375C19.5048 1.67872 19.4765 1.75078 19.4259 1.8048L17.569 3.95553C17.5429 3.98466 17.5113 4.00799 17.4761 4.02407C17.4408 4.04015 17.4028 4.04865 17.3642 4.04904C17.2967 4.04768 17.232 4.02108 17.1822 3.97423C17.1313 3.91944 17.1029 3.8466 17.1029 3.77085C17.1029 3.6951 17.1313 3.62226 17.1822 3.56746L19.0391 1.4027Z"
+                      fill="none" />
+                  </svg>
+                  <span class="news-tab-name">알림</span>
+                </button>
+              </li>
+
+            </ul>
+          </div>
+
+
+          <!-- 검색탭 -->
+          <form class="search-tab" data-aos="fade-up">
+            <div class="search-icon"></div>
+            <label for="search" class="blind">검색어 입력</label>
+            <input type="search" class="search-input" placeholder="키워드를 입력해주세요.">
+            <button class="search-btn">
+              검색
+            </button>
+          </form>
+
+          <!-- 총 개수 표시 -->
+          <div class="news-count">
+            총 <strong class="news-count-num">0</strong>건
+          </div>
+
+          <!-- 뉴스 리스트 -->
+          <ul class="news-list" data-aos="fade-up">
+
+            <!-- 뉴스 카드 들어갈 영역 -->
+
+          </ul>
+
+          <!-- 페이지네이션 -->
+          <div class="pagination">
+            <button class="prev first" type="button" aria-label="첫 페이지">
+              <i class="fa-solid fa-angles-left"></i>
+            </button>
+            <button class="prev prev-page" type="button" aria-label="이전 페이지">
+              <i class="fas fa-angle-left"></i>
+            </button>
+            <ol id="numbers">
+              <!-- JS가 여기 숫자 생성 -->
+              <li><a href="" class="active">1</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">4</a></li>
+              <li><a href="">5</a></li>
+              <li><a href="">6</a></li>
+              <li><a href="">7</a></li>
+              <li><a href="">8</a></li>
+              <li><a href="">9</a></li>
+              <li><a href="">10</a></li>
+            </ol>
+            <button class="next next-page" type="button" aria-label="다음 페이지">
+              <i class="fas fa-angle-right"></i>
+            </button>
+            <button class="next last" type="button" aria-label="마지막 페이지">
+              <i class="fa-solid fa-angles-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 풋터 -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-top-icon">
+            <div class="footer-top-sns">
+              <ul>
+                <li><a href="#none" class="footer-icon-youtube"></a></li>
+                <li><a href="#none" class="footer-icon-kakaostroy"></a></li>
+                <li><a href="#none" class="footer-icon-facebook"></a></li>
+                <li><a href="#none" class="footer-icon-x"></a></li>
+                <li><a href="#none" class="footer-icon-kakaotalk"></a></li>
+              </ul>
+            </div>
+            <div class="footer-top-site">
+              <a href="#none" class="footer-icon-long footer-icon-mynintendo"></a>
+              <a href="#none" class="footer-icon-long footer-icon-amiibo"></a>
+            </div>
+          </div>
+          <div class="footer-bottom-text">
+            <div class="footer-bottom-text-left">
+              <div class="footer-bottom-atags">
+                <a href="#none" class="footer-bottom-atag">이용약관</a>
+                <a href="#none" class="footer-bottom-atag">개인정보처리방침</a>
+              </div>
+              <p class="footer-bottom-text01">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+              <p class="footer-bottom-text02">상호명 : 한국닌텐도주식회사<span class="footer-line-break-mb"></span>대표자명 : 미우라
+                타카히로<span class="footer-line-break"></span>사업자등록번호
+                : 120-87-03578</p>
+            </div>
+            <div class="footer-bottom-text-right">
+              <p class="footer-bottom-text03">고객지원 문의전화 : 1670-9900</p>
+              <p class="footer-bottom-text04">(평일 오전 9시 30분~오후 5시 30분)</p>
+              <p class="footer-bottom-text05">※토/일/공휴일/회사 정기휴일 및 특별휴일 제외</p>
+            </div>
+          </div>
+          <p class="responsive-copyright">ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.</p>
+        </div>
+
+      </footer>
+    </div>
+  </div>
+
+  <!-- 쇼핑 버튼 -->
+  <div class="fixed-cart">
+    <div class="cart-panel">
+      <a href="#none" class="cart-text">장바구니 바로가기 ></a>
+    </div>
+    <button class="cart-btn">
+      <i class="fa-solid fa-bag-shopping"></i>
+    </button>
+  </div>
+
+  <!-- 탑버튼 -->
+  <div class="top-btn-wrap" id="topBtn">
+    <div class="top-btn">
+      <button>TOP <i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/sub5.js"></script>
+
+</body>
+
+</html>

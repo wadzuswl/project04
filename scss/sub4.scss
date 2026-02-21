@@ -1,0 +1,426 @@
+@import 'variables', 'mixins', 'reset', 'fonts', 'header', 'footer', 'common';
+
+body {
+  font-family: $ff-suit;
+}
+
+// 메인 비주얼
+.sub-page-main-visual {
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: relative;
+  margin-top: 60px;
+  // 충돌방지
+  padding-top: 1px;
+  opacity: 0;
+  transform: scale(1.03);
+  clip-path: circle(0% at 50% 50%);
+  animation-name: reveal;
+  animation-duration: 1.1s;
+  animation-timing-function: $ease-default;
+  animation-delay: 0.8s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  // 배경 이미지 변경
+  &-06 {
+    background: url(../images/sub4/sub9-main-visual-bg.png) no-repeat center / cover;
+  }
+
+  .sub-page-mv-title-wrap {
+    @include flex-center;
+    flex-direction: column;
+    gap: $sp-30;
+    margin-top: 300px;
+
+    .sub-page-big-title {
+
+      .big-title-img-tablet,
+      .big-title-img-mb {
+        display: none;
+      }
+    }
+
+    p {
+      font-size: 48px;
+      font-weight: $fw-b;
+      color: $c-white;
+    }
+  }
+
+  .sub-page-scroll-btn-wrap {
+    @include flex-center;
+    flex-direction: column;
+    gap: $sp-5;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    animation: sparkle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    .sub-page-scroll-text {
+      font-family: $ff-kanit;
+      font-size: $fs-20;
+      font-weight: $fw-r;
+      color: $c-white;
+    }
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: scale(1.03);
+    clip-path: circle(0% at 50% 50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    clip-path: circle(150% at 50% 50%);
+  }
+}
+
+// 콘텐츠 올라오는 거
+.sub-whole-content-container {
+  // 헤더 길이만큼 + 간격 너비만큼
+  padding-top: 210px;
+  position: relative;
+  z-index: 2;
+  border-radius: 200px 200px 0 0;
+  transform: translateY(80px);
+  transition: transform 800ms ease;
+  background: $c-white;
+
+  &.is-active {
+    transform: translateY(0);
+  }
+
+  .sub-content-wrap {
+    @include inner($inner-main);
+  }
+}
+
+
+/* 영상 소개 */
+.sub-whole-content-container {
+  background: url(../images/sub4/new-game-bg.png) no-repeat top center, #fff; //흰 배경 추가
+
+  .video-intro {
+    width: 100%;
+
+    .video-new-game {
+      width: 100%;
+      @include flex-center;
+      margin-bottom: $sp-section;
+
+      .video-new-game-wrap {
+        width: $inner-sub;
+
+        .sub-title {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: $sp-50;
+          padding-bottom: $sp-50;
+
+          .en {
+            @include sub-title-en;
+          }
+
+          .ko {
+            @include text($fs-32, $fw-semi-b, $c-text-main);
+            width: 65%;
+            text-align: center;
+          }
+        }
+
+        .video-new-game-bg {
+          position: relative;
+
+          .video-new-game-video {
+            position: absolute;
+            width: 1080px;
+            height: 608px;
+            top: 20px;
+            left: 120px;
+            overflow: hidden;
+            border-radius: $r-md;
+            outline: 3px solid rgba($c-white, 0.3);
+            outline-offset: -3px;
+
+            iframe {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .new-game-mario {
+            position: absolute;
+            top: -30px;
+            left: -225px;
+            z-index: -5;
+          }
+
+          .new-game-block {
+            position: absolute;
+            bottom: 15px;
+            right: -230px;
+            z-index: -5;
+          }
+
+          .new-game-block-responsive {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .video-now-playing {
+      padding: $sp-section 0;
+      position: relative;
+
+      .second-swiper {
+        margin-top: $sp-20;
+      }
+
+      .sub-title {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: $sp-50;
+        padding-bottom: $sp-50;
+
+        .en {
+          @include sub-title-en;
+        }
+
+        .ko {
+          @include text($fs-32, $fw-semi-b, $c-text-main);
+          text-align: center;
+        }
+      }
+
+      .now-playing-ch {
+        position: absolute;
+        top: -50px;
+        left: 20%;
+      }
+
+      .now-playing-video-box {
+        width: 1300px;
+        height: 720px;
+        margin: 0 auto $sp-50;
+        position: relative;
+
+        iframe {
+          width: 100%;
+          height: 100%;
+          object-position: center;
+          object-fit: cover;
+        }
+
+        .now-playing-block {
+          position: absolute;
+          z-index: -10;
+
+          &:first-of-type {
+            top: 200px;
+            left: -90px;
+          }
+
+          &:last-of-type {
+            top: 50px;
+            right: -90px;
+          }
+        }
+      }
+
+      .now-playing-video-swiper {
+        .now-playing-video-swiper-wrap {
+          transition-timing-function: linear !important;
+
+          .now-playing-swiper-item {
+            border-radius: $r-xs;
+            overflow: hidden;
+            box-shadow: $box-shadow-default;
+            cursor: pointer;
+
+            img {
+              transition: $tr-r;
+            }
+
+            &:hover {
+              img {
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .video-review {
+      width: 100%;
+      padding: $sp-section 0;
+      background: url(../images/sub4/review-bg.png) no-repeat bottom center;
+
+      .sub-title {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: $sp-50;
+        padding-bottom: $sp-50;
+
+        .en {
+          @include sub-title-en;
+        }
+      }
+
+      .video-review-wrap {
+        width: $inner-sub;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: $sp-20;
+
+        .review-card {
+          flex: 0 0 calc((100% - #{$sp-20}) / 2);
+          height: 420px;
+          position: relative;
+          cursor: pointer;
+          overflow: hidden;
+          transition: 0.4s ease;
+
+          &:hover {
+            width: 749px;
+          }
+
+          .more-btn {
+            @include more-btn($c-white, $c-white);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+          }
+
+          .review-card-img {
+            width: 100%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: $tr-r;
+          }
+
+          &:hover {
+            &::after {
+              opacity: 1;
+            }
+
+            .more-btn {
+              opacity: 1;
+            }
+          }
+        }
+
+        &:has(.review-card:nth-child(1):hover) {
+          .review-card:nth-child(1) {
+            flex: 0 0 749px;
+            border-radius: 0 20px 20px 20px;
+          }
+
+          .review-card:nth-child(2) {
+            flex: 0 0 530px;
+          }
+        }
+
+        &:has(.review-card:nth-child(2):hover) {
+          .review-card:nth-child(1) {
+            flex: 0 0 530px;
+          }
+
+          .review-card:nth-child(2) {
+            flex: 0 0 749px;
+            border-radius: 20px 0px 20px 20px;
+          }
+        }
+
+        &:has(.review-card:nth-child(3):hover) {
+          .review-card:nth-child(3) {
+            flex: 0 0 749px;
+            border-radius: 0 20px 20px 20px;
+          }
+
+          .review-card:nth-child(4) {
+            flex: 0 0 530px;
+          }
+        }
+
+        &:has(.review-card:nth-child(4):hover) {
+          .review-card:nth-child(3) {
+            flex: 0 0 530px;
+          }
+
+          .review-card:nth-child(4) {
+            flex: 0 0 749px;
+            border-radius: 20px 0px 20px 20px;
+          }
+        }
+
+        &:has(.review-card:nth-child(5):hover) {
+          .review-card:nth-child(5) {
+            flex: 0 0 749px;
+            border-radius: 0 20px 20px 20px;
+          }
+
+          .review-card:nth-child(6) {
+            flex: 0 0 530px;
+          }
+        }
+
+        &:has(.review-card:nth-child(6):hover) {
+          .review-card:nth-child(5) {
+            flex: 0 0 530px;
+          }
+
+          .review-card:nth-child(6) {
+            flex: 0 0 749px;
+            border-radius: 20px 0px 20px 20px;
+          }
+        }
+      }
+    }
+  }
+}

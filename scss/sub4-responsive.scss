@@ -1,0 +1,496 @@
+@import 'variables', 'mixins', 'reset', 'fonts', 'header', 'footer', 'common';
+
+//메인비주얼
+@media (max-width: $bp-tablet) {
+  .sub-page-main-visual {
+    height: 100vh;
+    margin-top: 0;
+
+    .sub-page-mv-title-wrap {
+      gap: $sp-40;
+
+      .sub-page-big-title {
+
+        .big-title-img,
+        .big-title-img-mb {
+          display: none;
+        }
+
+        .big-title-img-tablet {
+          display: block;
+        }
+
+        p {
+          font-size: $fs-40;
+        }
+      }
+    }
+
+    .sub-page-scroll-btn-wrap {
+      display: none;
+    }
+  }
+
+  //콘텐츠 올라오는 거
+  .sub-whole-content-container {
+    //헤더 길이만큼 + 간격 너비만큼
+    padding-top: 150px;
+    position: relative;
+    z-index: 2;
+    border-radius: 80px 80px 0 0;
+    transform: translateY(80px);
+    transition: transform 800ms ease;
+    background: $c-white;
+
+    .sub-page-tab-menu {
+      @include flex-center;
+      gap: $sp-50;
+      margin-bottom: 100px;
+
+      .sub-page-tab-btn {
+        @include flex-center;
+        flex-direction: column;
+        gap: 15px;
+
+        &:hover .sub-page-tab-btn-bar {
+          background: $c-main;
+        }
+
+        &-icon {
+          width: 45px;
+          height: 45px;
+        }
+
+        &-text {
+          font-size: $fs-16;
+        }
+
+        &-bar {
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .sub-page-main-visual {
+    .sub-page-mv-title-wrap {
+      gap: $sp-15;
+
+      .sub-page-big-title {
+
+        .big-title-img,
+        .big-title-img-tablet {
+          display: none;
+        }
+
+        .big-title-img-mb {
+          display: block;
+        }
+
+        p {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .sub-page-scroll-btn-wrap {
+      display: none;
+    }
+  }
+
+  //콘텐츠 올라오는 거
+  .sub-whole-content-container {
+    //헤더 길이만큼 + 간격 너비만큼
+    padding-top: 115px;
+    position: relative;
+    z-index: 2;
+    border-radius: 50px 50px 0 0;
+    transform: translateY(80px);
+    transition: transform 800ms ease;
+    background: $c-white;
+
+    .sub-page-tab-menu {
+      @include flex-center;
+      gap: $sp-10;
+      margin-bottom: 70px;
+
+      .sub-page-tab-btn {
+        @include flex-center;
+        flex-direction: column;
+        gap: 15px;
+
+        &:hover .sub-page-tab-btn-bar {
+          background: $c-main;
+        }
+
+        &-icon {
+          width: 45px;
+          height: 45px;
+        }
+
+        &-text {
+          font-size: $fs-16;
+          margin-bottom: 0;
+        }
+
+        &-bar {
+          width: 83px;
+          height: 4px;
+        }
+      }
+    }
+  }
+}
+
+
+/* 영상 소개 - 타블릿 */
+@media (max-width: $bp-tablet) {
+  .sub-whole-content-container {
+    background: url(../images/sub4/new-game-bg-tb.png) no-repeat top center, #fff;
+
+    .video-intro {
+      .video-new-game {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: $sp-100;
+
+        .video-new-game-wrap {
+          .sub-title {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: $sp-20;
+
+            .en {
+              @include sub-title-en;
+            }
+
+            .ko {
+              @include text($fs-24, $fw-semi-b, $c-text-main);
+              width: 100%;
+              text-align: center;
+            }
+          }
+
+          .video-new-game-bg {
+            .video-new-game-video {
+              width: 550px;
+              height: 300px;
+              top: 20px;
+              left: 75px;
+
+              iframe {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            .new-game-mario {
+              display: none;
+            }
+
+            .new-game-block {
+              display: none;
+            }
+
+            .new-game-block-responsive {
+              display: block;
+              position: absolute;
+              bottom: -140px;
+              left: 0px;
+              width: 180px;
+            }
+          }
+        }
+      }
+
+      .video-now-playing {
+        padding: $sp-100 0;
+
+        .second-swiper {
+          margin-top: $sp-10;
+        }
+
+        .sub-title {
+          gap: $sp-20;
+
+          .ko {
+            @include text($fs-24, $fw-semi-b, $c-text-main);
+          }
+        }
+
+        .now-playing-ch {
+          display: none;
+        }
+
+        .now-playing-video-box {
+          width: 90%;
+          height: 370px;
+
+          iframe {
+            width: 100%;
+            height: 100%;
+          }
+
+          .now-playing-block {
+            width: 60px;
+            height: 60px;
+
+            img {
+              object-fit: cover;
+            }
+
+            &:first-of-type {
+              top: 200px;
+              left: -40px;
+            }
+
+            &:last-of-type {
+              top: 50px;
+              right: -40px;
+            }
+          }
+        }
+      }
+
+      .video-review {
+        width: 100%;
+        padding: $sp-100 0 200px 0;
+        background: url(../images/sub4/review-bg-tb.png) no-repeat bottom center;
+
+        .video-review-wrap {
+          width: 90%;
+
+          .review-card {
+            height: 220px;
+
+            &:hover {
+              width: 400px;
+            }
+          }
+
+          &:has(.review-card:nth-child(1):hover) {
+            .review-card:nth-child(1) {
+              flex: 0 0 400px;
+              border-radius: 0 20px 20px 20px;
+            }
+
+            .review-card:nth-child(2) {
+              flex: 0 0 264px;
+            }
+          }
+
+          &:has(.review-card:nth-child(2):hover) {
+            .review-card:nth-child(2) {
+              flex: 0 0 400px;
+              border-radius: 20px 0px 20px 20px;
+            }
+
+            .review-card:nth-child(1) {
+              flex: 0 0 264px;
+            }
+          }
+
+          &:has(.review-card:nth-child(3):hover) {
+            .review-card:nth-child(3) {
+              flex: 0 0 400px;
+              border-radius: 0 20px 20px 20px;
+            }
+
+            .review-card:nth-child(4) {
+              flex: 0 0 264px;
+            }
+          }
+
+          &:has(.review-card:nth-child(4):hover) {
+            .review-card:nth-child(4) {
+              flex: 0 0 400px;
+              border-radius: 20px 0px 20px 20px;
+            }
+
+            .review-card:nth-child(3) {
+              flex: 0 0 264px;
+            }
+          }
+
+          &:has(.review-card:nth-child(5):hover) {
+            .review-card:nth-child(5) {
+              flex: 0 0 400px;
+              border-radius: 0 20px 20px 20px;
+            }
+
+            .review-card:nth-child(6) {
+              flex: 0 0 264px;
+            }
+          }
+
+          &:has(.review-card:nth-child(6):hover) {
+            .review-card:nth-child(6) {
+              flex: 0 0 400px;
+              border-radius: 20px 0px 20px 20px;
+            }
+
+            .review-card:nth-child(5) {
+              flex: 0 0 264px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* 영상 소개 - 모바일 */
+@media (max-width: $bp-mobile) {
+  .sub-whole-content-container {
+    background: url(../images/sub4/new-game-bg-mb.png) no-repeat top center, #fff;
+
+    .video-intro {
+      .video-new-game {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: $sp-140;
+
+        .video-new-game-wrap {
+          .sub-title {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: $sp-20;
+            gap: $sp-5;
+
+            .en {
+              @include sub-title-en;
+            }
+
+            .ko {
+              @include text($fs-18, $fw-semi-b, $c-text-main);
+              width: 100%;
+              text-align: center;
+            }
+          }
+
+          .video-new-game-bg {
+            position: static;
+            display: flex;
+            justify-content: center;
+
+            img {
+              display: none;
+            }
+
+            .video-new-game-video {
+              position: static;
+              width: 360px;
+              height: 210px;
+
+              iframe {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            .new-game-mario,
+            .new-game-block,
+            .new-game-block-responsive {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .video-now-playing {
+        padding: $sp-70 0;
+
+        .second-swiper {
+          margin-top: $sp-5;
+        }
+
+        .sub-title {
+          gap: $sp-5;
+          padding-bottom: $sp-20;
+
+          .ko {
+            @include text($fs-20, $fw-semi-b, $c-text-main);
+          }
+        }
+
+        .now-playing-ch {
+          display: none;
+        }
+
+        .now-playing-video-box {
+          width: 90%;
+          height: 210px;
+          margin: 0 auto $sp-20;
+
+          ㄴ iframe {
+            width: 100%;
+            height: 100%;
+          }
+
+          .now-playing-block {
+            display: none;
+          }
+        }
+      }
+
+      .video-review {
+        width: 100%;
+        padding: $sp-70 0 $sp-140 0;
+        background: url(../images/sub4/review-bg-mb.png) no-repeat bottom center;
+
+        .video-review-wrap {
+          width: 90%;
+          flex-direction: column;
+
+          .review-card {
+            flex: 1 !important;
+            height: 200px !important;
+            border-radius: 0 15px 15px 15px !important;
+
+            /* hover 무효화: 모바일에서는 hover 상태가 없어도 원래 값 유지 */
+            &:hover {
+              flex: 1 !important;
+              height: 200px !important;
+              border-radius: 0 15px 15px 15px !important;
+            }
+
+            .review-card-img {
+              width: 100%;
+              height: auto;
+
+              /* 부모 비율 유지 */
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                /* 이미지 비율 깨짐 방지 */
+              }
+            }
+
+            &::after {
+              display: none;
+            }
+
+            .more-btn {
+              display: none;
+            }
+          }
+
+          /* :has()로 적용되는 hover 스타일도 모바일에서는 무시 */
+          &:has(.review-card:hover) {
+            .review-card {
+              flex: 1 !important;
+              height: 200px !important;
+              border-radius: 0 15px 15px 15px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
