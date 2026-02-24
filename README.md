@@ -120,9 +120,9 @@
 
 | 팀원 | 구현 페이지 및 섹션 |
 | --- | --- |
-| **정현지 (ME)** | [**Common**] 헤더ㆍ푸터 (`All`) / [**Main**] 메인 비주얼 (`index.html`) / [**Sub**] 한국닌텐도 페이지 (`sub1.html`), 소프트웨어 페이지 - 시리즈 섹션 (`sub3-zelda.html`, `sub3-pikmin.html`), 고객지원 페이지 - switch2 탭 페이지 (`sub6.html`) |
+| **정현지 (ME)** | [**Common**] 헤더ㆍ푸터 (`All`) / [**Main**] 메인 비주얼 (`index.html`) / [**Sub**] 서브 페이지 - 메인 비주얼 (`sub1.html`, `sub2.html`, `sub4.html`, `sub5.html`, `sub6.html`), 한국닌텐도 페이지 (`sub1.html`), 소프트웨어 페이지 - 시리즈 섹션 (`sub3-zelda.html`, `sub3-pikmin.html`), 고객지원 페이지 - switch2 탭 페이지 (`sub6.html`) |
 | 강성령 | [**Main**] 소프트웨어 섹션ㆍ플레이 비디오 섹션ㆍ스토어 섹션 (`index.html`) / [**Sub**] 소프트웨어 페이지 - 시리즈 섹션 (`sub3-kirby.html`, `sub3-pikmin.html`), 영상소개 페이지 (`sub4.html`), 고객지원 페이지 - swtich 탭 페이지 (`sub6.html`) |
-| 김효진 | [**Main**] 뉴스 섹션ㆍ배너 섹션 (`index.html`) / [**Sub**] 뉴스 페이지 (`sub5.html`), 고객지원 페이지 - 수리지원 탭 페이지 (`sub6.html`, `sub6-2.html`) / 소프트웨어 페이지 - 캐릭터 섹션ㆍ다운로드 배너 섹션 (`sub3-animalCrossing.html`, `sub3-pikmin.html`) |
+| 김효진 | [**Main**] 뉴스 섹션ㆍ배너 섹션 (`index.html`) / [**Sub**] 뉴스 페이지 (`sub5.html`), 고객지원 페이지 - 수리지원 탭 페이지 (`sub6.html`, `sub6-2.html`) / 소프트웨어 페이지 - 메인 비주얼 섹션ㆍ 캐릭터 섹션ㆍ다운로드 배너 섹션 (`sub3-animalCrossing.html`, `sub3-pikmin.html`) |
 | 최지혜 | [**Common**] 장바구니 버튼, 탑 버튼 (`All`) / [**Main**] 캐릭터 섹션ㆍ아미보 섹션 (`index.html`) / [**Sub**] 제품소개 페이지 (`sub2.html`), 소프트웨어 페이지 - 소프트웨어 섹션 (`sub3-mario.html`, `sub3-pikmin.html`), 고객지원 페이지 - FAQ 탭 페이지 (`sub6.html`) |
 
 > ※ 세부 역할은 프로젝트 진행 과정에서 상호 협업하여 일부 조정되었습니다.
